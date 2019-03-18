@@ -22,7 +22,7 @@ export default () => {
                     <ul style={{ display: 'block', 
                                 listStyle: 'none',
                                 padding: '0px' }}>
-                        {menuData.map(item => ( <MenuItem title={item.title} link={item.link} /> ))}
+                        {menuData.map(item => ( <MenuItem key={item.title} title={item.title} link={item.link} /> ))}
                     </ul>
                 </Container>
             </nav>)

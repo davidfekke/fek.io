@@ -1,4 +1,14 @@
 
 .back {
-    background-image: url(../pages/Rejection.png)
+    background-image: url(../pages/Rejection.png);
+    margin: 0px 0px 50px 0px;
+}
+
+h1 {
+    padding: 200px 0px 200px 0px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 1000;
+    margin: 0px 200px 0px 200px;
+    color: #fff;
 }
