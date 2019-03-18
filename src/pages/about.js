@@ -14,9 +14,9 @@ export default () => {
                 <title>Fek.io</title>
             </Helmet>
             <Navbar />
-            <Header headline="This is the homepage." />
+            <Header headline="About JaxNode" />
             <Article>
-                <div>Hello JaxNode!</div>
+                <div>About JaxNode!</div>
             </Article>
             <Footer />
         </Layout>
