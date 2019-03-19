@@ -1,10 +1,9 @@
 
 .back {
-    background-image: url(../pages/cardinal.jpg);
-    background-color: #868e96;
-    background-attachment: scroll;
-    position: relative;
+    background-image: url(../components/oldcockpit.jpg);
+    background-attachment: fixed;
     background-size: cover;
+    background-color: #868e96;
     margin: 0px 0px 50px 0px;
 }
 

@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Container from "./container.js"
+import Logo from "./fekio.logo.svg"
 
 const menuData = [
     { title: 'Home', link: '/' },
@@ -12,16 +13,22 @@ const menuData = [
 
 const MenuItem = props => (
     <li style={{ display: 'inline' }}>
-        <Link style={{ padding: '0.8rem', textDecoration: 'none' }} to={props.link}>{props.title}</Link>
+        <Link style={{ padding: '0.8rem', 
+            textDecoration: 'none',
+            fontWeight: 'bold' }} to={props.link}>{props.title}</Link>
     </li>
 )
 
 export default () => {
     return (<nav>
                 <Container>
+                {/* */}
                     <ul style={{ display: 'block', 
                                 listStyle: 'none',
                                 padding: '0px' }}>
+                        <li style={{ display: 'inline' }}>
+                            <img src={Logo} style={{height: '25px', verticalAlign: 'middle' }} /> 
+                        </li>
                         {menuData.map(item => ( <MenuItem key={item.title} title={item.title} link={item.link} /> ))}
                     </ul>
                 </Container>

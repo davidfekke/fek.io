@@ -13,7 +13,7 @@ export default () => {
             <Navbar />
             <Header headline="This is the homepage" />
             <Article>
-                <div>Hello JaxNode!</div>
+                <div style={{ fontSize: '4rem', fontWeight: 'bolder'}}>Mobile Software for your iPhone, iPad and Android devices. We also produce web services that can be consumed by these devices.</div>
             </Article>
             <Footer />
         </Layout>
