@@ -15,6 +15,8 @@ const MenuItem = props => (
     <li style={{ display: 'inline' }}>
         <Link style={{ padding: '0.8rem', 
             textDecoration: 'none',
+            color: 'black',
+            textTransform: 'uppercase',
             fontWeight: 'bold' }} to={props.link}>{props.title}</Link>
     </li>
 )

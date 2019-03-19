@@ -1,9 +1,10 @@
 
 .back {
     background-image: url(../components/downtown.jpg);
-    background-attachment: fixed;
-    background-size: cover;
     background-color: #868e96;
+    background-attachment: scroll;
+    position: relative;
+    background-size: cover;
     margin: 0px 0px 50px 0px;
 }
 
