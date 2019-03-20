@@ -6,7 +6,7 @@ export default props => {
     return (
         <header className={headerStyles.back}>
             <Container>
-                <h1>{props.headline}</h1>
+                <h1 className={headerStyles.contact}>{props.headline}</h1>
             </Container>
         </header>
     )

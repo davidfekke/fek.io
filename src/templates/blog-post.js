@@ -1,15 +1,24 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import MainHelmet from "../components/mainhelmet"
+import Navbar from "../components/navbar"
+import Header from "../components/header"
+import Article from "../components/article"
+import Footer from "../components/footer"
+import "../components/layout.css"
 
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <div>
-        <h1>{post.frontmatter.title}</h1>
+      <MainHelmet />
+      <Navbar />
+      <Header headline={post.frontmatter.title} />
+      <Article>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
+      </Article>
+      <Footer />
     </Layout>
   )
 }
