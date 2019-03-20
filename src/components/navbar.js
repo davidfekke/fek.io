@@ -29,7 +29,7 @@ export default () => {
                                 listStyle: 'none',
                                 padding: '0px' }}>
                         <li style={{ display: 'inline' }}>
-                            <img src={Logo} style={{height: '25px', verticalAlign: 'middle' }} /> 
+                            <img src={Logo} alt="Logo" style={{height: '25px', verticalAlign: 'middle' }} /> 
                         </li>
                         {menuData.map(item => ( <MenuItem key={item.title} title={item.title} link={item.link} /> ))}
                     </ul>

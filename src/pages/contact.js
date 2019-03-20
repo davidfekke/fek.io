@@ -5,7 +5,6 @@ import Header from "../components/contactheader.js"
 import Footer from "../components/footer.js"
 import Article from "../components/article.js"
 import MainHelmet from "../components/mainhelmet.js"
-import { Link } from "gatsby"
 
 export default () => {
     return (
@@ -23,7 +22,9 @@ export default () => {
 
                 <p>I can also be reached by Twitter:</p>
 
-                <p><a href="https://twitter.com/@davidfekke" target="_blank">@davidfekke</a>
+                <p><a href="https://twitter.com/@davidfekke" 
+                        target="_blank"
+                        rel="noopener noreferrer">@davidfekke</a>
                 </p>
                 </div>
             </Article>

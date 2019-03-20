@@ -5,13 +5,7 @@ import Header from "../components/productsheader.js"
 import Footer from "../components/footer.js"
 import Article from "../components/article.js"
 import MainHelmet from "../components/mainhelmet.js"
-
-const products = [
-    { name: 'iDogYears' },
-    { name: 'iCatYears' },
-    { name: 'iLottoNum' },
-    { name: 'JaxNode' }  
-];
+import products from "../data/products"
 
 export default () => {
     return (
@@ -24,7 +18,11 @@ export default () => {
                     <h2>Apps for Download</h2>
                     <p>Here are some of my apps you can download on Apple's iTunes App Store</p>
                     {products.map(item => (
-                        <h2>{item.name}</h2>
+                        <div>
+                            <h2>{item.name}</h2>
+                            <p>{item.description}</p>
+                            <p><a href={item.uri} target="_blank" rel="noopener noreferrer">View on App Store</a></p>
+                        </div>
                     ))}
                 </div>
             </Article>
