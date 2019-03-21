@@ -7,6 +7,7 @@ import Header from "../components/header"
 import Article from "../components/article"
 import Footer from "../components/footer"
 import "../components/layout.css"
+import "../components/imgresponsive.css"
 
 export default ({ data }) => {
   const post = data.markdownRemark
