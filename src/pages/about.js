@@ -5,7 +5,7 @@ import Header from "../components/aboutheader.js"
 import Footer from "../components/footer.js"
 import Article from "../components/article.js"
 import MainHelmet from "../components/mainhelmet.js"
-import photoOfMe from "./davidfekke.jpg"
+import photoOfMe from "./DavidFekke.jpg"
 
 export default () => {
     return (
