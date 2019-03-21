@@ -9,7 +9,6 @@ import MainHelmet from "../components/mainhelmet.js"
 
 export default class BlogList extends React.Component {
   render() {
-    const { data } = this.props;
     const posts = this.props.data.allMarkdownRemark.edges;
     const { currentPage, numPages } = this.props.pageContext;
     const isFirst = currentPage === 1;
@@ -25,24 +24,27 @@ export default class BlogList extends React.Component {
         <Article>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
-            return (<div key={node.fields.slug}>
-                    <div style={{ fontSize: '2rem'}}>
-                        <Link to={node.fields.slug}>{title}</Link>
+            return (<div style={{ margin: '0px 100px 30px 100px'}} key={node.fields.slug}>
+                    <div style={{ fontSize: '2rem', fontWeight: 'bold' }}>
+                        <Link to={node.fields.slug} style={{ textShadow: '2px 2px 5px black', textDecoration: 'none', color: 'orange'}}>{title}</Link>
                     </div>
                     <div>{node.excerpt}</div> 
                     <div><em>Time to read: {node.timeToRead || 1} minute.</em></div> 
                 </div>)
           })}
-          {!isFirst && (
-            <Link to={prevPage} rel="prev">
-              ← Previous Page
-            </Link>
-          )}
-          {!isLast && (
-            <Link to={nextPage} rel="next">
-              Next Page →
-            </Link>
-          )}
+          <div style={{ margin: '0px 100px 30px 100px'}}>
+            {!isFirst && (
+              <Link to={prevPage} rel="prev">
+                ← Previous Page
+              </Link>
+            )}
+            {!isLast && <span>&nbsp;</span>}
+            {!isLast && (
+              <Link to={nextPage} rel="next">
+                Next Page →
+              </Link>
+            )}
+          </div>
         </Article>
         <Footer />
       </Layout>
