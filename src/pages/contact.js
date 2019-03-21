@@ -14,7 +14,7 @@ export default () => {
             <Header headline="Contact Us" />
             <Article>
                 <div>
-                <h3>How to contact me</h3>
+                <h3>How to contact</h3>
                 <p>
                 The best way to get a hold of me is to email me at my gmail account:</p>
 

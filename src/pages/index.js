@@ -12,7 +12,7 @@ export default () => {
         <Layout>
             <MainHelmet title="Fek.io" />
             <Navbar />
-            <Header headline="This is the homepage" />
+            <Header headline="Welcome to FEK.IO" />
             <Article>
                 <div style={{ display: 'block'}}>
                     <img src={iPhone} alt="iPhone" style={{ width: '250px', float: 'left', padding: '1rem' }} />

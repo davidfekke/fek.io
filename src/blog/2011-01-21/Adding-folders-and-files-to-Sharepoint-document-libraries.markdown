@@ -10,15 +10,17 @@ I am working on project now where we are creating reports and saving them to a d
 
 When I add a folder to the document library I used the following code;
 
-<pre class="brush: csharp;">SPSite mySite = new SPSite("http://sitename/");
+```csharp
+SPSite mySite = new SPSite("http://sitename/");
 SPWeb myWeb = mySite.AllWebs["mywebname"];
 
 SPFolderCollection myFolderCollection = myWeb.GetFolder("http://sitename/sites/mywebname/PDF Reports").SubFolders;
 myFolderCollection.Add("FolderName");
-</pre>
+```
 To add a file from a filestream, I used the following code;
 
-<pre class="brush: csharp;">FileStream stream = File.Create("report.pdf", result.Length);
+```csharp
+FileStream stream = File.Create("report.pdf", result.Length);
 
 SPSite mySite = new SPSite("http://sitename/");
 SPWeb myWeb = mySite.AllWebs["mywebname"];
@@ -27,4 +29,4 @@ SPFileCollection destFiles = myWeb.GetFolder("http://sitename/sites/mywebname/PD
 destFiles.Add("report.pdf", stream, true);
 
 stream.Close();
-</pre>
+```
