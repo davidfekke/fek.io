@@ -17,8 +17,15 @@ export default () => {
                 <div style={{ display: 'block'}}>
                     <img src={iPhone} alt="iPhone" style={{ width: '250px', float: 'left', padding: '1rem' }} />
                     <div style={{ textAlign: 'center', fontWeight: 'bolder'}}>
-                        <p style={{ fontSize: '3rem' }}>Mobile Software for your iPhone, iPad and Android devices. We also produce web services that can be consumed by these devices.</p>
-                        <p style={{ fontSize: '2rem' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.</p>
+                        <p style={{ fontSize: '2rem' }}>Mobile Software for your iPhone, iPad and Android devices. We also produce web services that can be consumed by these devices.</p>
+                        <h3>iOS Apps iPhone, iPad and Apple Watch development</h3>
+                        <p style={{ fontSize: '2rem' }}>Learn about our iOS projects leveraging key aspects of the iOS SDK.</p>
+                        <h3>Android Development</h3>
+                        <h4>The rest of the 92% of devices</h4>
+                        <p style={{ fontSize: '2rem' }}>Learn about our iOS projects leveraging key aspects of the iOS SDK.</p>
+                        <h3>.NET and Node.js</h3>
+                        <h4> Will Seal the Deal.</h4>
+                        <p>Mobile and IoT devices need a way to speak to the Cloud. We have 20 years of experience building server applications for your cloud solutions.</p>
                     </div>
                 </div>
             </Article>
