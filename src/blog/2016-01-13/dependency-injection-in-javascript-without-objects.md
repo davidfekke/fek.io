@@ -19,7 +19,7 @@ services so they would be more testable and more loosely coupled. In languages s
 In express it is actually very easy to inject functionality into a route. This can be done by either using middleware or 
 injecting another function into a route.
 
-~~~ javascript
+```javascript
 var routes = require('./routes/index');
 
 var exposeService = function(req, resp, next){
@@ -28,13 +28,13 @@ var exposeService = function(req, resp, next){
 };
 
 app.use('/', exposeService, routes);
-~~~
+```
 
 For one of the routes I needed to be able to inject two services that could be used by the route. In an earlier version of the 
 combined service I created an object that had two properties that held references to other objects that had functions for 
 returning the data I needed in my route. Here is how I intially wrote the service as an object.
 
-~~~ javascript
+```javascript
 "use strict";
 
 // Creating function object
@@ -59,11 +59,11 @@ function create(meetupdata, twitterdata) {
 }
 
 module.exports = create;
-~~~
+```
 
 While this worked, it turns out there is a much simpler and more elegant way of creating this service.
 
-~~~ Javascript
+```Javascript
 "use strict";
 
 function Service(meetupDataFN, twitterDataFN) {
@@ -74,7 +74,7 @@ function Service(meetupDataFN, twitterDataFN) {
 }
 
 module.exports = Service;
-~~~
+```
 
 In the current version of my service I am returning an object with two functions. Not only is this approach cleaner, 
 it is also more functional. I am also just passing in functions instead of whole objects.
