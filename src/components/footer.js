@@ -1,5 +1,6 @@
 import React from "react"
 import Container from "./container.js"
+import { Link } from "gatsby"
 import { FaTwitter, FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 export default () => {
@@ -14,7 +15,8 @@ export default () => {
                         <a href="https://github.com/davidfekke/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'black' }}><FaGithub size={32}  style={{ padding: '5px' }} /></a>
                     </div>
                     <div style={{ textAlign: 'center'}}>
-                        Copyright 2019, David Fekke.
+                        Copyright 2019, David Fekke.<br /> 
+                        <Link to="terms">Terms and Conditions</Link>.
                     </div>
                 </div>
             </Container>

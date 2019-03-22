@@ -4,7 +4,6 @@ import Container from "./container.js"
 import Logo from "./fekio.logo.svg"
 
 const menuData = [
-    { title: 'Home', link: '/' },
     { title: 'Products', link: '/products/' },
     { title: 'Blog', link: '/blog/' },
     { title: 'About', link: '/about/' },
@@ -24,12 +23,11 @@ const MenuItem = props => (
 export default () => {
     return (<nav>
                 <Container>
-                {/* */}
                     <ul style={{ display: 'block', 
                                 listStyle: 'none',
                                 padding: '0px' }}>
-                        <li style={{ display: 'inline' }}>
-                            <img src={Logo} alt="Logo" style={{height: '22px', verticalAlign: 'top' }} /> 
+                        <li style={{ display: 'inline', paddingRight: '10px' }}>
+                            <Link to="/"><img src={Logo} alt="Logo" style={{height: '22px', verticalAlign: 'top' }} /></Link> 
                         </li>
                         {menuData.map(item => ( <MenuItem key={item.title} title={item.title} link={item.link} /> ))}
                     </ul>

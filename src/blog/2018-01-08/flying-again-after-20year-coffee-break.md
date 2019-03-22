@@ -68,27 +68,39 @@ There are a ton of YouTube channels from pilots showing everything from instruct
 
 My favorite channel right now is FlightChops from Canadian pilot Steve Thorne. Steve is a professional filmmaker and a private pilot. He does a really good job of showing context in the things he is learning, and he consults with and uses real flight instructors in his videos.
 
-<iframe width="700" height="393" src="https://www.youtube.com/embed/71RL8EdvUkI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="text-align: center">
+    <iframe width="700" height="393" src="https://www.youtube.com/embed/71RL8EdvUkI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 YouTube user Steveo1Kinevo is a professional pilot based in South Florida. He makes great videos of his flights and experiences as a commercial pilot.
 
+<div style="text-align: center">
 <iframe width="700" height="393" src="https://www.youtube.com/embed/5XCCJVv-MFQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 Friendly Skies Films is another great YouTube channel by Nicholas Cyganski. Nicholas makes great videos about his experiences as a licensed pilot. He also goes into great detail explaining different aviation subjects. One of my favorite videos he did was how the news media never gets anything right when it comes to aviation.
 
+<div style="text-align: center">
 <iframe width="700" height="393" src="https://www.youtube.com/embed/NDOBN0r3ydA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 Another YouTube user I enjoy quite a bit is Matt Guthmiller. Matt set a world record when he was 19 to be the youngest pilot ever to fly around the world. Matt makes great videos of him flying the same plane he flew around the world, making regular general aviation flights. Check out this video he made of flying to the Bahamas.
 
+<div style="text-align: center">
 <iframe width="700" height="393" src="https://www.youtube.com/embed/tiUTcgQ978Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 There are also two ground instruction companies online that produce great short videos on short subjects on learning how to fly. One of these companies is MzeroA.com. Jason Schappert is a CFII and owner of MzeroA.com. Check out him demoing how to do slow light.
 
+<div style="text-align: center">
 <iframe width="700" height="393" src="https://www.youtube.com/embed/t8wEhhWQlSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 Another one of these companies is FLY8MA. They have some great videos online demonstrating different things a pilot needs to know when flying an airplane. Check out this video from Jon Kotwicki doing an introductory flight lesson.
 
+<div style="text-align: center">
 <iframe width="700" height="393" src="https://www.youtube.com/embed/G1v7KYjjtCI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 I would not use these videos as a substitute for training, but they are good refreshers on things you might have leaned in the past. I would still consult a CFI or CFII in person before attempting to do anything in these videos.
 
