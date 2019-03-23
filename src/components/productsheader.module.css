@@ -17,3 +17,45 @@ h1.product {
     margin: 0px 200px 0px 200px;
     color: #fff;
 }
+
+@media (max-width: 768px) {
+    .back {
+        background-image: url(../components/products.jpg);
+        background-color: #868e96;
+        background-attachment: scroll;
+        position: relative;
+        background-size: cover;
+        margin: 0px 0px 50px 0px;
+    }
+    
+    h1.product {
+        padding: 150px 0px 150px 0px;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 1000;
+        text-shadow: 2px 2px 5px black;
+        margin: 0px 100px 0px 100px;
+        color: #fff;
+    }
+}
+
+@media (max-width: 500px) {
+    .back {
+        background-image: url(../components/products.jpg);
+        background-color: #868e96;
+        background-attachment: scroll;
+        position: relative;
+        background-size: cover;
+        margin: 0px 0px 50px 0px;
+    }
+    
+    h1.product {
+        padding: 100px 0px 100px 0px;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 1000;
+        text-shadow: 2px 2px 5px black;
+        margin: 0px 50px 0px 50px;
+        color: #fff;
+    }
+}

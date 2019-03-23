@@ -1,0 +1,23 @@
+
+
+li.navbar {
+    display: inline;
+}
+
+li.navbarlogo {
+    display: inline; 
+    padding-right: 10px;
+}
+
+@media (max-width: 500px) { 
+
+    li.navbar {
+        display: block;
+    }
+    
+    li.navbarlogo {
+        display: block; 
+        padding-right: 10px;
+    }
+
+}
