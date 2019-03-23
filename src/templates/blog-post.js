@@ -17,6 +17,8 @@ export default ({ data }) => {
       <Navbar />
       <Header headline={post.frontmatter.title} />
       <Article>
+        <em>By David Fekke</em><br />
+        {post.frontmatter.date}
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </Article>
       <Footer />
@@ -30,6 +32,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date(formatString: "MMMM Do, YYYY")
       }
     }
   }
