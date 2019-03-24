@@ -26,7 +26,6 @@ export default ({ data }) => {
       title
     }
   };
-  console.log(socialConfig)
   return (
     <Layout>
       <MainHelmet />
