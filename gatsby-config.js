@@ -4,6 +4,8 @@ module.exports = {
       },
     plugins: [
       `gatsby-plugin-react-helmet`,
+      `gatsby-remark-copy-linked-files`,
+      `gatsby-transformer-sharp`,
       `gatsby-plugin-sharp`,
       {
         resolve: `gatsby-source-filesystem`,

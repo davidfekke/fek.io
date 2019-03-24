@@ -5,10 +5,8 @@ description: "A post I made to hashnode a couple of days ago about dealing with 
 category: 
 tags: iOS Apple App Submission
 date: 2016-09-06
+cover_image: "./rejection.png"
 ---
-
-
-![Image of Jekyll Logo](./rejection.png)
 
 *This article is reprinted from a post I made to [Hashnode](https://hashnode.com/post/dealing-with-a-rejection-from-the-apple-app-store-cisp16zu001284g53iqp3lu9d).*
 

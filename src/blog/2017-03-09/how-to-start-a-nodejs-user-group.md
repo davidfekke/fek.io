@@ -5,13 +5,11 @@ description: ""
 category: 
 tags: node.js javascript community
 date: 2017-03-09
+cover_image: "./1_UaqHI0lPvnbcdnMuN5-C7A.jpg"
 ---
 
 
 ### I started a Node.js User Group here in Jacksonville back in 2013, and I wanted to share my experiences about starting a Node.js User Group…
-
-![Picture of JaxNode meeting from Feb. 2017](https://cdn-images-1.medium.com/max/2000/1*UaqHI0lPvnbcdnMuN5-C7A.jpeg)
-##### February 2017’s JaxNode meeting with Brady Merkel speaking on Node 101 and mentoring
 
 I started a Node.js User Group here in Jacksonville back in 2013, and I wanted to share my experiences about starting a Node.js User Group for anyone who has ever wanted to get one started in their community! FYI, the user group that was started is called [JaxNode](https://www.jaxnode.com). Come join us next time you are in the area!
 

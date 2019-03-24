@@ -4,11 +4,10 @@ title: "Flying Again After a 20 Year Coffee Break"
 description: "I recently started flying again after a 20 year absence from the cockpit"
 category: Aviation flying pilot
 date: 2018-01-08
+cover_image: "./mooney2017.jpg"
 ---
 
 #### Coffee Breaks is what one of my flight instructors referred to my breaks of a couple months or a couple of years from flying.
-
-![Image of Mooney](./mooney2017.jpg)
 
 I recently started flying again after a 20 year absence from the cockpit. A recent experience I had with the Transportation Security Administration encouraged me that there might be a better way to travel.
 
