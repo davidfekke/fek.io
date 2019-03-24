@@ -1,6 +1,8 @@
 module.exports = {
     siteMetadata: {
         title: `FEK.IO, The website for David Fekke L.L.C.`,
+        twitterHandle: '@davidfekke',
+        url: 'https://fek.io'
       },
     plugins: [
       `gatsby-plugin-react-helmet`,
