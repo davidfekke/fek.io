@@ -79,7 +79,7 @@ exports.createPages = ({ graphql, actions }) => {
             const prev = index === posts.length - 1 ? null : posts[index + 1].node;
   
             createPage({
-              path: edge.node.fields.slug,
+              path: `blog${edge.node.fields.slug}`,
               component: postPage,
               context: {
                 slug: edge.node.fields.slug,

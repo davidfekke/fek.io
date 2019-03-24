@@ -26,7 +26,7 @@ export default class BlogList extends React.Component {
             const title = node.frontmatter.title || node.fields.slug
             return (<div style={{ margin: '0px 100px 30px 100px'}} key={node.fields.slug}>
                     <div style={{ fontSize: '2rem', fontWeight: 'bold' }}>
-                        <Link to={node.fields.slug} style={{ textShadow: '2px 2px 5px black', textDecoration: 'none', color: 'orange'}}>{title}</Link>
+                        <Link to={`blog/${node.fields.slug}`} style={{ textShadow: '2px 2px 5px black', textDecoration: 'none', color: 'orange'}}>{title}</Link>
                     </div>
                     <div>{node.excerpt}</div> 
                     <div><em>Time to read: {node.timeToRead || 1} minute.</em></div> 
