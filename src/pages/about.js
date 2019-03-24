@@ -5,6 +5,7 @@ import Header from "../components/aboutheader.js"
 import Footer from "../components/footer.js"
 import Article from "../components/article.js"
 import MainHelmet from "../components/mainhelmet.js"
+import ExtLink from "../components/extlink.js"
 import photoOfMe from "./DavidFekke.jpg"
 
 export default () => {
@@ -24,7 +25,7 @@ export default () => {
                 <p>If you are interested in custom application development, please contact us for rates.</p>
                 <br />
                 <h3>Affiliations</h3>
-                <p><strong>JaxNode</strong>, <strong>JaxDUG</strong>, <strong>JaxWeb</strong>, <strong>JaxMUG</strong></p>
+                <p><strong><ExtLink uri="https://www.jaxnode.com" name="JaxNode" /></strong>, <strong>JaxDUG</strong>, <strong>JaxWeb</strong>, <strong>JaxMUG</strong></p>
                 <h3>Aviation</h3>
                 <p>David is also a Commercial pilot and a licensed remote pilot in single engine and multi engine land aircraft (ASMEL).</p>
 

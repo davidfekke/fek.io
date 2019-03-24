@@ -4,20 +4,42 @@ li.navbar {
     display: inline;
 }
 
+li.navbar > a {
+    padding: 0.8rem; 
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 li.navbarlogo {
     display: inline; 
     padding-right: 10px;
+}
+
+li.navbarlogo > a {
+
 }
 
 @media (max-width: 500px) { 
 
     li.navbar {
         display: block;
+        margin: 10px;
     }
     
+    li.navbar > a {
+        padding: 0.2rem; 
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
     li.navbarlogo {
-        display: block; 
-        padding-right: 10px;
+        display: block;
+        margin: 10px; 
+        padding-left: 10px;
     }
 
 }

@@ -28,7 +28,7 @@ export default () => {
                                 listStyle: 'none',
                                 padding: '0px' }}>
                         <li className={styles.navbarlogo}> 
-                            <Link to="/"><img src={Logo} alt="Logo" style={{height: '22px', verticalAlign: 'top' }} /></Link> 
+                            <Link to="/"><img src={Logo} alt="Logo" style={{height: '22px', verticalAlign: 'middle' }} /></Link> 
                         </li>
                         {menuData.map(item => ( <MenuItem key={item.title} title={item.title} link={item.link} /> ))}
                     </ul>
