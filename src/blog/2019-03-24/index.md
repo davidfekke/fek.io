@@ -9,7 +9,7 @@ cover_image: "./movingtogatsby.jpg"
 
 ### I recently moved my Website to a new static site generator called Gatsby JS
 
-[Gatsby JS](https://gatsbyjs.org) is a site generator based on the [React](https://reactjs.org/) framework. I have been using [Jekyll](https://jekyllrb.com) for the last couple of years, but I have had real problems with some of the Ruby system not installing ruby gems properly. Another thing that is nice about Jekyll is that itis natively supported on Github pages. All you have to do with any github probject is make sure your jekyll site is checked into the ghpages branch, and Github will auto-publish your site everytime you check into that branch.
+[Gatsby JS](https://gatsbyjs.org) is a site generator based on the [React](https://reactjs.org/) framework. I have been using [Jekyll](https://jekyllrb.com) for the last couple of years, but I have had real problems with some of the Ruby system not installing ruby gems properly. Another thing that is nice about Jekyll is that itis natively supported on Github pages. All you have to do with any github probject is make sure your jekyll site is checked into the gh-pages branch, and Github will auto-publish your site everytime you check into that branch.
 
 I help run a user group on Node.js called [JaxNode](https://www.jaxnode.com) here in Jacksonville, Fl. Since we are heavily node focused, I decided to use one of the many site generators available on Node. There are many including [Hugo](https://gohugo.io/), [Hexo](https://hexo.io) and [Metalsmith](https://www.metalsmith.io). I opted to go with [Gatsby JS](https://gatsbyjs.org).
 
