@@ -11,9 +11,6 @@ const menuData = [
     { title: 'Contact', link: '/contact/' }
 ];
 
-
-// style={{ display: 'inline-block' }}
-
 const MenuItem = props => (
     <li className={ styles.navbar }> 
         <Link style={{ padding: '0.8rem', 
@@ -38,8 +35,3 @@ export default () => {
                 </Container>
             </nav>)
 }
-
-/*
-Logo style
-{* style={{ display: 'inline', paddingRight: '10px' }} *}
-*/
