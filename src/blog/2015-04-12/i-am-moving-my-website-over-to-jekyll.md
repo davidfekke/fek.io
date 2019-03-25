@@ -4,12 +4,13 @@ title: "I am moving my website over to Jekyll"
 category: "Jekyll"
 tags: [Jekyll]
 date: 2015-04-12
+cover_image: "./jekyllhero.png"
 ---
 
 
 I have decided to move my web site off of the [Orchard CMS](http://orchardproject.net/), and to [Jekyll](http://jekyllrb.com).
 
-![Image of Jekyll Logo](/assets/images/jekyll-workers.png)
+![Image of Jekyll Logo](./jekyll-workers.png)
 
 If you are not familiar with [Jekyll](http://jekyllrb.com), it is a static site generator written in Ruby. I initially decided a couple of years ago that I would move my site and blog over to Orchard because it is based on ASP.NET MVC, and I am a C# ASP.NET developer. I also write web based software using [Node.js](http://nodejs.org), and there are a coupld of CMSs based on Node that are pretty good. 
 
