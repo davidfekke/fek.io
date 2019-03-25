@@ -90,3 +90,57 @@ h1.about {
 }
 
 ```
+
+### Pages
+
+Creating pages in Gatsby is fairly easy. All you have to do is create a functional component in the `src/pages` directory in your project. If you name your page `about.js`, Gatsby will automatically create a route to that page as `/about/`. Here is what my about page looks like in React syntax;
+
+```jsx
+import React from "react"
+import Layout from "../components/layout"
+import Navbar from "../components/navbar.js"
+import Header from "../components/aboutheader.js"
+import Footer from "../components/footer.js"
+import Article from "../components/article.js"
+import MainHelmet from "../components/mainhelmet.js"
+
+export default () => {
+    return (
+        <Layout>
+            <MainHelmet title="Fek.io" />
+            <Navbar />
+            <Header headline="About FEK.IO" />
+            <Article>
+                <div>
+                    <h2>Need a iOS, Android or Node.js application</h2>
+                    ...
+                    <p>This Web site is built using Gatsby JS. </p>
+                </div>
+            </Article>
+            <Footer />
+        </Layout>
+    )
+}
+
+```
+
+### Linking to other pages
+
+Gatsby does not require the use of the React router. If you want to link to another page, they have a component you can use to create hyperlinks to other pages. This is the `<Link />` component. If you want to use it in your page or component, all you have to do is import it from the gatsby module.
+
+```jsx
+import React from "react"
+import { Link } from "gatsby"
+
+export default ({props}) => {
+    return (
+        <div>
+            <Link to={props.page}>{props.name}<Link>
+        </div>
+    )
+}
+```
+
+## Conclusion
+
+I have not finished making changes to my site yet, but I should be making some more changes soon. I will have some posts on how to add a blog to your site, how to use markdown and how to use the image manipulation features in Gatsby plugins.

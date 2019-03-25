@@ -2,7 +2,7 @@
 layout: post
 title: "Added twitter to my Blog"
 category: "Blog"
-date: 2011-01-17
+date: 2007-03-17
 ---
 
 
