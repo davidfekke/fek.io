@@ -5,8 +5,8 @@ description: ""
 category: 
 tags: expressjs Javascript node node.js DI Dependencey Injection
 date: 2016-01-13
+cover_image: "./javascripthero.png"
 ---
-
 
 After programming in an object oriented way for 15 years, I am started to make the transition of programming in a more functional way 
 with languages like Javascript and Swift. Javascript has always treated functions as first class citizens, and their is a movement in 
