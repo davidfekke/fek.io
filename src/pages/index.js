@@ -23,13 +23,3 @@ export default () => {
         </Layout>
     )
 }
-
-/*
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 3;
-    grid-template-areas: 
-      "iosshowcase iosdesc iosdesc"
-      "androiddesc androiddesc androidshowcase"
-      "nodeshowcase nodedesc nodedesc";
- */
