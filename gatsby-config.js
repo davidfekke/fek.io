@@ -2,7 +2,8 @@ module.exports = {
     siteMetadata: {
         title: `FEK.IO, The website for David Fekke L.L.C.`,
         twitterHandle: '@davidfekke',
-        url: 'https://fek.io'
+        url: 'https://fek.io',
+        facebookAppId: '833529826996398'
       },
     plugins: [
       `gatsby-plugin-react-helmet`,
