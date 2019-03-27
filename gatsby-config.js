@@ -4,10 +4,12 @@ module.exports = {
         description: `FEK.IO The website for David Fekke L.L.C.`,
         twitterHandle: '@davidfekke',
         url: 'https://fek.io',
+        siteUrl: 'https://fek.io',
         facebookAppId: '833529826996398'
       },
     plugins: [
       `gatsby-plugin-react-helmet`,
+      `gatsby-plugin-sitemap`,
       `gatsby-remark-copy-linked-files`,
       `gatsby-transformer-sharp`,
       `gatsby-plugin-sharp`,
