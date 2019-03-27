@@ -15,7 +15,16 @@ export default () => {
             <Header headline="Welcome to FEK.IO" />
             <Article>
                 <div style={{ display: 'block'}}>
-                    <p style={{ fontSize: '3rem', fontWeight: 'bold', textAlign: 'center' }}>Mobile Software for your iPhone, iPad and Android devices. We also produce web services that can be consumed by these devices.</p>    
+                    <div style={{ borderRadius: '1rem', 
+                                    padding: '0.65rem', 
+                                    backgroundColor: 'lightgrey',
+                                    marginTop: '2rem', marginBottom: '4rem' }}>
+                        <p style={{ fontSize: '3rem', fontWeight: 'bold', textAlign: 'center' }}>
+                            Mobile Software for your iPhone, iPad and Android devices. We also produce web services that can be consumed by these devices.
+                        </p>
+                    </div>
+                    
+                        
                     <Home />        
                 </div>
             </Article>
