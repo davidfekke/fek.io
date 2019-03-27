@@ -18,10 +18,14 @@ export default () => {
             <Header headline="iCatYears" />
             <Article>
                 <div>
+                <img src={iDogYears.icon} alt={iDogYears.name} style={{ borderRadius: '5px' }} />
                     <h2>iCatYears</h2>
                     <h3>This is the iOS app for caculating your cat's age in cat years</h3>
                     <p>{iDogYears.description}</p>
                     <p><ExtLink uri={iDogYears.uri} name={iDogYears.name} /></p>
+                    {iDogYears.screens.map(screen => (
+                        <img src={screen} alt="screenshot" style={{ width: '256px', padding: '5px' }} />
+                    ))}
                 </div>
             </Article>
             <Footer />

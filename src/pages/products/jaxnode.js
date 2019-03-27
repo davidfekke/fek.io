@@ -18,10 +18,14 @@ export default () => {
             <Header headline="JaxNode" />
             <Article>
                 <div>
+                    <img src={jaxnodeDetails.icon} alt={jaxnodeDetails.name} style={{ borderRadius: '5px' }} />
                     <h2>JaxNode</h2>
                     <h3>This is the iOS app for the JaxNode User Group</h3>
                     <p>{jaxnodeDetails.description}</p>
                     <p><ExtLink uri={jaxnodeDetails.uri} name={jaxnodeDetails.name} /></p>
+                    {jaxnodeDetails.screens.map(screen => (
+                        <img src={screen} alt="screenshot" style={{ width: '256px', padding: '5px' }} />
+                    ))}
                 </div>
             </Article>
             <Footer />
