@@ -25,11 +25,12 @@ export default () => {
                 <p>If you are interested in custom application development, please contact us for rates.</p>
                 <br />
                 <h3>Affiliations</h3>
-                <p><strong><ExtLink uri="https://www.jaxnode.com" name="JaxNode" /></strong>, <strong>JaxDUG</strong>, <strong>JaxWeb</strong>, <strong>JaxMUG</strong></p>
+                <p><strong><ExtLink uri="https://www.jaxnode.com" name="JaxNode" /></strong>, <strong>JaxDUG</strong>, <strong>JaxWeb</strong>, <strong>JaxMUG</strong>,
+                 and the <ExtLink uri="https://sites.google.com/view/craigpilots/home" name="Criag Pilots Airport Association" /></p>
                 <h3>Aviation</h3>
                 <p>David is also a Commercial pilot and a licensed remote pilot in single engine and multi engine land aircraft (ASMEL).</p>
 
-                <p>This Web site is built using Gatsby JS. </p>
+                <p>This Web site is built using Gatsby JS.</p>
                 </div>
             </Article>
             <Footer />

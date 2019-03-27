@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import MainHelmet from "../components/mainhelmet"
+import SEO from "../components/seo"
 import Navbar from "../components/navbar"
 import Header from "../components/postheader"
 import Article from "../components/article"
@@ -15,7 +15,8 @@ export default class BlogPost extends React.Component {
   render() {
     const data = this.props.data;
     const { prev, next } = this.props.pageContext;
-    const post = data.markdownRemark
+    const post = data.page;
+    const site = data.site;
     let HeaderImage = BannerImage;
     if (post.frontmatter.cover_image !== undefined && post.frontmatter.cover_image !== null && post.frontmatter.cover_image.publicURL !== undefined && post.frontmatter.cover_image.publicURL !== null) {
       HeaderImage = post.frontmatter.cover_image.publicURL;
@@ -23,15 +24,27 @@ export default class BlogPost extends React.Component {
     const url = `https://fek.io/blog${post.fields.slug}`;
     const title = post.frontmatter.title;
     const socialConfig = {
-      twitterHandle: '@davidfekke',
+      twitterHandle: site.siteMetadata.twitterHandle,
       config: {
-        url: `${url}`,
-        title
+        url,
+        title,
+        description: site.siteMetadata.description
       }
+    };
+    const seoData = {
+      title,
+      cover: HeaderImage,
+      slug: url,
+      siteURL: socialConfig.config.url,
+      twitterHandle: site.siteMetadata.twitterHandle,
+      description: site.siteMetadata.description
+    };
+    const facebook = {
+      appId: site.siteMetadata.facebookAppId
     };
     return (
       <Layout>
-        <MainHelmet />
+        <SEO data={seoData} facebook={facebook} />
         <Navbar />
         <Header headline={post.frontmatter.title} backgroundImage={HeaderImage} />
         <Article>
@@ -51,10 +64,11 @@ export default class BlogPost extends React.Component {
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    page: markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
         title
+        description
         date(formatString: "MMMM Do, YYYY")
         cover_image {
           publicURL
@@ -63,6 +77,15 @@ export const query = graphql`
       fields {
         slug
       } 
+    }
+    site {
+      siteMetadata {
+          title
+          description
+          twitterHandle
+          url
+          facebookAppId
+      }
     }
   }
 `
