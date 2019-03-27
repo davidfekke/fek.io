@@ -2,10 +2,14 @@
 layout: post
 title: "George Carlin \"The Earth wants our Plastic\""
 category: "Blog"
-date: 2011-01-17
+date: 2008-06-22
 ---
 
-<iframe width="560" height="420" src="http://www.youtube.com/embed/NBRquiS1pis"></iframe>
+## Bye Bye George :-(
+
+<div style="text-align: center">
+    <iframe width="560" height="420" src="https://www.youtube.com/embed/NBRquiS1pis"></iframe>
+</div>
 
 My favorite three comedians are George Carlin, [Dennis Miller](http://www.dennismillerradio.com) and [Stephen Wright](http://www.stevenwright.com). I was saddened to learn this morning that Comedian George Carlin [passed away](http://www.breitbart.com/article.php?id=D91FO6180&show_article=1&catnum=0).
 

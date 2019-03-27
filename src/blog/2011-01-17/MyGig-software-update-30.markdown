@@ -5,8 +5,6 @@ category: "Blog"
 date: 2011-01-17
 ---
 
-
-![](http://www.fekke.com/blog/images//Charger011web.jpg)  
  I recently received a software update for my MyGig audio navigation system in my Dodge. I am still getting used to the idea of giving my car software updates.
 
 This was for version 3.0 of the MyGig system software. The update took about 10 minutes to install. Harmon Becker cleaned up the interface with prettier icons. There is an icon on the bottom right hand corner of the map for tracking your path.

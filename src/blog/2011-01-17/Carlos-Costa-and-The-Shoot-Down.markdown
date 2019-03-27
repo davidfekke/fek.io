@@ -6,7 +6,7 @@ date: 2011-01-17
 ---
 
 
-![](http://www.fekke.com/blog/images/carloscosta.jpg) I went to Embry-Riddle Aeronautical University from 1988 to 1992\. While there I had the opportunity to meet Carlos Costa. Carlos was in the same program I was in which is the Aeronautical Science program where students learn how to become professional pilots.
+I went to Embry-Riddle Aeronautical University from 1988 to 1992\. While there I had the opportunity to meet Carlos Costa. Carlos was in the same program I was in which is the Aeronautical Science program where students learn how to become professional pilots.
 
 Carlos went on to fly with Brothers to the Rescue. Brothers to the Rescue flew over the Florida straights in Cessna Skymasters between Florida and Cuban airspace looking for Cuban refugees trying to escape from Cuba. On February 24th, 1996 the Cuban government sent Migs to shoot down Brothers to the Rescue. Carlos and another Embry-Riddle student, Mario De La Peña, where killed while flying in international airspace.
 
