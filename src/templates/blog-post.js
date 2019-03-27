@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { DiscussionEmbed } from "disqus-react";
 import Navbar from "../components/navbar"
 import Header from "../components/postheader"
 import Article from "../components/article"
@@ -42,6 +43,11 @@ export default class BlogPost extends React.Component {
     const facebook = {
       appId: site.siteMetadata.facebookAppId
     };
+    const disqusShortname = "fek-io-1";
+    const disqusConfig = {
+      identifier: post.fields.slug,
+      title
+    };
     return (
       <Layout>
         <SEO data={seoData} facebook={facebook} />
@@ -52,6 +58,7 @@ export default class BlogPost extends React.Component {
           <em>By David Fekke</em><br />
           {post.frontmatter.date}
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
           {prev && <Link to={`blog/${prev.fields.slug}`}>← Previous Page </Link>}
           {next && <span>&nbsp;</span>}
           {next && <Link to={`blog/${next.fields.slug}`}>Next Page →</Link>}
