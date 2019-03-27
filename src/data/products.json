@@ -1,14 +1,36 @@
 [
     { "name": "iDogYears",
         "description": "This is a simple program that converts dog years into human years. It uses the canines actual weight plus the actual age to determine the age.",
-        "uri": "https://itunes.apple.com/us/app/idogyears-free/id377638784?ls=1&mt=8" },
+        "uri": "https://itunes.apple.com/us/app/idogyears-free/id377638784?ls=1&mt=8",
+        "icon": "/images/idogs/idogicon.png",
+        "screens": [
+            "/images/idogs/iDogYear1.jpg",
+            "/images/idogs/iDogYear2.jpg"
+        ] },
     { "name": "iCatYears",
         "description": "This is a simple program that converts cat years into human years. It uses the felines actual age to determine the age.",
-        "uri": "https://itunes.apple.com/us/app/icatyears/id405030433?ls=1&mt=8" },
+        "uri": "https://itunes.apple.com/us/app/icatyears/id405030433?ls=1&mt=8",
+        "icon": "/images/icats/icaticon.png",
+        "screens": [
+            "images/icats/icatyears1.jpg",
+            "images/icats/icatyears2.jpg"
+        ] },
     { "name": "iLottoNum",
         "description": "This program randomly picks a number from the starting value to the end value. It is written as way for groups to quickly pick a number for giveaways at meetings. This is the Ad free version of this application.",
-        "uri": "https://itunes.apple.com/us/app/ilottonumber-paid/id377813705?ls=1&mt=8" },
+        "uri": "https://itunes.apple.com/us/app/ilottonumber-paid/id377813705?ls=1&mt=8",
+        "icon": "/images/ilottonum/ilottoicon.png",
+        "screens": [
+            "images/ilottonum/ilottonum1.jpg",
+            "images/ilottonum/ilottonum2.jpg",
+            "images/ilottonum/ilottonum3.jpg"
+        ]  },
     { "name": "JaxNode",
         "description": "The Jacksonville Node.js and Javascript User Group is for anyone interested in learning more about Node.js and JavaScript. JavaScript was originally created for scripting web browsers, but now JavaScript applications run on the server, desktop and even robots. Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.",
-        "uri": "https://itunes.apple.com/us/app/jaxnode/id1183086193?ls=1&mt=8" }  
+        "uri": "https://itunes.apple.com/us/app/jaxnode/id1183086193?ls=1&mt=8",
+        "icon": "/images/jaxnode/jaxnodeicon.png",
+        "screens": [
+            "images/jaxnode/jaxnode1.jpg",
+            "images/jaxnode/jaxnode2.jpg",
+            "images/jaxnode/jaxnode3.jpg"
+        ] }  
 ]
