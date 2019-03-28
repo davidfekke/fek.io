@@ -6,6 +6,7 @@ import Footer from "../../components/footer"
 import Article from "../../components/article"
 import ExtLink from "../../components/extlink"
 import MainHelmet from "../../components/mainhelmet"
+import Breadcrumb from "../../components/breadcrumb"
 import products from "../../data/products.json"
 
 const ilottonum = products.filter(item => item.name === 'iLottoNum')[0];
@@ -18,6 +19,7 @@ export default () => {
             <Header headline="JaxNode" />
             <Article>
                 <div>
+                    <Breadcrumb crumbs={ [ 'Products', 'iLottNum' ] } />
                     <img src={ilottonum.icon} alt={ilottonum.name} style={{ borderRadius: '5px' }} />
                     <h2>iLottoNum</h2>
                     <h3>This is the iOS app for picking a random number for meeting giveaways</h3>

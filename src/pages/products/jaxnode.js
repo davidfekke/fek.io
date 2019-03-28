@@ -6,6 +6,7 @@ import Footer from "../../components/footer"
 import Article from "../../components/article"
 import ExtLink from "../../components/extlink"
 import MainHelmet from "../../components/mainhelmet"
+import Breadcrumb from "../../components/breadcrumb"
 import products from "../../data/products.json"
 
 const jaxnodeDetails = products.filter(item => item.name === 'JaxNode')[0];
@@ -18,6 +19,7 @@ export default () => {
             <Header headline="JaxNode" />
             <Article>
                 <div>
+                    <Breadcrumb crumbs={ [ 'Products', 'JaxNode' ] } />
                     <img src={jaxnodeDetails.icon} alt={jaxnodeDetails.name} style={{ borderRadius: '5px' }} />
                     <h2>JaxNode</h2>
                     <h3>This is the iOS app for the JaxNode User Group</h3>

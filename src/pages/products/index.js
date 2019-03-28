@@ -6,6 +6,7 @@ import Header from "../../components/productsheader"
 import Footer from "../../components/footer"
 import Article from "../../components/article"
 import MainHelmet from "../../components/mainhelmet"
+import Breadcrumb from "../../components/breadcrumb"
 import products from "../../data/products.json"
 import ExtLink from "../../components/extlink"
 
@@ -17,6 +18,7 @@ export default () => {
             <Header headline="This is my Stuff" />
             <Article>
                 <div>
+                    <Breadcrumb crumbs={[ 'Products' ]} />
                     <h2>Apps for Download</h2>
                     <p>Here are some of my apps you can download on Apple's iTunes App Store</p>
                     {products.map(item => (
