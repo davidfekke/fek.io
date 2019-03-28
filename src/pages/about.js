@@ -6,9 +6,10 @@ import Footer from "../components/footer.js"
 import Article from "../components/article.js"
 import MainHelmet from "../components/mainhelmet.js"
 import ExtLink from "../components/extlink.js"
-import photoOfMe from "./DavidFekke.jpg"
+import Img from "gatsby-image"
 
-export default () => {
+
+export default ({data}) => {
     return (
         <Layout>
             <MainHelmet title="Fek.io" />
@@ -17,7 +18,8 @@ export default () => {
             <Article>
                 <div>
                     <h2>Need a iOS, Android or Node.js application</h2>
-                    <img src={photoOfMe} alt="David Fekke" style={{ float: 'left', boxShadow: '2px 2px 5px black', width: '7rem', borderRadius: '50%', border:'1px solid orange', margin: '0.5rem' }} />
+                    <Img fixed={data.file.childImageSharp.fixed} alt="Me" style={{ float: 'left', boxShadow: '2px 2px 5px black', width: '7rem', borderRadius: '50%', border:'1px solid orange', margin: '0.5rem' }} />
+    {/* <img src={photoOfMe} alt="David Fekke" style={{ float: 'left', boxShadow: '2px 2px 5px black', width: '7rem', borderRadius: '50%', border:'1px solid orange', margin: '0.5rem' }} /> */}
                     <p>This is the web site for David Fekke's mobile applications. David is a iOS, Android and Node.js developer. He also develops .NET, ColdFusion and Java web applications.</p>
 
                 <p>If you are looking for David's Powerpoint and presentation slides, you find them at this <a href="https://slides.com/davidfekke/" target="_blank" rel="noopener noreferrer">link</a>.</p>
@@ -42,3 +44,19 @@ export default () => {
         </Layout>
     )
 }
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "DavidFekke.jpg" }) {
+      id
+      extension
+      relativePath
+      dir
+      childImageSharp {
+        fixed(width: 112, height: 112) {
+            ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`

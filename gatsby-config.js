@@ -20,6 +20,13 @@ module.exports = {
             path: `${__dirname}/src/blog/`,
         },
       },
+      {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+          name: `static`,
+          path: `${__dirname}/static`
+        },
+      },
       `gatsby-transformer-remark`,
       {
         resolve: `gatsby-transformer-remark`,
