@@ -1,6 +1,6 @@
 
 .back {
-    background-image: url(../components/newyorkny.jpg);
+    background-image: url(../components/newyorkny3x.jpg);
     background-color: #868e96;
     background-attachment: scroll;
     position: relative;
@@ -20,7 +20,7 @@ h1.blog {
 
 @media (max-width: 768px) {
     .back {
-        background-image: url(../components/newyorkny.jpg);
+        background-image: url(../components/newyorkny2x.jpg);
         background-color: #868e96;
         background-attachment: scroll;
         position: relative;
@@ -41,7 +41,7 @@ h1.blog {
 
 @media (max-width: 500px) {
     .back {
-        background-image: url(../components/newyorkny.jpg);
+        background-image: url(../components/newyorkny1x.jpg);
         background-color: #868e96;
         background-attachment: scroll;
         position: relative;

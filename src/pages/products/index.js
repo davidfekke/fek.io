@@ -20,7 +20,7 @@ export default () => {
                     <h2>Apps for Download</h2>
                     <p>Here are some of my apps you can download on Apple's iTunes App Store</p>
                     {products.map(item => (
-                        <div  style={{ display: 'block', width: '100%' }}>
+                        <div  style={{ display: 'block', width: '100%' }} key={item.name}>
                             <div style={{ float: 'left', width: '120px', padding: '1rem' }}>
                                 <Link to={`/products/${item.name.toLowerCase()}`} style={{ textDecoration: 'none', color: 'black' }}>
                                     <img src={item.icon} alt={item.name} style={{ width: '100px', borderRadius: '10px' }} />
