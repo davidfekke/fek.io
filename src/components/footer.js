@@ -19,85 +19,77 @@ export default () => {
                     </div>
                     <nav className={footerStyles.gridarea}>
                         <div>
-                            <ul style={{ display: 'block', 
-                            listStyle: 'none',
-                            padding: '0px' }}>
-                                <li style={{ margin: '1rem' }}>
+                            <ul>
+                                <li>
                                     <strong>Connect</strong>
                                 </li>
-                                <li style={{ margin: '1rem' }}>
+                                <li>
                                     <Link to="blog">Blog</Link>
                                 </li>
-                                <li style={{ margin: '1rem' }}>
+                                <li>
                                     <ExtLink uri="https://twitter.com/davidfekke" name="Twitter" />
                                 </li>
-                                <li style={{ margin: '1rem' }}>
+                                <li>
                                     <ExtLink uri="https://www.linkedin.com/in/david-fekke-1913ba2/" name="Linkedin" />
                                 </li>
-                                <li style={{ margin: '1rem' }}>
+                                <li>
                                     <ExtLink uri="https://www.youtube.com/davidfekke/" name="Youtube" />    
                                 </li>
                             </ul>
                         </div>
                         <div>
-                            <ul style={{ display: 'block', 
-                            listStyle: 'none',
-                            padding: '0px' }}>
-                                <li style={{ margin: '1rem' }}>
+                            <ul>
+                                <li>
                                     <strong>Products</strong>
                                 </li>
-                                <li style={{ margin: '1rem' }}>
+                                <li>
                                     <Link to="/products/idogyears">iDogYears</Link>
                                 </li>
-                                <li style={{ margin: '1rem' }}>
+                                <li>
                                     <Link to="/products/ilottonum">iLottoNum</Link>
                                 </li>
-                                <li style={{ margin: '1rem' }}>
+                                <li>
                                     <Link to="/products/icatyears">iCatYears</Link>
                                 </li>
-                                <li style={{ margin: '1rem' }}>
+                                <li>
                                     <Link to="/products/jaxnode">JaxNode App</Link>
                                 </li>
                             </ul>                            
                         </div>
                         <div>
-                            <ul style={{ display: 'block', 
-                            listStyle: 'none',
-                            padding: '0px' }}>
-                                <li style={{ margin: '1rem' }}>
+                            <ul>
+                                <li>
                                     <strong>Sites</strong>
                                 </li>
-                                <li style={{ margin: '1rem' }}>
+                                <li>
                                     <ExtLink uri="https://www.jaxtechmeetups.com" name="Jax Tech Meetups" />
                                 </li>
-                                <li style={{ margin: '1rem' }}>
+                                <li>
                                     <ExtLink uri="https://www.jaxnode.com" name="JaxNode" />
                                 </li>
-                                <li style={{ margin: '1rem' }}>
+                                <li>
                                     <ExtLink uri="https://www.swyftmobile.com" name="Swyft Mobile" />
                                 </li>
-                                <li style={{ margin: '1rem' }}>
+                                <li>
                                     <ExtLink uri="https://www.github.com/davidfekke" name="Github" />
                                 </li>
                             </ul>
                         </div>
                         <div>
-                            <ul style={{ display: 'block', 
-                            listStyle: 'none',
-                            padding: '0px'}}>
-                                <li style={{ margin: '1rem' }}>
+                            <ul>
+                                <li>
                                     <strong>Pages</strong>
                                 </li>
-                                <li style={{ margin: '1rem' }}>
+                                <li>
                                     <Link to="contact">Contact</Link>
                                 </li>
-                                <li style={{ margin: '1rem' }}>
+                                <li>
                                     <Link to="about">About</Link>
                                 </li>
-                                <li style={{ margin: '1rem' }}>
+                                <li>
                                     <Link to="terms">Terms and Conditions</Link>
                                 </li>
-                                <li style={{ margin: '1rem' }}>
+                                <li>
                                     <a href="/rss.xml">RSS Feed</a>
                                 </li>
                             </ul>

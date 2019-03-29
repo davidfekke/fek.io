@@ -6,6 +6,16 @@
     align-items: center;
 }
 
+.gridarea > div > ul {
+    display: block; 
+    list-style: none;
+    padding: 0px;
+}
+
+.gridarea > div > ul > li {
+    margin: 0.75rem;
+}
+
 .gridarea > div > ul > li > a {
     text-decoration: none;
     color: black;
