@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "My Weight Loss Journey, or How I lost 70 lbs in a Year"
-description: "I was asked to write about how I lost 70 lbs"
-category: ["nutrition"]
+title: "My Weight Loss Journey, or How I lost 70 Pounds in a Year"
+description: "I was asked to write about how I lost 70 Pounds"
+category:
 date: 2019-03-28
 cover_image: "./beforeandafter.jpg"
 ---
