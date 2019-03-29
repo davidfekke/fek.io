@@ -7,7 +7,7 @@ date: 2019-03-27
 cover_image: "./keyboard.png"
 ---
 
-I came across a nasty bug in the WKWebView in iOS 12 today when it comes to dismissing the keyboard. What happens sometime when the user scrolls the webview while a textarea is selected, and then they dismiss the keyboard, it leaves the section of the webview that was covered by the keyboard unusable. We have a reload method that can clear this, but then the user will lose all of the input they have enetered into their forms.
+I came across a nasty bug in the WKWebView in iOS 12 today when it comes to dismissing the keyboard. What happens sometime when the user scrolls the webview while a textarea is selected, and then they dismiss the keyboard, it leaves the section of the webview that was covered by the keyboard unusable. We have a reload method that can clear this, but then the user will lose all of the input they have entered into their forms.
 
 I came across this [issue](https://github.com/apache/cordova-ios/issues/417) on the Cordova [repo](https://github.com/apache/cordova-ios) on github.  
 
@@ -29,7 +29,7 @@ I came across this [issue](https://github.com/apache/cordova-ios/issues/417) on 
 
 We already had some code in our application for triggering methods when the keyboard is shown or dismissed;
 
-```objc
+```objectivec
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(keyboardWillBeHidden:)
                                                      name:UIKeyboardWillHideNotification object:nil];
@@ -37,7 +37,7 @@ We already had some code in our application for triggering methods when the keyb
 
 We added some code from one of the examples for resetting the offsets on the WKWebView subviews once the keyboard has been dismissed.
 
-```objc
+```objectivec
 - (void)keyboardWillBeHidden:(NSNotification*)aNotification {
     ...
     
