@@ -1,9 +1,9 @@
 import React from "react"
 import shareStyles from "./share.module.css"
-import { FaTwitter, FaFacebook, FaRedditAlien } from 'react-icons/fa';
+import { FaTwitter, FaFacebook, FaRedditAlien, FaLinkedin } from 'react-icons/fa';
 import {
 	FacebookShareButton,
-
+    LinkedinShareButton,
 	TwitterShareButton,
 	RedditShareButton,
 } from 'react-share';
@@ -24,12 +24,12 @@ const Share = ({ socialConfig }) => (
             </span>
             <span className="text" style={{ padding: '3px' }}>Facebook</span>
         </FacebookShareButton>
-        {/* <LinkedinShareButton url={socialConfig.config.url} className={ `button is-outlined is-rounded ${shareStyles.linkedin}` }  title={socialConfig.config.title} >
+        <LinkedinShareButton url={socialConfig.config.url} className={ `button is-outlined is-rounded ${shareStyles.linkedin}` }  title={socialConfig.config.title} >
             <span className="icon" style={{ padding: '5px' }}>
-                <FaLinkedin size={16} style={{ padding: '5px' }} />
+                <FaLinkedin size={16} style={{ padding: '0px' }} />
             </span>
             <span className="text">LinkedIn</span>
-        </LinkedinShareButton> */}
+        </LinkedinShareButton>
         <RedditShareButton url={socialConfig.config.url} className={ `button is-outlined is-rounded ${shareStyles.reddit}` }  title={socialConfig.config.title} >
             <span className="icon" style={{ padding: '5px' }}>
                 <FaRedditAlien size={16} style={{ padding: '0px' }} />
