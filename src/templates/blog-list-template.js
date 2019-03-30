@@ -23,15 +23,15 @@ export default class BlogList extends React.Component {
         <Navbar />
         <Header headline="Blog" />
         <Article>
-          <div style={{ color: 'grey', 
+          <div style={{ color: 'black', 
                         fontWeight: 'bold', 
-                        fontSize: '1.5rem', 
+                        fontSize: '1rem', 
                         marginBottom: '50px', 
                         textAlign: 'center' }}>
             This blog is dedicated to my musings and are strictly my own. I use it to write about all things software, hardware and aviation. 
             The views and opinions on this site strictly reflect that of my own, and not my employer. 
-            At any point I can change my mind, and they may not even reflect my opinions from three minutes ago, so please don't take anything I say too seriously.<br /><br /> 
-            Some of the software topics on this blog will probably include ColdFusion, C#, .NET Core, Node.js, Objective-C, Swift, Java, Kotlin, C++.<br /><br />
+            At any point I can change my mind, and they may not even reflect my opinions from three minutes ago, so please don't take anything I say too seriously.
+            Some of the software topics on this blog will probably include ColdFusion, C#, .NET Core, Node.js, Objective-C, Swift, Java, Kotlin, C++. 
             As commercial pilot I will be writing about General Aviation, the Airlines, instrument flying, avionics, the Federal Aviation Administration and the TSA.
           </div>
           {posts.map(({ node }) => {
