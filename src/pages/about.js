@@ -17,7 +17,7 @@ export default ({data}) => {
             <Navbar />
             <Header headline="About FEK.IO" />
             <Article>
-                <div>
+                <div style={{ margin: '0px 100px' }}>
                     <h2>Need a iOS, Android or Node.js application</h2>
                     <Img fixed={data.file.childImageSharp.fixed} alt="Me" style={{ float: 'left', boxShadow: '2px 2px 5px black', width: '7rem', borderRadius: '50%', border:'1px solid orange', margin: '0.5rem' }} />
     {/* <img src={photoOfMe} alt="David Fekke" style={{ float: 'left', boxShadow: '2px 2px 5px black', width: '7rem', borderRadius: '50%', border:'1px solid orange', margin: '0.5rem' }} /> */}
@@ -28,8 +28,23 @@ export default ({data}) => {
                 <p>If you are interested in custom application development, please contact me for rates.</p>
                 <br />
                 <h3>Affiliations</h3>
-                <p><strong><ExtLink uri="https://www.jaxnode.com" name="JaxNode" /></strong>, <strong>JaxDUG</strong>, <strong>JaxWeb</strong>, <strong>JaxMUG</strong>,
-                 and the <ExtLink uri="https://sites.google.com/view/craigpilots/home" name="Criag Pilots Airport Association" /></p>
+                <ul>
+                  <li>
+                    <strong><ExtLink uri="https://www.jaxnode.com" name="JaxNode" /></strong>
+                  </li>
+                  <li>
+                    <strong>JaxDUG</strong>
+                  </li>
+                  <li>
+                    <strong>JaxWeb/JaxPHP</strong>
+                  </li>
+                  <li>
+                  <strong><ExtLink uri="http://jaxmug.com" name="JaxMUG" /></strong>
+                  </li>
+                  <li>
+                    <ExtLink uri="https://sites.google.com/view/craigpilots/home" name="Criag Pilots Airport Association" />
+                  </li>
+                </ul>
                 
                 <h3>Jax Tech Meetups</h3>
                 <p><ExtLink uri={`https://jaxtechmeetups.com`} name="Jax Tech Meetups" /> is a website I created to show all of the technical and software development user groups in Jacksonville, FL. 
