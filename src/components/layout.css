@@ -2,7 +2,7 @@
 body {
     margin: 0px;
     font-family: 'Open Sans, Helvetica';
-    padding-top: 56px;
+    padding-top: 72px;
 }
 
 
@@ -52,7 +52,7 @@ input {
 @media (max-width: 500px) { 
 
     body {
-        padding-top: 12rem;
+        padding-top: 200px;
     }
 
 }

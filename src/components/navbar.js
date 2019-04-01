@@ -24,19 +24,28 @@ const MenuItem = props => (
 class Navbar extends React.Component {
     constructor(props) {
         super(props);
-
-        // if (typeof window !== 'undefined') {
-        //     window.onscroll = function () {
-        //         console.log('I am scrolling!');
-        //         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        //             document.getElementByClassName("fooboologo").style.height = "40px";
-        //         } else {
-        //             document.getElementByClassName("fooboologo").style.height = "22px";
-        //         }
-        //     }
-        // }
+        //this.state.logoHeight = '22px';
+        this.state = {
+            logoHeight: '40px'
+        };
+        
+        this.handleScroll = this.handleScroll.bind(this);
+        //this.logoImg = React.createRef();
+    }
+    
+    handleScroll(event) {
+        if (document.documentElement.scrollTop > 80) {
+            this.setState({ logoHeight: '22px' });
+        } else {
+            this.setState({ logoHeight: '40px' });
+        }
     }
 
+    componentDidMount() {
+        if (typeof window !== 'undefined') {
+            window.addEventListener('scroll', this.handleScroll);
+        }
+    }
 
     render() {
         return (<nav className={styles.mainNavElement}>
@@ -45,7 +54,7 @@ class Navbar extends React.Component {
                             listStyle: 'none',
                             padding: '0px' }}>
                     <li className={styles.navbarlogo}> 
-                        <Link to="/"><img src={Logo} alt="Logo" /></Link> 
+                        <Link to="/"><img src={Logo} alt="Logo" style={{ height: `${this.state.logoHeight}` }} /></Link>
                     </li>
                     {menuData.map(item => ( <MenuItem key={item.title} title={item.title} link={item.link} /> ))}
                 </ul>
