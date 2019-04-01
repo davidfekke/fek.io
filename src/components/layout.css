@@ -25,14 +25,17 @@ form input {
 }
 
 form button {
-    background: lightgrey;
+    background-color: #337ab7;
+    color: white; 
+    border-radius: 3px; 
+    font-size: 1rem;
     padding: 0.7em;
     width: 100%;
     border: 0;
 }
 
 form button:hover {
-    background: gold;
+    background: #286090;
 }
 
 label {

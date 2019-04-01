@@ -24,17 +24,17 @@ export default class Contact extends React.Component {
       };
     
     handleSubmit = e => {
-    e.preventDefault();
-    const form = e.target;
-    fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({
-            "form-name": form.getAttribute("name"),
-            ...this.state
-        })
-    }).then(() => navigateTo(form.getAttribute("action")))
-        .catch(error => alert(error));
+        e.preventDefault();
+        const form = e.target;
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({
+                "form-name": form.getAttribute("name"),
+                ...this.state
+            })
+        }).then(() => navigateTo(form.getAttribute("action")))
+            .catch(error => alert(error));
     };
 
     render() {
@@ -84,7 +84,7 @@ export default class Contact extends React.Component {
                             <label for="message">Message: </label>
                             <textarea rows="7" name="message" onChange={this.handleChange}></textarea>
                             
-                            <button style={{ backgroundColor: 'lightblue' }}  type="submit">Send</button>
+                            <button type="submit">Send</button>
                             
                         </form>
                         
