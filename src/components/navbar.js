@@ -5,10 +5,10 @@ import Logo from "./fekio.logo.svg"
 import styles from "./navbar.module.css"
 
 const menuData = [
-    { title: 'Products', link: '/products/' },
-    { title: 'Blog', link: '/blog/' },
-    { title: 'About', link: '/about/' },
-    { title: 'Contact', link: '/contact/' }
+    { title: 'Products', link: 'products' },
+    { title: 'Blog', link: 'blog' },
+    { title: 'About', link: 'about' },
+    { title: 'Contact', link: 'contact' }
 ];
 
 const MenuItem = props => (
@@ -44,6 +44,12 @@ class Navbar extends React.Component {
     componentDidMount() {
         if (typeof window !== 'undefined') {
             window.addEventListener('scroll', this.handleScroll);
+        }
+    }
+
+    componentWillUnmount() {
+        if (typeof window !== 'undefined') {
+            window.removeEventListener('scroll',this.handleScroll, false);
         }
     }
 
