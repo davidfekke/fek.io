@@ -7,7 +7,7 @@ export default props => {
         <div>
             <ul className={breadcrumbStyles.breadcrumb}>
                 {props.crumbs.map((crumb, index) => (
-                    ((props.crumbs.length - index) > 1) ? <li><Link to={crumb.toLowerCase()}>{crumb}</Link></li> : <li>{crumb}</li> 
+                    ((props.crumbs.length - index) > 1) ? <li key={index}><Link to={crumb.toLowerCase()}>{crumb}</Link></li> : <li key={index}>{crumb}</li> 
                 ))}
             </ul>
             <div style={{ clear: 'both' }}></div>
