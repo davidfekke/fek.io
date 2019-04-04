@@ -13,6 +13,12 @@
 .mainNavElement nav {
     position: relative;
     display: block;
+    left: 0;
+}
+
+.mainNavElement > div {
+    display: flex;
+    align-items: center;
 }
 
 li.navbar {
@@ -30,6 +36,8 @@ li.navbar > a {
 div.navbarlogo {
     float: left;
     padding-right: 10px;
+    margin-block-start: 1em;
+    margin-block-end: 10px;
 }
 
 li.navbarlogo > a > img {
@@ -58,6 +66,9 @@ li.navbarlogo > a > img {
     .hamburger {
         display: block;
         float: right;
+        position: fixed;
+        top: 11px;
+        right: 11px;
     }
     
     .mainNavElement nav::after {

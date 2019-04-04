@@ -26,11 +26,18 @@ class Navbar extends React.Component {
     constructor(props) {
         super(props);
 
+        let startingWidth = '1160px';
+        if (typeof window !== 'undefined') {
+            startingWidth = window.innerWidth + 'px';
+        }
+
         this.state = {
-            logoHeight: '40px'
+            logoHeight: '40px',
+            windowwidth: startingWidth
         };
         
         this.handleScroll = this.handleScroll.bind(this);
+        this.handleResize = this.handleResize.bind(this);
     }
     
     handleScroll(event) {
@@ -41,15 +48,26 @@ class Navbar extends React.Component {
         }
     }
 
+    handleResize(event) {
+        const width = event.target.innerWidth;
+        this.setState({ windowwidth: width + 'px' });
+        let linksEl = document.querySelector('nav');
+        if (width > 768 && linksEl.style.display === 'none') {
+            linksEl.style.display = 'block';
+        }
+    }
+
     componentDidMount() {
         if (typeof window !== 'undefined') {
             window.addEventListener('scroll', this.handleScroll);
+            window.addEventListener('resize', this.handleResize);
         }
     }
 
     componentWillUnmount() {
         if (typeof window !== 'undefined') {
             window.removeEventListener('scroll',this.handleScroll, false);
+            window.removeEventListener('resize', this.handleResize, false);
         }
     }
     
@@ -77,7 +95,7 @@ class Navbar extends React.Component {
                     </ul>
                 </nav>  
                 <div className={styles.hamburger}>
-                    <a href="#" onClick={this.burgerToggle}><FaBars size={32}  style={{ padding: '5px' }} /></a>
+                    <FaBars size={32}  style={{ padding: '5px' }} onClick={this.burgerToggle} />
                 </div>          
             </Container>
         </div>)

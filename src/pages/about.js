@@ -17,7 +17,7 @@ export default ({data}) => {
             <Navbar />
             <Header headline="About FEK.IO" />
             <Article>
-                <div style={{ margin: '0px 100px' }}>
+                <div className="aboutDiv" >
                     <h2>Need a iOS, Android or Node.js application</h2>
                     <Img fixed={data.file.childImageSharp.fixed} alt="Me" style={{ float: 'left', boxShadow: '2px 2px 5px black', width: '7rem', borderRadius: '50%', border:'1px solid orange', margin: '0.5rem' }} />
     {/* <img src={photoOfMe} alt="David Fekke" style={{ float: 'left', boxShadow: '2px 2px 5px black', width: '7rem', borderRadius: '50%', border:'1px solid orange', margin: '0.5rem' }} /> */}
