@@ -25,13 +25,12 @@ const MenuItem = props => (
 class Navbar extends React.Component {
     constructor(props) {
         super(props);
-        //this.state.logoHeight = '22px';
+
         this.state = {
             logoHeight: '40px'
         };
         
         this.handleScroll = this.handleScroll.bind(this);
-        //this.logoImg = React.createRef();
     }
     
     handleScroll(event) {
