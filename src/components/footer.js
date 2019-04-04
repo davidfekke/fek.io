@@ -8,6 +8,7 @@ import footerStyles from "./footer.module.css"
 export default () => {
     return (
         <footer style={{ backgroundColor: '#868e96', marginTop: '2rem'}}>
+            <hr/>
             <Container>
                 <div style={{ paddingTop: '1rem', paddingBottom: '2rem' }}>
                     <div style={{ textAlign: 'center', height: '3rem', paddingTop: '20px', paddingBottom: '10px',  }}>
