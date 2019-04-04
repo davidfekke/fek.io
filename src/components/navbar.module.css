@@ -10,6 +10,11 @@
     z-index: 999;
 }
 
+.mainNavElement nav {
+    position: relative;
+    display: block;
+}
+
 li.navbar {
     display: inline;
 }
@@ -22,8 +27,8 @@ li.navbar > a {
     font-weight: bold;
 }
 
-li.navbarlogo {
-    display: inline; 
+div.navbarlogo {
+    float: left;
     padding-right: 10px;
 }
 
@@ -36,8 +41,29 @@ li.navbarlogo > a > img {
     vertical-align: middle;
 }
 
-@media (max-width: 500px) { 
+.hamburger {
+    display: none;
+}
 
+@media (max-width: 768px) { 
+
+    .mainNavElement nav {
+        position: absolute;
+        display: none;
+        background-color: aliceblue;
+        top: 100%;
+        width: 100%;
+    }
+    
+    .hamburger {
+        display: block;
+        float: right;
+    }
+    
+    .mainNavElement nav::after {
+        clear: both;
+    }
+    
     li.navbar {
         display: block;
         margin: 10px;

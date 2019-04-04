@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Container from "./container.js"
+import { FaBars } from 'react-icons/fa';
 import Logo from "./fekio.logo.svg"
 import styles from "./navbar.module.css"
 
@@ -52,20 +53,35 @@ class Navbar extends React.Component {
             window.removeEventListener('scroll',this.handleScroll, false);
         }
     }
+    
+    burgerToggle() {
+        let linksEl = document.querySelector('nav');
+        if (linksEl.style.display === 'block') {
+            linksEl.style.display = 'none';
+        } else {
+            linksEl.style.display = 'block';
+        }
+    }
 
     render() {
-        return (<nav className={styles.mainNavElement}>
+        return (<div className={styles.mainNavElement}>
             <Container>
-                <ul style={{ display: 'block', 
-                            listStyle: 'none',
-                            padding: '0px' }}>
-                    <li className={styles.navbarlogo}> 
-                        <Link to="/"><img src={Logo} alt="Logo" style={{ height: `${this.state.logoHeight}` }} /></Link>
-                    </li>
-                    {menuData.map(item => ( <MenuItem key={item.title} title={item.title} link={item.link} /> ))}
-                </ul>
+                <div className={styles.navbarlogo}>
+                    <Link to="/"><img src={Logo} alt="Logo" style={{ height: `${this.state.logoHeight}` }} /></Link>
+                </div>
+                <nav>
+                    <ul style={{ display: 'block', 
+                        float: 'left',
+                        listStyle: 'none',
+                        padding: '0px' }}>
+                        {menuData.map(item => ( <MenuItem key={item.title} title={item.title} link={item.link} /> ))}
+                    </ul>
+                </nav>  
+                <div className={styles.hamburger}>
+                    <a href="#" onClick={this.burgerToggle}><FaBars size={32}  style={{ padding: '5px' }} /></a>
+                </div>          
             </Container>
-        </nav>)
+        </div>)
     }
 }
 
