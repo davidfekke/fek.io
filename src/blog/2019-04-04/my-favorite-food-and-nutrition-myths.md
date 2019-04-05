@@ -88,9 +88,9 @@ There is nothing heart healthy about grains. Grains actually get converted into 
 
 Dr. William Davis chronicled this in his book [Wheat Belly](https://www.amazon.com/Wheat-Belly-Lose-Weight-Health/dp/1609614798). 
 
-## 9. Eat Many Small Meals a Day Instead of Three Large if you are Trying to Loose Weight
+## 9. Eat Many Small Meals a Day Instead of Three Large if you are Trying to Lose Weight
 
-Eating six small meals a day is much worse for than eating three meals a day. Every time you eat, especially food with carbohydrates or protein, your pancreas has to produce more insulin to process your blood sugar. Spiking your [blood sugar](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0038632) six times day is not going to help you loose weight. 
+Eating six small meals a day is much worse for than eating three meals a day. Every time you eat, especially food with carbohydrates or protein, your pancreas has to produce more insulin to process your blood sugar. Spiking your [blood sugar](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0038632) six times day is not going to help you lose weight. 
 
 ## 10. Use Margarine over Butter
 
