@@ -68,7 +68,7 @@ Check out this video by Dr. Robert Lustig who treats children with adult onset d
 
 ## 6. An Apple a Day Will Keep the Doctor Away
 
-Apples contain lots of fructose. They also contain fibre, which makes them easier to process than if we just drank apple juice. The fructose has to They are essentially confection on a tree.
+Apples contain lots of fructose. They also contain fibre, which makes them easier to process than if we just drank apple juice. The fructose has to be processed in your liver. The fiber in an apple helps, but the overall effects of fructose can be harmful. Apples and most fruit are essentially confection on a tree.
 
 Check out this presentation from Dr. Gary Fettke on why fruit may not be as good for you as you think.
 
@@ -84,14 +84,16 @@ The line “Breakfast is the most important meal of the day” was invented in t
 
 ## 8. Grains are Heart Healthy
 
-There is nothing heart healthy about grains. Grains actually get converted into long chain triglycerides in our liver, and are pro-inflammatory.
+There is nothing heart healthy about grains. Grains actually get converted into long chain triglycerides in our liver, and are pro-inflammatory. Wheat and white flour are treated by your liver in a similar way as eating sugar. Eating a slice of bread is like eating seven tea spoons of sugar.
 
 Dr. William Davis chronicled this in his book [Wheat Belly](https://www.amazon.com/Wheat-Belly-Lose-Weight-Health/dp/1609614798). 
 
-## 9. Eat Many Small Meals Instead of Three Large if you are Trying to Loose Weight
+## 9. Eat Many Small Meals a Day Instead of Three Large if you are Trying to Loose Weight
 
-Eating six small meals a day is much worse for than eating three meals a day. Every time you eat, especially food with carbohydrates or protein, your pancreas has to produce more insulin to process your blood sugar. Spiking your blood sugar six times day is not going to help you loose weight. 
+Eating six small meals a day is much worse for than eating three meals a day. Every time you eat, especially food with carbohydrates or protein, your pancreas has to produce more insulin to process your blood sugar. Spiking your [blood sugar](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0038632) six times day is not going to help you loose weight. 
 
 ## 10. Use Margarine over Butter
 
 Margarine is made from vegetable oil, and is actually gray until it is died with food coloring. People started eating Margarine when Butter was maligned because of saturated fat. Margarine contains trans-fats. It is also causes inflammation and should be avoided.
+
+Current forms of Margarine contain polyunsaturated fats, and contain food additives like emulsifiers. It is a highly processed food. There is great [article](https://www.healthline.com/nutrition/butter-vs-margarine#what-are-butter-and-margarine) on margarine at healthline.
