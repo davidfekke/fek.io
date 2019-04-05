@@ -40,7 +40,7 @@ div.navbarlogo {
     margin-block-end: 10px;
 }
 
-li.navbarlogo > a > img {
+div.navbarlogo > a > img {
     transition: 0.4s;
 }
 
@@ -69,6 +69,7 @@ li.navbarlogo > a > img {
         position: fixed;
         top: 11px;
         right: 11px;
+        transition: 0.4s;
     }
     
     .mainNavElement nav::after {

@@ -33,6 +33,7 @@ class Navbar extends React.Component {
 
         this.state = {
             logoHeight: '40px',
+            hamburgerTop: '11px',
             windowwidth: startingWidth
         };
         
@@ -42,9 +43,15 @@ class Navbar extends React.Component {
     
     handleScroll(event) {
         if (document.documentElement.scrollTop > 80) {
-            this.setState({ logoHeight: '22px' });
+            this.setState({ 
+                logoHeight: '22px',
+                hamburgerTop: '6px'
+             });
         } else {
-            this.setState({ logoHeight: '40px' });
+            this.setState({ 
+                logoHeight: '40px',
+                hamburgerTop: '11px'
+            });
         }
     }
 
@@ -94,7 +101,7 @@ class Navbar extends React.Component {
                         {menuData.map(item => ( <MenuItem key={item.title} title={item.title} link={item.link} /> ))}
                     </ul>
                 </nav>  
-                <div className={styles.hamburger}>
+                <div className={styles.hamburger} style={{ top: `${this.state.hamburgerTop}`}}>
                     <FaBars size={32}  style={{ padding: '5px' }} onClick={this.burgerToggle} />
                 </div>          
             </Container>

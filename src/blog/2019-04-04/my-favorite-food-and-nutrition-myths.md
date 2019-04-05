@@ -56,6 +56,10 @@ Sugar is just empty calories, right? WRONG!!!
 
 The two sugars that are commonly found in our foods, sucrose and high fructose corn syrup. Sucrose is 50% fructose and 50% glucose. High fructose corn syrup is 55% fructose and 45% glucose. They are both equally bad for you. Many of our foods and drinks have replaced sucrose with high fructose corn sugar, mainly because it is cheaper to produce.
 
+Science journalist Gary Taubes wrote an excellent book called [The Case Against Sugar](https://www.amazon.com/Case-Against-Sugar-Gary-Taubes/dp/0307701646). Sugar intake around the world has gone up dramatically around the world over the last 100 years. You certainly make the case based on epidemiology that sugar is also causing heart disease, obesity, diabetes, hypertension and a host of other diseases.
+
+![Sugar consumption](sugarconsumption.jpg)
+
 Check out this video by Dr. Robert Lustig who treats children with adult onset diabetes.
 
 <div style="text-align: center">
@@ -66,7 +70,7 @@ Check out this video by Dr. Robert Lustig who treats children with adult onset d
 
 Apples contain lots of fructose. They also contain fibre, which makes them easier to process than if we just drank apple juice. The fructose has to They are essentially confection on a tree.
 
-Check out this presentation from Dr. Gary Fettke on why fruit my not be as good for you as you think.
+Check out this presentation from Dr. Gary Fettke on why fruit may not be as good for you as you think.
 
 <div style="text-align: center">
 <iframe width="1160" height="652" src="https://www.youtube.com/embed/L6LL92Zs5L0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -78,7 +82,7 @@ The name Breakfast actually comes from two words, `break` and `fast`, meaning yo
 
 The line “Breakfast is the most important meal of the day” was invented in the 1800s by Seventh Day Adventists James Caleb Jackson and John Harvey Kellogg to help them sell their  breakfast cereal. 
 
-## 8. Heart Healthy Grains
+## 8. Grains are Heart Healthy
 
 There is nothing heart healthy about grains. Grains actually get converted into long chain triglycerides in our liver, and are pro-inflammatory.
 
