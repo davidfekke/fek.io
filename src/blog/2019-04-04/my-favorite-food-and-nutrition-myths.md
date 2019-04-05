@@ -24,9 +24,9 @@ As someone who has suffered through hypertension, I am super sensitive to anythi
 
 There is no proof that salt has any kind of lasting affect on blood pressure. A more recent study [BU](https://www.medicalnewstoday.com/articles/317099.php) could not find example of anyone who had high blood pressure due to sodium. In fact they found that low sodium produced nearly the same risk as a high sodium diet. 
 
-## 2. Eat Egg White Omelettes, don't eat the Yoke
+## 2. Eat Egg White Omelettes, don't eat the Yolk
 
-Egg white omelettes became popular because the yokes contain cholesterol. The egg whites also have [less calories and fat](https://www.popsugar.com/fitness/Egg-Whites-vs-Whole-Eggs-7291034). Unfortunately, the yokes also contain Vitamins B12, D and Iron. The egg whites also have more Omega 6 fatty acids, where the yokes have Omega 3 fatty acids. So eating just the egg whites is pro-inflammatory. Inflammation is bad because it can cause weakening of the arteries, and eventually arteriosclerosis. 
+Egg white omelettes became popular because the yolks contain cholesterol. The egg whites also have [less calories and fat](https://www.popsugar.com/fitness/Egg-Whites-vs-Whole-Eggs-7291034). Unfortunately, the yolks also contain Vitamins B12, D and Iron. The egg whites also have more Omega 6 fatty acids, where the yolks have Omega 3 fatty acids. So eating just the egg whites is pro-inflammatory. Inflammation is bad because it can cause weakening of the arteries, and eventually arteriosclerosis. 
 
 ## 3. Saturated Fat is bad for you
 
