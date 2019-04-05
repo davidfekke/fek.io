@@ -30,13 +30,13 @@ Egg white omelettes became popular because the yokes contain cholesterol. The eg
 
 ## 3. Saturated Fat is bad for you
 
-Saturated Fat started being maligned in the 1950s because research done my Ancel Keys, a physiologist from the University of Minnesota. He believed at the time that eating saturated fat would give you heart disease. He even produced a study called the `The Seven Countries` study. There were actually 22 countries that kept the kind of data that he used in his report, but he excluded the countries that did not prove his theory. 
+Saturated Fat started being maligned in the 1950s because research done my Ancel Keys, a physiologist from the University of Minnesota. He believed at the time that eating fat would give you heart disease. He even produced a study called the `The Seven Countries` study. There were actually 22 countries that kept the kind of data that he used in his report, but he excluded the countries that did not prove his theory. 
 
 Healthy fats are an essential part of ones diet. The worst part about fat is the name, Fat. People think that if you eat fat, you will get fat. I am sure if you ate enough of it you would get fatter, but getting fat is really a hormonal response due to insulin secretion. Your body produces insulin as a way to lower blood sugar. Anything that is not used up as energy gets stored as long chain triglycerides into your fat cells.
 
 There are fats that are bad for you. Trans-fats, which come from hydrogenated vegetable oil, have been shown to lower HDL, increase LDL, and more importantly [increase inflammation](https://www.healthline.com/nutrition/why-trans-fats-are-bad).
 
-Nina Teicholz goes into great detail about the studies, how experts made recommendations for women without ever doing any studies on women in her book, [The Big Fat Surprise](https://www.amazon.com/Big-Fat-Surprise-Butter-Healthy/dp/1451624425), 
+Nina Teicholz goes into great detail about the studies, how experts made recommendations for women without ever doing any studies on women in her book, [The Big Fat Surprise](https://www.amazon.com/Big-Fat-Surprise-Butter-Healthy/dp/1451624425).
 
 ## 4. Don't Eat Red Meat because it is bad for you
 
