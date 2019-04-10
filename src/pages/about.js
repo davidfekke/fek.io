@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Navbar from "../components/navbar.js"
 import Header from "../components/aboutheader.js"
@@ -23,10 +23,13 @@ export default ({data}) => {
     {/* <img src={photoOfMe} alt="David Fekke" style={{ float: 'left', boxShadow: '2px 2px 5px black', width: '7rem', borderRadius: '50%', border:'1px solid orange', margin: '0.5rem' }} /> */}
                     <p>This is the web site for David Fekke's mobile applications. David is a iOS, Android and Node.js developer. He also develops .NET, ColdFusion and Java web applications.</p>
 
-                <p>If you are looking for David's Powerpoint and presentation slides, you find them at this <a href="https://slides.com/davidfekke/" target="_blank" rel="noopener noreferrer">link</a>.</p>
+                <p>If you are looking for David's Powerpoint and presentation slides, you find them at this <ExtLink uri="https://slides.com/davidfekke/" name="Link" />.</p>
 
                 <p>If you are interested in custom application development, please contact me for rates.</p>
                 <br />
+                <p>
+                  You can find a copy of my <Link to="resume">Resume here</Link>.
+                </p>
                 <h3>Affiliations</h3>
                 <ul>
                   <li>
