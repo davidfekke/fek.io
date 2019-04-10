@@ -1,0 +1,160 @@
+import React from "react"
+import Layout from "../components/layout"
+import Navbar from "../components/navbar.js"
+import Header from "../components/header.js"
+import Footer from "../components/footer.js"
+import Article from "../components/article.js"
+import MainHelmet from "../components/mainhelmet.js"
+
+export default () => {
+    return (
+        <Layout>
+            <MainHelmet title="Fek.io" />
+            <Navbar />
+            <Header headline="Resume" />
+            <Article>
+                <h2>David Fekke's Resume</h2>
+                <h3>Summary</h3>
+                <p>
+                    I am a Software Engineer and Commercial Pilot with experience architecting,
+                    designing and documenting object-oriented applications with the following technologies;
+                    iPhone/iPad CocoaTouch, .NET 4.5 framework, Java, C#, VB.NET, ASP.NET MVC 5, Transact
+                    SQL, DTS packages, SQL Server 2012 Integration Services, SOAP based web services,
+                    JavaScript, JQuery, JSON, and XML. I have experience using these technologies to build
+                    applications using MVC methodologies. I also have experience building mobile applications for
+                    iOS and Android platforms
+                </p>
+                <h3>Work Experience</h3>
+                <p>
+                July 2016 – Present.
+                </p>
+                <p>
+                Swyft Technology L.L.C., Ponte Vedra Beach, Fl. <strong>Chief Mobile Architect</strong>. Responsible for architecting all of our iOS and Android applications built on top BlackBerry Dynamics security framework. 
+                These mobile apps are primarily used as clients to CRM systems such as Salesforce and Infusionsoft. Duties also include writting AppExchange package in Salesforce Apex for mobile integration.  
+                </p>
+                <p>
+                August 2014 – December 2018.
+                </p>
+                <p>
+                    MomentStrong L.L.C., Jacksonville, Fl. <strong>CTO and Partner</strong>. I
+                    developed and maintained Mobile applications (iOS, Android)
+                    alond with Node.js services hosted in AWS. Duties include
+                    administering Linux VMs and bug fixes for Node.js, Android and
+                    iOS applications.
+                </p>
+                <p>
+                June 2010 - Present.
+                </p>
+                <p>
+                David Fekke L.L.C., Jacksonville, FL. <strong>President</strong>. I have developed several mobile applications for iOS and Android devices such as the iPhone/iPad that are available on the Apple iTunes App Store and Google Play. These applications have used key Android and iOS SDK features that include the mapping API, networking services and location services. I also developed web applications, APIs and services on the Node.js and .NET platforms.
+                </p>
+                <p>
+                March 2012 – June 2016.
+                </p>
+                <p>
+                One Call Care Management, Formerly MSC, Jacksonville, Fl. <strong>Senior Software Engineer and Team Lead Architect</strong>. Maintained existing ASP.NET MVC web applications and WCF web services as well as Greenfield web applications. Also maintained Windows applications and Windows services.
+                </p>
+                <p>
+                June 2011 – February 2012.
+                </p>
+                <p>
+                DME Automotive, Jacksonville, Fl. <strong>Senior Software Engineer</strong>. Developed new web portal platform based on ASP.NET MVC 3 using C# for all libraries. MVC Views were written using the new Razor syntax.  The web portals consumed a rest based service oriented architecture that delivered JSON based payloads. We built these services so they could be consumed by mobile applications as well as our internal web applications. Also helped create a sales lead routing system that used MSMQ and NServiceBus to process and cleanse sales leads going to automotive dealerships. 
+                </p>
+                <p>
+                March 2009 – June 2011. 
+                </p>
+                <p>
+                Lender Processing Services, Jacksonville, Fl. <strong>Development Lead</strong>. Developed a dynamic form building application that used reflection to populate form models from a client configured database. I also built and maintained SOAP based web services written in .NET 3.5 that were used to integrate client data with our Desktop web site. Duties also included maintaining legacy ASP.NET web application written in C# and VB.NET that is used for Mortgage Loan processing, as well as writing and maintaining SQL Server stored procedures for data access. I also wrote and maintained .NET 3.5 WCF based services.
+                </p>
+                <p>
+                April 2008 – March 2009.  
+                </p>
+                <p>
+                HCR Software, Jacksonville, Fl. <strong>Lead Software Engineer</strong>. Developed ASP.NET 3.5 web application for compensation planning. This application was built using DevExpress components, Aspose Cells and the jQuery javascript framework. This application is written in C# 3.0 and VB.NET.
+                </p>
+                <p>
+                I also helped set up a server infrastructure for our hosted software solution built on Windows server 2003 64bit and SQL Server 2008. Other duties included supporting SQL Server 2005, 2008 and Oracle 10g databases as database administrator.                
+                </p>
+                <p>
+                April 2007 – April 2008.  
+                </p>
+                <p>
+                Idea Integration, Jacksonville, FL. <strong>Consultant</strong> – Microsoft Practice. Consulted, documented and developed solutions for Microsoft SQL Server 2005, Office SharePoint Server 2007 using .NET 3.0 technologies including Windows Workflow. I designed and built tools for automating the creation of Service Oriented Architecture based applications.
+                </p>
+                <p>
+                August 2004 – March 2007.  
+                </p>
+                <p>
+                Vurv Technology, formerly Recruitmax now owned by Oracle, Jacksonville, FL. <strong>Lead Developer</strong> – API Team, Technical Services Group. Architected, developed and maintained integration solutions between human resource software, client systems as well as third party vendors using a host of different technologies. Other duties included developing data migrations into Vurv databases. Integration solutions included building a real-time gateway into an accounting system that handles over $1 billion worth of transactions a year.
+
+
+                </p>
+                <p>
+                Worked with customers providing business analysis on architecting the best solutions for their data needs. Solutions provided included the use of SOAP based Web Services, HTTP and FTP transfers of data, Multi-RDBMS integration, BizTalk integration, DTS package ETLs and email integration.
+                
+                </p>
+                <p>
+                August 2002 – August 2004.  
+                </p>
+                <p>
+                Jagged Peak, Inc., Clearwater, FL. <strong>Edge Developer</strong>, Developed and maintained enterprise Edge web application. Duties including writing use case, business requirement and fusedoc documentation as well as building object-oriented components for front end web sites. Helped create database schema for new version of Edge.</p>
+
+                <p>I also helped maintain front-end websites and ColdFusion custom tags that interact with Edge. Other duties include writing transact SQL scripts to automate data merges. Also maintaining a custom in-house XML based messaging system to allow for disconnected access to multiple warehouse management systems. This XML tool sent and received messages using OBDC, FTP and IBM MQSeries.
+
+                </p>
+                <p>
+                May 2002 ­ August 2002.  
+                </p>
+                <p>
+                Mercury New Media, Tampa, FL. <strong>Lead Developer and Database Administrator</strong>, Designed and developed all new web applications, administered all web and database servers and automated processes. Moved existing server architecture over to new multi-server Windows 2000 architecture with Active Directory.
+                </p>
+                <p>
+                May 2001 - May 2002.  
+                </p>
+                <p>
+                Goodwill Industries Suncoast, Inc., St. Petersburg, FL. <strong>Webmaster and Citrix Metaframe Administrator</strong>, Designed and Developed all new thin client applications for Intranet and Internet using ColdFusion and fusebox methodology. Took existing thick client applications and published them to remote users over the Internet and wide area network. Other duties include SQL programming and administration, network security and web server administration.
+                </p>
+                <p>
+                1992– May 2001.  
+                </p>
+                <p>
+                Impact Publishing and Information, Dunedin, FL. <strong>Developer Analyst</strong> Responsible for developing intranet and internet applications with ColdFusion for 100+ person company and online customers. Other responsibilities included writing SQL queries and stored procedures, and Applescript automation. Impact Publishing, Dunedin FL. Desktop Supervisor Responsible for prepress department of 8 graphic designers.
+                </p>
+                <p>
+                1992 – 1999. 
+                </p>
+                <p>
+                Impact Publishing, Dunedin FL. <strong>Desktop Supervisor</strong> Responsible for prepress department of 8 graphic designers. 
+                </p>
+                <h3>Languages</h3>
+                <p>
+                Programming languages known include C#, Objective-C, C, Swift, Java, Razor, Transact SQL, PL-SQL, ColdFusion, JavaScript. Also familiar with C++ and PHP.
+                </p>
+                <h3>Tools</h3>
+                <p>
+                I have used include Apple Xcode and Interface Builder, Visual Studio 2013. I also have experience with Eclipse, Visual Studio 2008 and SQL Server client tools.
+                </p>
+                <h3>
+                    Skills
+                </h3>
+                <p>
+                HTML (21 years), C# (10 years), ColdFusion (15 years), Java (10 years), SOAP (13 years), SQL Server (17 Years), Oracle (13 years), Micro-controller (2 years), Angular.js (1 year) and System administration (26 years).
+                </p>
+                <p>Github site: <a href="https://github.com/davidfekke">https://github.com/davidfekke</a></p>
+                <h3>Education</h3>
+                <p>
+                1988 – 1992, Embry-Riddle Aeronautical University in Daytona Beach, FL Bachelor of Science in Aeronautical Science. Degree specialized in professional aviation, management, computer science, electronics, and legal aspects of aviation.
+                </p>
+                <h3>
+                Activities
+                </h3>
+                <p>
+                Founder and Co-Organizer for the JaxNode User Group. Responsible for scheduling monthly meetings, and creating presentations based on JavaScript fullstack technologies.</p>
+                <p>
+                Additional professional activities include being a Commercial Pilot in airplane single engine, multi engine land. Includes instrument rating in both types. Also, a Certified Flight Instructor.
+                </p>
+            </Article>
+            <Footer />
+        </Layout>
+    )
+}
