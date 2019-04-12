@@ -1,6 +1,6 @@
 
 .back {
-    background-image: url(../pages/cardinal3x-60.jpg);
+    background-image: url(../components/newcockpit-3x.jpg);
     background-color: #868e96;
     background-attachment: scroll;
     position: relative;
@@ -20,7 +20,7 @@ h1.myheadline {
 
 @media (max-width: 768px) {
     .back {
-        background-image: url(../pages/cardinal2x.jpg);
+        background-image: url(../components/newcockpit-2x.jpg);
         background-color: #868e96;
         background-attachment: scroll;
         position: relative;
@@ -41,7 +41,7 @@ h1.myheadline {
 
 @media (max-width: 500px) {
     .back {
-        background-image: url(../pages/cardinal1x.jpg);
+        background-image: url(../components/newcockpit-1x.jpg);
         background-color: #868e96;
         background-attachment: scroll;
         position: relative;
