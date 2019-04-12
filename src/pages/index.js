@@ -15,7 +15,7 @@ export default () => {
             <Header headline="Welcome to FEK.IO" />
             <Article>
                 <div style={{ display: 'block'}}>
-                    <div style={{ borderRadius: '1rem', 
+                    <div className="hero" style={{ borderRadius: '1rem', 
                                     padding: '0.65rem', 
                                     backgroundColor: 'lightgrey',
                                     marginTop: '2rem', marginBottom: '4rem' }}>

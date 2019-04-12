@@ -6,6 +6,7 @@ import Logo from "./fekio.logo.svg"
 import styles from "./navbar.module.css"
 
 const menuData = [
+    { title: 'Home', link: ''},
     { title: 'Products', link: 'products' },
     { title: 'Blog', link: 'blog' },
     { title: 'About', link: 'about' },
