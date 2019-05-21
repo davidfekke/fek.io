@@ -45,7 +45,7 @@ export default ({data}) => {
                   <strong><ExtLink uri="http://jaxmug.com" name="JaxMUG" /></strong>
                   </li>
                   <li>
-                    <ExtLink uri="https://sites.google.com/view/craigpilots/home" name="Criag Pilots Airport Association" />
+                    <ExtLink uri="https://craigpilots.org" name="Criag Pilots Airport Association" />
                   </li>
                 </ul>
                 
