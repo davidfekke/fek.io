@@ -96,7 +96,7 @@ export default () => {
                         </div>    
                     </nav>
                     <div style={{ textAlign: 'center', fontSize: 'small', paddingTop: '1rem'}}>
-                        <p style={{ fontWeight: '600' }}>Copyright 2019, David Fekke</p>
+                        <p style={{ fontWeight: '600' }}>Copyright 2020, David Fekke</p>
                     </div>
                 </div>
             </Container>
