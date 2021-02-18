@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: fek.io
+Token: 7e27a615a4f49e4031e8c5535ccad9fc71ad8fcec3cb72d2a89914c837689290
