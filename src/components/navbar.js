@@ -6,11 +6,11 @@ import Logo from "./fekio.logo.svg"
 import styles from "./navbar.module.css"
 
 const menuData = [
-    { title: 'Home', link: ''},
-    { title: 'Products', link: 'products' },
-    { title: 'Blog', link: 'blog' },
-    { title: 'About', link: 'about' },
-    { title: 'Contact', link: 'contact' }
+    { title: 'Home', link: '/'},
+    { title: 'Products', link: '/products' },
+    { title: 'Blog', link: '/blog' },
+    { title: 'About', link: '/about' },
+    { title: 'Contact', link: '/contact' }
 ];
 
 const MenuItem = props => (
