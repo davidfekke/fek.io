@@ -154,6 +154,9 @@ module.exports = {
               `,
               output: "/rss.xml",
               title: "FEK.IO RSS Feed",
+              match: "^/blog/",
+            // optional configuration to specify external rss feed, such as feedburner
+              link: "https://fek.io/blog",
             },
           ],
         },

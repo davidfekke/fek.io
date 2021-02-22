@@ -171,7 +171,7 @@ export default () => {
                     </FloatLeft>
                     <FloatRight>
                         
-                            Impact Publishing and Information, Dunedin, FL. <strong>Developer Analyst</strong> Responsible for developing intranet and internet applications with ColdFusion for 100+ person company and online customers. Other responsibilities included writing SQL queries and stored procedures, and Applescript automation. Impact Publishing, Dunedin FL. Desktop Supervisor Responsible for prepress department of 8 graphic designers.
+                            Impact Publishing and Information, Dunedin, FL. <strong>Developer Analyst</strong> Responsible for developing intranet and internet applications with ColdFusion for 100+ person company and online customers. Other responsibilities included writing SQL queries and stored procedures, and Applescript automation.
                         
                     </FloatRight>
                 </div>
