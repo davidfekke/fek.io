@@ -6,6 +6,7 @@ import { FaTwitter, FaFacebook, FaLinkedin, FaGithub, FaYoutube } from 'react-ic
 import footerStyles from "./footer.module.css"
 
 export default () => {
+    const now = new Date();
     return (
         <footer style={{ backgroundColor: '#868e96', marginTop: '2rem'}}>
             <Container>
@@ -96,7 +97,7 @@ export default () => {
                         </div>    
                     </nav>
                     <div style={{ textAlign: 'center', fontSize: 'small', paddingTop: '1rem'}}>
-                        <p style={{ fontWeight: '600' }}>Copyright 2020, David Fekke</p>
+                        <p style={{ fontWeight: '600' }}>Copyright {now.getFullYear()}, David Fekke</p>
                     </div>
                 </div>
             </Container>
