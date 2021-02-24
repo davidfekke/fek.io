@@ -63,7 +63,7 @@ export default () => {
                                     <strong>Sites</strong>
                                 </li>
                                 <li>
-                                    <ExtLink uri="https://www.jaxtechmeetups.com" name="Jax Tech Meetups" />
+                                    <ExtLink uri="https://www.youtube.com/channel/UC1TglgvYxS354qj7ZlmoUcA" name="Polyglot Engineer" />
                                 </li>
                                 <li>
                                     <ExtLink uri="https://www.jaxnode.com" name="JaxNode" />
