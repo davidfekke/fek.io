@@ -58,10 +58,10 @@ export default class BlogPost extends React.Component {
           <em>By David Fekke</em><br />
           {post.frontmatter.date}
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
           {prev && <Link to={`/blog${prev.fields.slug}`}>← Previous Page </Link>}
           {next && <span>&nbsp;</span>}
           {next && <Link to={`/blog${next.fields.slug}`}>Next Page →</Link>}
+          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
         </Article>
         <Footer />
       </Layout>
