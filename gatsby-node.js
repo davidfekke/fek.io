@@ -93,3 +93,13 @@ exports.createPages = ({ graphql, actions }) => {
       );
     });
   };
+
+  exports.createSchemaCustomization = ({ actions }) => {
+    const { createTypes } = actions
+    const typeDefs = `
+      type frontmatter implements Node {
+        cover_image: String
+      }
+    `
+    createTypes(typeDefs)
+  }
