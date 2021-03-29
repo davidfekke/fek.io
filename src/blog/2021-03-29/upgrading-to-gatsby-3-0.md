@@ -7,9 +7,9 @@ date: 2021-03-29
 cover_image: "./lucas-benjamin.jpg"
 ---
 
-I upgraded my website to the newest version of [Gatsby JS](https://www.gatsbyjs.com). If you are not familiar with [Gatsby]() or the JAMSTACK, it is a framework for creating static websites using the [React](https://reactjs.org/) framework. Last month Gatsby 3.0 was released, the first major upgrade since 2.0 in 2018.
+I upgraded my website to the newest version of [Gatsby JS](https://www.gatsbyjs.com). If you are not familiar with [Gatsby](https://www.gatsbyjs.com) or the [jamstack](https://jamstack.org/), it is a framework for creating static websites using the [React](https://reactjs.org/) framework. Last month Gatsby 3.0 was released, the first major upgrade since 2.0 in 2018.
 
-They have included a [Gatsby 3.0 Migration Guide](https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v2-to-v3/) in their docs, but I wanted to cover the changes I had to make in order to upgrade mu site to 3.0.
+They have included a [Gatsby 3.0 Migration Guide](https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v2-to-v3/) in their docs, but I wanted to cover the changes I had to make in order to upgrade the site to 3.0.
 
 The first step I did was create a git branch for the upgrade that I could blow away if the upgrade failed. Once I created the new branch, I followed the instructions in the migration guide. The first step was upgrading the dependencies in the Node package.json file. I ran the following command;
 
@@ -73,7 +73,7 @@ Graphql in earlier versions of Gatsby did not require being imported in order to
 const graphql = require('gatsby').graphql;
 ```
 
-I am also using an extra frontmatter variable for specifying an extra variable for the `cover_image`. This allows me to specifiy a unique cover graphic in my header for each post. I was able to add this by adding the following schema addtion in the `gatsby_node.js` file;
+I am also using an extra frontmatter variable for specifying an extra variable for the `cover_image`. This allows me to specifiy a unique cover graphic in my header for each post. I was able to add this by adding the following schema addition in the `gatsby_node.js` file;
 
 ```javascript
 exports.createSchemaCustomization = ({ actions }) => {
