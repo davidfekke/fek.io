@@ -1,6 +1,6 @@
 import React from "react"
 import Container from "./container.js"
-import headerStyles from "./blogheader.module.css"
+import * as headerStyles from "./blogheader.module.css"
 
 export default props => {
     return (

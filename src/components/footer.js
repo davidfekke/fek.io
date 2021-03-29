@@ -3,7 +3,7 @@ import Container from "./container.js"
 import { Link } from "gatsby"
 import ExtLink from "./extlink"
 import { FaTwitter, FaFacebook, FaLinkedin, FaGithub, FaYoutube } from 'react-icons/fa';
-import footerStyles from "./footer.module.css"
+import * as footerStyles from "./footer.module.css"
 
 export default () => {
     const now = new Date();

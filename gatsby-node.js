@@ -1,5 +1,6 @@
 const path = require('path');
 const _ = require('lodash');
+const graphql = require('gatsby').graphql;
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.onCreateNode = ({ node, actions }) => {
@@ -98,7 +99,7 @@ exports.createPages = ({ graphql, actions }) => {
     const { createTypes } = actions
     const typeDefs = `
       type frontmatter implements Node {
-        cover_image: String
+        cover_image: String!
       }
     `
     createTypes(typeDefs)

@@ -1,6 +1,6 @@
 import React from "react"
 import Container from "./container.js"
-import headerStyles from "./postheader.module.css"
+import * as headerStyles from "./postheader.module.css"
 // Lowercased name.
 
 export default props => {

@@ -1,6 +1,6 @@
 import React from "react"
 import Container from "./container.js"
-import headerStyles from "./contactheader.module.css"
+import * as headerStyles from "./contactheader.module.css"
 
 export default props => {
     return (

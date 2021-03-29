@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import breadcrumbStyles from "./breadcrumb.module.css"
+import * as breadcrumbStyles from "./breadcrumb.module.css"
 
 export default props => {
     return (

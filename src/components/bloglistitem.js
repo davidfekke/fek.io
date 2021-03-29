@@ -1,5 +1,5 @@
 import React from "react"
-import itemStyle from "./bloglistitem.module.css"
+import * as itemStyle from "./bloglistitem.module.css"
 
 const BlogListItem = ({children}) => {
     return (

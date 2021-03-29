@@ -1,5 +1,5 @@
 import React from "react"
-import { navigateTo } from "gatsby-link"
+import { navigate } from "gatsby"
 import Layout from "../components/layout"
 import Navbar from "../components/navbar.js"
 import Header from "../components/contactheader.js"
@@ -33,7 +33,7 @@ export default class Contact extends React.Component {
                 "form-name": form.getAttribute("name"),
                 ...this.state
             })
-        }).then(() => navigateTo(form.getAttribute("action")))
+        }).then(() => navigate(form.getAttribute("action")))
             .catch(error => alert(error));
     };
 
