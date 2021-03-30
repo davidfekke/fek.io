@@ -14,7 +14,7 @@ export default () => (
         <Article>
         <p><strong>Terms of Use</strong>
         <br />
-        <br />Use of this website/blog is offered to you on your acceptance of these Terms of Use, our Privacy Policy and other notices posted on this website. Your use of this website or of any content presented in any and all areas of the website indicates your acknowledgment and agreement to these Terms of Use, our Privacy Policy and other notices posted on this website. If you do not agree to be bound by and comply with all of the foregoing, you may not access the website. Fekke.com has the right, at its sole discretion, to modify, add or remove any terms or conditions of these Terms of Use without notice or liability to you. Any changes to these Terms of Use shall be effectively immediately following the posting of such changes on this website.
+        <br />Use of this website/blog is offered to you on your acceptance of these Terms of Use, our Privacy Policy and other notices posted on this website. Your use of this website or of any content presented in any and all areas of the website indicates your acknowledgment and agreement to these Terms of Use, our Privacy Policy and other notices posted on this website. If you do not agree to be bound by and comply with all of the foregoing, you may not access the website. Fek.io has the right, at its sole discretion, to modify, add or remove any terms or conditions of these Terms of Use without notice or liability to you. Any changes to these Terms of Use shall be effectively immediately following the posting of such changes on this website.
         <br />
         <br />This website is for informational purposes only and is not intended to provide specific commercial, financial, investment, accounting, tax, or legal advice. It is provided to you solely for your own personal, non-commercial use. You may link to and refer to this website freely.
         <br />
@@ -24,7 +24,7 @@ export default () => (
         <br />
         <br />We reserve the right to modify, disable access to or discontinue, temporarily or permanently, any part or all of this website or any information contained thereon without liability or notice to you. We tell you this for no particular reason since you cannot do much about it anyway.
         <br />
-        <br />As a visitor to our website, you acknowledge and agree that any reliance on or use by you of any information available on this website shall be entirely at your own risk. In no event shall Fekke.com nor any of its data providers, friends, allies or hangers-on be liable for any direct, indirect, consequential or exemplary damages arising from the use or the performance of this website. And don't let the door hit you in the ass on your way out!
+        <br />As a visitor to our website, you acknowledge and agree that any reliance on or use by you of any information available on this website shall be entirely at your own risk. In no event shall Fek.io nor any of its data providers, friends, allies or hangers-on be liable for any direct, indirect, consequential or exemplary damages arising from the use or the performance of this website. And don't let the door hit you in the ass on your way out!
         <br />
         <br /><strong>Privacy Policy</strong>
         <br />
