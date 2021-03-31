@@ -12,10 +12,6 @@ With the release of ColdFusion 8 you now have the same ability to serialize CFCs
 
 So why is this so important? The answer is that you can use persisted objects in a clustered environment. A perfect scenario for this new functionality is a shopping cart. Shopping cart data is typically transactional, but still need to be persisted. After the shopping cart goes to a checkout is usually when that data needs to be placed into a database. Before that the shopping cart can stay in session memory.
 
-[code:c#]
-
-[/code]>
-
 The Session.shoppingCart can now be persisted across page requests and application servers. If the server I am requesting crashes, my object will still be alive on the other application servers on the cluster.
 
 If you are planning on using this new feature in ColdFusion 8, I would suggest doing research on session clustering. There are some good articles on how to configure app servers for clustering and replication session data. It is worthwhile to do research on how to set up NIC cards for replicating session data, and how many application servers you can cluster together without losing performance to latency.

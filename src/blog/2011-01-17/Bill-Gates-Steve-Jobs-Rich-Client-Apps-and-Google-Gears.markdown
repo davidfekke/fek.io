@@ -12,7 +12,7 @@ Steve Jobs made a point that he thought there is room for these applications tha
 
 At the same time Google has released a browser plugin called 'Gears'. Gears is still in pre-release, but it has a local server, a database and messaging components. This allows developers to write disconnected applications. It is my understanding that some of these components are being included in Adobe Apollo. The database component is based on SQLite, which is the same engine used by Mac OS X for searching. It is an extremely lite weight database engine, and can be accessed with JavaScript.
 
-[code:c#]
+```sql
 
 resultSet = db.execute (
 
@@ -22,6 +22,6 @@ resultSet = db.execute (
 
 );
 
-[/code]>
+```
 
 Apollo, Silverlight and Gears all important parts of building these types of applications that use Internet based web services.
