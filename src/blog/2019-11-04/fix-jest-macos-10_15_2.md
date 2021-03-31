@@ -15,7 +15,7 @@ None of my [Jest](https://jestjs.io/) based tests would run anymore. When I ran 
 I tried reinstalling Node.js, downgrading Node. I even emptied the NPM cache and reinstalled jest. Nothing I did worked. I came across a Stackoverflow [post](https://stackoverflow.com/a/55260912/97313). One of the tools Jest uses is called `watchman`.
 The Stackover flow post suggested uninstalling and reinstalling `watchman`. You can use [Homebrew](https://brew.sh) to do this on the Mac. If you are not familiar with Homebrew, it is essentially the missing package manager for macOS.
 
-```console
+```bash
 brew uninstall watchman
 brew install watchman
 ```

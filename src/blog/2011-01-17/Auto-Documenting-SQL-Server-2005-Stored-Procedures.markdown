@@ -38,7 +38,7 @@ ORDER BY r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, p.ORDINAL_POSITION
 
 I then used the following code to display the stored procedures in my database;
 
-```c#
+```sql
 
 ## #SPECIFIC_SCHEMA#.#SPECIFIC_NAME#
 

@@ -43,12 +43,12 @@ export default class BlogPost extends React.Component {
     const facebook = {
       appId: site.siteMetadata.facebookAppId
     };
-    const disqusShortname = "fek-io-1";
-    const disqusConfig = {
-      identifier: post.fields.slug,
-      title,
-      url: `https://fek.io/blog/${post.fields.slug}`
-    };
+    // const disqusShortname = "fek-io-1";
+    // const disqusConfig = {
+    //   identifier: post.fields.slug,
+    //   title,
+    //   url: `https://fek.io/blog/${post.fields.slug}`
+    // };
     return (
       <Layout>
         <SEO data={seoData} facebook={facebook} />
