@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { DiscussionEmbed } from "disqus-react";
+//import { DiscussionEmbed } from "disqus-react";
 import Navbar from "../components/navbar"
 import Header from "../components/postheader"
 import Article from "../components/article"
@@ -46,7 +46,8 @@ export default class BlogPost extends React.Component {
     const disqusShortname = "fek-io-1";
     const disqusConfig = {
       identifier: post.fields.slug,
-      title
+      title,
+      url: `https://fek.io/blog/${post.fields.slug}`
     };
     return (
       <Layout>
@@ -61,7 +62,7 @@ export default class BlogPost extends React.Component {
           {prev && <Link to={`/blog${prev.fields.slug}`}>← Previous Page </Link>}
           {next && <span>&nbsp;</span>}
           {next && <Link to={`/blog${next.fields.slug}`}>Next Page →</Link>}
-          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+          {/* <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} /> */}
         </Article>
         <Footer />
       </Layout>
