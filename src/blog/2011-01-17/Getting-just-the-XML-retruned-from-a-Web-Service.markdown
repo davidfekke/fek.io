@@ -10,7 +10,7 @@ I got a question yesterday about how to just get the XML being returned from a w
 
 I believe CF7 included some new functions for returning the XML used in the request and the response. Here is an example below;
 
-[code:c#]
+```
 
 ws = CreateObject("webservice",
 
@@ -20,4 +20,4 @@ ws.echo_me("hello world");
 
 resp = getSOAPResponse(ws);
 
-[/code]>
+```

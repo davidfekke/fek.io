@@ -2,7 +2,7 @@ import React from "react"
 import Container from "./container.js"
 import * as headerStyles from "./productsheader.module.css"
 
-export default props => {
+const ProductHeader = props => {
     return (
         <header className={headerStyles.back}>
             <Container>
@@ -11,3 +11,5 @@ export default props => {
         </header>
     )
 }
+
+export default ProductHeader;

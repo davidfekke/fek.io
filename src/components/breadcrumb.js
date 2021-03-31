@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import * as breadcrumbStyles from "./breadcrumb.module.css"
 
-export default props => {
+const Breadcrumb = props => {
     return (
         <div>
             <ul className={breadcrumbStyles.breadcrumb}>
@@ -15,3 +15,5 @@ export default props => {
         
     )
 }
+
+export default Breadcrumb;

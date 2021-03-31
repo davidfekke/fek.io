@@ -8,7 +8,7 @@ import MainHelmet from "../components/mainhelmet.js"
 import FloatLeft from "../components/floatleft.js"
 import FloatRight from "../components/floatright.js"
 
-export default () => {
+const Resume = () => {
     return (
         <Layout>
             <MainHelmet title="Fek.io" />
@@ -218,3 +218,5 @@ export default () => {
         </Layout>
     )
 }
+
+export default Resume;

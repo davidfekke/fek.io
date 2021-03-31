@@ -10,7 +10,7 @@ import ExtLink from "../components/extlink.js"
 import Img from "gatsby-image"
 
 
-export default ({data}) => {
+const About = ({data}) => {
     return (
         <Layout>
             <MainHelmet title="Fek.io" />
@@ -78,3 +78,5 @@ export const query = graphql`
     }
   }
 `
+
+export default About;

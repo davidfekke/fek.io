@@ -18,22 +18,22 @@ I also was able to install a [newer version](http://www.open.collab.net/download
 
 By default you point your subversion.conf file to the following location;
 
-[code:c#]
+```
 
 LoadModule dav_svn_module libexec/apache2/mod_dav_svn.so
 
 LoadModule authz_svn_module libexec/apache2/mod_authz_svn.so
 
-[/code]>
+```
 
 After I installed the newer version of SVN, I changed this file to point to the new location of the mod_dav_svn.so and mod_authz_svn.so files.
 
-[code:c#]
+```
 
 LoadModule dav_svn_module /opt/subversion/lib/svn-apache/mod_dav_svn.so
 
 LoadModule authz_svn_module /opt/subversion/lib/svn-apache/mod_authz_svn.so
 
-[/code]>
+```
 
 I also installed [project tracker](http://projecttracker.riaforge.org/) after I ran into problems trying to install Trac. I am really liking this web application for doing my bug tracking. It also integrates with subversion and will send SMS messages.

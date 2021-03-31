@@ -9,7 +9,7 @@ import MainHelmet from "../components/mainhelmet.js"
 import Img from "gatsby-image"
 
 
-export default ({data}) => {
+const Bebe = ({data}) => {
     return (
         <Layout>
             <MainHelmet title="Fek.io" />
@@ -39,3 +39,5 @@ export const query = graphql`
     }
   }
 `
+
+export default Bebe;

@@ -1,6 +1,6 @@
 import React from "react"
 
-export default ({children}) => {
+const FloatLeft = ({children}) => {
     return (
         <div style={{ float: 'left', width: '220px' }}>
             {children}
@@ -8,4 +8,4 @@ export default ({children}) => {
     )
 }
 
-
+export default FloatLeft;

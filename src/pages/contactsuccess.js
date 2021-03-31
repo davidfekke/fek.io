@@ -7,7 +7,7 @@ import Article from "../components/article.js"
 import MainHelmet from "../components/mainhelmet.js"
 import ExtLink from "../components/extlink"
 
-export default () => {
+const ContactSuccess = () => {
     return (
         <Layout>
             <MainHelmet title="Fek.io" />
@@ -45,3 +45,5 @@ export default () => {
         </Layout>
     )
 }
+
+export default ContactSuccess;

@@ -3,7 +3,7 @@ import Container from "./container.js"
 import * as headerStyles from "./postheader.module.css"
 // Lowercased name.
 
-export default props => {
+const PostHeader = props => {
     return (
         <header className={headerStyles.back} style={{ backgroundImage: `url(${props.backgroundImage})`}}>
             <Container>
@@ -12,3 +12,5 @@ export default props => {
         </header>
     )
 }
+
+export default PostHeader;

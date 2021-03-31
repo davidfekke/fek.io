@@ -2,7 +2,7 @@
 layout: post
 title: "Sending Email with Attachments from Sharepoint Custom Workflows"
 category: "Blog"
-date: 2011-01-17
+date: 2007-08-17
 ---
 
 
@@ -10,7 +10,7 @@ I have been developing custom Sharepoint workflows in Visual Studio 2005 over th
 
 The SendMail activity in the workflow tools does not allow for email attachments. I found a good work around is to use the .NET email API in a custom code activity. In the following example I send an email with an attachment.
 
-[code:c#]
+```csharp
 
 SmtpClient client = new SmtpClient();
 
@@ -35,12 +35,11 @@ MemoryStream myMemoryStream = new MemoryStream(this.attachmentByteArray);
 myMailMessage.Attachments.Add(new Attachment(myMemoryStream, this.attachmentFileName));
 
 client.Send(myMailMessage);
-
-[/code]>
+```
 
 If you need to dynamically get the name of the Smtp server, you can get this throught the parent web application. Here is an example of how to call it through the Workflow Properties.
 
-[code:c#]
+```csharp
 
 SPSite site = this.workflowProperties.Site;
 
@@ -50,7 +49,7 @@ SPWebApplication webapp = site.WebApplication;
 
 string smtpServer = webapp.OutboundMailServiceInstance.Server.Address;
 
-[/code]>
+```
 
 I found the previous example in this 
 
@@ -60,7 +59,7 @@ Update
 
 There is a question on how I got the Byte[] array. I used a InfoPath form to collect the attachment. The InfoPath form stores this attachment in a XML node as base64 encoded string. When .NET pulls the value from the XML node, it turns the value into a byte array. I then use the following code to extract the filename and the document data;
 
-[code:c#]
+```csharp
 
 byte[] myAttachment = myInfoPathForm.Attachment;
 
@@ -102,6 +101,6 @@ this.attachmentFileName = filename;
 
 }
 
-[/code]>
+```
 
 This code only works if you are pulling the data from an InfoPath form.

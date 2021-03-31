@@ -12,7 +12,7 @@ import products from "../../data/products.json"
 const iDogYears = products.filter(item => item.name === 'iDogYears')[0];
 const icon = iDogYears.icon;
 
-export default () => {
+const iDogYearsProduct = () => {
     return (
         <Layout>
             <MainHelmet title="Fek.io" />
@@ -35,3 +35,5 @@ export default () => {
         </Layout>
     )
 }
+
+export default iDogYearsProduct;

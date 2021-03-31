@@ -11,7 +11,7 @@ import products from "../../data/products.json"
 
 const iDogYears = products.filter(item => item.name === 'iCatYears')[0];
 
-export default () => {
+const iCatYears = () => {
     return (
         <Layout>
             <MainHelmet title="Fek.io" />
@@ -34,3 +34,5 @@ export default () => {
         </Layout>
     )
 }
+
+export default iCatYears;

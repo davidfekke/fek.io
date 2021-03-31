@@ -2,7 +2,7 @@ import React from "react"
 import Container from "./container.js"
 import * as headerStyles from "./header.module.css"
 
-export default props => {
+const Header = props => {
     return (
         <header className={headerStyles.back}>
             <Container>
@@ -11,3 +11,5 @@ export default props => {
         </header>
     )
 }
+
+export default Header;

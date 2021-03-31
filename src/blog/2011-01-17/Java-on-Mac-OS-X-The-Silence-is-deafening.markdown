@@ -8,11 +8,10 @@ date: 2011-01-17
 
 My software update feature on my older Mac showed that I had downloaded Java release 6 for Mac OS X 10.4\. I got really exited until I read the release notes;
 
-[code:c#]
-
+```
 This release of Java for Mac OS X includes improvements for Java 2 Platform, Standard Edition 5.0 (J2SE 5.0) and Java 2 Platform, Standard Edition 1.4.2 (Java 1.4.2) on Mac OS X. It features Apple's implementation of Sun's J2SE Versions 1.5.0_13 and 1.4.2_16.
 
-[/code]>
+```
 
 It looks like this is a series of security updates. Before Leopard was released Apple had a prerelease version of Java SE 6 on their developer site, which they took down earlier in the year. I had hoped that Apple would release Java SE 6 with Mac OS 10.5, but I was let down when it was released to find it only had Java SE 5.
 

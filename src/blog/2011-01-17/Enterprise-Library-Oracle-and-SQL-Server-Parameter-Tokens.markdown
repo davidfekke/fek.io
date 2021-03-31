@@ -10,7 +10,7 @@ I have been using the DAAB part of the Enterprise Library at my current job. One
 
 The problem with this is that if you want to use parametrized queries, T-SQL and PL-SQL use different prefixes in front of the parameters. SQL Server uses '@' symbols in front of the parameter names, and Oracle uses ':' in front of their parameters. So how can you write Ad hoc queries that will run on both SQL Server and Oracle. I have written a class that will set the parameter tokens automatically based on your database context.
 
-[code:c#]
+```csharp
 
 using System;
 
@@ -70,11 +70,11 @@ return TokenPrefix + parameterName;
 
 }
 
-[/code]>
+```
 
 This class can be used in your ad hoc queries in the following way to set the tokens;
 
-[code:c#]
+```csharp
 
 string myquery = "select firstname, lastname " +
 
@@ -82,4 +82,4 @@ string myquery = "select firstname, lastname " +
 
 "where customerid = " + DAABDbTokenSetter.CreateParam(db,"customerid")
 
-[/code]>
+```

@@ -9,7 +9,7 @@ import { Link} from "gatsby"
 import upsetMarmot from "./marmot.gif"
 
 
-export default () => {
+const FourOhFour = () => {
     return (
         <Layout>
             <MainHelmet title="Fek.io" />
@@ -46,3 +46,5 @@ export default () => {
         </Layout>
     )
 }
+
+export default FourOhFour;

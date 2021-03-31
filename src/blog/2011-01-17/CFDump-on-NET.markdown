@@ -8,7 +8,7 @@ date: 2011-01-17
 
 I have been developing almost exclusively in C# .net for about a year now. In that time, I have wished for some of the language functionality in ColdFusion to find its way into C#. I have been using Visual Studio 2008 since it came out, and I found a project that is used to test Linq called ObjectDumper. It compiles a class called ObjectDumper that can be used for dumping the value of just about any object into a command line. Here is some sample syntax; [code:c#][/code]>
 
-```c#
+```csharp
 using System; using System.Collections.Generic;  
 using System.Linq;   
 using System.Text; 

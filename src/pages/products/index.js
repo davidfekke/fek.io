@@ -10,7 +10,7 @@ import Breadcrumb from "../../components/breadcrumb"
 import products from "../../data/products.json"
 import ExtLink from "../../components/extlink"
 
-export default () => {
+const Index = () => {
     return (
         <Layout>
             <MainHelmet title="Fek.io" />
@@ -44,3 +44,5 @@ export default () => {
         </Layout>
     )
 }
+
+export default Index;

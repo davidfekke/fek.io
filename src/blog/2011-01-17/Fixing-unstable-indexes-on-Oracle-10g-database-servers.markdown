@@ -10,13 +10,14 @@ I work with an application that can update the database schema of on Oracle data
 
 Rebuilding indexes in Oracle can be done by using a PL-SQL script like the following;
 
-[code:c#]
+```sql
 
 ALTER INDEX SCHEMA_NAME.INDEX_NAME REBUILD;
 
-[/code]> If you need to rebuild every index at the same time, that can be accomplished by using a cursor such as the following
+```
+If you need to rebuild every index at the same time, that can be accomplished by using a cursor such as the following
 
-[code:c#]
+```sql
 
 DECLARE sql_str varchar2(1000);
 
@@ -44,4 +45,4 @@ COMMIT;
 
 END;
 
-[/code]>
+```

@@ -11,7 +11,7 @@ import products from "../../data/products.json"
 
 const jaxnodeDetails = products.filter(item => item.name === 'JaxNode')[0];
 
-export default () => {
+const Jaxnode = () => {
     return (
         <Layout>
             <MainHelmet title="Fek.io" />
@@ -34,3 +34,5 @@ export default () => {
         </Layout>
     )
 }
+
+export default Jaxnode;

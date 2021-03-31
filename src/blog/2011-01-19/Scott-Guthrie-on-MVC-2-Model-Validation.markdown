@@ -9,7 +9,7 @@ date: 2011-01-19
 
 [Scott Guthrie](http://weblogs.asp.net/scottgu/archive/2010/01/15/asp-net-mvc-2-model-validation.aspx) in his latest blog post explains one of the cool new features in ASP.NET MVC 2: Model Validation. MVC already had a way of validating that worked pretty well, but with MVC 2 has improved on this with new DataAnnotation Validation attributes.
 
-```c#
+```csharp
 using System;
 using System.ComponentModel.DataAnnotations;
 

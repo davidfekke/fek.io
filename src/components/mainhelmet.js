@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 
-export default (props) => {
+const MainHelmet = (props) => {
     return (
         <Helmet
             meta={[ { charSet: 'utf-8'} ]}
@@ -15,3 +15,5 @@ export default (props) => {
             ]} />
     )
 }
+
+export default MainHelmet;

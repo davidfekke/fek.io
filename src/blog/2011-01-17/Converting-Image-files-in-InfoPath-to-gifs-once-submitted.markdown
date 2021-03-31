@@ -10,7 +10,7 @@ I have been developing a lot of windows workflows and web services in .NET recen
 
 .NET 2.0 can convert and resize images natively. Here is how I converted the WMF files. First I added the following using statements;
 
-```c#
+```csharp
 
 using System.Drawing;
 
@@ -19,7 +19,7 @@ using System.Drawing.Imaging;
 ```
 InfoPath saves images as Base64 strings, and .NET treats this as a byte array. So I had to convert the WMF byte array to a gif byte array.
 
-```
+```csharp
 
 byte[] imageByteArray = DiagramImage;
 

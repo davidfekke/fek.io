@@ -12,7 +12,7 @@ One of the jokes I heard at the Miami Flex Camp was that [Adobe Air](http://www.
 
 Here is a Shell script that I wrote to send twitter updates from the BASH shell in Mac OS X 10.5;
 
-[code:c#]
+```bash
 
 #!/bin/bash
 
@@ -20,20 +20,20 @@ curl -u username:password -d status="$1" http://twitter.com/statuses/update.xml
 
 echo "Sent twitter a status update"
 
-[/code]>
+```
 
 You will need to replace the username and password with your own username and password. I named my script "twitter". Once you create the script, you will need to change the permissions on the file to execute using a command like the following;
 
-[code:c#]
+```bash
 
 sudo chmod +x twitter
 
-[/code]>
+```
 
 Once you have set the permissions on the file, you can use it in the following way;
 
-[code:c#]
+```bash
 
 ./twitter "I am updating my twitter status"
 
-[/code]>
+```

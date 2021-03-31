@@ -11,7 +11,7 @@ import products from "../../data/products.json"
 
 const ilottonum = products.filter(item => item.name === 'iLottoNum')[0];
 
-export default () => {
+const iLottoNum = () => {
     return (
         <Layout>
             <MainHelmet title="Fek.io" />
@@ -34,3 +34,5 @@ export default () => {
         </Layout>
     )
 }
+
+export default iLottoNum;

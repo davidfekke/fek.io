@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import * as homeStyles from "./home.module.css"
 
-export default () => (
+const Home = () => (
     <StaticQuery
       query={graphql`
         query {
@@ -64,3 +64,6 @@ export default () => (
       )}
     />
   )
+
+  export default Home;
+  

@@ -7,7 +7,7 @@ import Article from "../components/article.js"
 import MainHelmet from "../components/mainhelmet.js"
 import Home from "../components/home"
 
-export default () => {
+const Index = () => {
     return (
         <Layout>
             <MainHelmet title="Fek.io" />
@@ -32,3 +32,5 @@ export default () => {
         </Layout>
     )
 }
+
+export default Index;

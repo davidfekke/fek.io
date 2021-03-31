@@ -6,7 +6,9 @@ date: 2011-01-17
 ---
 
 
-One of the nice new features in SQL Server 2005 is the inclusion of an XML data type. Microsoft added the ability to use XQuery searches to pull values from this type. [code:c#]
+One of the nice new features in SQL Server 2005 is the inclusion of an XML data type. Microsoft added the ability to use XQuery searches to pull values from this type. 
+
+```sql
 
 DECLARE @filterData xml;
 
@@ -20,11 +22,11 @@ SET @PersonID = @filterData.value('(/XMLDATA/REC/@PersonID)[1]','int');
 
 PRINT @PersonID
 
-[/code]>
+```
 
 One of the problems I am seeing with developers using this code is that because Transact SQL is case insensitive, they forget that XQuery is not case insensive. The following example will return a NULL value
 
-[code:c#]
+```sql 
 
 DECLARE @filterData xml;
 
@@ -38,6 +40,6 @@ SET @PersonID = @filterData.value('(/XMLDATA/REC/@PersonID)[1]','int');
 
 SELECT @PersonID AS PersonID
 
-[/code]>
+```
 
 Make sure you use the proper casing when using XQuery in your Transact SQL.

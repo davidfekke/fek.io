@@ -1,6 +1,6 @@
 import React from "react"
 
-export default ({children}) => {
+const Container = ({children}) => {
     return (<div style={{ maxWidth: '1140px', 
                 width: 'auto', 
                 paddingRight: '15px', 
@@ -10,3 +10,5 @@ export default ({children}) => {
         {children}
     </div>)
 }
+
+export default Container;

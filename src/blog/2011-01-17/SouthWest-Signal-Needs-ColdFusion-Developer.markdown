@@ -8,7 +8,7 @@ date: 2011-01-17
 
 SouthWest Signal has been trying to place a ColdFusion developer at their offices in Jacksonville, Fl.
 
-Here is the job description; [code:c#]
+Here is the job description;
 
 Southwest Signal Engineering is expanding and we are looking for aColdFusion Web Developer for our Jacksonville, Florida office. Theindividual will work with a team & independently on web developmentand function in multiple roles to include: business analyst, developerand tester. They will design and develop new forms, reports and otherweb applications, support modification requests, identify and solveissues within several web applications.
 
@@ -30,6 +30,5 @@ The ideal candidate will have good verbal and written communication skills
 
 Bachelors degree in Computer Science or closely related area, or equivalent experience preferred.
 
-[/code]>
 
 Contact [a_daveline@swsignal.com](mailto:a_daveline@swsignal.com?subject=ColdFusion%20Developer)

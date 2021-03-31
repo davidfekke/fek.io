@@ -1,9 +1,11 @@
 import React from "react"
 
-export default ({children}) => {
+const FloatRight = ({children}) => {
     return (
         <div style={{ overflow: 'hidden' }}>
             {children}
         </div>
     )
 }
+
+export default FloatRight;

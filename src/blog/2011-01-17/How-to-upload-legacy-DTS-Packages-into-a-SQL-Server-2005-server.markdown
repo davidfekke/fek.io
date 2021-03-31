@@ -14,23 +14,17 @@ The first thing I did was add a reference for the Microsoft DTSPackage Object Li
 
 I then used the following code to import the DTS file into the SQL Server;
 
-[code:c#]
+```csharp
 
 string package = @"C:\DTSTest\ImportSample.dts";
-
 object pVarPersistStgOfHost = null;
-
 DTS.Package myPackage = new DTS.Package();
 
 myPackage.LoadFromStorageFile(package, "", null, null, null, ref pVarPersistStgOfHost);
-
 myPackage.SaveToSQLServer("10.25.15.0", null, null, 
-
 DTSSQLServerStorageFlags.DTSSQLStgFlag_UseTrustedConnection, 
+null, null, null, ref pVarPersistStgOfHost, false);
 
-null, null, null,
+```
 
-ref pVarPersistStgOfHost, false);
-
-`
-You will need to add some additional code to unmarshall DTS.Package object.`
+`You will need to add some additional code to unmarshall DTS.Package object.`

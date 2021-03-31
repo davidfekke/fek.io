@@ -6,7 +6,7 @@ import Footer from "../components/footer.js"
 import Article from "../components/article.js"
 import MainHelmet from "../components/mainhelmet.js"
 
-export default () => (
+const Terms = () => (
     <Layout>
         <MainHelmet title="Fek.io" />
         <Navbar />
@@ -61,3 +61,5 @@ export default () => (
         <Footer />
     </Layout>
 )
+
+export default Terms;
