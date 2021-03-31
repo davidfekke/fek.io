@@ -73,11 +73,11 @@ namespace inheritance {
 }
 ```
 
-In the example above we have two classes, one called `Person`, and the other called `Employee`. If we look at the example above, we can see that the class `Employee` is followed by a colon then the name of the previous class `Person`. The `Employee` class is inheriting the properties from the `Person` class. This is inportant because it means we do not have to redeclare the `Name` property in the `Employee` class. We get all of methods, properties and variables from `Person` class for free just by inheriting it into our `Employee` class.
+In the example above we have two classes, one called `Person`, and the other called `Employee`. If we look at the example above, we can see that the class `Employee` is followed by a colon and then the name of the previous class `Person`. The `Employee` class is inheriting the properties from the `Person` class. This is important because it means we do not have to redeclare the `Name` property in the `Employee` class. We get all of methods, properties and variables from `Person` class for free just by inheriting it into our `Employee` class.
 
 # Polymorphism
 
-The term Polymorphism means the ability to change. For the purposes of OOP, while we can inherit from one class to another, we can also change the behavior of certain methods. We do not have to use the default implementation of all of the proerties and methods that we inherited from a parent class. When we do this, we are creating our own or new implementation of a method or property. Most OOP languages have a keyword that allows us to override the default method or property as we can see from the example below.
+The term Polymorphism means the ability to change. For the purposes of OOP, while we can inherit from one class to another, we can also change the behavior of certain methods. We do not have to use the default implementation of all of the properties and methods that we inherited from a parent class. When we do this, we are creating our own or new implementation of a method or property. Most OOP languages have a keyword that allows us to override the default method or property as we can see from the example below.
 
 ```csharp
 using System;
@@ -105,8 +105,8 @@ namespace inheritance {
 
 As we can see in the `Person` class above, we have a method called `describe` that prints out a description of the object with the name of the person. In the `Employee` class we have created a new implementation of the `describe` method that includes the name and the department of the employee.
 
-In C# you can tell the compiler that you want a method to be overidable by add the `virtual` keyword before the return type. When you override the inherited method or property you use the `override` keyword before the return type.
+In C# you can tell the compiler that you want a method to be overridable by add the `virtual` keyword before the return type. When you override the inherited method or property you use the `override` keyword before the return type.
 
 # Summary
 
-This just scratches the surface of some of the things you can do with OOP languages. There are far too many topics to cover in a single post, but I hope this helps you with the basics of the three main characteristics of Object-Oriented Programming langauges.
+This just scratches the surface of some of the things you can do with OOP languages. There are far too many topics to cover in a single post, but I hope this helps you with the basics of the three main characteristics of Object-Oriented Programming languages.
