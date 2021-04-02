@@ -33,7 +33,7 @@ const Home = () => (
                     image={data.ios.childImageSharp.gatsbyImageData}
                     alt="iPhone"
                     style={{ padding: '1rem' }} 
-                    format="WebP" />       
+                     />       
             </div>
             <div style={{ gridArea: 'iosdesc', textAlign: 'center', marginBottom: '3rem', alignItems: 'center' }}>
                 
@@ -47,7 +47,7 @@ const Home = () => (
                     image={data.android.childImageSharp.gatsbyImageData}
                     alt="android"
                     style={{ padding: '1rem' }}
-                    format="WebP" /> 
+                     /> 
             </div>
             <div style={{ gridArea: 'androiddesc', textAlign: 'center', marginBottom: '3rem'  }}>
                 <h3 style={{ fontSize: '2.5rem' }}>Android Development,<br /> The rest of the 92% of devices</h3>
@@ -58,7 +58,7 @@ const Home = () => (
                 image={data.nodejs.childImageSharp.gatsbyImageData}
                 alt="nodejs"
                 style={{ padding: '1rem' }}
-                format="WebP" /> 
+                 /> 
             </div>
             <div style={{ gridArea: 'nodedesc', textAlign: 'center'  }}>
                 <h3 style={{ fontSize: '2.5rem' }}>.NET and Node.js</h3>

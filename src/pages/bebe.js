@@ -17,7 +17,7 @@ const Bebe = ({data}) => {
             <Header headline="Ms Bebe Albano" />
             <Article>
                 <h2>This is my cat Bebe</h2>
-                <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} format="WebP" alt="My cat" />
+                <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt="My cat" />
             </Article>
             <Footer />
         </Layout>
