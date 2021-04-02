@@ -35,7 +35,7 @@ class Program
 }
 ```
 
-In the example above, the `num1` variable is value, and we unboxed it into a refernce called `obj1`. The `obj1` reference is of type `object`, which is the base reference type in .NET.
+In the example above, the `num1` variable is value, and we unboxed it into a reference called `obj1`. The `obj1` reference is of type `object`, which is the base reference type in .NET.
 
 ```csharp
 using System;
@@ -88,7 +88,7 @@ class Program
 }
 ```
 
-Subsequently we can make a new object from the `num1` object, and it will maintain a refernce to that first object. if we change the value of the new object, we will lose the refence to the original object.
+Subsequently we can make a new object from the `num1` value, and it will maintain a refernce to that first object. if we change the value of the new object, we will lose the refence to the original object.
 
 ```csharp
 object obj2 = obj1;
