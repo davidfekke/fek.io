@@ -7,7 +7,7 @@ date: 2019-04-03
 cover_image: "./movingtogatsby.jpg"
 ---
 
-*Check out my first post on [Gatsby JS](i-moved-my-website-and-blog-to-gatsby)*
+*Check out my first post on [Gatsby JS](/blog/i-moved-my-website-and-blog-to-gatsby)*
 
 # Gatsby is fun to use
 

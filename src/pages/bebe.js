@@ -6,7 +6,7 @@ import Header from "../components/header.js"
 import Footer from "../components/footer.js"
 import Article from "../components/article.js"
 import MainHelmet from "../components/mainhelmet.js"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
 
 const Bebe = ({data}) => {
@@ -17,27 +17,24 @@ const Bebe = ({data}) => {
             <Header headline="Ms Bebe Albano" />
             <Article>
                 <h2>This is my cat Bebe</h2>
-                <Img fluid={data.file.childImageSharp.fluid} alt="My cat" />
+                <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt="My cat" />
             </Article>
             <Footer />
         </Layout>
-    )
+    );
 }
 
-export const query = graphql`
-  query {
-    file(relativePath: { eq: "images/bebealbano.jpg" }) {
-      id
-      extension
-      relativePath
-      dir
-      childImageSharp {
-        fluid(maxWidth: 1160, quality: 75) {
-            ...GatsbyImageSharpFluid
-        }
-      }
+export const query = graphql`{
+  file(relativePath: {eq: "images/bebealbano.jpg"}) {
+    id
+    extension
+    relativePath
+    dir
+    childImageSharp {
+      gatsbyImageData(quality: 75, layout: FULL_WIDTH)
     }
   }
+}
 `
 
 export default Bebe;
