@@ -32,7 +32,7 @@ const Home = () => (
                 <GatsbyImage
                     image={data.ios.childImageSharp.gatsbyImageData}
                     alt="iPhone"
-                    style={{ padding: '1rem' }} />       
+                    style={{ padding: '1rem' }} />
             </div>
             <div style={{ gridArea: 'iosdesc', textAlign: 'center', marginBottom: '3rem', alignItems: 'center' }}>
                 
