@@ -7,6 +7,11 @@ date: 2021-04-07
 cover_image: "./alex-bracken-unsplash.jpg"
 ---
 
+
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/VaWiLYJpioQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 Cordova is a very popular framework for creating mobile applications that are based on web technologies. It allows developers to create apps that are based on HTML, CSS and JavaScript. There are a number of different software development kits that are based on Cordova. These include Ionic and PhoneGap.
 
 ![We don't need no Stinking Cordova](../../../static/stinking.cordova.jpg "Stinking Cordova")
