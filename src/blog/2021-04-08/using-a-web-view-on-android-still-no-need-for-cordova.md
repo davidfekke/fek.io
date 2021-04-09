@@ -87,4 +87,4 @@ Now you should be able to run your app and have it use the new WebView widget.
 
 # Summary
 
-We have obviously just scratched the surface on what we can do with WebViews on Android. I aintend on doing several more posts on the WebViews on iOS and Android in the near future.
+We have obviously just scratched the surface on what we can do with WebViews on Android. I intend on doing several more posts on the WebViews on iOS and Android in the near future.
