@@ -52,7 +52,7 @@ const About = ({data}) => {
                 </ul>
                 
                 <h3>Jax Tech Meetups</h3>
-                <p><ExtLink uri={`https://jaxtechmeetups.com`} name="Polyglot Engineer Channel" /> is a Youtube channel I created to show Software Engineers looking to learn a new language.</p>
+                <p><ExtLink uri={`https://polyglotengineer.com`} name="Polyglot Engineer Channel" /> is a Youtube channel I created to show Software Engineers looking to learn a new language.</p>
                 
                  <h3>Aviation</h3>
                 <p>David is also a Commercial pilot and a licensed remote pilot in single engine and multi engine land aircraft (ASMEL).</p>
