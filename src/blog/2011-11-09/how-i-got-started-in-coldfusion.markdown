@@ -13,7 +13,7 @@ I after I finished college in 1992, I got a job working for a company called Imp
 
 By the end of the 90's I had moved into the IT department. While working for the technology group I heard that the company was sending group of our web developers to a three day training class on how to use ColdFusion 4.5\. I convinced my boss to let me tag along with the developers since it would only cost an extra $200.00\. During the class I fell in love with the language because it was built with the web in mind. I did not realize at the time, but ColdFusion is a DSL (domain specific language). Since it was based on <CFTags>, similar to HTML tags, the code mixed with the other tags in a very natural way.
 
-```coldfusion
+```xml
 <cfquery name="myQuery" datasource="database">SELECT username FROM tblusers WHERE clue > 0</cfquery>
 <cfoutput query="myQuery">#username#</cfoutput>
 ```
