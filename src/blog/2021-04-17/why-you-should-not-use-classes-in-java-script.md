@@ -7,7 +7,13 @@ date: 2021-04-17
 cover_image: "./dontuseclass.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/UR10juj3ZEk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 I recently wrote a [post](/blog/crockford-objects-in-java-script) on the way I like to create objects in JavaScript. I call this style of object creation 'Crockford Objects', named after Douglas Crockford, author of "JavaScript: The Good Parts". 
+
+![Douglas Crockford](../2021-04-05/douglas.crockford.jpg)
 
 I received a lot of feedback from people telling me that I did not explain why they should not use the 'class' keyword in JavaScript. I didn't explain why because I was not saying that you can't use it, I just prefer not to use the 'class' keyword for defining an object.
 
@@ -51,9 +57,9 @@ class Cat extends Animal {
 }
 ```
 
-Under the hood in JavaScript this is done by a delegate to the parents prototype property. There are performance considerations with this type of operation, but that is not the main reason to avoid inheritence.
+Under the hood in JavaScript this is done by a delegate to the parents prototype property. There are performance considerations with this type of operation, but that is not the main reason to avoid inheritance.
 
-Even in true Object-Oriented langauges, inheritence should be avoided. A common problem that developers run into with inheritence chains is the fragile base class problem. This is sometimes refered to the Gorilla/Bananna problem. The main issue has to do with tight coupling to a parent object. If you need to make a change to the parent object, it is reflected down the entire tree of objects. I am currently working with a Java API where this is a huge problem.
+Even in true Object-Oriented languages, inheritance should be avoided. A common problem that developers run into with inheritance chains is the fragile base class problem. This is sometimes referred to the Gorilla/Banana problem. The main issue has to do with tight coupling to a parent object. If you need to make a change to the parent object, it is reflected down the entire tree of objects. I am currently working with a Java API where this is a huge problem.
 
 Composition of objects in most cases is a better approach than inheriting from parent objects, even in Object-Oriented languages. In strictly typed languages like Java or Swift you are better off inheriting from an interface or a protocol than from a class. Also in Java and C# you can inherit from an Abstract class.
 
