@@ -7,10 +7,35 @@ import Header from "../components/aboutheader.js"
 import Footer from "../components/footer.js"
 import Article from "../components/article.js"
 import MainHelmet from "../components/mainhelmet.js"
+import SEO from "../components/seo"
+import HeaderImage from "../components/b24-3x.jpg"
 
 const sunnfun = ({data}) => {
+    const site = data.site;
+    const title = 'Sun-n-Fun 2021';
+
+    const socialConfig = {
+        twitterHandle: site.siteMetadata.twitterHandle,
+        config: {
+            url: 'https://fek.io/sunandfun2021',
+            title,
+            description: site.siteMetadata.description
+        }
+    };
+    const seoData = {
+        title,
+        cover: HeaderImage,
+        slug: 'https://fek.io/sunandfun2021',
+        siteURL: socialConfig.config.url,
+        twitterHandle: site.siteMetadata.twitterHandle,
+        description: site.siteMetadata.description
+    };
+    const facebook = {
+        appId: site.siteMetadata.facebookAppId
+    };
     return (
         <Layout>
+            <SEO data={seoData} facebook={facebook} />
             <MainHelmet title="Fek.io" />
             <Navbar />
             <Header headline="Sun-n-Fun 2021" />
@@ -39,6 +64,15 @@ sunnfunimages: allFile(filter: {relativeDirectory: {eq: "images/sunnfun2021"}}) 
           gatsbyImageData(quality: 75, layout: FULL_WIDTH, placeholder: DOMINANT_COLOR)
         }
       }
+    }
+  }
+  site {
+    siteMetadata {
+        title
+        description
+        twitterHandle
+        url
+        facebookAppId
     }
   }
 }`;
