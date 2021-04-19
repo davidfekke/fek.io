@@ -20,9 +20,9 @@ In express it is actually very easy to inject functionality into a route. This c
 injecting another function into a route.
 
 ```javascript
-var routes = require('./routes/index');
+const routes = require('./routes/index');
 
-var exposeService = function(req, resp, next){
+const exposeService = function(req, resp, next){
     req.service = require('./myservice');
     next();
 };
@@ -38,7 +38,7 @@ returning the data I needed in my route. Here is how I intially wrote the servic
 "use strict";
 
 // Creating function object
-var Service = function Service(meetupdata, twitterdata) {
+const Service = function Service(meetupdata, twitterdata) {
 	this.Meetup = meetupdata;
 	this.Twitter = twitterdata;
 }
@@ -75,6 +75,8 @@ function Service(meetupDataFN, twitterDataFN) {
 
 module.exports = Service;
 ```
+
+# Summary
 
 In the current version of my service I am returning an object with two functions. Not only is this approach cleaner, 
 it is also more functional. I am also just passing in functions instead of whole objects.
