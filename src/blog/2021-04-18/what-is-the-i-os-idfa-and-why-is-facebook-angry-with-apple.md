@@ -3,7 +3,6 @@ layout: post
 title: "What is the iOS IDFA, and Why is Facebook angry with Apple?"
 description: ""
 category: 
-tags: ["IDFA", "Apple", "Google"]
 date: 2021-04-18
 cover_image: "./sergiu-nista-ew3-7k3sl-g-unsplash.jpg"
 ---
@@ -41,7 +40,7 @@ import AdSupport
 let idfa = ASIdentifierManager.shared().advertisingIdentifier
 ```
 
-```obj-c
+```objc
 // Objective-C
 #import <AdSupport/AdSupport.h>
 
