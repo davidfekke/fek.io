@@ -7,6 +7,10 @@ date: 2021-04-18
 cover_image: "./sergiu-nista-ew3-7k3sl-g-unsplash.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/s3_EB2ABnc0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 Apple will be releasing OS updates for most of their mobile devices pretty soon. There is a change that has ruffled the features of a lot of people in the online advertising industry.
 
 The issue revolves around an API that Apple has for iOS called the Advertising Identifier, or IDFA for short.
