@@ -13,12 +13,12 @@ cover_image: "./apple_new-imac-spring21_hero_04202021.jpg"
 
 I posted a [video](https://www.youtube.com/watch?v=eysQu3pFNa8) to Youtube back in November on whether Apple Silicon M1 Macs could and should be used by Developers and Software Engineers. I received more views for that video than any other video, with the exception of one I made of my broken [air conditioner](https://www.youtube.com/watch?v=HJer7aPM6tk). 
 
-As I write this, Apple did their big April 20th, 2021 product announcments. One of the products they announced was the new [M1 iMac](https://www.apple.com/newsroom/2021/04/imac-features-all-new-design-in-vibrant-colors-m1-chip-and-45k-retina-display/). I have not purchased one of the new M1 Apple Silicon Macs yet, but I may buy one of these iMacs. The computer I am writing this on right now is a 27" iMac with an I7 processor.
+As I write this, Apple did their big April 20th, 2021 product announcements. One of the products they announced was the new [M1 iMac](https://www.apple.com/newsroom/2021/04/imac-features-all-new-design-in-vibrant-colors-m1-chip-and-45k-retina-display/). I have not purchased one of the new M1 Apple Silicon Macs yet, but I may buy one of these iMacs. The computer I am writing this on right now is a 27" iMac with an I7 processor.
 
-I primarily use my iMac for development, so I wanted to see where the development tools I use are as far as support for the new M1 Macs. When the M1 Macs were first released, there was pretty good support for regular user software through either universal apps or through a program on the Mac called Rosetta 2 that will allow you to run x86_64 code on an M1 chip. Lets take a look to see where we currently are with the tools that developers need.
+I primarily use my iMac for development, so I wanted to see where the development tools I use are as far as support for the new M1 Macs. When the M1 Macs were first released, there was pretty good support for regular user software through either universal apps or through a program on the Mac called Rosetta 2 that will allow you to run x86_64 code on an M1 chip. Lets' take a look to see where we currently are with the tools that developers need.
 
 # Tools
-Homebrew is similar to package managers like apt-get on Linux or Choclatey on Windows. It is a command line tool for installing applications and libraries targeting Unix like operating systems. When the original M1s were released, there was not good support for Homebrew. My understanding is that it has been completely [ported](https://www.imore.com/package-manager-homebrew-now-fully-supports-apple-silicon) to the new ARM64 based archetecture.
+Homebrew is similar to package managers like apt-get on Linux or Chocolatey on Windows. It is a command line tool for installing applications and libraries targeting Unix like operating systems. When the original M1s were released, there was not good support for Homebrew. My understanding is that it has been completely [ported](https://www.imore.com/package-manager-homebrew-now-fully-supports-apple-silicon) to the new ARM64 based architecture.
 
 # Integrated Development Environments and Code Editors
 
@@ -36,7 +36,7 @@ Homebrew is similar to package managers like apt-get on Linux or Choclatey on Wi
 * Python: Python now has native support for the M1 processor.
 * R: No support for the R programming language. The reason for this is because R is built using a newer version of Fortran. Fortran code can be converted to C, but only Fortran-77. R was built with a newer version of Fortran.
 * Go Lang: Go is now fully supported on the M1 processor.
-* Rust: The Rust compiler was built with LLVM, the same compiler technology used for Xcode languages. It is now supported on the M1 prcessor.
+* Rust: The Rust compiler was built with LLVM, the same compiler technology used for Xcode languages. It is now supported on the M1 processor.
 
 # Docker and Virtualization
 * Docker: There was an early release of Docker that came out last year, but as a couple of days ago Docker [released](https://www.docker.com/blog/released-docker-desktop-for-mac-apple-silicon/) full support for the M1 processor. Docker supports images that run on both ARM and x86.
