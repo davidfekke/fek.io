@@ -3,16 +3,19 @@ layout: post
 title: "What is the iOS IDFA, and Why is Facebook angry with Apple?"
 description: ""
 category: 
-tags: ["IDFA", "Apple", "Google"]
 date: 2021-04-18
 cover_image: "./sergiu-nista-ew3-7k3sl-g-unsplash.jpg"
 ---
+
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/s3_EB2ABnc0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 Apple will be releasing OS updates for most of their mobile devices pretty soon. There is a change that has ruffled the features of a lot of people in the online advertising industry.
 
 The issue revolves around an API that Apple has for iOS called the Advertising Identifier, or IDFA for short.
 
-The IDFA is used by advertisiers to tie advertising campaigns back to a specific device. This is very similar to how they track users with cookies on certain browsers. I say certain browsers because Apple's Safari and Brave have blocked this type of tracking. This is why when you are searching for a certain product or service on one page, and then you browse to another website you will sometimes see ads for what you were just searching. Advertisers are doing this mainly so they can tie campaigns and their success to the users viewing the ads.
+The IDFA is used by advertisers to tie advertising campaigns back to a specific device. This is very similar to how they track users with cookies on certain browsers. I say certain browsers because Apple's Safari and Brave have blocked this type of tracking. This is why when you are searching for a certain product or service on one page, and then you browse to another website you will sometimes see ads for what you were just searching. Advertisers are doing this mainly so they can tie campaigns and their success to the users viewing the ads.
 
 For mobile app developers like Facebook, they sell advertising campaigns for other mobile apps. If a user installs a mobile app based on an ad campaign they saw on Facebook, they use the IDFA to tie the device back to the campaign to know how effective the campaign was for that app install.
 
@@ -26,7 +29,7 @@ If the user does not give permission to use their IDFA, the app developer will g
 00000000-0000-0000-0000-000000000000
 ```
 
-By doing this, all users that opp out will have the same IDFA, rendering it useless for the campaign.
+By doing this, all users that opt out will have the same IDFA, rendering it useless for the campaign.
 
 # How do you currently get the IDFA
 
@@ -41,7 +44,7 @@ import AdSupport
 let idfa = ASIdentifierManager.shared().advertisingIdentifier
 ```
 
-```obj-c
+```objc
 // Objective-C
 #import <AdSupport/AdSupport.h>
 
@@ -56,9 +59,9 @@ In iOS 14.5 and greater, if you want to get a valid identifier back, you will ne
 
 # Solutions when the User Ops Out of App Tracking
 
-If you were to ask most mobile phone users if they want to be tracked, I believe most would say no. This is one of the reasons why Facebook is so upset. This may not satisfy Facebook, but Apple has added an API to try to find a middle ground with advertisiers while satifying the privacy concerns of their customers. 
+If you were to ask most mobile phone users if they want to be tracked, I believe most would say no. This is one of the reasons why Facebook is so upset. This may not satisfy Facebook, but Apple has added an API to try to find a middle ground with advertisers while satisfying the privacy concerns of their customers. 
 
-Apple has a framework called SKAdNetwork which allows advertisiers to run campaigns without gathering the unique identifier of a users device. While this does not replace what advertising networks can do with a IDFA, it does give them feedback on the success of a campaign.
+Apple has a framework called SKAdNetwork which allows advertisers to run campaigns without gathering the unique identifier of a users device. While this does not replace what advertising networks can do with a IDFA, it does give them feedback on the success of a campaign.
 
 ![SkAdNetwork Graphic from Apple Inc.](./rendered2x-1590201126.png)
 <p align="Center" style="font-size: small; color: gray;">Graphic courtesy of Apple, Inc.</p>
@@ -92,4 +95,4 @@ The advertiser will have to host a service to receive the callback. This is done
 
 # Summary
 
-I am sure that advertisiers are going to find ways to get around this limitation with the IDFA, but there are tools that we can use to track the success of a campaign.
+I am sure that advertisers are going to find ways to get around this limitation with the IDFA, but there are tools that we can use to track the success of a campaign.
