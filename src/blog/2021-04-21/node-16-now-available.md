@@ -11,7 +11,12 @@ The Node.js foundation just released the first version of Node v16.0.0. The Node
 
 ![Node.js release schedule](./node-release-schedule.png)
 
-You can download this release through the Node foundation as a `.pkg` file or through the Node Version Manager. This is the first release with Apple Silicon binaries. The `.pkg` installer will install a universal binarythat will run either on Apple Silicon processors or on Intel based Macs.
+# Apple Silicon Support
+Apple released a new CPU architecture last November based on ARM64. These are the Macs using the M1 chip from Apple. While Node.js did run on these newer machines, it did so through Apple's Rosetta technology. Rosetta allows x86_64 code to run in emulation on the newer chips. While this is stable, it is not ideal.
+
+![Apple M1 chip](./m1chip.png)
+
+You can now download this release through the Node foundation as a `.pkg` file or through the Node Version Manager. This is the first release with Apple Silicon binaries. The `.pkg` installer will install a universal binarythat will run either on Apple Silicon processors or on Intel based Macs.
 
 # V8 version 9.0
 
@@ -25,22 +30,94 @@ Stable Timers were previously available in Node v15 under an experimental status
 
 ```javascript
 import { setTimeout } from 'timers/promises';
-async function doSomthing() {
+
+async function doSomething() {
   console.log('doSomething started!');
   await setTimeout(2000);
   console.log('Delayed Timers!');
 }
-doSomthing();
+doSomething();
+```
+
+# Experimental Web Crypto API
+
+The Web Crypto API is the newer more wel defined version of the Crypto library for JavaScript. All of the new Web Crypto methods are available on the `subtle` interface. 
+Many browsers used an interface called `Crypto` without having a specific specification. The Web Crypto API adds a standard to the `Crypto` library.
+
+```JavaScript
+import { webcrypto } from 'crypto';
+const { subtle } = webcrypto;
+
+(async function() {
+
+  const key = await subtle.generateKey({
+    name: 'HMAC',
+    hash: 'SHA-256',
+    length: 256
+  }, true, ['sign', 'verify']);
+
+  const digest = await subtle.sign({
+    name: 'HMAC'
+  }, key, 'I love node.js');
+
+  console.log(digest);
+})();
+```
+
+# Node-API version 8
+The Node API provides an interface for writting Native C++ addons as node modules. Version 8 of the Node-API adds native methods for the following methods;
+
+* `napi_add_async_cleanup_hook`
+* `napi_object_freeze`
+* `napi_object_seal`
+* `napi_type_tag_object`
+* `napi_check_object_type_tag`
+* `napi_type_tag`
+
+# AbortController
+
+The AbortController Web API provides a global API that can be used to cancel select promised based APIs. Event listeners should use the `{ once: true }` option  ensure that the event listener is removed. Here is an example of the AbortController being used with a event listener;
+
+```JavaScript
+const abortC = new AbortController();
+abortC.signal.addEventListener('abort', () => {
+    console.log('Just cancelled')
+}, { once: true });
+ac.abort();
+console.log(ac.signal.aborted);
+```
+
+# Buffer atob and btoa
+
+These methods for converting data into base64 encoded strings and back where added to support legacy web platform APIs. This is not the prefered way, and should not be used in new code.
+
+The preffered way to convert data into a base64 encoded string is to use one of the following methods;
+
+```JavaScript
+const str = 'Hello JavaScript Developer!';
+
+const strBuf = Buffer.from(str, 'utf8');
+console.log(strBuf);
+// <Buffer 1d e9 65 a0 96 af 69 27 2b 8a 9b 43 7a f7 a5 a2 97 ab>
+
+const base64Buf = Buffer.from(strBuf, 'base64');
+const base64Str = base64Buf.toString('base64');
+console.log(base64Str);
+// SGVsbG8gSmF2YVNjcmlwdCBEZXZlbG9wZXIh
+
+const bufFromBase64Str = Buffer.from(base64Str, 'base64');
+
+const decodedStr = bufFromBase64Str.toString('utf-8');
+console.log(decodedStr);
+// Hello JavaScript Developer!
+console.log(str === decodedStr);
+// true
 ```
 
 # Other features
 
-* Experimental Web Crypto API
 * npm v7.10.0
-* Native Node-API version 8
-* AbortController Web API
 * Source Maps v3
-* atob and btoa functions for converting data to base64 and back
 * process.binding() has been deprecated
 
 # Conclusion
