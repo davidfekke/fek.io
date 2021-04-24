@@ -41,7 +41,7 @@ doSomething();
 
 # Experimental Web Crypto API
 
-The Web Crypto API is the newer more wel defined version of the Crypto library for JavaScript. All of the new Web Crypto methods are available on the `subtle` interface. 
+The Web Crypto API is the newer more well defined version of the Crypto library for JavaScript. All of the new Web Crypto methods are available on the `subtle` interface. 
 Many browsers used an interface called `Crypto` without having a specific specification. The Web Crypto API adds a standard to the `Crypto` library.
 
 ```JavaScript
@@ -65,7 +65,7 @@ const { subtle } = webcrypto;
 ```
 
 # Node-API version 8
-The Node API provides an interface for writting Native C++ addons as node modules. Version 8 of the Node-API adds native methods for the following methods;
+The Node API provides an interface for writing Native C++ add-ons as node modules. Version 8 of the Node-API adds native methods for the following methods;
 
 * `napi_add_async_cleanup_hook`
 * `napi_object_freeze`
@@ -89,9 +89,9 @@ console.log(ac.signal.aborted);
 
 # Buffer atob and btoa
 
-These methods for converting data into base64 encoded strings and back where added to support legacy web platform APIs. This is not the prefered way, and should not be used in new code.
+These methods for converting data into base64 encoded strings and back where added to support legacy web platform APIs. This is not the preferred way, and should not be used in new code.
 
-The preffered way to convert data into a base64 encoded string is to use one of the following methods;
+The preferred way to convert data into a base64 encoded string is to use the `Buffer.from(data, 'base64')` method or `buf.toString('base64')` to convert the buffer into a 'base64' string.
 
 ```JavaScript
 const str = 'Hello JavaScript Developer!';
