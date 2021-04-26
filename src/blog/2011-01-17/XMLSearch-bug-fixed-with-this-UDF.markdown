@@ -10,7 +10,7 @@ I got tired of waiting for Macromedia to fix the bug in XMLSearch, so I wrote th
 
 The code below uses a regular expression to strip the xmlns attribute out of the XMLDoc before performing the xpath search. 
 
-```coldfusion
+```xml
 <cffunction name="fixedXMLSearchOld" access="public" returntype="array">  
  <cfargument name="XMLString" type="Any" />  
  <cfargument name="xPathString" type="string"  
@@ -31,7 +31,7 @@ The code below uses a regular expression to strip the xmlns attribute out of the
 
 I also wrote a version in cfscript.
 
-```coldfusion
+```javascript
  function fixedXMLSearch(XMLString, xPathString) {  
  var myRegEx = 'xmlns[ ]*=[ ]*<font color="BLUE">"[[:graph:]]+"</font>';  
  var currentXMLString = <font color="BLUE">""</font>;  

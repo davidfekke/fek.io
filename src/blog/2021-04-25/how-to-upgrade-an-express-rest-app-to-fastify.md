@@ -201,4 +201,4 @@ start();
 
 # Conclusion
 
-As you can see from this example, the structure of a Fastify app is not that disimilar to an Express app. For a simple application like this, this is a good example of an app that can be upgraded to Fastify.
+As you can see from this example, the structure of a Fastify app is not that dissimilar to an Express app. For a simple application like this, this is a good example of an app that can be upgraded to Fastify.
