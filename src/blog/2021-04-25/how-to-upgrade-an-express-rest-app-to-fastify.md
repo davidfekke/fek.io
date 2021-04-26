@@ -4,12 +4,14 @@ title: "How to upgrade an Express REST app to Fastify"
 description: ""
 category: 
 date: 2021-04-25
-cover_image: "./unnamed.jpg"
+cover_image: "./expressjs-to-fastify.png"
 ---
 
 A while back I wrote a quick and dirty aviation weather proxy for the FAA's weather service. The existing weather service returns the data in an XML format. So I created an express app that proxies two of the web methods from that service so they will return JSON instead of XML.
 
 The original proxy service I wrote is a simple [express](https://expressjs.com/) app. Last year during the start of the pandemic I started looking at alternate frameworks. [Fastify](https://fastify.io) has become increasingly popular of the last couple of years. 
+
+![Fastify Logo](./fastify-olive-logo.png)
 
 Fastify is also a more modern framework for writing web apps. It has some unigue features like JSON schemas for the request and response. It also has its own JSON parser. The one used by express is the default parser used in V8.
 
@@ -61,7 +63,7 @@ As you can see from this example, I am using `axios` as my HTTP client. I prefer
 
 The first change I wanted to make was to use the new module import syntax over the commonjs `require` nethods for importing in my modules. You can turn this on by default in version of node.js 14 and later by adding the following key to your `package.json`.
 
-```
+```json
 "type": "module"
 ```
 
@@ -71,7 +73,7 @@ Node.js still defaults to 'commonjs' if you do not specify a type in the `packag
 
 Now you can use NPM or YARN to add the Fastify module. I am also using CORS, so we can add this and update our package.json file for these dependencies at the same time by running the following command;
 
-```
+```bash
 > npm i fastify fastify-cors --save
 ```
 
@@ -109,7 +111,7 @@ fastify.register(fastifyCors, {
 });
 ```
 
-Typically in most Node.js web apps, the routes are configured separate from the main application file, in their own module or plugin. This will make the application loosely coupled and easier to test. For this example I am just going to configure the two methods in the same file as the main application.
+Typically in most Node.js web apps, the routes are configured separate from the main application file, in their own module or plugin. This will make the application more loosely coupled and easier to test. For this example I am just going to configure the two methods in the same file as the main application.
 
 ```javascript
 fastify.get('/metar/:icaoidentifier', async function(request, reply) {
@@ -131,7 +133,7 @@ fastify.get('/taf/:icaoidentifier', async function(request, reply) {
 });
 ```
 
-These two routes are now using `async` function handlers, so I can use the async/await syntax. I can also use `return` instead of having to use `reply.send(resonse)`.
+These two routes are now using `async` function handlers, so I can use the async/await syntax. I can also use `return` instead of having to use `reply.send(response)`.
 
 ## Starting the App
 
