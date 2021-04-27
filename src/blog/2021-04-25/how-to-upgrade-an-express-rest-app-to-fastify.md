@@ -7,6 +7,10 @@ date: 2021-04-25
 cover_image: "./expressjs-to-fastify.png"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/l2BEsu3Aap0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 A while back I wrote a quick and dirty aviation weather proxy for the FAA's weather service. The existing weather service returns the data in an XML format. So I created an express app that proxies two of the web methods from that service so they will return JSON instead of XML.
 
 The original proxy service I wrote is a simple [express](https://expressjs.com/) app. Last year during the start of the pandemic I started looking at alternate frameworks. [Fastify](https://fastify.io) has become increasingly popular of the last couple of years. 
