@@ -90,7 +90,14 @@ module.exports = {
           ],
         },
       },
-
+      {
+        resolve: 'gatsby-plugin-robots-txt',
+        options: {
+          host: 'https://fek.io',
+          sitemap: 'https://fek.io/sitemap.xml',
+          policy: [{ userAgent: '*', allow: '/' }]
+        }
+      },
       {
         resolve: `gatsby-plugin-google-analytics`,
         options: {
