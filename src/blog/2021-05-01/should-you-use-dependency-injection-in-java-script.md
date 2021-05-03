@@ -7,6 +7,10 @@ date: 2021-05-01
 cover_image: "./ultrasound-guided-injections.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/Udfp9ln8naA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 I have seen some posts on JavaScript and for other languages that dissuade the use of Dependency Injection. I even had a boss at one company I worked for tell his developers that we should never use Dependency Injection.
 
 Dependency Injection, (DI), sometimes referred to as 'Inversion of Control' is where an object receives other objects or functions it depends on for part of its functionality. This can be achieved by passing an object through object instantiation with a constructor or with a property setting. This is very common in the world of statically typed languages like Java or C#. There are many popular frameworks built specifically for managing dependencies in the statically typed object-oriented world.
