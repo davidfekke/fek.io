@@ -13,7 +13,7 @@ cover_image: "./injectable.jpg"
 
 I recently did a blog post on using [Dependency Injection](https://fek.io/blog/should-you-use-dependency-injection-in-java-script) in JavaScript. This technique comes in handy, and can be really useful when using web application frameworks like [Express](https://expressjs.com).
 
-Express makes it very easy to inject dependencies into you web application through middleware or into individual routes. In my Express applications when I need a dependency, I inject it directly into a route by injecting it as a service on the request object. But before we do that, lets break our app up into different modular components.
+Express makes it very easy to inject dependencies into you web application through middleware or into individual routes. In my Express applications when I need a dependency, I inject it directly into a route by injecting it as a service on the request object. But before we do that, lets' break our app up into different modular components.
 
 # The Service
 
@@ -41,7 +41,7 @@ async function getStarships() {
 export { getVehicles, getPlanets, getStarships };
 ```
 
-I am using the [Star Wars API](https://swapi.dev/) for my example. I have created three functions for `getVehicles`,`getPlanets` and `getStarships`. These methods are using the `async/await` syntax, which will allow them to be used asynchronously by module that imports these functions.
+I am using the [Star Wars API](https://swapi.dev/) for my example. I have created three functions for `getVehicles`,`getPlanets` and `getStarships`. These methods are using the `async/await` syntax, which will allow them to be used asynchronously by the module that imports these functions.
 
 # Routes
 
@@ -102,7 +102,7 @@ The example above shows boiler plate Express route setup in this module.  We can
 
 # Injecting the Service
 
-For injecting our service, we will need to create a service object that we can attach to the `req` object, and create a middleware component that actually inject service into our API route.
+For injecting our service, we will need to create a service object that we can attach to the `req` object, and create a middleware component that actually injects the service into our API route.
 
 ```javascript
 import { getVehicles, getPlanets, getStarships } from './dataservices.js';
