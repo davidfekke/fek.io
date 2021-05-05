@@ -7,6 +7,10 @@ date: 2021-05-04
 cover_image: "./injectable.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/82LCcsu_QAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 I recently did a blog post on using [Dependency Injection](https://fek.io/blog/should-you-use-dependency-injection-in-java-script) in JavaScript. This technique comes in handy, and can be really useful when using web application frameworks like [Express](https://expressjs.com).
 
 Express makes it very easy to inject dependencies into you web application through middleware or into individual routes. In my Express applications when I need a dependency, I inject it directly into a route by injecting it as a service on the request object. But before we do that, lets break our app up into different modular components.
