@@ -7,6 +7,10 @@ date: 2021-05-08
 cover_image: "./delegate.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/t1q9I9obHJA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 There are actually times when you want to use object inheritance in your applications. I have seen a lot of applications that extend a lifecycle API through object inheritance.
 
 Inheritance was designed as a way for software developers to extend existing functionality and add properties to an existing base class or object. When modeling data as objects it is very common to create object graphs where one object may be a grandchild or great grandchild of a base object.
@@ -197,3 +201,5 @@ The wonderful thing about JavaScript is that there are multiple ways of achievin
 # Conclusion 
 
 The Delegation Pattern is a great alternative to having to inherit functionality from a base object, and allows the developer to observe multiple objects at the same time. This is also a great pattern to use if you need to wire up many different lifecycle events to an API without having to use an actual event listener.
+
+[Example Code](https://github.com/davidfekke/delegateexample)
