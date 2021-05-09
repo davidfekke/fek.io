@@ -35,7 +35,7 @@ Today Apple has a lot of modern APIs that use closures and blocks to handle a ne
 
 # Inheriting Functionality in JavaScript
 
-Lets' say we have a object we are creating that needs to offload some work to another object, and then needs to have a function called on once the other object has completed that task. One way of doing this is to inherit that functionality from a parent object. For this example we create two objects, one called `parent`, and the other called `child`. The `child` is going offload some of its work to the `parent` object. The `parent` object will have functions called `doWorkForChild`, `setStatus` and `sayHelloToMe`.
+Lets' say we have an object we are creating that needs to offload some work to another object, and then needs to have a function called on once the other object has completed that task. One way of doing this is to inherit that functionality from a parent object. For this example we create two objects, one called `parent`, and the other called `child`. The `child` is going offload some of its work to the `parent` object. The `parent` object will have functions called `doWorkForChild`, `setStatus` and `sayHelloToMe`.
 
 The `child` object will inherit the methods from the `parent` object, but we are going to override the functionality of the `setStatus` function, and add functions for `start` and `print`.
 
