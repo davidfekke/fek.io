@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E6E6E6;}
+	.st1{font-family:'MyriadPro-Regular';}
+	.st2{font-size:40.9631px;}
+	.st3{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<g>
+	<rect x="584.95" y="86.5" class="st0" width="229.24" height="136.05"/>
+	<path d="M813.7,87v135.05H585.45V87H813.7 M814.7,86H584.45v137.05H814.7V86L814.7,86z"/>
+</g>
+<g>
+	<rect x="271.11" y="293.44" class="st0" width="229.24" height="136.05"/>
+	<path d="M499.85,293.94v135.05H271.61V293.94H499.85 M500.85,292.94H270.61v137.05h230.24V292.94L500.85,292.94z"/>
+</g>
+<g>
+	<rect x="860.42" y="293.44" class="st0" width="229.24" height="136.05"/>
+	<path d="M1089.17,293.94v135.05H860.92V293.94H1089.17 M1090.17,292.94H859.92v137.05h230.24V292.94L1090.17,292.94z"/>
+</g>
+<g>
+	<rect x="732.97" y="527.8" class="st0" width="229.24" height="136.05"/>
+	<path d="M961.71,528.3v135.05H733.47V528.3H961.71 M962.71,527.3H732.47v137.05h230.24V527.3L962.71,527.3z"/>
+</g>
+<g>
+	<rect x="1063.26" y="527.8" class="st0" width="229.24" height="136.05"/>
+	<path d="M1292,528.3v135.05h-228.24V528.3H1292 M1293,527.3h-230.24v137.05H1293V527.3L1293,527.3z"/>
+</g>
+<text transform="matrix(1 0 0 1 638.3623 130.2764)" class="st1 st2">Vehicle</text>
+<text transform="matrix(1 0 0 1 336.853 335.8511)" class="st1 st2">Road</text>
+<text transform="matrix(1 0 0 1 913.832 335.8511)" class="st1 st2">Aircraft</text>
+<text transform="matrix(1 0 0 1 752.1133 570.2061)" class="st1 st2">Fixed Wing</text>
+<text transform="matrix(1 0 0 1 1086.5137 570.2061)" class="st1 st2">Helicopter</text>
+<g>
+	<rect x="76.5" y="527.8" class="st0" width="229.24" height="136.05"/>
+	<path d="M305.24,528.3v135.05H77V528.3H305.24 M306.24,527.3H76v137.05h230.24V527.3L306.24,527.3z"/>
+</g>
+<g>
+	<rect x="406.79" y="527.8" class="st0" width="229.24" height="136.05"/>
+	<path d="M635.53,528.3v135.05H407.29V528.3H635.53 M636.53,527.3H406.29v137.05h230.24V527.3L636.53,527.3z"/>
+</g>
+<text transform="matrix(1 0 0 1 155.9478 570.2061)" class="st1 st2">Car</text>
+<text transform="matrix(1 0 0 1 473.9023 570.2061)" class="st1 st2">Truck</text>
+<g>
+	<g>
+		<line class="st3" x1="835.03" y1="184.07" x2="950.38" y2="277.87"/>
+		<g>
+			<path d="M825.66,176.45c3.08,5.22,6.28,12.45,7.26,18.16l3.33-9.55l8.67-5.21C839.13,180.06,831.4,178.4,825.66,176.45z"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st3" x1="365.55" y1="439.89" x2="228.12" y2="514.97"/>
+		<g>
+			<path d="M376.14,434.11c-5.99,0.87-13.9,1.1-19.56-0.15l7.58,6.7l1.54,10C367.7,445.21,372.16,438.68,376.14,434.11z"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st3" x1="399.07" y1="443.26" x2="485.78" y2="516.34"/>
+		<g>
+			<path d="M389.84,435.48c2.98,5.27,6.06,12.56,6.94,18.29l3.5-9.49l8.76-5.05C403.25,439.32,395.54,437.53,389.84,435.48z"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st3" x1="940.89" y1="438.93" x2="866.78" y2="520.45"/>
+		<g>
+			<path d="M949.01,429.99c-5.38,2.78-12.78,5.58-18.54,6.25l9.35,3.85l4.72,8.94C944.66,443.25,946.74,435.61,949.01,429.99z"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st3" x1="1027.01" y1="441.57" x2="1127.17" y2="520.45"/>
+		<g>
+			<path d="M1017.53,434.11c3.16,5.17,6.47,12.35,7.55,18.05l3.18-9.6l8.59-5.34C1031.06,437.5,1023.3,435.97,1017.53,434.11z"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st3" x1="566.43" y1="161.57" x2="400.81" y2="280.61"/>
+		<g>
+			<path d="M576.23,154.52c-5.84,1.6-13.66,2.8-19.43,2.25l8.35,5.72l2.76,9.73C569.22,166.58,572.85,159.55,576.23,154.52z"/>
+		</g>
+	</g>
+</g>
+</svg>
