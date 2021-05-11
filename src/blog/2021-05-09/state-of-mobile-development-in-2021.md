@@ -15,7 +15,7 @@ There are a number of different options for building mobile apps that are multi-
 
 # Cordova
 
-Cordova is a framework that sprang out of building applications using web technologies like HTML/CSS and JavaScript, and embeding the HTML app in a native container. This has been a huge boost to existing web front-end devlopers who where already knowledgable in web technologies. The native applications can be submitted to the individual app stores just like regular native applications.
+Cordova is a framework that sprang out of building applications using web technologies like HTML/CSS and JavaScript, and embeding the HTML app in a native container. This has been a huge boost to existing web front-end developers who where already knowledgable in web technologies. The native applications can be submitted to the individual app stores just like regular native applications.
 
 ### Pros
 * Easy to transition if you are a existing web developer
@@ -62,11 +62,25 @@ Flutter is another cross platform framework from Google. Unlike Cordova, Flutter
 Xamarin, now officially part of Microsoft and Visual Studio, this framework is based off of .NET and C#. If you are a .NET developer and unfamiliar with Java/Kotlin on Android and Swift/Objective-C on iOS, this may be the framework for you. You can build and structure your applications using Visual Studio solutions. In your solutions, you can divide your project into shared code projects, and individual projects for iOS and Android. This allows the developer to custom tailer their app to the specific UI of the platform they are targeting. It also allows the developer to share business logic for both platforms.
 
 ### Pros
+* If you have developers that are familiar with .NET, the language and tools are the same ones they are used using
+* Allows the reuse of code between Android and iOS
+* Uses Ahead of Time compiling to create native apps 
+* Some APIs from .NET available for use with Xamarin
 
 ### Cons
+* Does require a Mac for compiling iOS apps
+* No Visual Studio support for M1 Macs
 
 ## Xamarin Forms
+
+Xamarin forms present a cross-platform tool for creating User Interfaces that work on both iOS and Android. Not all UI elements available on both platforms.
+
 # React Native
+
+This framework is the same framework used for React.js applications. React is a very popular JavaScript based view engine for building component based UIs. React Native has its own native views that can be composed using React. It also has its own implementation of Flexbox for laying out your UIs.
+
+A JavaScript bridge is used to bind your business logic to your User Interface components. React Native uses JavaScript Core for the bridge.
+
 # NativeScript
 # Native
 ## CocoaTouch
