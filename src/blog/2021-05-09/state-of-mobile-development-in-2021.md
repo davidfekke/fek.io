@@ -79,10 +79,38 @@ Xamarin forms present a cross-platform tool for creating User Interfaces that wo
 
 This framework is the same framework used for React.js applications. React is a very popular JavaScript based view engine for building component based UIs. React Native has its own native views that can be composed using React. It also has its own implementation of Flexbox for laying out your UIs.
 
-A JavaScript bridge is used to bind your business logic to your User Interface components. React Native uses JavaScript Core for the bridge.
+A JavaScript bridge is used to bind your business logic to your User Interface components. React Native uses JavaScript Core for the bridge. Like React.js, this project is sponsored by Facebook.
+
+### Pros
+* Build Native Apps using JavaScript JSX while still being a native app
+* Easily extend your application with React Native modules
+* Can use React developers to build mobile apps
+* Can also build React Native Web applications
+
+### Cons
+* Can run into performance problems using the JavaScript bridge
+* Writing custom moudules requires knowledge of Objective-C on iOS and Java on Android
+* Scroll performance suboptimal
 
 # NativeScript
+
+NativeScript has a similiar model to that of React Native. But unlike React its framework was originally based on Angular. NativeScript also has support for Vue, Svelte and React.
+
+NativeScript shows how Angular, Vue and React are not just web application frameworks, but can be used as just application frameworks. This project is part of the OpenJS foundation
+
+### Pros
+* Similar framework to React
+* build Native apps with JavaScript or TypeScript
+* Support for multiple application frameworks including Vue, Svelte and Angular
+
+### Cons
+* Similar perforance problems tht you have in React Native
+* Limited set of Native APIs that accesible to the developer
+
 # Native
+
+The way that Apple and Google would prefer you write applications for their respective OSes would be natively. iOS and iPadOS have their own frameworks and languages. Apple's MacOS was originally based on the NextStep operating system which used Objective-C for all of its frameworks. In 2014 Apple introduced a new more modern programming language called `Swift`. Swift is much more approachable than Objective-C for most software developers.
+
 ## CocoaTouch
 ### Objective-C
 ### Swift
