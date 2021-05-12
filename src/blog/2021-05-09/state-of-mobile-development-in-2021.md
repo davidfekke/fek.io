@@ -7,6 +7,10 @@ date: 2021-05-09
 cover_image: "./PhotoCollage.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/KTD3szzMfyI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 Building apps for the iOS/iPadOS and Android platforms may seem daunting if you are new to mobile development, but there are many different options for developing these apps that may suit your needs. In this post I will cover some of the options for developing mobile applications and the discuss the pros and cons for each of the different options.
 
 Mobile development options can be broken into three main groups: Web based, cross-platform native and pure native development. I will try to drill down into each option that developers might want to use for building their mobile apps.
