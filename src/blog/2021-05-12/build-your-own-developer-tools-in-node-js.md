@@ -4,10 +4,14 @@ title: "Build your own Developer tools in Node.js"
 description: ""
 category: 
 date: 2021-05-12
-cover_image: "./unnamed.jpg"
+cover_image: "./cesar-carlevarino-aragon.jpg"
 ---
 
-I did a presentation a couple of years ago to JaxNode User Group about building your own tools. As user it is very common to find yourself repeating the same series of commands over and over again. In software development you often here about the SOLID principles. One of those principles is DRY principle, which stands for Don't Repeat Yourself.
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/cKVgbKFRV8U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+I did a presentation a couple of years ago to JaxNode User Group about building your own tools. As an user it is very common to find yourself repeating the same series of commands over and over again. In software development you often here about the [SOLID principles](https://www.baeldung.com/solid-principles). One of those principles is DRY principle, which stands for Don't Repeat Yourself.
 
 If you don't want to repeat yourself as a developer, why would you want to do it as a user? This is one of the reasons why I build my own tools. Here are some examples of tasks I ran across where I built my own tools.
 
@@ -17,7 +21,7 @@ If you don't want to repeat yourself as a developer, why would you want to do it
 
 # Command Line Tools
 
-I have used a couple of different frameworks creating command line tools with Node.js. You don't have to use Node.js. Python and Shell scripts are also popular for creating command line tools. You can even use C.
+I have used a couple of different frameworks for creating command line tools with Node.js. You don't have to use Node.js. Python and Shell scripts are also popular for creating command line tools. You can even use C.
 
 When using Node.js for command line tools, there are a couple of popular frameworks. The first one that became popular was [Commander](https://github.com/tj/commander.js) by TJ Holowaychuk. Commander is still a very popular framework.
 
@@ -29,7 +33,7 @@ Oclif is feature rich with the ability to create multiple commands, add plugins 
 
 ## Creating a New App in Node.js
 
-When I am testing out a new NPM package that I might want to use or test a new JavaScript feature in Node.js, I usually do a number of things to setup a new project. The tasks I go through are usually as follows;
+When I am testing out a new NPM package that I might want to use or testing a new JavaScript feature in Node.js, I usually do a number of things to setup a new project. The tasks I go through are usually as follows;
 
 1) Create a directory and change into that directory
 2) Init a new project using NPM
@@ -245,8 +249,6 @@ We can even test this and run it locally by NPM installing it globally.
 ```
 
 I have this current project available to view on [Github](https://github.com/davidfekke/setupnodeproject).
-
-![Setup Node Project Animated GIF](./render1620868431266.gif)
 
 # Conclusion
 
