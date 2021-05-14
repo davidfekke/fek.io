@@ -11,7 +11,7 @@ cover_image: "./cesar-carlevarino-aragon.jpg"
 <iframe width="700" height="393" src="https://youtube.com/embed/cKVgbKFRV8U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-I did a presentation a couple of years ago to JaxNode User Group about building your own tools. As an user it is very common to find yourself repeating the same series of commands over and over again. In software development you often here about the [SOLID principles](https://www.baeldung.com/solid-principles). One of those principles is DRY principle, which stands for Don't Repeat Yourself.
+I did a presentation a couple of years ago to JaxNode User Group about building your own tools. As a user it is very common to find yourself repeating the same series of commands over and over again. In software development you often hear about the [SOLID principles](https://www.baeldung.com/solid-principles). One of those principles is DRY principle, which stands for Don't Repeat Yourself.
 
 If you don't want to repeat yourself as a developer, why would you want to do it as a user? This is one of the reasons why I build my own tools. Here are some examples of tasks I ran across where I built my own tools.
 
