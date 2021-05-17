@@ -32,7 +32,7 @@ A couple of years ago I built a tool called jimp-appicon for creating icons for 
 
 # Jimp
 
-Jimp, a tool named after the popular GIMP image processing application, is an image processing tools written entirely in JavaScript. It does not have any external dependencies, and can run on any processor architecture.
+[Jimp](https://github.com/oliver-moran/jimp), a tool named after the popular GIMP image processing application, is an image processing tools written entirely in JavaScript. It does not have any external dependencies, and can run on any processor architecture.
 
 Jimp also has an easy API to understand with a promise library allowing Node.js developers to run multiple operations on an image. In the following example we will take the Lenna image, and resize it 256 pxiels square, make it a greyscale and save our results as a JPEG. Here is the original image;
 
@@ -55,6 +55,23 @@ jimp.read("lenna.png").then(function (lenna) {
 The resulting image will look like the following image;
 
 ![Lena-blake-and-white](lena-small-bw.jpg)
+
+# Sharp
+
+I am came across the [Sharp](https://github.com/lovell/sharp) image module a couple of years ago when I first started using Gatsby. Gatsby uses the Sharp image module in their image plugins. This is exetermely fast because it is mostly written in C++ code as a native module for Node.js. And unlike some of the other native image modules for Node.js, it will compile and run on most processor architectures. So if you are running on a large x86_64 server or on a Raspberry Pi running on an ARM processor. 
+
+```javascript
+import sharp from 'sharp';
+
+sharp('lenna.png')
+  .rotate()
+  .resize(200)
+  .jpeg({ mozjpeg: true })
+  .toFile('output.jpg', (err, info) => {
+    if (err) console.error(err);
+    console.log(info);
+  });
+```
 
 # PhotoShop and Adobe Generator
 
@@ -204,24 +221,7 @@ PhotoShop is probably my favorite application of all time. I have been using Pho
 }());
 ```
 
-While this is extremely neat that it is posible to use PhotoShop and Node.js together, it is not practicle to keep both Node.js and PhotoShop on the same computer.
-
-# Sharp
-
-I am came across the [Sharp](https://github.com/lovell/sharp) image module a couple of years ago when I first started using Gatsby. Gatsby uses the Sharp image module in their image plugins. This is exetermely fast because it is mostly written in C++ code as a native module for Node.js. And unlike some of the other native image modules for Node.js, it will compile and run on most processor architectures. So if you are running on a large x86_64 server or on a Raspberry Pi running on an ARM processor. 
-
-```javascript
-import sharp from 'sharp';
-
-sharp('lenna.png')
-  .rotate()
-  .resize(200)
-  .jpeg({ mozjpeg: true })
-  .toFile('output.jpg', (err, info) => {
-    if (err) console.error(err);
-    console.log(info);
-  });
-```
+While this is extremely neat that it is posible to use PhotoShop and Node.js together, it is not practicle to keep both Node.js and PhotoShop on the same server. Plus PhotoShop only runs on Windows and MacOS.
 
 ## Make an AppIcon with Sharp-AppIcon
 
