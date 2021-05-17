@@ -13,6 +13,10 @@ One of my favorite laws is **Atwood's Law**. **Atwood's Law** states: any applic
 
 If you are not familiar with Jeff Atwood, he writes the popular blog [Coding Horror](https://codinghorror.com).
 
+![Dr. Ian Malcolm, Jurasic Park](./whether-you-should.jpg)
+
+When you ask yourself should I use Node.js to process images, this is a question that definitely qualifies for Atwood's Law. 
+
 # Image Processing
 
 One of the first programming jobs I had in the 90s was writing an AppleScript that could leverage [Adobe PhotoShop](https://www.adobe.com/products/photoshop.html) to create images for a high resolution library the company I was working for at the time was trying to build. At the time Adobe did not have scripting capability built into Photoshop like they do know. I found a Photoshop plugin that would allow me to write code that could command Photoshop to automate our imaging needs.
@@ -225,7 +229,7 @@ While this is extremely neat that it is posible to use PhotoShop and Node.js tog
 
 ## Make an AppIcon with Sharp-AppIcon
 
-I decided to write a new AppIcon maker using Sharp because it is so performant. It can create all of the icons you need for your iOS/iPadOS and Android apps in about a second. Here is how you can install and use Sharp-AppIcon. Make sure you have Node.js installed on your computer. Then you can NPM install Sharp-AppIcon globally using the following command;
+I decided to write a new AppIcon maker using Sharp because it is so performant. It can create all of the icons you need for your iOS/iPadOS and Android apps in about a second. Here is how you can install and use [Sharp-AppIcon](https://www.npmjs.com/package/sharp-appicon). Make sure you have Node.js installed on your computer. Then you can NPM install [sharp-appicon](https://www.npmjs.com/package/sharp-appicon) globally using the following command;
 
 ```bash
 $ npm install sharp-appicon -g
@@ -245,4 +249,4 @@ This will create a directory called 'icons' with all of the icons required for y
 
 # Conclusion
 
-It is extremely practicle to use Node.js for creating thumbnails, creating simple operations and cropping and saving your images into different formats. You do not have to use these modules, and you can choose to use modules that work with GraphicsMagic and ImageMagic as well.
+It is extremely practicle to use Node.js for creating thumbnails, creating simple operations and cropping and saving your images into different formats. You do not have to use these modules, and you can choose to use modules that work with [GraphicsMagic](http://www.graphicsmagick.org/index.html) and [ImageMagic](https://imagemagick.org/script/index.php) as well.
