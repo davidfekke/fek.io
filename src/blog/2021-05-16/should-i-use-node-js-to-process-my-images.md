@@ -225,7 +225,7 @@ PhotoShop is probably my favorite application of all time. I have been using Pho
 }());
 ```
 
-While this is extremely neat that it is posible to use PhotoShop and Node.js together, it is not practicle to keep both Node.js and PhotoShop on the same server. Plus PhotoShop only runs on Windows and MacOS.
+While this is extremely neat that it is possible to use PhotoShop and Node.js together, it is not practical to keep both Node.js and PhotoShop on the same server. Plus PhotoShop only runs on Windows and MacOS.
 
 ## Make an AppIcon with Sharp-AppIcon
 
@@ -235,7 +235,7 @@ I decided to write a new AppIcon maker using Sharp because it is so performant. 
 $ npm install sharp-appicon -g
 ```
 
-Once it finishes install this module, you can execute it in the commandline using `appicon` command. You just need to navigate to the location of your source icon. It should probably be an image with the deminsions of 1536 pixels by 1536 pixels. Lets say your icon is called `MyAppIcon.png'. You can create your appicons by running the following command;
+Once it finishes install this module, you can execute it in the command line using `appicon` command. You just need to navigate to the location of your source icon. It should probably be an image with the dimensions of 1536 pixels by 1536 pixels. Lets' say your icon is called `MyAppIcon.png`. You can create your appicons by running the following command;
 
 ```bash
 $ appicon MyAppIcon.png
@@ -249,4 +249,4 @@ This will create a directory called 'icons' with all of the icons required for y
 
 # Conclusion
 
-It is extremely practicle to use Node.js for creating thumbnails, creating simple operations and cropping and saving your images into different formats. You do not have to use these modules, and you can choose to use modules that work with [GraphicsMagic](http://www.graphicsmagick.org/index.html) and [ImageMagic](https://imagemagick.org/script/index.php) as well.
+It is extremely practical to use Node.js for creating thumbnails, creating simple operations and cropping and saving your images into different formats. You do not have to use these modules, and you can choose to use modules that work with [GraphicsMagic](http://www.graphicsmagick.org/index.html) and [ImageMagic](https://imagemagick.org/script/index.php) as well.
