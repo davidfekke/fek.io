@@ -83,8 +83,8 @@ const abortC = new AbortController();
 abortC.signal.addEventListener('abort', () => {
     console.log('Just cancelled')
 }, { once: true });
-ac.abort();
-console.log(ac.signal.aborted);
+abortC.abort();
+console.log(abortC.signal.aborted);
 ```
 
 # Buffer atob and btoa
