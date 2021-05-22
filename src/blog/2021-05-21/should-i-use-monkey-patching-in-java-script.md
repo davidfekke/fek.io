@@ -4,7 +4,7 @@ title: "Should I use Monkey Patching in JavaScript?"
 description: ""
 category: 
 date: 2021-05-21
-cover_image: "./unnamed.jpg"
+cover_image: "./MonkeyPatching.jpg"
 ---
 
 
