@@ -55,8 +55,9 @@ console.log(`Result of 1 + 2 = ${result}`);
 
 ```
 
+# Preventing Monkey Patching
 
-
+If you do not want your functions to be Monkey Patched, there are ways of preventing that type of code from happening in your code. One way of accomplishing this is to use factory function and `Object.freeze` when returning your object.
 
 ```javascript
 function createAddObject() {
@@ -66,13 +67,16 @@ function createAddObject() {
     function add(a, b) {
         return a + b;
     }
-    return {
+    return Object.freeze({
         add
-    };
+    });
 }
+```
 
-//var AddObject = createAddObject();
-var MyObject = new createAddObject(); //new AddObject();
+Now if you try to replace the `add` function with your own like in the example below, the JavaScript engine will throw a TypeError;
+
+```javascript
+const MyObject = new createAddObject();
 
 const origAdd = MyObject.add; 
 
@@ -80,9 +84,15 @@ MyObject.add = function(a, b) {
     console.log(`First param ${a} and second param is ${b}`)
     return origAdd(a, b);
 }
-
-const num = MyObject.add(1, 2);
-
-console.log(`num: ${num}`);
-
 ```
+
+The error from trying to execute this code should look like the following.
+
+```bash
+TypeError: Cannot assign to read only property 'add' of object '#<Object>'
+    at file:///Users/davidfekke/Documents/monkeypatch/monkey.js:39:23
+```
+
+# Conclusion
+
+Monkey Patching is a very powerful concept in JavaScript. You can use to add aspects or inject new functionality into existing libraries or modules. It can also be dangerous. But if you do not want your code to be Monkey Patched, you can use Object.freeze to make your objects read only.
