@@ -17,7 +17,7 @@ If you have a class that you want to serialize or archive, your class will need 
 
 # Implementing NSCoding
 
-Lets take a look at a class I have defined for keeping track of a vehicle.
+Lets' take a look at a class I have defined for keeping track of a vehicle.
 
 ```swift
 class Vehicle {
@@ -57,7 +57,7 @@ class Vehicle: NSObject, NSCoding {
 }
 ```
 
-Now lets implement these two methods. For the `init?(coder: NSCoder)` we are going to want to make this a convenience init because we want it to call the existing `init` constructor once it has been decoded.
+Now lets' implement these two methods. For the `init?(coder: NSCoder)` we are going to want to make this a convenience init because we want it to call the existing `init` constructor once it has been decoded.
 
 ```swift
 public required convenience init?(coder: NSCoder) {
@@ -122,7 +122,7 @@ This new protocol called `NSSecureCoding` will require a boolean property be add
 
 Secure Coding will enable the encoding and decoding in a way that will prevent object substitution attacks. If an object substitution attack were to occur, it is possible that object being unarchived could inflate into an object that could potentially allow an attack.
 
-Lets add the `NSSecureCoding` protocol to our class.
+Lets' add the `NSSecureCoding` protocol to our class.
 
 ```swift
 class Vehicle: NSObject, NSCoding, NSSecureCoding {
