@@ -7,6 +7,10 @@ date: 2021-05-25
 cover_image: "./Illustration.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/3jMXQJjfgfA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 Not only does Apple Think Differently, they also like to name things differently as well. In languages like Java and C#, if you want to share a contract between objects that guarantees the same interface, that is called an 'Interface'. On MacOS, iOS/iPadOS, watchOS and tvOS, that is called a 'Protocol'. Just like you can make a class or struct conform to an interface, you can also make a Swift class or struct conform to a 'Protocol'.
 
 In Objective-C, if you want extend an existing class, that is called a 'Category', but it is called an `extension` in C# and Swift.
