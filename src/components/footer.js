@@ -25,7 +25,7 @@ const Footer = () => {
                                     <strong>Connect</strong>
                                 </li>
                                 <li>
-                                    <Link to="blog">Blog</Link>
+                                    <Link to="/blog">Blog</Link>
                                 </li>
                                 <li>
                                     <ExtLink uri="https://twitter.com/davidfekke" name="Twitter" />
@@ -34,7 +34,7 @@ const Footer = () => {
                                     <ExtLink uri="https://www.linkedin.com/in/david-fekke-1913ba2/" name="Linkedin" />
                                 </li>
                                 <li>
-                                    <ExtLink uri="https://www.youtube.com/davidfekke/" name="Youtube" />    
+                                    <ExtLink uri="https://www.youtube.com/c/polyglotengineer" name="Youtube" />    
                                 </li>
                             </ul>
                         </div>
