@@ -9,7 +9,7 @@ cover_image: "./semicolons.jpg"
 
 In a lot of the C based languages such as C#, Java and C++, a semicolon is required to end the line.
 
-```javascript
+```csharp
 String foo = "Hello World!";
 ```
 
