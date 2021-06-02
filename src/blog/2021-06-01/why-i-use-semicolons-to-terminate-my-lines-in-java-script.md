@@ -7,6 +7,10 @@ date: 2021-06-01
 cover_image: "./semicolons.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/x6_lFh1WgA8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 In a lot of the C based languages such as C#, Java and C++, a semicolon is required to end the line.
 
 ```csharp

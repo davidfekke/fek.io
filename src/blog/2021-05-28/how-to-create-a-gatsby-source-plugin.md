@@ -13,4 +13,4 @@ The there two primary forms of plugins for Gatsby, 'source' and 'transformer'. S
 
 Once data is configured to be brought into your site through a source plugin, you will be able to use GraphQL queries to query the specific content you need added to your site. 
 
-You can also use Gatsby's built in query editor that can be accessed via the `http://localhost:8000/___graphql` url after you run `gatsby develop`.
+You can also use Gatsby's built in query editor that can be accessed via the Graph*i*QL `http://localhost:8000/___graphql` url after you run `gatsby develop`.
