@@ -7,13 +7,17 @@ date: 2021-06-03
 cover_image: "./marcus-kauffman-apocolapse.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/0p8B3c1qZ4o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 It has been just over five years since the event known as 'LeftPad Apocalypse'. In March of 2016 an NPM user removed their module 'Left-pad' from the NPM repository, resulting in the breaking of any Node.js application which had that dependency.
 
 It was a wake up call for the Node.js community, and some changes where implemented to NPM after this incident to prevent this from happening again.
 
 ## What exactly happened
 
-A company called Kik with a messenger app wanted to use the same module named 'kik' as another user, Azer Koçulu, on NPM. They sent Mr. Koçulu a e-mail from a patent attorney asking him to relinquish the module name 'kik'. Mr. Koçulu declined to give up the module name. Kik then went to NPM with a trademark request to give them access to the module, which they eventually did.
+A company called Kik with a messenger app wanted to use the same module named 'kik' as another user, Azer Koçulu, on NPM. They sent Mr. Koçulu an e-mail from a patent attorney asking him to relinquish the module named 'kik'. Mr. Koçulu declined to give up the module name. Kik then went to NPM with a trademark request to give them access to the module, which they eventually did.
 
 Mr. Koçulu after loosing the module name decided to un-publish all 250 of his other modules from NPM. One of those modules was a module that was used in thousands of projects including Babel.js. When he un-published 'left-pad', it essentially broke the internet. This is because so many projects rely on NPM, not to mention that modules also have their dependencies. You wind up with these giant tree structures of dependencies sometimes 10 levels deep. If you want to visualize this, simply run `npm list` in your modules directory. 
 
@@ -79,7 +83,7 @@ NPM also offers a local version of NPM so you can run just run it for your organ
 
 If you are not familiar with [Deno](https://deno.land/), it is an alternative JavaScript runtime from Ryan Dahl, the inventor of Node.js. One of the things that Ryan did when he created Deno was rethink how he did certain things in Node. 
 
-Node.js does not have a standard library. When Ryan created Deno, he also made sure that it included a standard library of modules you can use with having to install third party modules.
+Node.js does not have a standard library. When Ryan created Deno, he also made sure that it included a standard library of modules you can use without having to install third party modules.
 
 Deno also allows developers to import modules directly from the source, so there is no need for a package manager. You can simply `import 'https://github.com/someuser/mymodule/main/src.js'` in your app, and Deno will cache the module locally on your system.
 
