@@ -57,4 +57,155 @@ module.exports = {
 }
 ```
 
-We can test that this is configured properly by run `gatsby develop` on our playground-site. 
+We can test that this is configured properly by run `gatsby develop` on our playground-site. You should see 'Loaded gatsby-starter-plugin' from the terminal when you go to run the playground-site.
+
+## Adding data to our Plugin
+
+Now that we have our sample plugin, lets' modify it so that it will pull in a source from an API. For this example I am going to use the Star Wars API. I want to be able to use GraphQL to query ship data from the Star Wars API. 
+
+Gatsby provides an API you can use to create GraphQL nodes through a function called `createNode`. We can use this inside of a function in the gatsby-node.js file that exports an async function called `sourceNodes`.
+
+For this example I am going to get the data from the Star Wars API using the 'axios' module. In your plugin module you can add this with the following npm command;
+
+```bash
+source-plugin> npm i axios --save
+```
+
+This will add 'axios' to the project.json dependencies. Now that we have added 'axios' we can modify the gatsby-node.js file so that the sourceNodes function looks like the following;
+
+```javascript
+/**
+ * Implement Gatsby's Node APIs in this file.
+ *
+ * See: https://www.gatsbyjs.com/docs/node-apis/
+ */
+// You can delete this file if you're not using it
+
+/**
+ * You can uncomment the following line to verify that
+ * your plugin is being loaded in your site.
+ *
+ * See: https://www.gatsbyjs.com/docs/creating-a-local-plugin/#developing-a-local-plugin-that-is-outside-your-project
+ */
+const axios = require('axios');
+
+exports.onPreInit = () => console.log("Loaded ships");
+
+// constants for your GraphQL Post and Author types
+const SHIP_NODE_TYPE = `Ship`;
+
+exports.sourceNodes = async ({
+  actions,
+  createContentDigest,
+  createNodeId,
+  getNodesByType,
+}) => {
+  const { createNode } = actions
+
+    let shipsleft = true;
+    let currentpage = 1;
+    let ships = [];
+
+    while (shipsleft) {
+        let shippages = await getShipsPage(currentpage); 
+        ships.push(...shippages.results);
+        if (!shippages?.next) {
+            shipsleft = false;
+        } else {
+            currentpage++;
+        }
+    }
+    
+  // loop through data and create Gatsby nodes
+  ships.forEach(ship =>
+    createNode({
+      ...ship,
+      id: createNodeId(`${SHIP_NODE_TYPE}-${ship.name}`),
+      parent: null,
+      children: [],
+      internal: {
+        type: SHIP_NODE_TYPE,
+        content: JSON.stringify(ship),
+        contentDigest: createContentDigest(ship),
+      },
+    })
+  )
+
+  return
+}
+
+async function getShipsPage(page = 1) {
+    const ships = await axios.get(`https://swapi.dev/api/starships/?page=${page}`);
+    return ships.data;
+}
+```
+
+We have modified the 'gatsby-node.js' file in the plugin so that it queries all of the ships in the Star Wars API, and adds nodes for each ship. We now test that the plugin is adding the nodes by using the GraphQL by running `gatsby develop` command and doing a query against the Graph*i*QL tool at [http://localhost:8000/___graphql].
+
+Try making the following query in graph*i*ql;
+
+```graphql
+query MyQuery {
+  allShip {
+    edges {
+      node {
+        id
+        name
+        model
+      }
+    }
+  }
+}
+```
+
+## Using this data in our Site
+
+Now that we have the plugin querying data, we can use it to query data and display it on our Homepage. Lets' modify the 'index.js' file so that it uses GraphQL to query the data from our plugin;
+
+```jsx
+import React from "react"
+import { graphql } from "gatsby"
+
+const HomePage = ({ data }) => {
+  console.log(data);
+  return (
+    <>
+      <h1>Ships</h1>
+      {data.allShip.edges.map(ship => (
+        <div id={ship.node.id}>
+          <h3>{ship.node.name}</h3>
+          <p>Model: {ship.node.model}</p>
+          <p>hyperdrive_rating: {ship.node.hyperdrive_rating}</p>
+        </div>
+      ))}
+    </>)
+};
+
+export const query = graphql`
+  query {
+    allShip {
+      edges {
+        node {
+          id
+          name
+          model
+          passengers
+          crew
+          hyperdrive_rating
+          manufacturer
+          starship_class
+          url
+        }
+      }
+    }
+  }
+`
+
+export default HomePage;
+```
+
+As you can see from the above example we are importing in 'graphql', creating a query to get our ship data, then outputting through the 'data' de-constructor in the HomePage function.
+
+# Conclusion
+
+Gatsby makes it very easy to extend the built in functionality to import data through the use of source plugins. Combined with the power of GraphQL, we can now easily add new data sources to our Gatsby sites.
