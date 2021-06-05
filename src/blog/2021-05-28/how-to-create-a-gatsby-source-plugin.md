@@ -7,6 +7,10 @@ date: 2021-05-28
 cover_image: "./gatsbyplugins.png"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/250oBun_wRs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 One of the powerful things about Gatsby is the way you can pull multiple sources of content from completely different areas into your site. Gatsby does this through plugins. 
 
 There are two primary forms of plugins for Gatsby, 'source' and 'transformer'. Source plugins allow you to bring data from out side of your Gatsby site into Gatsby, and Transformer plugins allow you to massage and transform the data from your sources into the specific content you need in your site. 
