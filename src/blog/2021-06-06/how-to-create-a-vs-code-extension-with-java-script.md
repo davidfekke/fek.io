@@ -19,7 +19,7 @@ VSCode code is built on top of Electron, a framework from GitHub that is based o
 
 I created a command line tool for generating new blog posts a couple of years ago called 'blogpostgenerator'. You can find it on NPM. This tool creates a folder named after the current date, and then creates a markdown file with some frontmatter for metadata. 
 
-Microsoft has pretty good documentation on how to create a extension for VSCode, but I was looking at creating an extension that could take some user input for the name of the file I was trying to create. Here is how I created my extension.
+Microsoft has pretty good documentation on how to create an extension for VSCode, but I was looking at creating an extension that could take some user input for the name of the file I was trying to create. Here is how I created my extension.
 
 You can create a hello world extension using [Yoeman](https://yeoman.io/) and a VSCode generator called 'generator-code'.
 
@@ -121,7 +121,6 @@ function startInputProcess() {
 		value: '',
 		placeHolder: 'Enter Your Title Here'
 	}).then(result => { 
-		//vscode.window.showInformationMessage(`Got: ${result}`);
 		createMarkdownFolder(result);
 	}).catch(err => console.log(err));
 }
@@ -193,6 +192,29 @@ function createMarkdownFile(mdp, frontmatter) {
 
 The first function here, 'startInputProcess' actually will prompt the user for what title they want to assign to their post. Once the title has been captured, it calls the 'createMarkdownFolder' function, which will create the subdirectory for our content and markdown file. The folder name will be based after the current date, We use two functions 'getDateString' and 'addLeadingZeros' to create a folder name. The last function 'createMarkdownFile' will actually create the markdown file in the folder we just created.
 
+Now lets' alter the `activate(context)' function so that it uses the code we added to our 'extension.js' file.
+
+```javascript
+async function activate(context) {
+
+	// Use the console to output diagnostic information (console.log) and errors (console.error)
+	// This line of code will only be executed once when your extension is activated
+	console.log('Congratulations, your extension "myhelloworld" is now active!');
+
+	// The command has been defined in the package.json file
+	// Now provide the implementation of the command with  registerCommand
+	// The commandId parameter must match the command field in package.json
+	let disposable = vscode.commands.registerCommand('myhelloworld.createMarkdownPost', function () {
+		// The code you place here will be executed every time your command is executed
+
+		// We start the process here
+		startInputProcess();
+	});
+
+	context.subscriptions.push(disposable);
+}
+```
+
 This extension also uses a settings that we can assign to the extension, and can be modified by the end user. We will need to modify the package.json file to add these settings options. We can do this by adding a "configuration" key to the "contributes" section of our 'package.json'.
 
 ```json
@@ -226,7 +248,7 @@ I previously mentioned that since we are using the external module 'lodash' that
 npm i --save-dev esbuild
 ```
 
-We will need to add the following scripts to the "scripts" section of our 'package.json' file.
+We will need to add the following script properties to the "scripts" section of our 'package.json' file.
 
 ```json
     "vscode:prepublish": "npm run -S esbuild-base -- --minify",

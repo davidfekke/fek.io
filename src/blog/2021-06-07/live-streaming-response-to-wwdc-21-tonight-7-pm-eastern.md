@@ -12,3 +12,5 @@ I will be live streaming the WWDC21 developer keynote tonight to go over new fea
 <div style="text-align: center">
 <iframe width="700" height="393" src="https://youtube.com/embed/0wgCljlIOC0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+I will be discussing some of the new APIs announced by Apple, the developer tools and new async language features added to Swift.
