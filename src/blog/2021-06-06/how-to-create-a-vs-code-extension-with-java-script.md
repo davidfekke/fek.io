@@ -7,6 +7,10 @@ date: 2021-06-06
 cover_image: "./vscodeicons.png"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/xALMaiUR2vQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 I recently wrote about creating your own tools using Node.js. There are a lot of applications now that are based on Node.js that you can extend using JavaScript. One of those applications is one that I am using right now as I write this post, Visual Studio Code.
 
 ## VS Code
