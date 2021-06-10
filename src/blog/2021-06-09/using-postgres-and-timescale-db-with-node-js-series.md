@@ -7,6 +7,10 @@ date: 2021-06-09
 cover_image: "./wolfgang-hasselmann.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/dr3ILUGwFEA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 This is part one of a three part series on using [Postgres](https://www.postgresql.org/) DB with [Node.js](https://nodejs.org).
 
 ### Prerequisites
