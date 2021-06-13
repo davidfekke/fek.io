@@ -1,0 +1,380 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<!-- Slides go here -->
+            
+            <div class="slides">
+                <section class="" data-id="f17b08f75348ddaa8b244ca4ceabe5ef">
+                    <h1>Internet of things</h1>
+                    <div>CodeImpact 2014</div>
+                    <div>By David Fekke</div>
+                </section>
+                <section class="" data-id="379c84b94a1bc191f0549fbc25375a0a">
+                    <h2>tessel giveaway</h2>
+                    <div>JaxNode UG is giving away a Tessel microcontroller&nbsp;</div>
+                    <div>on Thursday Sept. 18th.</div>
+                    <div>There will be a full presentation on the Tessel</div>
+                    <div>Meetings held at Payspan at 6:30 PM&nbsp;</div>
+                    <div>on the third Thursday of each month</div>
+                </section>
+                <section class="" data-id="2eeca7c1762e45243f12106eb4c8ff90">
+                    <h2>DISCLAIMER</h2>
+                    <div>
+                        <ul>
+                            <li>Please recite the following oath with the presenter</li>
+                            <li>If I _state_your_name_ electrocute myself after trying to replicate something from this presentation, I swear that neither I nor any loved ones or members of my extended family will sue this presenter pursuant to all Federal, state and local laws, including those in international and intergalactic jurisdictions. &nbsp;&nbsp;</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="" data-id="318d459006e43cbb5aea23114386d2de">
+                    <h2>IoT</h2>
+                    <div>
+                        <ul>
+                            <li>Internet of Things</li>
+                            <li>This is about wanting to program hardware</li>
+                            <li>The components for building your own hardware has become very inexpensive</li>
+                            <li>Getting to the point where almost any device can have its own IP address</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="" data-id="c50796ec18026801bd43bd69d156dc1b">
+                    <h2>The internet is everywhere</h2>
+                    <div>
+                        <ul>
+                            <li>Desktop Computers</li>
+                            <li>Mobile devices</li>
+                            <li>Wi-Fi enabled microcontrollers</li>
+                            <li>Thermostats, Nest</li>
+                            <li>Refrigerators, (SAMSUNG)</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="" data-id="e1eb6979750d07a094d59f6e52baddab">
+                    <h2>Wearables</h2>
+                    <h2>
+                        <img src="http://www.trbimg.com/img-54124307/turbine/la-blm-apple-iphone-jpg-20140911/700/700x394" alt="Apple Inc. Reveals Bigger-Screen iPhones Alongside Wearables"><br>
+                    </h2>
+                </section>
+                <section class="" data-id="72348ed8cbfe04c74143c08e4047403d">
+                    <h2>Wi-fi chip</h2>
+                    <div>
+                        <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/davidfekke/images/622611/pasted-from-clipboard.png" style="width: 369px; height: 369px; max-height: none; max-width: none;">
+                        <br>
+                    </div>
+                    <div>CC3000</div>
+                    <div>
+                        IEEE 802.11 b/g Compatible</div>
+                    <div>SmartConfig iOS/Android Config</div>
+                </section>
+                <section class="" data-id="0ffe4a7a14afa1a52bd5c063b514f980">
+                    <h2>Microcontrollers</h2>
+                    <div>
+                        <ul>
+                            <li>
+                                <span style="text-align: center;">Not computers</span><br>
+                            </li>
+                            <li>
+                                <span style="text-align: center;">Write programs as firmware</span><br>
+                            </li>
+                            <li><span style="text-align: center;">Some come with Wi-Fi</span></li>
+                            <li><span style="text-align: center;">Inputs and outputs</span></li>
+                            <li><span style="text-align: center;">Digital and Analog</span></li>
+                            <li><span style="text-align: center;">Not enough power to stream video or audio</span></li>
+                            <li><span style="text-align: center;">Wire up servos, lights, sensors, speakers and cameras</span></li>
+                            <li><span style="text-align: center;">Power robots</span></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="" data-id="069bcbcc17ee65da866528c02e02de59">
+                    <h2>Arduino</h2>
+                    <div>
+                        <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/davidfekke/images/469337/pasted-from-clipboard.png" style="width: 446.9594594594594px; height: 294px; max-height: none; max-width: none;"><br>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Introduced in 2005</li>
+                            <li>Connect to USB</li>
+                            <li>12 Digital pins, 6 Analog</li>
+                            <li>All kinds of shield modules</li>
+                            <li>Firmware written in C, C++</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="" data-id="b2216f3223d1c871394a4286c902d7e9">
+                    <h2>Spark Core</h2>
+                    <div>
+                        <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/davidfekke/images/469338/pasted-from-clipboard.png" style="width: 376.3636363636364px; height: 280px; max-height: none; max-width: none;"><br>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Wi-Fi chip built-in</li>
+                            <li>ARM processor</li>
+                            <li>Always connected cloud service</li>
+                            <li>Web based IDE, C and C++</li>
+                            <li>New node compatible firmware</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="" data-id="2200206cc7485ae71b1bdb9ec946aeee">
+                    <h2>ESPrUINO</h2>
+                    <div>
+                        <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/davidfekke/images/469340/pasted-from-clipboard.png" style="width: 429.3167701863354px; height: 216px; max-height: none; max-width: none;"><br>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Introduced in 2013</li>
+                            <li>Javascript based microcontroller</li>
+                            <li>Does not run V8 or node</li>
+                            <li>Does not have Wi-Fi, but can be added</li>
+                            <li>72Mhz ARM microcontroller with <br>256KB of Flash memory and 48KB of RAM</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="" data-id="2f18049224cb3a46bfd1d95023c0f87e">
+                    <h2>Tessel</h2>
+                    <div>
+                        <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/davidfekke/images/469345/pasted-from-clipboard.png" style="width: 345.4026845637584px; height: 219px; max-height: none; max-width: none;"><br>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Released June 2014 supposedly</li>
+                            <li>Runs Node code</li>
+                            <li>Has modules, reduces the need to solder or breadboard</li>
+                            <li>Wi-Fi CC3000 built into board</li>
+                            <li>Modules include Servo interface, GPS, GPRS, Bluetooth, accelerometer, climate, camera, infrared and SD Card reader</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="" data-id="5618005df473b32ec037aa77a50b1753">
+                    <h2>Netduino</h2>
+                    <div>
+                        <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/davidfekke/images/469350/pasted-from-clipboard.png"><br>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Modeled after Arduino</li>
+                            <li>Runs .NET code</li>
+                            <li>.NET micro framework</li>
+                            <li>Can use this with Linux and Mac OS X</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="" data-id="170ebda03cc1034969881183f46faf81">
+                    <h2>Raspberry PI</h2>
+                    <div>
+                        <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/davidfekke/images/469354/pasted-from-clipboard.png"><br>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Full computer with ARM processor</li>
+                            <li>Runs different versions of Linux</li>
+                            <li>HDMI output, 2 USB ports, Ethernet</li>
+                            <li>GPIO digital ports, no analog ports</li>
+                            <li>Model a/b, 256 and 512 MB RAM</li>
+                            <li>Runs Node.js</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="" data-id="f4f2a25272da6766c3c064c3c5fe03f0">
+                    <h2>Beaglebone black</h2>
+                    <div>
+                        <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/davidfekke/images/622277/pasted-from-clipboard.png"><br>
+                    </div>
+                    <div>Similar to Raspberry Pi</div>
+                    <div>2x46 pins</div>
+                    <div>Runs Debian, Android and Ubuntu</div>
+                    <div><br></div>
+                </section>
+                <section class="" data-id="c319abc6fb4ba7222ea1ccdbed16ad10">
+                    <h2>GALILEO</h2>
+                    <div>
+                        <img src="http://www.intel.com/content/dam/www/public/us/en/images/product/RWD/galileo-product-16x9.jpg/_jcr_content/renditions/intel.web.480.270.jpg" alt="FPO"><br>
+                    </div>
+                    <div>Arduino compatible</div>
+                    <div>100 MB Ethernet Port</div>
+                    <div>USB host and client port<br>
+                    </div>
+                    <div>Quark SOC chip</div>
+                </section>
+                <section class="" data-id="389ceed9cc1bcc7389a9cc7154e42b94">
+                    <h2>Many others</h2>
+                    <div>
+                        <ul>
+                            <li>Most boards and standard firmware are open source</li>
+                            <li>Many knockoffs of the Arduino, ATMega chip</li>
+                            <li>ARM Microprocessors are becoming common</li>
+                            <li>Common to see these on Kickstarter</li>
+                            <li>&nbsp;Intel Edison SoC will run Node.js 70 pins</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="" data-id="a806a06ef9a8e95e862d354c08c62ac6">
+                    <h2>Arduino code</h2>
+                    <div>
+                        <ul>
+                            <li>Requires void setup() and void loop() methods<span style="font-family: monospace; white-space: pre-wrap; color: rgb(0, 0, 0);"> </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <pre style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal;"><div style="background-color: rgb(255, 255, 255);">// Pin 13 has an LED connected on most Arduino boards.
+            // give it a name:
+            int led = 13;
+
+            // the setup routine runs once when you press reset:
+            void setup() {                
+            // initialize the digital pin as an output.
+            pinMode(led, OUTPUT);     
+            }
+
+            // the loop routine runs over and over again forever:
+            void loop() {
+            digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
+            delay(1000);               // wait for a second
+            digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
+            delay(1000);               // wait for a second
+            }</div><br></pre>
+                    </div>
+                    <br>
+                </section>
+                <section class="" data-id="b6cefd30522889d9ee126bff07258d71">
+                    <h2>Johnny-five</h2>
+                    <div>
+                        <ul>
+                            <li>Rick Waldrons framework for controlling microcontrollers</li>
+                            <li>Pre-built modules for different boards, buttons, gyros, IR, Led, motor, pin, relay, sensor, servo, sonar and steppers</li>
+                        </ul>
+                    </div>
+                    <pre style="margin-right: 0px; margin-left: 0px; border: 1px solid rgb(221, 221, 221); overflow: auto; padding: 6px 10px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; word-wrap: normal; color: rgb(51, 51, 51); font-style: normal; font-variant: normal; background-color: rgb(248, 248, 248);"><font style="font-size: 24px;"><span class="kd" style="font-weight: bold;">var</span> <span class="nx">five</span> <span class="o" style="font-weight: bold;">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2" style="color: rgb(221, 17, 68);">"johnny-five"</span><span class="p">),</span> 
+                <span class="nx">board</span> <span class="o" style="font-weight: bold;">=</span> <span class="k" style="font-weight: bold;">new</span> <span class="nx">five</span><span class="p">.</span><span class="nx">Board</span><span class="p">();</span>
+
+            <span class="nx">board</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2" style="color: rgb(221, 17, 68);">"ready"</span><span class="p">,</span> <span class="kd" style="font-weight: bold;">function</span><span class="p">()</span> <span class="p">{</span>
+
+            <span class="kd" style="font-weight: bold;">var</span> <span class="nx">servo</span> <span class="o" style="font-weight: bold;">=</span> <span class="k" style="font-weight: bold;">new</span> <span class="nx">five</span><span class="p">.</span><span class="nx">Servo</span><span class="p">({</span>
+                <span class="nx">pin</span><span class="o" style="font-weight: bold;">:</span> <span class="mi" style="color: rgb(0, 153, 153);">12</span><span class="p">,</span> 
+                <span class="nx">type</span><span class="o" style="font-weight: bold;">:</span> <span class="s2" style="color: rgb(221, 17, 68);">"continuous"</span>
+            <span class="p">});</span>
+
+            <span class="c1" style="color: rgb(153, 153, 136); font-style: italic;">// Clockwise, top speed.</span>
+            <span class="nx">servo</span><span class="p">.</span><span class="nx">cw</span><span class="p">(</span><span class="mi" style="color: rgb(0, 153, 153);">1</span><span class="p">);</span>
+            <span class="p">});</span></font></pre>
+                    <br>
+                </section>
+                <section class="" data-id="35fb738177c783ccbe9e385b4bfe5c4b">
+                    <h2>JS Language support</h2>
+                    <div>
+                        <ul>
+                            <li>
+                                <span style="text-align: center;">Many languages supported through tethering</span><br>
+                            </li>
+                            <li>Firmware usually written C</li>
+                            <li>Chris WIlliams created Node-serial</li>
+                            <li>Many NPM modules written for interfacing with controllers</li>
+                            <li>Johnny-five written by Rick Waldron</li>
+                            <li>Cylon.js also popular</li>
+                            <li>Arduinos will use Standard Firmata firmware</li>
+                            <li>Spark Cores will use Voodoo firmware</li>
+                            <li>Tessels support Node natively through Lua</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="" data-id="c4aa03230cacab23cf19874030ba2dfc">
+                    <h2>Why use javascript</h2>
+                    <div>
+                        <ul>
+                            <li>Most microcontrollers run inside of a run loop</li>
+                            <li>Requires break and interrupt logic</li>
+                            <li>Difficult to do more than one thing at a time</li>
+                            <li>Javascript is more accessible than &nbsp;C or C++</li>
+                            <li>Javascript is asynchronous, and can do multiple things at the same time inside of a single thread</li>
+                            <li>Javascript is the best language for programming robots</li>
+                            <li>NPM libraries make programming different kinds of hardware easy</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="" data-id="cabe5870efd1b06c1a12fe8a8cb5b184">
+                    <h2>electrical engineering for dummies</h2>
+                    <div>
+                        <ul>
+                            <li>V = I R</li>
+                            <li>Voltage = Current x Resistance</li>
+                            <li>Albert Einstein said that the fact that this equation is so simple, it was proof that there was a God</li>
+                            <li>5 Volts considered standard voltage for most electronics</li>
+                            <li>There is a push to make 3.3 Volts the standard</li>
+                            <li>Check the tolerance of your microcontroller, some will go as high as 12 or 15 Volts</li>
+                            <li>If you burn something out, these things are cheap</li>
+                            <li>Test your circuits on a breadboard, then solder&nbsp;</li>
+                            <li>Check max amps, and find correct resister</li>
+                            <li>Please unplug from a power source while wiring</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="" data-id="545473594b9f2f13b0989407e0cadfd6">
+                    <h2>Breadboard</h2>
+                    <div>
+                        <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/davidfekke/images/469393/pasted-from-clipboard.png" style="width: 750.2025931928688px; height: 529px; max-height: none; max-width: none;"><br>
+                    </div>
+                </section>
+                <section class="" data-id="e429874d59876fc4fd616e5580332ffe">
+                    <h2>hopefully this demo won't <br>make your HEAD Explode</h2>
+                    <div>
+                        <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/davidfekke/images/469385/headexplodes.gif"><br>
+                    </div>
+                </section>
+                <section class="" data-id="3ab2dc709d78cd2a984475649877ef9f">
+                    <h2><br></h2>
+                    <h2><br></h2>
+                    <h2>Questions</h2>
+                    <div>
+                        <font style="font-size: 112px;">?</font>
+                    </div>
+                </section>
+                <section class="" data-id="ca7d6f2452c94bf67e24c228de17bab5">
+                    <h2>Contact me</h2>
+                    <div>
+                        <ul>
+                            <li>David Fekke</li>
+                            <li>email me at David Fekke at gmail dot com</li>
+                            <li>On Skype as my first name and last name as one word</li>
+                            <li>Twitter @davidfekke and @jaxnode</li>
+                            <li>Thanks for coming out tonight</li>
+                            <li>Once again, please don't electrocute yourself and sue me &nbsp;</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+			<!-- Slides end here -->
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
+

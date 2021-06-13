@@ -25,7 +25,7 @@ const About = ({data}) => {
     {/* <img src={photoOfMe} alt="David Fekke" style={{ float: 'left', boxShadow: '2px 2px 5px black', width: '7rem', borderRadius: '50%', border:'1px solid orange', margin: '0.5rem' }} /> */}
                     <p>This is the web site for David Fekke's mobile applications. David is a iOS, Android and Node.js developer. He also develops .NET, ColdFusion and Java web applications.</p>
 
-                <p>If you are looking for David's Powerpoint and presentation slides, you find them at this <ExtLink uri="https://slides.com/davidfekke/" name="Link" />.</p>
+                <p>If you are looking for David's Powerpoint and presentation slides, you find them at this <Link to="/slides">Link</Link>.</p>
 
                 <p>If you are interested in custom application development, please contact me for rates.</p>
                 <br />

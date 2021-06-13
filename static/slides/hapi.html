@@ -1,0 +1,454 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<!-- Slides go here -->
+            
+            <div class="slides">
+                <section class="" data-id="913ca73bcb014ec04a331c728bea4bea">
+                    <h1>HAPI</h1>
+                    <div>
+                        <img src="http://i265.photobucket.com/albums/ii228/Saturn695/ren_and_stimpy.jpg"><br>
+                    </div>
+                </section>
+                <section class="" data-id="1dce08b533123fbe10c97e8f8af0aee1">
+                    <h2>jaxnode july 2014</h2>
+                    <div>Code on the Beach August</div>
+                    <div>RobotsCONF December</div>
+                </section>
+                <section class="" data-id="1dde87ea3bee331b7077d4396ec32371">
+                    <h2>Hapi HAPI, joi joi</h2>
+                    <div>
+                        <img src="http://photos4.meetupstatic.com/photos/event/5/a/4/8/600_382403112.jpeg"><br>
+                    </div>
+                </section>
+                <section class="" data-id="984920ba99a41028f60c269b25d7eb1c">
+                    <h2><a href="http://youtu.be/y0V4TZAyd8I" data-jzz-gui-player="true">http://youtu.be/y0V4TZAyd8I</a></h2>
+                    <h2>
+                        <br>
+                        <iframe width="560" height="315" src="//www.youtube.com/embed/y0V4TZAyd8I?enablejsapi=1" frameborder="0" allowfullscreen=""></iframe>
+                    </h2>
+                </section>
+                <section class="" data-id="41ca3a5b1c12ed393956e1f368dbf6b7">
+                    <h2>hapi.js</h2>
+                    <div>Hapi short for HTTP API, or so they say</div>
+                    <div>Developed by Walmart Labs</div>
+                    <div>Eran Hammer also authored OAuth</div>
+                    <div>Developed as a proxy for Mobile Services</div>
+                </section>
+                <section class="" data-id="ffaa59e2b5dc75b8ff446ff7682d8113">
+                    <h2>
+                        <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/davidfekke/images/521462/pasted-from-clipboard.png"><br>
+                    </h2>
+                    <h2>walmart really?</h2>
+                    <div>Walmart is very high tech</div>
+                    <div>Invented EDI</div>
+                    <div>Replacing legacy AS400 and Java services with Node.js</div>
+                    <div>NPM rewritten from scratch with Hapi</div>
+                </section>
+                <section class="" data-id="a8cd7c54232a665fddaf53c955a764f9">
+                    <h2>
+                        <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/davidfekke/images/515910/pasted-from-clipboard.png" style="width: 718.6666666666667px; height: 539px; max-height: none; max-width: none;"><br>
+                    </h2>
+                    <p><br></p>
+                </section>
+                <section class="" data-id="492cd9056f2d368d9d0a2f9ab0f5f3d6">
+                    <h2>req, res, next</h2>
+                    <div>Express, Connect and Director follow pattern</div>
+                    <div>Middleware Hell</div>
+                    <div>Modules needed for all features you need</div>
+                    <div>Express to be replaced by Koa</div>
+                    <div>Koa requires ES6</div>
+                </section>
+                <section class="" data-id="f3570793c87e409f2eb48ecd1c2550dd">
+                    <h2>Hapi.js</h2>
+                    <div>Hapi full framework for Rest and Web</div>
+                    <div>Open Source</div>
+                    <div>@ Version 6</div>
+                    <div>Routes</div>
+                    <div>Caching</div>
+                    <div>Cookies</div>
+                    <div>Sessions</div>
+                    <div>Logging</div>
+                    <div>Authentication</div>
+                    <div>Plugins</div>
+                    <div>100% code coverage</div>
+                    <div><br></div>
+                    <div><br></div>
+                </section>
+                <section class="" data-id="22feb8771225316a64e14a29a08842e1">
+                    <h2>Configuration over code</h2>
+                    <div>You can configure with code</div>
+                    <div>Configurations can be stored in json and loaded at runtime</div>
+                </section>
+                <section class="" data-id="418588bdb28b95d251ab8ffb7059330b">
+                    <h2>http Object Abstraction</h2>
+                    <div>Request and Response Object can change</div>
+                    <div>HTTP objects have changed with versions of Node</div>
+                    <div>They have changed with Express</div>
+                    <div>Express gives you raw request objects</div>
+                    <div>Hapi provides those objects if you need them</div>
+                </section>
+                <section class="" data-id="45c689b7d0dc977bfb1f711e5606e1ed">
+                    <h2>Three R's of hapi</h2>
+                    <div>Reflection - Code stubing and documentation</div>
+                    <div>Reduce Errors - Validation and Route handling</div>
+                    <div>Reusability - business logic, helpers, caching</div>
+                </section>
+                <section class="" data-id="f386f4698743b653fa52940271f578d2">
+                    <h2>Plugins</h2>
+                    <div>Hapi framework will slowly add features into Hapi, and then extract out plugins if warranted</div>
+                    <div>Joi validation is plugin</div>
+                    <div>Swagger, Lout plugin for Documentation</div>
+                </section>
+                <section class="" data-id="b97eb9a44240a480d9b3be8c53277220">
+                    <pre>var Hapi = require('hapi');
+
+            // Create a server with a host and port
+            var server = new Hapi.Server('localhost', 8000);
+
+            // Add the route
+            server.route({
+                method: 'GET',
+                path: '/hello',
+                handler: function (request, reply) {
+
+                    reply('hello world');
+                }
+            });
+
+            // Start the server
+            server.start();
+            </pre>
+                </section>
+                <section class="" data-id="475decee012499ccffcf098737a0a1b1">
+                    <pre>var Hapi = require('hapi');
+            var server = new Hapi.Server(3000);
+
+            server.route({
+                method: 'GET',
+                path: '/',
+                handler: function (request, reply) {
+                    reply('Hello, world!');
+                }
+            });
+
+            server.route({
+                method: 'GET',
+                path: '/{name}',
+                handler: function (request, reply) {
+                    reply('Hello, ' + encodeURIComponent(request.params.name) + '!');
+                }
+            });
+
+            server.start(function () {
+                console.log('Server running at:', server.info.uri);
+            });
+            </pre>
+                </section>
+                <section class="" data-id="f30c5e98a58dea6d57215c30617d1ba8">
+                    <h2>handler</h2>
+                    <div>2.0 adding breaking change</div>
+                    <div>fn(request, reply);</div>
+                    <div>
+                        <pre><code>function myHandler(request, reply) {
+            reply(msg + "Hello, World");
+            }</code></pre>
+                    </div>request contains raw references to both the request and response objects<br>
+                </section>
+                <section class="" data-id="c76b8ff226a652c84d6f262e3dd0e133">
+                    <h2>using plugins</h2>
+                    <pre>var <font color="#ffff00">Good</font> = require('good');
+
+            server.pack.register(<font color="#ffff00">Good</font>, function (err) {
+                if (err) {
+                    throw err; // something bad happened loading the plugin
+                }
+
+                server.start(function () {
+                    server.log('info', 'Server running at: ' + server.info.uri);
+                });
+            });
+            </pre>
+                    Plugins are really used to modularize your app<br>
+                    <div>Catalog and Cart could be two different plugins</div>
+                </section>
+                <section class="" data-id="b715c4a496688ac9ec1f08e02b1a51b8">
+                    <h2>Routes</h2>
+                    <div>
+                        <pre><code>server.route({
+                method: 'GET',
+                path: '/',
+                handler: someHandler
+            });
+
+            server.tables();</code></pre>
+                    </div>
+                    <br>
+
+                </section>
+                <section class="" data-id="4fb169366d8b04115fd5a062e538c6a8">
+                    <h2>packs</h2>
+                    <div>Packs are a way for Hapi to combine multiple servers into a single unit, and are designed to give a unified interface when working with plugins.<br>
+                    </div>
+                    <div>You can assign labels to each server.</div>
+                    <div>You can have 'PublicWeb', 'Api' and 'Admin' as separate packs.</div>
+                </section>
+                <section class="" data-id="4cbfe6c6195bcafdbb8ba28d7d0c9a16">
+                    <h2>plugins</h2>
+                    <div>
+                        <pre><code>exports.register = function (plugin, options, next) {
+                next();
+            };
+
+            exports.register.attributes = {
+                pkg: require('./package.json')
+            };
+            </code></pre>
+                        or</div>
+                    <div>
+                        <pre><code>var myPlugin = {
+                register: function (plugin, options, next) {
+                    next();
+                }
+            }
+
+            myPlugin.register.attributes = {
+                name: 'myPlugin',
+                version: '1.0.0'
+            };    
+            </code></pre>
+                    </div>
+                    <br>
+
+                </section>
+                <section class="" data-id="65815f0cece27a767a8a259e35881344">
+                    <h2>validation</h2>
+                    <div>Hapi uses Joi validation</div>
+                    <div>Failed validation returns 400 status code</div>
+                    <div>
+                        <pre><code>server.route({
+                method: 'GET',
+                path: '/hello/{name}',
+                handler: function (request, reply) {
+                    reply('Hello ' + request.params.name + '!');
+                },
+                config: {
+                    validate: {
+                        params: {
+                            name: Joi.string().min(3).max(10)
+                        }
+                    }
+                }
+            });
+            </code></pre>
+                    </div>
+                    <br>
+                </section>
+                <section class="" data-id="a226b3b69bdb2243e078b371b64e155b">
+                    <h2>HELPERS, er I mean server methods</h2>
+                    <div>
+                        <pre><code>var add = function (a, b, next) {
+
+                next(null, a + b);
+            };
+
+            server.method(
+            { name: 'sum', fn: add, options: { cache: { expiresIn: 2000 } } });
+
+            server.methods.sum(4, 5, function (err, result) {
+                console.log(result);
+            });
+            </code></pre>
+                    </div>
+                    <br>
+
+                </section>
+                <section class="" data-id="2a75aff87609f1cfba9c6b89e052a0ec">
+                    <h2>CACHing</h2>
+                    <div>Uses the Catbox module</div>
+                    <div>Support for in memory cache up to 100MB</div>
+                    <div>Support for scalable cache through Redis, MongoDB, Memcached, and Riak</div>
+                    <div>
+                        <pre><code>cache: {
+                expiresIn: 60 * 1000,
+                staleIn: 45 * 1000,
+                staleTimeout: 500
+            }    
+            </code></pre>
+                    </div>
+                </section>
+                <section class="" data-id="2f17b824201239bd4e35d2eb9ed43c3f">
+                    <h2>Routing config options</h2>
+                    <div>Can specify handlers</div>
+                    <div>Set up endpoint cache</div>
+                    <div>You can also setup Route prerequisites for handling asynchronous and synchronous processing before replying to an http request</div>
+                    <pre><code>server.route({
+                method: 'GET',
+                path: '/hello/{name}',
+                config: {
+                    handler: function (request, reply) {
+                        reply('Hello ' + request.params.name + '!');
+                },
+                validate: {
+                    params: {
+                        name: Joi.string().min(3).max(10)
+                    }
+                }
+                }
+            });</code></pre>
+                    <br>
+                </section>
+                <section class="" data-id="8de7d3fc52f42464b33d9eaaa589def9">
+                    <pre>var pre1 = function (request, reply) {
+                reply('Hello');
+            };
+            var pre2 = function (request, reply) {
+                reply('World');
+            };
+            var pre3 = function (request, reply) {
+                reply(request.pre.m1 + ' ' + request.pre.m2);
+            };
+            server.route(...
+                config: {
+                    pre: [
+                        [
+                            // m1 and m2 executed in parallel
+                            { method: pre1, assign: 'm1' },
+                            { method: pre2, assign: 'm2' }
+                        ],
+                        { method: pre3, assign: 'm3' },
+                    ],
+                    handler: function (request, reply) {
+                        reply(request.pre.m3 + '\n');
+                    }
+                }
+            });
+            </pre>
+                </section>
+                <section class="" data-id="04d18ee39ee2cddb216082be9ea38f32">
+                    <h2>Views</h2>
+                    <div>Hapi will support all of the major template engines</div>
+                    <pre><code>var server = new Hapi.Server({
+                views: {
+                    engines: { html: require('handlebars') },
+                    path: __dirname + '/templates'
+                }
+            });
+
+            var handler = function (request, reply) {
+
+                var context = {
+                    title: 'Views Example',
+                    message: 'Hello, World'
+                };
+
+                reply.view('hello', context);
+            };</code></pre>
+                    <br>
+                </section>
+                <section class="" data-id="8ced51b69069d601d712ebdc4c2f5637">
+                    <h2>Static content</h2>
+                    <div>Hapi gives the developer precise control over hosting&nbsp;</div>
+                    <div>static content</div>
+                    <pre><code>{ 
+                method: 'GET',
+                path: '/images/{path*}, 
+                handler: { 
+                    directory: './public/images',
+                    listing: false
+                } 
+            }
+            </code></pre>
+                    <br>
+                </section>
+                <section class="" data-id="45df53ec2d01b865758680a37440b107">
+                    <h2>server options</h2>
+                    <div>Hapi has many configurable options</div>
+                    <div>Built in support for CORS</div>
+                    <div>Can configure cache at server level</div>
+                    <div>Well documented</div>
+                    <div><br></div>
+                </section>
+                <section class="" data-id="9cf0d1ddef3fbb868676c7f1c7fb03af">
+                    <h2>Cookies</h2>
+                    <div>Hapi.state object used for configuring cookies</div>
+                    <pre><code>var handler = function (request, reply) {
+                var maxCookieSize = 512;
+                var cookieOptions = {
+                    encoding: 'iron',
+                    password: 'secret'
+                };
+                var content = request.pre.user;
+                Hapi.state.prepareValue('user', content, cookieOptions, function (err, value) {
+                    if (err) {
+                        return reply(err);
+                    }
+                    if (value.length &lt; maxCookieSize) {
+                        reply.state('user', value, { encoding: 'none' } );
+                    }
+                    reply('success');
+                });
+            };
+            </code></pre>
+
+
+                </section>
+                <section class="" data-id="6c4f3c389d83086836cf1ba1d93e94dc">
+                    <h1>DEMo time</h1>
+                </section>
+                <section class="" data-id="0e587c4303a5b8f4780ff6a67c8df603">
+                    <h2>Questions</h2>
+                </section>
+                <section class="" data-id="c7f4cc22d2227898494ad993a9db957b">
+                    <h2>Resources</h2>
+                    <div>http://hapijs.com/ provides great documentation<br>
+                    </div>
+                    <div>Git repo found at&nbsp;https://github.com/spumko/hapi/</div>
+                    <div>My Git repo for tonights Demo:&nbsp;</div>
+                    <div>https://github.com/davidfekke/jaxnodeHapi<br>
+                    </div>
+                    <div>Eran Hammer's blog:&nbsp;http://hueniverse.com/</div>
+                    <div><br></div>
+                </section>
+                <section class="" data-id="aeb4289e8c62283edee6fdfa211c9360">
+                    <h2>contact</h2>
+                    <div>David Fekke at gmail dot com</div>
+                    <div>Twitter: @davidfekke</div>
+                    <div><br></div>
+                </section>
+            </div>
+			<!-- Slides end here -->
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
+
