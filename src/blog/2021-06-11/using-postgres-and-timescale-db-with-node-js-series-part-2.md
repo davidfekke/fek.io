@@ -7,6 +7,10 @@ date: 2021-06-11
 cover_image: "../2021-06-09/wolfgang-hasselmann.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/cl2Iw5iPlbA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 This is part two of a three part series on using Postgres DB with Node.js.
 
 Read [part one here](/blog/using-postgres-and-timescale-db-with-node-js-series).
