@@ -7,6 +7,10 @@ date: 2021-06-13
 cover_image: "../2021-05-28/gatsbyplugins.png"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/Ylj1Uq2sDb0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 I was getting ready to create a set of slides for my next presentation. I usually use [slides.com](https://slides.com) to create and host my slides. If you have not looked at slide.com before, it is a great example of the power of web applications. Slides.com has a presentation editor that is based on Reveal.js, a JavaScript library for making animated slide shows. I am a firm believer that you do not need Powerpoint to make slide shows. This can be done as a web app.
 
 As I was getting ready to start my next set of slides I found out I had exceeded my limit of free slides. So I have decided to move my slides over to my Gatsby site.
