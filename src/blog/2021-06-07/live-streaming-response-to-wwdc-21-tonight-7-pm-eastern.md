@@ -53,7 +53,7 @@ func processImageData1(completionBlock: (result: Image) -> Void) {
 
 We can take this and rewrite it as function that uses the `async` keyword instead of a trailing closure, and we simply place the `await` keyword in front of any function call that we would normally wait for a response.
 
-```swyft
+```swift
 func loadWebResource(_ path: String) async -> Resource
 func decodeImage(_ r1: Resource, _ r2: Resource) async -> Image
 func dewarpAndCleanupImage(_ i : Image) async -> Image

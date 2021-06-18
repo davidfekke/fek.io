@@ -7,6 +7,10 @@ module.exports = {
         siteUrl: 'https://fek.io',
         facebookAppId: '833529826996398'
       },
+    flags: {
+      PRESERVE_FILE_DOWNLOAD_CACHE: true,
+      PRESERVE_WEBPACK_CACHE: true
+    },
     plugins: [
       `gatsby-plugin-react-helmet`,
       `gatsby-plugin-image`,
