@@ -7,9 +7,11 @@ date: 2021-06-18
 cover_image: "./xavi-cabrera-unsplash.jpg"
 ---
 
-Like many other HBO Max subscribers I received an email titled "Integration Test Email #1" to the email I use for my HBO Max account. I decided to write a post about how you can send you own Integration Test Email from Node.js. There are a couple of different ways.
+Like many other HBO Max subscribers I received an email titled "Integration Test Email #1" to the email I use for my HBO Max account. I decided to write a post about how you can send your own 'Integration Test Email' from Node.js. There are a couple of different ways.
 
-Send automated emails from a server application is something you need to be careful about. Email is typically sent out through the SMTP protocol. Internet service providers are cautious that bad actors are not using their networks for sending SPAM. So when when writing software that sends email we need to make sure that we do not do anything to get us blacklisted. It is very easy to do if you are not careful.
+![Spam](./spam.png)
+
+Sending automated emails from a server application is something you need to be careful about. Email is typically sent out through the SMTP protocol. Internet service providers are cautious that bad actors are not using their networks for sending SPAM. So when when writing software that sends email we need to make sure that we do not do anything to get us blacklisted. It is very easy to do if you are not careful.
 
 ## Nodemailer
 
@@ -19,7 +21,7 @@ The way I have sent email from Node.js in the past is by using a NPM module call
 > npm i nodemailer --save
 ```
 
-To create a send out our "Integration Test Email" we can write a simple program that creates network connection to a SMTP server.
+To send out our "Integration Test Email" we can write a simple program that creates network connection to a SMTP server.
 
 ```javascript
 import nodemailer from 'nodemailer';
