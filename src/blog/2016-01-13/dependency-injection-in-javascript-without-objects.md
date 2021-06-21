@@ -3,7 +3,7 @@ layout: post
 title: "Dependency injection in Javascript without objects"
 description: ""
 category: 
-tags: expressjs Javascript node node.js DI Dependencey Injection
+tags: [expressjs, Javascript, node, node.js, DI, Dependency, Injection]
 date: 2016-01-13
 cover_image: "./javascripthero.png"
 ---

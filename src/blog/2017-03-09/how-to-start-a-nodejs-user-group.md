@@ -3,7 +3,7 @@ layout: post
 title: "How to Start a Node.js User Group"
 description: ""
 category: 
-tags: node.js javascript community
+tags: [node.js, javascript community]
 date: 2017-03-09
 cover_image: "./1_UaqHI0lPvnbcdnMuN5-C7A.jpg"
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Dealing with a rejection from the Apple App Store"
 description: "A post I made to hashnode a couple of days ago about dealing with rejection from the iTunes Connect process"
 category: 
-tags: iOS Apple App Submission
+tags: [iOS, Apple App Submission]
 date: 2016-09-06
 cover_image: "./rejection.png"
 ---

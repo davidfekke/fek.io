@@ -36,12 +36,22 @@ export default class BlogList extends React.Component {
           </div>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
+            const tags = node.frontmatter.tags || [];
+            let taglist = 'Tags: ';
+            if (tags.length > 0) {
+              taglist += tags.join(', ');
+            }
             return (<BlogListItem key={node.fields.slug}>
                     <div style={{ fontSize: '2rem', fontWeight: 'bold' }}>
                         <Link to={`/blog${node.fields.slug}/`} style={{ textShadow: '2px 2px 5px black', textDecoration: 'none', color: 'orange'}}>{title}</Link>
                     </div>
                     <div>{node.excerpt}</div> 
-                    <div><em>Time to read: {node.timeToRead || 1} minute.</em></div> 
+                    {tags.length > 0 && 
+                      <div>
+                        <strong>{taglist}</strong>
+                      </div>
+                    }
+                    <div><em>Time to read: {node.timeToRead || 1} minute.</em> </div> 
                 </BlogListItem>)
           })}
           <div style={{ margin: '0px 100px 30px 100px'}}>
@@ -78,6 +88,7 @@ export const blogListQuery = graphql`
           }
           frontmatter {
             title
+            tags
           }
           excerpt
           timeToRead

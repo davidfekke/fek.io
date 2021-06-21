@@ -3,6 +3,7 @@ layout: post
 title: "How to Create your own Integration Test Email #1 from Node.js"
 description: ""
 category: 
+tags: [JavaScript, Node.js, email, nodemailer]
 date: 2021-06-18
 cover_image: "./xavi-cabrera-unsplash.jpg"
 ---
