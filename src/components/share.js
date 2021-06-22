@@ -1,6 +1,6 @@
 import React from "react"
 import * as shareStyles from "./share.module.css"
-import { FaTwitter, FaFacebook, FaRedditAlien, FaLinkedin } from 'react-icons/fa';
+import { FaTwitter, FaRedditAlien, FaLinkedin } from 'react-icons/fa'; // FaFacebook,
 import {
     LinkedinShareButton,
 	TwitterShareButton,

@@ -7,7 +7,7 @@ import Header from "../components/aboutheader.js"
 import Footer from "../components/footer.js"
 import Article from "../components/article.js"
 import MainHelmet from "../components/mainhelmet.js"
-import SEO from "../components/seo"
+import seo from "../components/seo"
 import HeaderImage from "../components/b24-3x.jpg"
 
 const sunnfun = ({data}) => {
@@ -35,7 +35,7 @@ const sunnfun = ({data}) => {
     };
     return (
         <Layout>
-            <SEO data={seoData} facebook={facebook} />
+            <seo data={seoData} facebook={facebook} />
             <MainHelmet title="Fek.io" />
             <Navbar />
             <Header headline="Sun-n-Fun 2021" />

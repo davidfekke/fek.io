@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import seo from "../components/seo"
 import { DiscussionEmbed } from "disqus-react";
 import Navbar from "../components/navbar"
 import Header from "../components/postheader"
@@ -53,7 +53,7 @@ export default class BlogPost extends React.Component {
     const taglist = tags.join(', ');
     return (
       <Layout>
-        <SEO data={seoData} facebook={facebook} />
+        <seo data={seoData} facebook={facebook} />
         <Navbar />
         <Header headline={post.frontmatter.title} backgroundImage={HeaderImage} />
         <Article>
