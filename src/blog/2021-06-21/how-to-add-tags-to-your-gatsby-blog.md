@@ -58,7 +58,7 @@ tags:
 ---
 ```
 
-Some of my posts had my all of my tags inside of a single string. This was causing a conflict in the 'gatsby-transformer-remark' plugin when it was trying to resolve what type to render the tag.
+Some of my posts had all of my tags inside of a single string. This was causing a conflict in the 'gatsby-transformer-remark' plugin when it was trying to resolve what type to render the tag.
 
 ```yml
 // Don't do this
@@ -71,7 +71,7 @@ tags: "Gatsby JavaScript GraphQL"
 
 ## Render you tags
 
-Once I had my tags changed to the correct type, I was bale to query them in mu Graph*i*ql query tool. Here is the query I used for listing the posts I had with the tags included. You can find it in the `edges.node.frontmatter.tags`.
+Once I had my tags changed to the correct type, I was able to query them in my Graph*i*ql query tool. Here is the query I used for listing the posts I had with the tags included. You can find it in the `edges.node.frontmatter.tags`.
 
 ```javascript
 export const blogListQuery = graphql`
@@ -109,7 +109,7 @@ if (tags.length > 0) {
 }
 ```
 
-This creates an array that I can use in my render to display the tags in my post.
+This creates an array that I can use in my render function to display the tags in my post.
 
 ```javascript
 {tags.length > 0 && 
@@ -119,7 +119,7 @@ This creates an array that I can use in my render to display the tags in my post
 }
 ```
 
-This checks to see if I have any tags, then uses `&&` operator to display my tags. In React you can do this to conditionally display in your render method.
+This checks to see if I have any tags, then uses `&&` operator to display my tags. In React you can do this to conditionally display something in your render method.
 
 ## Gatsby documentation
 
