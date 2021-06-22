@@ -4,6 +4,7 @@ title: "How to create a VSCode Extension with JavaScript"
 description: ""
 category: 
 date: 2021-06-06
+tags: ["VSCode", "JavaScript", "Extensions", "Node.js"]
 cover_image: "./vscodeicons.png"
 ---
 

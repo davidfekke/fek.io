@@ -4,6 +4,7 @@ title: "What is Apple showing off to developers this year at WWDC21?"
 description: ""
 category: 
 date: 2021-06-07
+tags: ["WWDC21", "Swift", "iOS", "iPadOS"]
 cover_image: "./wwdc21highlights.jpg"
 ---
 

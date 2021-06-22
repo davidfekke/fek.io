@@ -4,6 +4,7 @@ title: "Maybe you should think twice before installing that NPM module?"
 description: ""
 category: 
 date: 2021-06-03
+tags: ["JavaScript", "NPM", "Node.js"]
 cover_image: "./marcus-kauffman-apocolapse.jpg"
 ---
 

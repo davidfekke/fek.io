@@ -49,6 +49,8 @@ export default class BlogPost extends React.Component {
       title,
       url: `https://fek.io/blog/${post.fields.slug}`
     };
+    const tags = post.frontmatter.tags || [];
+    const taglist = tags.join(', ');
     return (
       <Layout>
         <SEO data={seoData} facebook={facebook} />
@@ -59,6 +61,11 @@ export default class BlogPost extends React.Component {
           <em>By David Fekke</em><br />
           {post.frontmatter.date}
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          {tags.length &&
+            <div style={{ fontWeight: 'bold' }}>
+              <p>Tags: {taglist}</p>
+            </div>
+          }
           {prev && <Link to={`/blog${prev.fields.slug}`}>← Previous Page </Link>}
           {next && <span>&nbsp;</span>}
           {next && <Link to={`/blog${next.fields.slug}`}>Next Page →</Link>}
@@ -78,6 +85,7 @@ export const query = graphql`
         title
         description
         date(formatString: "MMMM Do, YYYY")
+        tags
         cover_image {
           publicURL
         }

@@ -4,6 +4,7 @@ title: "Why I use Semicolons to Terminate my Lines in JavaScript"
 description: ""
 category: 
 date: 2021-06-01
+tags: ["Semicolons", "JavaScript", "Node.js"]
 cover_image: "./semicolons.jpg"
 ---
 

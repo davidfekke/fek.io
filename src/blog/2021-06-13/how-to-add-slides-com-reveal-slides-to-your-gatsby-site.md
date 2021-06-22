@@ -4,6 +4,7 @@ title: "How to add slides.com Reveal Slides to your Gatsby site"
 description: ""
 category: 
 date: 2021-06-13
+tags: ["Slides", "HTML", "Reveal.js"]
 cover_image: "../2021-05-28/gatsbyplugins.png"
 ---
 
