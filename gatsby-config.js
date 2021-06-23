@@ -17,7 +17,6 @@ module.exports = {
       `gatsby-plugin-sitemap`,
       `gatsby-remark-copy-linked-files`,
       `gatsby-transformer-sharp`,
-      `gatsby-plugin-gatsby-cloud`,
       `gatsby-plugin-sharp`,
       {
         resolve: `gatsby-source-filesystem`,
