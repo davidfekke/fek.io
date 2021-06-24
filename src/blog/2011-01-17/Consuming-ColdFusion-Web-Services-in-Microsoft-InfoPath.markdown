@@ -9,11 +9,8 @@ date: 2011-01-17
 I have been using Microsoft Office InfoPath in some recent projects. One of the nice features of InfoPath is the ability to consume SOAP based web services. This can be used to pre-populate fields in the InfoPath form, or to submit the form to a web service once the user has finished filling out the form.
 
 I decided to test some different web services with InfoPath, and I received the following error when I tried to use InfoPath with a ColdFusion based web service; 
-```
 
-InfoPath cannot work with this Web service because it uses RPC encoding. Only document literal encoding is supported.
-
-```
+    InfoPath cannot work with this Web service because it uses RPC encoding. Only document literal encoding is supported.
 
 There is actually a very easy way to fix this if you are using ColdFusion 7 or greater, and that is to use the style attribute in the cfcomponent tag.
 

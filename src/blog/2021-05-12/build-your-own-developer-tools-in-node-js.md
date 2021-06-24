@@ -67,7 +67,7 @@ You can generate a new oclif application using `npx`. Oclif gives you options fo
 
 This will generate a new project that with the following directory structure;
 
-```
+```bash
 MYTESTCONSOLE
 --bin
   --run

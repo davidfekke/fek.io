@@ -39,7 +39,7 @@ gatsby new source-plugin https://github.com/gatsbyjs/gatsby-starter-plugin
 
 If you want to, you can also create the plugin into the 'plugins' folder in your playground-site folder. For this example we will keep the site and plugin in separate folders.
 
-```
+```bash
 /playground-site
 /source-plugin
 ├── .gitignore

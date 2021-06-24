@@ -37,7 +37,7 @@ The first part of the for loop in parenthesis defines an initalizer. This lets t
 
 This example will return the following values in this order to the console;
 
-```
+```bash
 First
 2
 3.3

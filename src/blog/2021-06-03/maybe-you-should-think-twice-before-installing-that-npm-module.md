@@ -96,7 +96,7 @@ Before you npm install any module you have not worked with before, take a look a
 
 Another thing to look at is the dependencies used by that module. One of the things you should look at is how old are those dependencies, and are there any security concerns. NPM provides a security audit you can perform on your modules.
 
-```
+```bash
 npm audit
 ```
 

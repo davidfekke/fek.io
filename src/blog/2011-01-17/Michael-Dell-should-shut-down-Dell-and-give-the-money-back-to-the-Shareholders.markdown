@@ -8,11 +8,7 @@ date: 2008-01-17
 
 It was ten years ago when Michael Dell answered a question about what Apple should do at an expo in Orlando with this comment;
 
-```
-
-"What would I do? I'd shut it down and give the money back to the shareholders,"
-
-```
+    "What would I do? I'd shut it down and give the money back to the shareholders,"
 
 This [Fortune CNN Money article](http://apple20.blogs.fortune.cnn.com/2007/10/07/dell-vs-apple-10-years-later/) shows the difference in stock valuations between Apple and Dell. Apple is now worth more than twice then what Dell is worth as a company. To be fair, I think Michael regreted making that comment, but in the end it doesn not matter. Apple was able to inovate their way out of a crisis with good solid design.
 
