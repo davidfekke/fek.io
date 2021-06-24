@@ -18,7 +18,7 @@ I also was able to install a [newer version](http://www.open.collab.net/download
 
 By default you point your subversion.conf file to the following location;
 
-```
+```bash
 
 LoadModule dav_svn_module libexec/apache2/mod_dav_svn.so
 
@@ -28,7 +28,7 @@ LoadModule authz_svn_module libexec/apache2/mod_authz_svn.so
 
 After I installed the newer version of SVN, I changed this file to point to the new location of the mod_dav_svn.so and mod_authz_svn.so files.
 
-```
+```bash
 
 LoadModule dav_svn_module /opt/subversion/lib/svn-apache/mod_dav_svn.so
 

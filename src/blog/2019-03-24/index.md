@@ -25,7 +25,7 @@ Gatsby is actually very well documented. They have their main documentation site
 
 Gatsby has a set of CLI tools you can use for developing, building and browsing your site. Here are some of the basic commands;
 
-```
+```bash
 // Generate a new site
 > gatsby new my-new-site-name
 

@@ -17,7 +17,7 @@ I have really enjoyed using Gatsby so far in the process of moving my website to
 
 It is very common to use a URL pattern that simulates a hierarchical structure. If you have different products that you list on your website, you may have a parent directory called `products`. Then underneath `parents` you may have a page for a particular product for a baseball. That path might look like `/products/baseball`. This can be done very easily in Gatsby by creating a similar folder structure;
 
-```
+```bash
 src/
 --pages/
 ----index.js
@@ -160,7 +160,7 @@ export default (props) => {
 
 As you can see from the example above I am adding some Google fonts and favicons to my header. The resulting HTML looks like the following;
 
-```
+```html
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -182,7 +182,7 @@ The `gatsby-plugin-sitemap` plugin lets you add a `sitemap.xml` file to your pag
 
 The `gatsby-plugin-google-analytics` plugin lets you add Google Analytics to your sites JavaScript. You will need to get a trackingId from your Google Analytics console, and add the following plugin configuration to your gatsby-config.js file.
 
-```
+```json
 ...
 plugins: [{
         resolve: `gatsby-plugin-google-analytics`,

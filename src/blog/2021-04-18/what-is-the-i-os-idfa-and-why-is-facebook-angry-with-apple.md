@@ -25,7 +25,7 @@ In the upcoming release of iOS 14.5 developers are being required to get permiss
 
 If the user does not give permission to use their IDFA, the app developer will get a series of zeros when they look up this identifier. It will look something like this to the developer;
 
-```
+```bash
 00000000-0000-0000-0000-000000000000
 ```
 
@@ -68,7 +68,7 @@ Apple has a framework called SKAdNetwork which allows advertisers to run campaig
 
 To use the new functionality, developers will need to [register](https://developer.apple.com/contact/request/ad-network-id/) their Ad Network with Apple. Once they have registered their network, the developer will need to configure the participating apps for the network identifier, or `SKAdNetworkIdentifier`. This can be done by adding a dictionary to the 'info.plist' for the key 'SKAdNetworkItems'. 
 
-```
+```xml
 <array>
     <dict>
         <key>SKAdNetworkIdentifier</key>

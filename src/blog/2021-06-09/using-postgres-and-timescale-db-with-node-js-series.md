@@ -50,7 +50,7 @@ This will have started a local instance of TimescaleDB.
 
 3) Now check and see if TimescaleDB is running. Run the following command;
 
-```
+```bash
 > docker ps
 ```
 

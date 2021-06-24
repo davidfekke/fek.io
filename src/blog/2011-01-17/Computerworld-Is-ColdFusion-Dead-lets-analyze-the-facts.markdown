@@ -10,13 +10,9 @@ Lets analyze the facts. Is ColdFusion Dead? Full disclosure. I just switched job
 
 In Mary Brandel's "opinion piece", she states the following;
 
-```
+    This once-popular Web programming language -- released in the mid-1990s by Allaire Corp. (which was later purchased by Macromedia Inc., which itself was acquired by Adobe Systems Inc.) -- has since been superseded by other development platforms, including Microsoft Corp.'s Active Server Pages and .Net, as well as Java, Ruby on Rails, Python, PHP and other open-source languages.
 
-This once-popular Web programming language -- released in the mid-1990s by Allaire Corp. (which was later purchased by Macromedia Inc., which itself was acquired by Adobe Systems Inc.) -- has since been superseded by other development platforms, including Microsoft Corp.'s Active Server Pages and .Net, as well as Java, Ruby on Rails, Python, PHP and other open-source languages.
-
-Debates continue over whether ColdFusion is as robust and scalable as its competitors, but nevertheless, premiums paid for ColdFusion programmers have dropped way off, according to Foote. "It was really popular at one time, but the market is now crowded with other products," he says.
-
-```
+    Debates continue over whether ColdFusion is as robust and scalable as its competitors, but nevertheless, premiums paid for ColdFusion programmers have dropped way off, according to Foote. "It was really popular at one time, but the market is now crowded with other products," he says.
 
 So lets analyze this sentence by sentence. Brandel states that ColdFusion was once-popular. It is "once-popular" when you consider it has always been a popular web application language since it was released in 1995\. Back then you could write CGI applications in C++, or use ColdFusion and ASP. ColdFusion quickly became popular because it was easier to develop for then ASP or C++. Later on in the 90s PHP and JSP became popular options, but neither are as easy to use as CF.
 
