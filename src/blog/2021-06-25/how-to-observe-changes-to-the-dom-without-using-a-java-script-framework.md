@@ -8,7 +8,11 @@ date: 2021-06-25
 cover_image: "./mutation.jpg"
 ---
 
-Nearly a decode ago I used to use jQuery for manipulating the document object model, or (DOM), in my web applications. jQuery has been supplanted in popularity by other frameworks like Angular, Backbone and React. These frameworks have become almost a standard for web development.
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/-ivM7fyXnTk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+Nearly a decade ago I used to use jQuery for manipulating the document object model, or (DOM), in my web applications. jQuery has been supplanted in popularity by other frameworks like Angular, Backbone and React. These frameworks have become almost a standard for web development.
 
 I ran into a situation a couple of years ago where I had to watch for changes to a particular DOM element, and remove any children that were being added by another framework inside of a WebView. While it would have been more ideal to change the code in that framework not to add these unnecessary DOM elements, I did not have that option.
 
@@ -44,7 +48,7 @@ observer.disconnect();
 
 ## MutationObserver options
 
-The Mutation Observer lets' us pass a lot of different options on what we want to observe. You can observe all items under the tree structure of the DOM element you are watching. You can also watch for the attributes changes to the element. At a minumum at least the childList, attributes, and or characterData must be true in order for the observer to watch a node. Here is a list of the different options you can pass.
+The Mutation Observer lets' us pass a lot of different options on what we want to observe. You can observe all items under the tree structure of the DOM element you are watching. You can also watch for the attributes changes to the element. At a minimum at least the `childList`, `attributes`, and or `characterData` must be true in order for the observer to watch a node. Here is a list of the different options you can pass.
 
 * subtree
 * childList
@@ -64,7 +68,7 @@ One example of how we could use the Mutation Observer if we are adding a div ele
 </section>
 ```
 
-Now lets write some JavaScript to add a `div` element to this section.
+Now lets' write some JavaScript to add a `div` element to this section.
 
 ```javascript
 const section = document.querySelector('#div_section');
