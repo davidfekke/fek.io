@@ -11,6 +11,7 @@ import "../components/layout.css"
 import "../components/imgresponsive.css"
 import Share from "../components/share"
 import BannerImage from "../pages/cardinal.jpg"
+import TagDecorator from "../components/tagdecorator";
 
 export default class BlogPost extends React.Component {
   render() {
@@ -50,7 +51,7 @@ export default class BlogPost extends React.Component {
       url: `https://fek.io/blog/${post.fields.slug}`
     };
     const tags = post.frontmatter.tags || [];
-    const taglist = tags.join(', ');
+    //const taglist = tags.join(', ');
     return (
       <Layout>
         <SeoTag data={seoData} facebook={facebook} />
@@ -63,7 +64,7 @@ export default class BlogPost extends React.Component {
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           {tags.length &&
             <div style={{ fontWeight: 'bold' }}>
-              <p>Tags: {taglist}</p>
+              <p>Tags: {tags.map((tag, i, arr) => (<><TagDecorator tag={tag} /><span>{arr.length === i+1 ? `` : `, ` } </span> </>))} </p>
             </div>
           }
           {prev && <Link to={`/blog${prev.fields.slug}`}>← Previous Page </Link>}

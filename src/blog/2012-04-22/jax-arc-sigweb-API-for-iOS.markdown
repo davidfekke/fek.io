@@ -2,7 +2,7 @@
 layout: post
 title: "I am speaking at the Jacksonville Software Architecture Group this Tuesday on developing with Web API for iOS"
 category: "Blog"
-tags: [ASP.NET MVC WebAPI iOS iPhone iPad]
+tags: ["ASP.NET", "MVC", "WebAPI", "iOS", "iPhone", "iPad"]
 date: 2012-04-22
 ---
 
