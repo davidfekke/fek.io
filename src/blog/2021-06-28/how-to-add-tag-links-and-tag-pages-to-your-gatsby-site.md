@@ -8,6 +8,10 @@ date: 2021-06-28
 cover_image: "../2021-06-21/kyle-glenn-grafitti.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/jYVM6KOWYBs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 I recently posted on how to add `tags` to your Gatsby site using FrontMatter. After doing that change to my blog, I also wanted to add linking as well to my posts, as well as a page that listed all Tags.
 
 Gatsby actually has the queries and [code examples](https://www.gatsbyjs.com/docs/adding-tags-and-categories-to-blog-posts) you need pretty well documented. I wanted to show how I used these on my site. The [Creating Tags Pages for Blog Posts](https://www.gatsbyjs.com/docs/adding-tags-and-categories-to-blog-posts) documentation describes the code you will have to write in order to add the tag linking and templates to your site. The code is divided into three different areas, a tag template, an addition to the `createPages` function in the gatsby-node.js file and a Tags page for listing all of the tags.
