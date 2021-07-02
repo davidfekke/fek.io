@@ -7,6 +7,7 @@ import Footer from "../components/footer.js"
 import Article from "../components/article.js"
 import BlogListItem from "../components/bloglistitem"
 import MainHelmet from "../components/mainhelmet.js"
+import TagDecorator from "../components/tagdecorator"
 
 export default class BlogList extends React.Component {
   render() {
@@ -37,10 +38,6 @@ export default class BlogList extends React.Component {
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             const tags = node.frontmatter.tags || [];
-            let taglist = 'Tags: ';
-            if (tags.length > 0) {
-              taglist += tags.join(', ');
-            }
             return (<BlogListItem key={node.fields.slug}>
                     <div style={{ fontSize: '2rem', fontWeight: 'bold' }}>
                         <Link to={`/blog${node.fields.slug}/`} style={{ textShadow: '2px 2px 5px black', textDecoration: 'none', color: 'orange'}}>{title}</Link>
@@ -48,7 +45,9 @@ export default class BlogList extends React.Component {
                     <div>{node.excerpt}</div> 
                     {tags.length > 0 && 
                       <div>
-                        <strong>{taglist}</strong>
+                        <strong>Tags: {tags.length && 
+                          tags.map((tag, i , arr) => (<><TagDecorator tag={tag} />{arr.length === i+1 ? `` : `, `}</>))
+                        }</strong>
                       </div>
                     }
                     <div><em>Time to read: {node.timeToRead || 1} minute.</em> </div> 

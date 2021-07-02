@@ -3,6 +3,7 @@ layout: post
 title: "Upgrading to Gatsby 3.0"
 description: ""
 category: 
+tags: ["JavaScript", "Gatsby", "Graphql", "React", "Node.js", "npm"]
 date: 2021-03-29
 cover_image: "./lucas-benjamin.jpg"
 ---
@@ -23,7 +24,7 @@ After I upgraded the gatsby module, I then checked which dependencies needed to 
 npm outdated
 ```
 
-This command will give you a report of which dpendencies in your project need to be upgraded;
+This command will give you a report of which dependencies in your project need to be upgraded;
 
 ```bash
 > npm outdated
@@ -98,4 +99,4 @@ I am currently using Netlify to host my site. Netlify defaults to Node v10, but 
 
 # Summary
 
-This upgrade was not entirely painless, but I was able to make the upgrade in about an hour by following their guide. There are lots of new additions that have been made to Gatsby that you can now take advantage of by mking this upgrade. I hope this post helps you with your upgrade.
+This upgrade was not entirely painless, but I was able to make the upgrade in about an hour by following their guide. There are lots of new additions that have been made to Gatsby that you can now take advantage of by making this upgrade. I hope this post helps you with your upgrade.
