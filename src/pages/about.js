@@ -32,6 +32,9 @@ const About = ({data}) => {
                 <p>
                   You can find a copy of my <Link to="/resume">Resume here</Link>.
                 </p>
+                <p>
+                  Here are some <Link to="/flight">Flight Training</Link> resources I use.
+                </p>
                 <h3>Affiliations</h3>
                 <ul>
                   <li>
