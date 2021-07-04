@@ -8,7 +8,11 @@ date: 2021-07-03
 cover_image: "../2021-05-28/gatsbyplugins.png"
 ---
 
-[MDX](https://github.com/mdx-js/mdx) is a hybrid of [Markdown](https://www.markdownguide.org/) syntax and [React](https://reactjs.org/) JSX syntax. Authors who are writing post in Markdown can use React components in their posts. 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/9B8i_CAON_0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+[MDX](https://github.com/mdx-js/mdx) is a hybrid of [Markdown](https://www.markdownguide.org/) syntax and [React](https://reactjs.org/) JSX syntax. Authors who are writing posts in Markdown can use React components in their posts. 
 
 Currently Markdown allows authors to  add HTML tags to their posts. One of the nice things about React is that it makes it possible for us to create components of a combination of HTML elements, and then reuse those elements in our React applications. MDX allows us to take those same components and use it in our Markdown posts.
 
@@ -62,7 +66,7 @@ In your `gatsby-config.json` file, we will replace the `gatsby-transformer-remar
 {
   resolve: `gatsby-plugin-mdx`,
   options: {
-    extensions: [".mdx", ".md"],
+    extensions: [`.mdx`, `.md`, `.markdown`],
     gatsbyRemarkPlugins: [
       {
         resolve: `gatsby-remark-images`,
