@@ -2,7 +2,7 @@
     { "title": "FAA Publications",
         "articles": [
         {
-            "title": "Airmans Information Manual",
+            "title": "Airman's Information Manual",
             "href": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/index.html"
         },
         {
@@ -28,6 +28,10 @@
         {
             "title": "Instrument Rating ‒ Airplane ACS",
             "href": "https://www.faa.gov/training_testing/testing/acs/media/instrument_rating_acs_change_1.pdf"
+        },
+        {
+            "title": "Aviation Instructors Handbook",
+            "href": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/aviation_instructors_handbook/media/aviation_instructors_handbook.pdf"
         }
     ] },
     { "title": "Advisory Circulars",
