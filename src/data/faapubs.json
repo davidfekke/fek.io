@@ -1,0 +1,67 @@
+[
+    { "title": "FAA Publications",
+        "articles": [
+        {
+            "title": "Airman's Information Manual",
+            "href": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/index.html"
+        },
+        {
+            "title": "Federal Aviation Regulations",
+            "href": "https://www.ecfr.gov/cgi-bin/text-idx?SID=336163b1986c0c31b9155a8ea2f1d5b2&mc=true&tpl=/ecfrbrowse/Title14/14cfrv2_02.tpl#0"
+        },
+        {
+            "title": "Airplane Flying Handbook",
+            "href": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook/media/airplane_flying_handbook.pdf"
+        },
+        {
+            "title": "Instrument Flying Handbook",
+            "href": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/media/FAA-H-8083-15B.pdf"
+        },
+        {
+            "title": "Instrument Procedures Handbook",
+            "href": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/instrument_procedures_handbook/media/FAA-H-8083-16B.pdf"
+        },
+        {
+            "title": "Pilots Handbook of Aeronautical Knowledge",
+            "href": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/media/pilot_handbook.pdf"
+        },
+        {
+            "title": "Instrument Rating ‒ Airplane ACS",
+            "href": "https://www.faa.gov/training_testing/testing/acs/media/instrument_rating_acs_change_1.pdf"
+        },
+        {
+            "title": "Aviation Instructors Handbook",
+            "href": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/aviation_instructors_handbook/media/aviation_instructors_handbook.pdf"
+        }
+    ] },
+    { "title": "Advisory Circulars",
+        "articles": [
+        {
+            "title": "AC 61-98D Currency Requirements",
+            "href": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_61-98D.pdf"
+        },
+        {
+            "title": "AC 61-65H Certification: Pilots and Flight and Ground Instructors",
+            "href": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_61-65H.pdf"
+        },
+        {
+            "title": "AC 61-67 Stall Spin Awareness",
+            "href": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_61-67C_Chg_2.pdf"
+        }
+    ] },
+    { "title": "Pertinent FARs",
+        "articles": [
+        {
+            "title": "FAR 61.57 Recent Flight Experience",
+            "href": "https://www.ecfr.gov/cgi-bin/text-idx?SID=ccab9e752494533a9308faff31fcb8d9&mc=true&node=se14.2.61_157&rgn=div8"
+        },
+        {
+            "title": "FAR 61.191 Additional flight instructor ratings",
+            "href": "https://www.ecfr.gov/cgi-bin/text-idx?SID=ccab9e752494533a9308faff31fcb8d9&mc=true&node=se14.2.61_1191&rgn=div8"
+        },
+        {
+            "title": "FAR 61.199 Recent Flight Experience",
+            "href": "https://www.ecfr.gov/cgi-bin/text-idx?SID=ccab9e752494533a9308faff31fcb8d9&mc=true&node=se14.2.61_1199&rgn=div8"
+        }
+    ] }
+]
