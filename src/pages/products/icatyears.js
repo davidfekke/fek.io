@@ -22,7 +22,7 @@ const iCatYears = () => {
                     <Breadcrumb crumbs={ [ 'Products', 'iCatYears' ] } /> 
                     <img src={iDogYears.icon} alt={iDogYears.name} style={{ borderRadius: '5px' }} />
                     <h2>iCatYears</h2>
-                    <h3>This is the iOS app for caculating your cat's age in cat years</h3>
+                    <h3>This is the iOS app for calculating your cat's age in cat years</h3>
                     <p>{iDogYears.description}</p>
                     <p><ExtLink uri={iDogYears.uri} name={iDogYears.name} /></p>
                     {iDogYears.screens.map(screen => (
