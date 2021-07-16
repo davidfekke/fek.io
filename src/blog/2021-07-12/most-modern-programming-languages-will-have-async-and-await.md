@@ -8,6 +8,10 @@ date: 2021-07-12
 cover_image: "./asyncawait.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/Esq5cXpyDL0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 I will be doing a [presentation](https://www.meetup.com/Jax-Node-js-UG/events/278916415/) to the [JaxNode](https://www.jaxnode.com) User Group on July 15th on the `Async` and `Await` feature in JavaScript. I have done some [posts](https://fek.io/blog/promises-are-interchangeable-with-async-await) on `Async` and `Await` recently as well. One of the neat things about `Async` and `Await` is that it is finding it's way into more and more programming languages.
 
 ## Concurrency
