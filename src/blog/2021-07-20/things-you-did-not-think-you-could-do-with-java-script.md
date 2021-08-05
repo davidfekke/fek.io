@@ -3,6 +3,7 @@ layout: post
 title: "Things you did not think you could do with JavaScript"
 description: ""
 category: 
+tags: ["JavaScript", "IoT", "Image Processing", "ML", "AI", "Gaming"]
 date: 2021-07-20
 cover_image: "./jacqueline-brandwayn-variety.jpg"
 ---
