@@ -8,6 +8,10 @@ date: 2021-07-20
 cover_image: "./jacqueline-brandwayn-variety.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/j-fyT9SzjIA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 I am often amazed at some of the software that people write using JavaScript as the language. When JavaScript was first introduced in 1995 it was considered by many as a 'Toy' language. At that time Java was considered to be the serious language with 'Java Applets' that could be run in web pages.
 
 JavaScript since then has been implemented into a number of different places including micro-controllers, server applications and even desktop applications. There are also a number of different engines that can be used that portable so JavaScript can basically be run anywhere.
