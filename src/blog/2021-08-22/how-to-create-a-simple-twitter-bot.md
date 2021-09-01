@@ -5,7 +5,7 @@ description: ""
 category: 
 tags: ["JavaScript", "Bot", "Twitter", "Node.js"]
 date: 2021-08-22
-cover_image: "./unnamed.jpg"
+cover_image: "./adam-lukomski-robot.jpg"
 ---
 
 One of the many popular applications that can be written using JavaScript and Node.js is a Bot. Bots can be thought of simple applications that can be used to advertise or respond to users on chat services, social media platforms and team communication software. 
@@ -83,7 +83,7 @@ async function getNextMeetingInfo() {
 
 This API returns a JSON array with all of the upcoming events for our meetup group. To answer any tweets with `what` we will assume the user want to know what the next meeting will be about. There is a `name` property in the object that is returned. We will use the name to answer the `what` question. 
 
-To reply will a tweet, we will use another part of the twitter API to send tweets. To do this we will create the following function;
+To reply with a tweet, we will use another part of the twitter API to send tweets. To do this we will create the following function;
 
 ```javascript
 function tweetNow(tweetTxt) {  
@@ -101,7 +101,7 @@ function tweetNow(tweetTxt) {
 }
 ```
 
-Now we can complete our bot logic by construction a reply and tweeting out an update.
+Now we can complete our bot logic by constructing a reply and tweeting out an update.
 
 ```javascript
 stream.on('tweet', async function (tweet) {    
@@ -244,6 +244,6 @@ http.createServer().listen(3000);
 
 ## Conclusion
 
-I think it is important to remember that these Bots should be used for good purposes. Most only services will try to prevent you from spamming their users. Try to be respectful of the other users that share your platforms.
+I think it is important to remember that these Bots should be used for good purposes. Most online services will try to prevent you from spamming their users. Try to be respectful of the other users that share your platforms.
 
 These Bots can be extremely useful, and when coupled with AI can be very powerful.
