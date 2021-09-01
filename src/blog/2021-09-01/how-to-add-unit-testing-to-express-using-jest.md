@@ -8,7 +8,7 @@ date: 2021-09-01
 cover_image: "./expressjest.jpg"
 ---
 
-Whether you are doing test driven development (TDD) or are just looking for a way to add automated testing to your [express](https://expressjs.com), this can be accomplished fairly easily using many different unit testing frameworks. With Node.js, I have used a number of different testing frameworks. One of the nice things about Node is that there are no shortage of options when it comes to testing.
+Whether you are doing test driven development (TDD) or are just looking for a way to add automated testing to your [express](https://expressjs.com) app, this can be accomplished fairly easily using many different unit testing frameworks. With Node.js, I have used a number of different testing frameworks. One of the nice things about Node is that there are no shortage of options when it comes to testing.
 
 The testing framework I prefer to use is [Jest](https://jestjs.io/), but it is not a requirement for unit testing an express application. Jest is extremely popular with React developers, but it can be used with just about any JavaScript application.
 
@@ -26,7 +26,7 @@ app.get('/users/report', function(req, res) {
 });
 ```
 
-It is a good practice to break the handler code into it's own function, and then use that handler in the route.
+It is a good practice to break the handler code into its own function, and then use that handler in the route.
 
 ```javascript
 function userReportHandler(req, res) {
@@ -55,11 +55,11 @@ This will install Jest tooling into our node_modules folder. Now that Jest is in
 },
 ```
 
-Lets' take a quick look at what command is doing. We are telling `Node` to run the jest command in the `node_modules/.bin/jest` location. This in turn runs the jest-cli. We are also running a flag `--experimental-vm-modules` to allow us to run ESModule import/export syntax. We are also using jest's `--coverage` flag to get a code coverage report to let us know what percentage of our code is covered by unit tests.
+Lets' take a quick look at what this command is doing. We are telling `Node` to run the jest command in the `node_modules/.bin/jest` location. This in turn runs the jest-cli. We are also running a flag `--experimental-vm-modules` to allow us to run ESModule import/export syntax. We are also using jest's `--coverage` flag to get a code coverage report to let us know what percentage of our code is covered by unit tests.
 
 ## Express App Example
 
-For the purposes of this example, I am going to create a simple Express app that has two routes. One that will operate as a home page with a route of `/`, and one that has a route called `hello` that takes one input parameter called `:name`.
+For the purposes of this example, I am going to create a simple Express app that has two routes. One that will operate as a home page with a route of `/`, and one that has a route called `/hello` that takes one input parameter called `:name`.
 
 ```javascript
 // routes/default.js
@@ -113,7 +113,7 @@ Supertest is used to mock out our express server so we do not have to run a http
 
 ## Unit Tests
 
-Lets' create an unit test just to test our route handlers.
+Lets' create a unit test just to test our route handlers.
 
 ```javascript
 import { index, hello } from '../routes/default.js';
@@ -149,7 +149,7 @@ Both of our route handlers both use the send function on the `res` object, so I 
 
 In both of my unit tests I am using jest's `expect` function to compare our expected results in the `toEqual` function. If they match, both tests will pass.
 
-Now lets' add a another test suite with `supertest` to test the routes. We will create a new file called `routes.t.js` to test the actual routes.
+Now lets' add another test suite with `supertest` to test the routes. We will create a new file called `routes.t.js` to test the actual routes.
 
 ```javascript
 import request from 'supertest';
@@ -185,9 +185,9 @@ describe('Good Home Routes', function () {
 });
 ```
 
-Using `supertest` we can see this tests our more thorough and accurate of what our express app. In the test suite above we supertest to run the specific routes. We can also look at specific express properties to make sure the application is returning the expected results.
+Using `supertest` we can see these tests our more thorough and accurate of what our express app is doing. In the test suite above we use supertest to run the specific routes. We can also look at specific express properties to make sure the application is returning the expected results.
 
-In all three unit tests we use `expect` to check we have the correct header results, statusCode and text.
+In all three unit tests we use `expect` to check that we have the correct header results, statusCode and text.
 
 ## Running our tests
 
@@ -221,6 +221,6 @@ Time:        0.782 s, estimated 1 s
 
 As you can see from the example above it is actually quite easy to add unit testing to your express app.
 
-I had a former co-worker who had the following slogan in his cubicle; "Test, test, test, and once you think you done, test again". Unit testing is just one small aspect to the quality assurance of your code, but if used correctly with CI/CD it help you discover bugs well before they even make it to a staging or test environment.
+I had a former co-worker who had the following slogan in his cubicle; "Test, test, test, and once you think you are done, test again". Unit testing is just one small aspect to the quality assurance of your code, but if used correctly with CI/CD it will help you discover bugs well before they even make it to a staging or test environment.
 
 [Example on Github](https://github.com/davidfekke/expresstest)
