@@ -8,6 +8,10 @@ date: 2021-09-01
 cover_image: "./expressjest.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/pwOh-lOIyEc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 Whether you are doing test driven development (TDD) or are just looking for a way to add automated testing to your [express](https://expressjs.com) app, this can be accomplished fairly easily using many different unit testing frameworks. With Node.js, I have used a number of different testing frameworks. One of the nice things about Node is that there are no shortage of options when it comes to testing.
 
 The testing framework I prefer to use is [Jest](https://jestjs.io/), but it is not a requirement for unit testing an express application. Jest is extremely popular with React developers, but it can be used with just about any JavaScript application.
