@@ -4,7 +4,7 @@ title: "Async/Await syntax in Swift 5.5"
 description: ""
 category: 
 date: 2021-09-05
-cover_image: "./unnamed.jpg"
+cover_image: "./moveleft.jpg"
 ---
 
 *Note: This is a re-post of an article I wrote for [Logrocket](https://blog.logrocket.com/). You can read the original [here](https://blog.logrocket.com/concurrency-swift-async-await-syntax/)*
@@ -122,7 +122,7 @@ Inside of our function I am using the keyword `await` in front of my `URLSession
 If we try to call the `goGrabSomething` function from synchronous code, it will fail. But Swyft provides a nice workaround for that use case. We can use an `async` closure in our synchronous code to be able to call our async functions.
 
 ```swift
-async {
+Task.init {
     var myModel = try await goGrabSomething() 
     print("Name: \(myModel.name)")
 }
