@@ -8,6 +8,10 @@ date: 2021-09-10
 cover_image: "./corepack.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/sEI03as_aYQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 With the release of Node.js 16.9.0 comes a new tool called [Corepack](https://github.com/nodejs/corepack). `Corepack` is described as a zero-runtime-dependency Node script that acts a bridge between Node projects and package managers like [Yarn](https://yarnpkg.com/) and [Pnpm](https://pnpm.io/). Node.js comes with a package manager called `NPM` that gets installed with Node.js every time that Node.js is installed on a computer or server. 
 
 So essentially Corepack allows us to use third party package managers without having to install them globally on our development computers or our build servers.
