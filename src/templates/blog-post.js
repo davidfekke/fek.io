@@ -62,7 +62,7 @@ export default class BlogPost extends React.Component {
           <em>By David Fekke</em><br />
           {post.frontmatter.date}
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          {tags.length &&
+          {tags.length > 0 &&
             <div style={{ fontWeight: 'bold' }}>
               <p>Tags: {tags.map((tag, i, arr) => (<><TagDecorator tag={tag} /><span>{arr.length === i+1 ? `` : `, ` } </span> </>))} </p>
             </div>
