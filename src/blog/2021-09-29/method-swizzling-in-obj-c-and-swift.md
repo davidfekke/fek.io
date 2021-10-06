@@ -13,7 +13,7 @@ cover_image: "./belinda-fewings.jpg"
 
 One of the things I first came across when I started to work on legacy iOS applications was Method Swizzling. Swizzling lets' developers change the underlying implementation of a pre-existing method without having to change the original implementation. In affect you can swap one method with another method. JavaScript developers might be familiar with this concept if they have ever done monkey patching.
 
-Most modern object-oriented and statically typed languages have a way of overriding existing methods if you inheriting from  base class. This is sometimes referred to as polymorphism. But what if you want to change the original implementation with out changing the original underlying code in the base class?
+Most modern object-oriented and statically typed languages have a way of overriding existing methods if you are inheriting from  base class. This is sometimes referred to as polymorphism. But what if you want to change the original implementation with out changing the original underlying code in the base class?
 
 You can do this in most of Apple's languages using method swizzling. You may asking yourself why do this if you have the original code of the method you need to change. The main reason is usually if you are using a library that you can not change or do not have permission to alter, you can at least change the behavior of a method using swizzling at runtime.
 
@@ -89,7 +89,7 @@ Now we are going to create a Objective-C category, which is like an extension in
 
 This category adds a new method called `swizzle_whatAreMyTaxes`. This will be the method we use to swizzle the original method `whatAreMyTaxes`. 
 
-In order for our application to use the swizzled method, we will need to swap the methods when our application is first loaded. We will use Objective-C's `load` method to swap our methods. The `load` method on a class always executes when the application in initialized. We will also need to make sure that this is loaded only once. We will use grand central dispatch to make sure that the method is only loaded once. The implementation will look like the following example;
+In order for our application to use the swizzled method, we will need to swap the methods when our application is first loaded. We will use Objective-C's `load` method to swap our methods. The `load` method on a class always executes when the application is initialized. We will also need to make sure that this is loaded only once. We will use grand central dispatch (GCD) to make sure that the method is only loaded once. The implementation will look like the following example;
 
 ```objective-c
 + (void) load {
@@ -115,7 +115,7 @@ Looking at the method above, lets' break down what we are doing for each line. T
 
 In out `dispatch_once` closure we create a reference to the current class by using the `Class` type and calling `[self class]`. Then we can create two selectors for our original method and our swizzled method. In Objective-C we use `@selector` method to get the reference to our method signatures.
 
-After defining our selectors, we will need to get the actual method reference. Here is where we start using the Objective-C runtime. We will create references for both methods using the `class_getInstanceMethod` method. If you are swizzling our class methods, there is a different runtime method you can use called `class_getClassMethod`. Both methods take the class reference and selector references as parameters.
+After defining our selectors, we will need to get the actual method reference. Here is where we start using the Objective-C runtime. We will create references for both methods using the `class_getInstanceMethod` method. If you are swizzling out class methods, there is a different runtime method you can use called `class_getClassMethod`. Both methods take the class reference and selector references as parameters.
 
 Now that we have both method references, we swizzle them using the `method_exchangeImplementations` method. This method can also be used to swap them back.
 
@@ -204,6 +204,28 @@ NS_ASSUME_NONNULL_END
 
 @end
 ```
+
+Using this helper class, we can now refactor our load method to enable the swizzling. Note that `SimpleSwizzleHelper` can handle both instance and class methods.
+
+```objective-c
++ (void) load {
+    if (self == TaxCalculator.self) {
+        [self enableSwizzledMethods];
+    }
+}
+
++ (void) enableSwizzledMethods {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class = [self class];
+        
+        SEL originalSelector = @selector(whatAreMyTaxes);
+        SEL swizzledSelector = @selector(swizzle_whatAreMyTaxes);
+        [SimpleSwizzleHelper swizzleMethod:originalSelector with:swizzledSelector forClass:class isInstanceMethod:YES];
+    });
+}
+```
+
 
 [Example Swizzling repo](https://github.com/davidfekke/SwizzleExample)
 
