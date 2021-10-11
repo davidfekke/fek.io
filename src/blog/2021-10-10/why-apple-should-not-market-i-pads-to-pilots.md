@@ -2,6 +2,7 @@
 layout: post
 title: "Why Apple should not Market iPads to Pilots"
 description: ""
+tags: ["iPad Mini", "Apple", "EFBs", "FAA"]
 category: 
 date: 2021-10-10
 cover_image: "./cessna172head.jpg"
