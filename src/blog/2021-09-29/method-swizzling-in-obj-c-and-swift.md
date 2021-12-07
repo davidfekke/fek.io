@@ -2,6 +2,7 @@
 layout: post
 title: "Method Swizzling in Obj-C and Swift"
 description: ""
+tags: ["objective-c", "method swizzling", "Apple", "iOS"]
 category: 
 date: 2021-09-29
 cover_image: "./belinda-fewings.jpg"
