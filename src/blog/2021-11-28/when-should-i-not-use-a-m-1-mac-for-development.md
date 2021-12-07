@@ -2,10 +2,15 @@
 layout: post
 title: "When should I not use a M1 Mac for development"
 description: ""
+tags: ["M1", "M1 Max", "M1 Pro", "Apple", "x86", "Intel"]
 category: 
 date: 2021-11-28
-cover_image: "./unnamed.jpg"
+cover_image: "./pcb.jpg"
 ---
+
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/cvuwrYnrjRE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 I have made a number of videos on what kinds of development you can do on M1 Macs. Lately I have received a number of posts about specific cases where the M1 based Macs are not the best fit for certain types of software engineering.
 
