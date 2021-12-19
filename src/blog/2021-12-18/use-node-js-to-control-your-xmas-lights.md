@@ -8,6 +8,10 @@ date: 2021-12-18
 cover_image: "./xmaslights.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/pA55JQgUl9o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 Or how to over engineer your Christmas Lights.
 
 I have wanted to get light bulbs that you could control over a network or smart phone for years. I finally splurged and got the Philips Hue bridge and bulb. You can find these at most hardware stores now. The bridge ran me about $59 US. You can also purchase starter kits with some bulbs for about $69.
