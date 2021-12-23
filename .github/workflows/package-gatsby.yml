@@ -1,0 +1,26 @@
+name: Package Gatsby
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm ci
+      - run: npm run build
+      - shell: bash
+        run: tar -czvf fek.io.site_archive.tar.gz public/*
+      - name: Upload site archive
+        uses: actions/upload-artifact@v2
+        with:
+          name: fek.io.archive
+          path: fek.io.site_archive.tar.gz
