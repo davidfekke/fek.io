@@ -8,7 +8,7 @@ date: 2021-12-27
 cover_image: "./clement-helardot.jpg"
 ---
 
-Every computer programmer/software engineer should learn a new programming language each year. In the book the Pragmatic Programmer, the book postulates that everyone should try to learn a new programming language each year. I decided to compile a list of languages that if you are not really familiar with, you might be interested iun learning more about the language.
+Every computer programmer/software engineer should learn a new programming language each year. In the book the Pragmatic Programmer, the book postulates that everyone should try to learn a new programming language each year. I decided to compile a list of languages that if you are not really familiar with, you might be interested in learning more about the language.
 
 ## 10: Shell Scripting
 
@@ -44,7 +44,7 @@ Julia has features that make it easy to use object oriented and functional style
 
 The C programming language has been around since the 70s, but continues to be staple when it comes to doing lower level systems programming. C++ adds types and object oriented features on top of C. While C does not change or get new features frequently, C++ receives new features every couple of years.
 
-C has been criticized for not being as safe as other languages, but there are tons of pre-existing applications and operating systems built on C. In fact, C was originally created to help create UNIX.
+C has been criticized for not being as safe as other languages, but there are tons of pre-existing applications and operating systems built on C. In fact, C was originally created to help create UNIX. C is also the primary language used in the Linux kernel.
 
 Pointers and manual memory management are some of the programming concepts are some of the concepts you will have to master in order to write C, but C++ now has features like smart pointers that make this type of programming easier. These languages will be in high demand for some time.
 
@@ -99,11 +99,11 @@ Golang or Go is a newer language developed by Google as a possible replacement f
 
 All Go code has to be compiled from source, which means you can not include in pre-compiled libraries. Go can be compiled to run on many different operating systems and processor architectures. 
 
-Go simplifies asynchronous programming with a feature called Go routines. These routines are designed to take advantage of modern processors that have multiple cores. This makes it easier for the programmer to write code with manual thread management.
+Go simplifies asynchronous programming with a feature called Go routines. These routines are designed to take advantage of modern processors that have multiple cores. This makes it easier for the programmer to write code without having to do manual thread management.
 
 ## 3: JavaScript
 
-JavaScript, also known as EcmaScript, is the built language used in all web browsers. JavaScript has become even more popular since Node.js was introduced in 2009. With Node, JavaScript programmers can write code for both client side and server side applications, or the full stack.
+JavaScript, also known as EcmaScript, is the primary language used in all web browsers. JavaScript has become even more popular since Node.js was introduced in 2009. With Node, JavaScript programmers can write code for both client side and server side applications, or the full stack.
 
 JavaScript may look similar to Java or C, but more closely models functional languages like Scheme or Clojure. JavaScript is also dynamically typed like Python.
 
@@ -124,3 +124,7 @@ One of the key features of Rust is the concept of memory safety and ownership. R
 ## Conclusion
 
 These languages just scratch the surface of some of the popular languages that are out there to learn. I sure that there are some I have not mentioned in this post that deserved to be mentioned.
+
+If you are looking for a scripting language, consider learning Python or JavaScript. If you are looking at enterprise development, you might want to take a look at C# or Java. If you are interested in writing lower level applications, C/C++ or Rust might fill that need.
+
+If you are looking at doing high performance cloud based applications, you can take a look at Go lang or Rust. 
