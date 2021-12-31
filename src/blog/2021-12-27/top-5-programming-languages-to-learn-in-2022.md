@@ -8,6 +8,10 @@ date: 2021-12-27
 cover_image: "./clement-helardot.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/RRVaoejqgi0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 Every computer programmer/software engineer should learn a new programming language each year. In the book the Pragmatic Programmer, the book postulates that everyone should try to learn a new programming language each year. I decided to compile a list of languages that if you are not really familiar with, you might be interested in learning more about the language.
 
 ## 10: Shell Scripting
