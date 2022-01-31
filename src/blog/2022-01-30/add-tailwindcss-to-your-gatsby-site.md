@@ -8,9 +8,13 @@ date: 2022-01-30
 cover_image: "../2021-05-28/gatsbyplugins.png"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/ImmsEgNFxPQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 I am in the process of trying to get caught up on all of the new CSS technologies. One of those technologies that has become increasingly popular over the last couple of years has been Tailwindcss.
 
-If you ar not familiar with Tailwindcss, it is a CSS framework that gives web developers a set of low level components to style web sites. Unlike frameworks like Bootstrap, instead of giving you a single class for a button, it allows you to use multiple classes to specifically style the element with specific classes. One way you might style a button using Tailwind would be like the following example;
+If you are not familiar with Tailwindcss, it is a CSS framework that gives web developers a set of low level components to style web sites. Unlike frameworks like Bootstrap, instead of giving you a single class for a button, it allows you to use multiple classes to specifically style the element with specific classes. One way you might style a button using Tailwind would be like the following example;
 
 ```html
 <button class="bg-green-500 text-white px-4 py-2 mt-3 mb-4 rounded">Press Me</button>
@@ -35,7 +39,7 @@ The first thing you will need to do is add the following modules to your Gatsby 
 This adds the Tailwind modules along with the gatsby plugin you will need to use Tailwind with Gatsby. After you have added these modules you will need to init Tailwind using the following command;
 
 ```bash
-npx tailwindcss init -p
+> npx tailwindcss init -p
 ```
 
 This will create the `tailwind.config.js` file along with the `postcss.config.js` files. 
@@ -64,7 +68,7 @@ module.exports = {
 }
 ```
 
-Now lets add a `styles` folder underneath our `src` folder. In the `styles` folder we will create a file called `global.css`. Add the following `@include` lines to the `global.css file.
+Now lets' add a `styles` folder underneath our `src` folder. In the `styles` folder we will create a file called `global.css`. Add the following `@include` lines to the `global.css file.
 
 ```css
 /* ./src/styles/global.css */
