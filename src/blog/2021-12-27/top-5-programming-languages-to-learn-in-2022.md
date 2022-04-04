@@ -132,3 +132,7 @@ These languages just scratch the surface of some of the popular languages that a
 If you are looking for a scripting language, consider learning Python or JavaScript. If you are looking at enterprise development, you might want to take a look at C# or Java. If you are interested in writing lower level applications, C/C++ or Rust might fill that need.
 
 If you are looking at doing high performance cloud based applications, you can take a look at Go lang or Rust. 
+
+## Update
+
+I received a note from [Toptal](https://toptal.com) about an [article](https://www.toptal.com/c-sharp/c-sharp-vs-c-plus-plus) they have comparing C# to C++. It covers the full history and differences between the languages. Please check it out if you like this post.
