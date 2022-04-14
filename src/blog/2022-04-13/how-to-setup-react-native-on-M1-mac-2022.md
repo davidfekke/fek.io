@@ -12,12 +12,42 @@ I recently purchased a M1 Mac for development. It is my first time using an M1 M
 
 Going through the React-Native documentation, I found a lot of it to be out of date. Here is what I had to do to get React-Native running on my new Mac.
 
-* Make sure you have Xcode installed
-* Make sure to install Xcode Command Line tools are installed
-* Install homebrew
-* Install the current LTS version of Node.js
-* Install watchman
-* Install Cocoapods using homebrew, do not use the Ruby `gem` command listed in the documetation
+## Make sure you have Xcode installed
+
+Make sure to install the latest version of Xcode onto your Mac. This can be installed by going to the App Store on your Mac, and searching for Xcode, then installing.
+
+## Make sure to install Xcode Command Line tools are installed
+
+When you open Xcode, you should be prompted to install the Xcode command line tools. To verify that you have installed the tools, go to the preferences, choose locations, and make sure you have the current version of the tools installed. It should look something like the following;
+
+![Screenshot of the command line preferences](./prefs.jpg)
+
+## Install homebrew
+
+Homebrew is like apt-get if Apple had a package manager. You can install Homebrew by running the following command in your terminal;
+
+```bash
+> /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+This might take a little while to install, be patient.
+
+## Install the current LTS version of Node.js
+
+Next you will want to install the LTS version of [Node.js](https://nodejs.org/). I recommend using the installer from their website, but you can also install using Homebrew.
+
+## Install watchman
+
+Use Homebrew to install watchman. Run the following command in your terminal to install watchman;
+
+```bash
+> brew install watchman
+```
+
+## Install Cocoapods
+
+Install Cocoapods using `homebrew`, do not use the Ruby `gem` command listed in the documentation. Cocoapods is like NPM for Node. It is used for installing dependencies for your project. You cannot use React Native on iOS with a working installing of Cocoapods.
+
+## Lets' create a new project to make sure your installation is working properly
 
 Once you have all of the prerequisites installed, you can run the following example from their documentation
 
