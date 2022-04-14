@@ -8,6 +8,10 @@ date: 2022-04-13
 cover_image: "./RNM1.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/B1efUcJ8Fbk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 I recently purchased a M1 Mac for development. It is my first time using an M1 Mac, so I thought share my experiences.
 
 Going through the React-Native documentation, I found a lot of it to be out of date. Here is what I had to do to get React-Native running on my new Mac.
@@ -46,6 +50,10 @@ Use Homebrew to install watchman. Run the following command in your terminal to 
 ## Install Cocoapods
 
 Install Cocoapods using `homebrew`, do not use the Ruby `gem` command listed in the documentation. Cocoapods is like NPM for Node. It is used for installing dependencies for your project. You cannot use React Native on iOS with a working installing of Cocoapods.
+
+```bash
+> brew install cocoapods
+```
 
 ## Lets' create a new project to make sure your installation is working properly
 
