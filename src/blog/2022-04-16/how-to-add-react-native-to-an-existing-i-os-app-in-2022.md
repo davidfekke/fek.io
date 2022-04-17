@@ -7,6 +7,10 @@ date: 2022-04-16
 cover_image: "../2022-04-13//RNM1.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/3wftC30CN2I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 I have been starting to use [React Native](https://reactnative.dev) in an existing iOS and Android app that I am maintaining. One of the problems I am finding in the React Native [docs](https://www.reactnative.dev/docs/integration-with-existing-apps) is the guides they give for adding to an existing iOS application are out of date.
 
 ## Cocoapods
