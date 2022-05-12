@@ -30,13 +30,17 @@ This will create an example Next.js app with Jest already configured and ready t
 
 If you have a pre-existing Next.js app, jest can be added fairly easily. We are going to add Jest to a Next.js 12 app by using the following steps;
 
-1) Add the `@testing-library/react`, `@testing-library/jest-dom`, `jest-environment-jsdom` modules using your package manger of choice. I am going to use `yarn` for my examples:
+### Add Testing Modules
+ 
+Add the `@testing-library/react`, `@testing-library/jest-dom`, `jest-environment-jsdom` modules using your package manger of choice. I am going to use `yarn` for my examples:
 
 ```shell
 yarn add jest @testing-library/react @testing-library/jest-dom jest-environment-jsdom --dev
 ```
 
-2) The next thing we need to do is add a `jest.config.js` file to the root directory of our project, and code the following configuration:
+### Add Jest Config
+
+The next thing we need to do is add a `jest.config.js` file to the root directory of our project, and code the following configuration:
 
 ```javascript
 const nextJest = require('next/jest');
@@ -60,7 +64,9 @@ module.exports = createJestConfig(customJestConfig);
 
 ```
 
-3) Now we will add out first unit test for the landing page. We will create a folder in the root directory for all of out tests. Jest uses the following convention of a `__tests__` directory for storing all of your Jest tests. We will create this directory and add a test file called `index.test.js` for our test. Add the following code to this file:
+### Add Unit Test
+
+Now we will add out first unit test for the landing page. We will create a folder in the root directory for all of out tests. Jest uses the following convention of a `__tests__` directory for storing all of your Jest tests. We will create this directory and add a test file called `index.test.js` for our test. Add the following code to this file:
 
 ```javascript
 // __tests__/index.test.js
@@ -82,7 +88,9 @@ describe('Home', () => {
 });
 ```
 
-4) Our last step will be to modify our `package.json` file to add a test runner script to the scripts section. My scripts section look like the following example:
+### Add a Test Runner to package.json
+
+Our last step will be to modify our `package.json` file to add a test runner script to the scripts section. My scripts section look like the following example:
 
 ```json
 ...
