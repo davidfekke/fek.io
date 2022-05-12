@@ -10,7 +10,7 @@ cover_image: "./next_jest.png"
 
 I have been using [Next.js](https://nextjs.org/) for a new project I am currently working. Most of my Node.js experience working with web apps has been using the [Express.js](https://expressjs.com/) framework. One of the tools I like using for my testing is [Jest](https://jestjs.io/). 
 
-If you have not had a chance to use Jest, it is defiantly worth checking out. It is very popular with the React community and it has test coverage built into the framework.
+If you have not had a chance to use Jest, it is definitely worth checking out. It is very popular with the React community and it has test coverage built into the framework.
 
 ## The easy way to add Jest to Next.js
 
@@ -66,7 +66,7 @@ module.exports = createJestConfig(customJestConfig);
 
 ### Add Unit Test
 
-Now we will add out first unit test for the landing page. We will create a folder in the root directory for all of out tests. Jest uses the following convention of a `__tests__` directory for storing all of your Jest tests. We will create this directory and add a test file called `index.test.js` for our test. Add the following code to this file:
+Now we will add out first unit test for the landing page. We will create a folder in the root directory for all of our tests. Jest uses the following convention of a `__tests__` directory for storing all of your Jest tests. We will create this directory and add a test file called `index.test.js` for our test. Add the following code to this file:
 
 ```javascript
 // __tests__/index.test.js
@@ -158,4 +158,4 @@ Ran all test suites.
 
 Next.js offers a lot of options when it comes to testing and mocking. Along with Jest, you can also test using [Cypress](https://docs.cypress.io/guides/getting-started/writing-your-first-test#What-you-ll-learn), [Playwright](https://playwright.dev/docs/intro) or [Vitest](https://github.com/vitest-dev/vitest).
 
-The example of using Jest in this post is using the Rust compiler, but you can also set up Jest to run using Babel if you prefer.
+The example of using Jest in this post is using the Rust compiler, but you can also set up Jest to run using Babel if you prefer. Have fun testing!
