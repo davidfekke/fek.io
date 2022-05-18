@@ -5,7 +5,7 @@ tags: ["SQL", "Development"]
 description: ""
 category: 
 date: 2022-05-17
-cover_image: "./unnamed.jpg"
+cover_image: "./sqlsaturday.jpg"
 ---
 
 I spent last Saturday going to the 2022 SQL Saturday event here in Jacksonville, FL. This is an event, think of it as a conference in a day, where system admins, developers and Devops workers get together to learn more about Microsoft SQL Server.
