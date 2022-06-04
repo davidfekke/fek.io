@@ -8,6 +8,10 @@ date: 2022-05-11
 cover_image: "./next_jest.png"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/jQT0Xhgbql8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 I have been using [Next.js](https://nextjs.org/) for a new project I am currently working. Most of my Node.js experience working with web apps has been using the [Express.js](https://expressjs.com/) framework. One of the tools I like using for my testing is [Jest](https://jestjs.io/). 
 
 If you have not had a chance to use Jest, it is definitely worth checking out. It is very popular with the React community and it has test coverage built into the framework.

@@ -23,14 +23,5 @@
             "/images/ilottonum/ilottonum1.jpg",
             "/images/ilottonum/ilottonum2.jpg",
             "/images/ilottonum/ilottonum3.jpg"
-        ]  },
-    { "name": "JaxNode",
-        "description": "The Jacksonville Node.js and Javascript User Group is for anyone interested in learning more about Node.js and JavaScript. JavaScript was originally created for scripting web browsers, but now JavaScript applications run on the server, desktop and even robots. Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.",
-        "uri": "https://itunes.apple.com/us/app/jaxnode/id1183086193?ls=1&mt=8",
-        "icon": "/images/jaxnode/jaxnodeicon.png",
-        "screens": [
-            "/images/jaxnode/jaxnode1.jpg",
-            "/images/jaxnode/jaxnode2.jpg",
-            "/images/jaxnode/jaxnode3.jpg"
-        ] }  
+        ]  }
 ]

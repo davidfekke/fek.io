@@ -16,7 +16,7 @@ const iLottoNum = () => {
         <Layout>
             <MainHelmet title="Fek.io" />
             <Navbar />
-            <Header headline="JaxNode" />
+            <Header headline="iLottoNum" />
             <Article>
                 <div>
                     <Breadcrumb crumbs={ [ 'Products', 'iLottNum' ] } />
