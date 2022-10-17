@@ -8,6 +8,10 @@ date: 2022-10-16
 cover_image: "./fastlanepackage.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/uK5s--MuaaI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 I recently ran into a problem trying to set up automated unit testing for a iOS based Swift Package. 
 There are a couple of different ways of creating packages or libraries of code for an iOS project. The Swift Package Manager has become one of the more popular methods of creating reusable modules.
 
@@ -47,7 +51,7 @@ Select manual setup, which should be option number four. This will create a `fas
 
 ## Swift Packages and Xcode
 
-Xcode no longer requires an `xcodeproj` project folder in order to open packages. You can open your project by either typing `xed .` in the terminal at the root of your project or by opening your folder directly in Xcode. In order to run tests in Fastlane, we will need a `xcodeproj` file. Here is the SPM command that you can use to generate a the `xcodeproj` folder. 
+Xcode no longer requires an `xcodeproj` project folder in order to open packages. You can open your project by either typing `xed .` in the terminal at the root of your project or by opening your folder directly in Xcode. In order to run tests in Fastlane, we will need a `xcodeproj` folder. Here is the SPM command that you can use to generate a the `xcodeproj` folder. 
 
 ```shell
 swift package generate-xcodeproj
@@ -105,7 +109,7 @@ end
 
 If you want to run a Fastlane `lane` for tests, this can be done by typing `fastlane ios tests`. Our current Fastfile only outputs the text `running our tests!`. We are going to change the `Fastfile` so that it does the following three actions. We will be telling fastlane to create a new `xcodeproj` folder for our swift package, then to run our unit tests and finally remove the `xcodeproj` folder we just created.
 
-Edit your `Fastfile` do it looks like the following example:
+Edit your `Fastfile` so it looks like the following example:
 
 ```ruby
 default_platform(:ios)
