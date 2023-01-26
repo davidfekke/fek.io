@@ -23,7 +23,7 @@ The app struct that is part of the standard Xcode SwiftUI template does not hand
 
 ## SwiftUI file structure
 
-When you create a new SwiftUI iOS app im Xcode, it will create a folder named after your app, and two files for the App struct and the ContentView struct. They look like the following;
+When you create a new SwiftUI iOS app in Xcode, it will create a folder named after your app, and two files for the App struct and the ContentView struct. They look like the following;
 
 ```swift
 // SampleApp.swift
@@ -90,7 +90,7 @@ Then in your App.swift file you can add a reference to the AppDelegate file in y
 
 ```swift
 ...
-struct BILLApp: App {
+struct SampleApp: App {
 
     @UIApplicationDelegateAdaptor private var appDelegate: AppDelegate
 
