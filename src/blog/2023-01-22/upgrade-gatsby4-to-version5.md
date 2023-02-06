@@ -8,6 +8,10 @@ date: 2023-01-22
 cover_image: "../2021-03-29/lucas-benjamin.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/FIeIVhfVrDo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## Upgrading to Gatsby 5 from version 4
 
 Gatsby 5 was introduced at the end of last year. I decided to upgrade my site to Gatsby 5 from version 4. Upgrading Gatsby a major version can be complex, especially if you are using a lot of plugins. Here are the steps I usually take to upgrade to a newer version of Gatsby.
