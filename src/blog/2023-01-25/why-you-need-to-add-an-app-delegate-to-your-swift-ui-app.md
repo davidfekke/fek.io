@@ -8,6 +8,10 @@ date: 2023-01-25
 cover_image: "../2019-03-27/keyboard.png"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/g6Ei6esE7Ac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 By default when you create a new application in Xcode that is a SwiftUI app, it generates an application without an AppDelegate class. It has been replaced by an App struct. Much like how SwiftUI uses structs 
 for views, Apple also is creating a struct for the App.
 
