@@ -8,6 +8,10 @@ tags: ["Node.js", "GraphQL", "Fastify", "Mercurius"]
 cover_image: "./fastify-mercurius.png"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/TGalBR4j2Uo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 I recently needed to add a GraphQL endpoint to an existing [Fastify](https://www.fastify.io/) service. I have worked with Apollo before which has a way of hosting on top of an Express service. 
 There may be a way of hosting Apollo on top of Fastify service, but I have not found a way to do this with the existing version of Fastify.
 
