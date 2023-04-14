@@ -115,8 +115,69 @@ Now that you have the config file, the SDL and a graphql query file, we can gene
 $ apollo-ios-cli generate
 ```
 
+## Using your generated code to display query in a SwiftUI View
+
+We will create a new class and call it `BooksQueryViewModel`.
+
+Once you have created the class, we will add an init constructor. We will also add a property for our Apollo client. It should look like the following:
+
+```swift
+import Foundation
+import Apollo
+
+class BooksQueryViewModel: ObservableObject {
+    
+    var apollo = {
+        guard let url = URL(string: "http://localhost:3000/graphql") else {
+            fatalError("Could not create URL for GraphQL endpoint.")
+        }
+        return ApolloClient(url: url)
+    }()
+    
+    typealias Book = Bookschema.BookQuery.Data.Book
+    @Published var books: [Book] = []
+    
+    init() {
+        apollo.fetch(query: Bookschema.BookQuery()) { [weak self] result in
+            switch result {
+            case .success(let graphResult):
+                self?.books = graphResult.data?.books ?? []
+            case .failure(let error):
+                print("\(error.localizedDescription)")
+            }
+        }
+    }
+}
+```
+
+As you can see from the code above, we create a `typealias` to make an easier to use `Book` type based off of the generated type of `Bookschema.BookQuery.Data.Book`. Then in the `fetch` method, we use a resultType, which can take either a success or a failure from the fetch result. If it is successful we set the `books` property to the result, which is an array of Books.
+
+Now we will modify our SwiftUI view to use this view model and display the results in a list using a `ForEach` function.
+
+```swift
+import SwiftUI
+
+struct ContentView: View {
+    
+    @ObservedObject var viewModel = BooksQueryViewModel()
+    
+    var body: some View {
+        VStack {
+            List {
+                ForEach(viewModel.books, id: \.id) { book in
+                    Text("\(book.title) by \(book.author)")
+                }
+            }
+        }
+        .padding()
+    }
+}
+```
+
+Now when we run the app with this view, we will see a list of our books and authors.
+
 ## Conclusion
 
 It takes a lot of set up to get the Apollo working with a Mercurius/Fastify backend. Once you have all of these pieces in place, it does make it a lot easier to develop and use GraphQL with your iOS code.
 
-You can set up your Xcode project to automatically generate code everytime you build or run your app. I do not think that is a best practice. It is better to generate when you know new types have been added to your schema. Some environments make frequent changes to their GraphQL backend, so you may need to add a script to run this each time you build your app.
+You can set up your Xcode project to automatically generate code every time you build or run your app. I do not think that is a best practice. It is better to generate when you know new types have been added to your schema. Some environments make frequent changes to their GraphQL backend, so you may need to add a script to run this each time you build your app.
