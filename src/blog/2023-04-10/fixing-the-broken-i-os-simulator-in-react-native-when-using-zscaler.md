@@ -2,6 +2,7 @@
 layout: post
 title: "Fixing the broken iOS simulator in React Native when using zscaler"
 description: ""
+tags: ["zscaler", "iOS", "Simulator"]
 category: 
 date: 2023-04-10
 cover_image: "./NTC-React-Native-2466236507.png"

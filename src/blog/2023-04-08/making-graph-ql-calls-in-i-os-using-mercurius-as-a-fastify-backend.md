@@ -2,9 +2,10 @@
 layout: post
 title: "Making GraphQL calls in iOS using Mercurius and Fastify backend"
 description: ""
+tags: ["Node.js", "iOS", "GraphQL", "Apollo", "Mercurius"]
 category: 
 date: 2023-04-08
-cover_image: "./unnamed.jpg"
+cover_image: "./graphapolloios.png"
 ---
 
 ## Make sure to add the following to this post
