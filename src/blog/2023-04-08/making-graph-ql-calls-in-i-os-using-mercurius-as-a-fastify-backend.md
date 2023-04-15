@@ -49,7 +49,9 @@ Now that you have this routes, you can download the SDL using `/schema` for the 
 
 ## Setting up your Xcode project structure
 
-In the root directory where you keep your swift code, create a new directory called `/graphql`. This directory will contain your GraphQL queries and your schema, as well as your generated code. This folder will need to be added to your Xcode project as well as a `folder group`.
+In the root directory where you keep your swift code, create a new directory called `/graphql`. This directory will contain your GraphQL queries and your schema, as well as your generated code. This folder will need to be added to your Xcode project as well as a `folder group`. When adding to your Xcode project navigator, make sure to choose the create groups` next to the `added folders` option.
+
+![When adding folders to your project, select 'create groups'](./create_groups.webp)
 
 ## Generate apollo configuration
 
