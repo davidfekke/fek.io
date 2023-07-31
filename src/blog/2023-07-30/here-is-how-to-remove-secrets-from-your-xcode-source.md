@@ -8,6 +8,10 @@ date: 2023-07-30
 cover_image: "./securesource.jpg"
 ---
 
+A colleague recently showed me an article that showed that half of the repos on GitHub that had ChatGPT examples had their access key in their source code. GitHub actually does a pretty good job of policing when someone checks in a secure key or token, but if you want to avoid checking them in in the first place.
+
+Many 3rd party APIs require the use of some sort of secret or configuration file that you do not want to share with the rest of the world.
+
 It is considered a bad practice to keep secrets in your source code. Whether you are keeping you source code in a public repo or private repo, do not keep secrets in your source.
 
 ## What is a secret?
@@ -88,7 +92,26 @@ public struct Constants {
 } 
 ```
 
-This file can be replaced by file with the actual values at build time using a shell script.
+This file can be replaced by file with the actual values at build time using a shell script. There is a command in Unix called `envsubst` that will substitute any environment variables in a template, and let you create a new file. The template can just be a text file like the following:
+
+```swift
+// mytemplate.txt
+public struct Constants {
+    let mySuperSecret = "${SUPER_SECRET_VALUE}"
+} 
+```
+
+Then you can use the `envsubst` command in a shell script to create the file you want to use at build time.
+
+```sh
+#!/bin/bash
+
+# Create the output file by substituting the environment variables in the template
+echo "Create Constants.swift file for secret constants values"
+envsubst < Scripts/mytemplate.txt > Shared/Constants.swift
+```
+
+This will create a new file or replace an existing file with the correct secrets.
 
 ```swift
 public struct Constants {
