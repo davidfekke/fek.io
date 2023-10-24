@@ -2,7 +2,8 @@ import React from "react"
 import Container from "./container.js"
 import { Link } from "gatsby"
 import ExtLink from "./extlink"
-import { FaTwitter, FaFacebook, FaLinkedin, FaGithub, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaGithub, FaYoutube } from 'react-icons/fa';
+import { RiTwitterXFill } from 'react-icons/ri';
 import * as footerStyles from "./footer.module.css"
 
 const Footer = () => {
@@ -12,7 +13,7 @@ const Footer = () => {
             <Container>
                 <div style={{ paddingTop: '1rem', paddingBottom: '2rem' }}>
                     <div style={{ textAlign: 'center', height: '3rem', paddingTop: '20px', paddingBottom: '10px',  }}>
-                        <a href="https://twitter.com/davidfekke" target="_blank" rel="noopener noreferrer" aria-label="Twitter" style={{ textDecoration: 'none', color: 'black' }}><FaTwitter size={32} style={{ padding: '5px' }} /></a>
+                        <a href="https://x.com/davidfekke" target="_blank" rel="noopener noreferrer" aria-label="Twitter" style={{ textDecoration: 'none', color: 'black' }}><RiTwitterXFill size={32} style={{ padding: '5px' }} /></a>
                         <a href="https://www.facebook.com/David-Fekke-LLC-178889285498948/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style={{ textDecoration: 'none', color: 'black' }}><FaFacebook size={32}  style={{ padding: '5px' }} /> </a>
                         <a href="https://www.linkedin.com/in/david-fekke-1913ba2/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style={{ textDecoration: 'none', color: 'black' }}><FaLinkedin size={32}  style={{ padding: '5px' }} /></a> 
                         <a href="https://github.com/davidfekke/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" style={{ textDecoration: 'none', color: 'black' }}><FaGithub size={32}  style={{ padding: '5px' }} /></a>
@@ -28,7 +29,7 @@ const Footer = () => {
                                     <Link to="/blog">Blog</Link>
                                 </li>
                                 <li>
-                                    <ExtLink uri="https://twitter.com/davidfekke" name="Twitter" />
+                                    <ExtLink uri="https://x.com/davidfekke" name="X" />
                                 </li>
                                 <li>
                                     <ExtLink uri="https://www.linkedin.com/in/david-fekke-1913ba2/" name="Linkedin" />
