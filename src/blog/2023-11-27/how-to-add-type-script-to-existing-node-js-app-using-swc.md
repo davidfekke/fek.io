@@ -8,6 +8,10 @@ date: 2023-11-27
 cover_image: "./nerdcat.jpg"
 ---
 
+<div style="text-align: center">
+<iframe width="700" height="393" src="https://youtube.com/embed/XosDBsxgb7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 I recently started using some [TypeScript](https://www.typescriptlang.org/) in some of the applications I have been working on over the past year or so. A lot of JvaScript frameworks have generators that give the developer the option of whether they want to use TypeScript or JavaScript.
 
 What if you want to add TypeScript to an existing JavaScript application. The nice thing about TypeScript is that it is a superset of JavaScript. In theory any JavaScript file should work in a TypeScript application. 
