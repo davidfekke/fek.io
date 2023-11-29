@@ -10,8 +10,10 @@ import Footer from "../components/footer"
 import "../components/layout.css"
 import "../components/imgresponsive.css"
 import Share from "../components/share"
+import SpeechButton from "../components/speechbutton";
 import BannerImage from "../pages/cardinal.jpg"
 import TagDecorator from "../components/tagdecorator";
+
 
 export default class BlogPost extends React.Component {
   render() {
@@ -58,7 +60,8 @@ export default class BlogPost extends React.Component {
         <Navbar />
         <Header headline={post.frontmatter.title} backgroundImage={HeaderImage} />
         <Article>
-          <Share socialConfig={socialConfig} /><br />
+          <Share socialConfig={socialConfig} />
+          <SpeechButton textToRead={post.html} /> <br />
           <em>By David Fekke</em><br />
           {post.frontmatter.date}
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -71,6 +74,7 @@ export default class BlogPost extends React.Component {
           {next && <span>&nbsp;</span>}
           {next && <Link to={`/blog${next.fields.slug}`}>Next Page →</Link>}
           <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} /> 
+          
         </Article>
         <Footer />
       </Layout>
