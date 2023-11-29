@@ -1,12 +1,13 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeadphones, faPlay, faStop } from '@fortawesome/free-solid-svg-icons';
+import { faHeadphones, faPlay, faStop, faPause } from '@fortawesome/free-solid-svg-icons';
 
 const SpeechButton = ({ textToRead }) => {
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [currentPosition, setCurrentPosition] = useState(0);
   const [textSegments, setTextSegments] = useState([]);
-  const speechSynthesisRef = useRef(window.speechSynthesis);
+  // Setting useRef to null since Gatsby uses SSR, and the window object may be null.
+  const speechSynthesisRef = useRef(null);
   const regex = /(<([^>]+)>)/gi;
   const cleansedText = textToRead.replace(regex, "");
 
@@ -27,6 +28,10 @@ const SpeechButton = ({ textToRead }) => {
   };
 
   useEffect(() => {
+    // This is needed to check for window object since Gatsby uses SSR.
+    if (typeof window !== 'undefined' && window.speechSynthesis) {
+        speechSynthesisRef.current = window.speechSynthesis;
+    }
     const segments = cleansedText.split(/[.!?]+/).filter(segment => segment.trim());
     setTextSegments(segments);
     setCurrentPosition(0);
@@ -67,7 +72,7 @@ const SpeechButton = ({ textToRead }) => {
       <button onClick={toggleReadAloud} style={buttonStyle}>
         <FontAwesomeIcon icon={faHeadphones} />
         {' '}
-        <FontAwesomeIcon icon={isSpeaking ? faStop : faPlay} />
+        <FontAwesomeIcon icon={isSpeaking ? (currentPosition === 0 ? faStop : faPause) : faPlay} />
         {' '}
         {isSpeaking ? ' Stop Listening' : ' Listen to Post'}
       </button>
