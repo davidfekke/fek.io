@@ -21,7 +21,7 @@ const SpeechButton = ({ textToRead }) => {
     border: 'none',
     cursor: 'pointer',
     color: 'white',
-    backgroundColor: isSpeaking ? '#4CAF50' : '#f44336', // green when speaking, red otherwise
+    backgroundColor: isSpeaking ? '#f44336' : '#4CAF50', // green when speaking, red otherwise
     fontSize: '16px',
     margin: '10px',
     outline: 'none',
