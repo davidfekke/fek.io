@@ -24,7 +24,7 @@ The runtime for Objective-C provides some nice utilities for executing operation
 
 In the following example we have a class that has a method that we need to change. We will call the class `TaxCalculator` and our method that we want to swizzle `whatAreMyTaxes`.
 
-```objective-c
+```objc
 // TaxCalculator.h
 #import <Foundation/Foundation.h>
 
@@ -62,7 +62,7 @@ In the following example we have a class that has a method that we need to chang
 
 Now we are going to create a Objective-C category, which is like an extension in swift, to add a new method to our `TaxCalculator` class.
 
-```objective-c
+```objc
 // TaxCalculator+rates2018.h
 #import "TaxCalculator.h"
 
@@ -92,7 +92,7 @@ This category adds a new method called `swizzle_whatAreMyTaxes`. This will be th
 
 In order for our application to use the swizzled method, we will need to swap the methods when our application is first loaded. We will use Objective-C's `load` method to swap our methods. The `load` method on a class always executes when the application is initialized. We will also need to make sure that this is loaded only once. We will use grand central dispatch (GCD) to make sure that the method is only loaded once. The implementation will look like the following example;
 
-```objective-c
+```objc
 + (void) load {
     if (self == TaxCalculator.self) {
         static dispatch_once_t onceToken;
@@ -124,7 +124,7 @@ Now that we have both method references, we swizzle them using the `method_excha
 
 I created a utility class that you can use to easily swap out either instance or class methods. Here is my `SimpleSwizzleHelper` class;
 
-```objective-c 
+```objc
 // SimpleSwizzleHelper.h header file
 
 //
@@ -208,7 +208,7 @@ NS_ASSUME_NONNULL_END
 
 Using this helper class, we can now refactor our load method to enable the swizzling. Note that `SimpleSwizzleHelper` can handle both instance and class methods.
 
-```objective-c
+```objc
 + (void) load {
     if (self == TaxCalculator.self) {
         [self enableSwizzledMethods];
