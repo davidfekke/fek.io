@@ -56,13 +56,13 @@ Apple usually tries to stay out in front of the rest of the industry when comes 
 
 One solution that developers may be interested in using is Docker's new buildx feature.
 
-```terminal
+```shell
 $ docker buildx build --platform=value[,value]
 ```
 
 With this build command you can target multiple platforms as in this example below;
 
-```terminal
+```shell
 $ docker buildx build --platform=linux/amd64,linux/arm64,linux/arm/v7 .
 ```
 
