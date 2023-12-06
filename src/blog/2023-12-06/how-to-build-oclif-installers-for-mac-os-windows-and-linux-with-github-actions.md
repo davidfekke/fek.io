@@ -8,6 +8,12 @@ date: 2023-12-06
 cover_image: "./githubactionsoclif.jpg"
 ---
 
+<div style="text-align: center">
+    <div class="responsive-iframe-container">
+        <iframe src="https://youtube.com/embed/WFSeKQiW-pE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
 Whenever I need to build a CLI (command line interface) application, my goto framework is [OCLIF](https://oclif.io/). OCLIF is the CLI framework that was used by Heroku and Salesforce to build their CLI applications, which Salesforce has open sourced. It is a great framework, and I have used on a couple of different projects.
 
 One of the issues I ran into recently had to do with getting the CLI installed on a user's OS of choice. With OCLIF, you can publish your app up to NPM, and anyone with [Node.js](https://nodejs.org/en/) installed can run the application. As an example, here is a CLI I built for getting aviation weather called `avweather-cli`. To install it from NPM, all you have to do is run the following npm command:
