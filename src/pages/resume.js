@@ -30,7 +30,25 @@ const Resume = () => {
                 <div style={{ marginBottom: '1rem' }}>
                     <FloatLeft>
                         
-                        July 2016 – Present.
+                        June 2022 – Feb 2024.
+                          
+                    </FloatLeft>
+                    <FloatRight>
+                        BILL Holdings, San Jose, CA. Staff iOS Engineer. Duties included
+                        helping integrate native and React Native applications into a single
+                        code base. Developed the Continuous Integration/Continuous
+                        Deployment solutions used by BILL for running automated testing
+                        and delivery of our mobile apps to Apple App Store and the
+                        Google Play Store. Helped mentor developers who were
+                        transitioning from React Native to iOS and Swift. Also lead the
+                        transition from Fastlane to [Bitrise](https://bitrise.io). Created a CLI tool for our
+                        developers to manage releases using OCLIF.
+                    </FloatRight>
+                </div>
+                <div style={{ marginBottom: '1rem' }}>
+                    <FloatLeft>
+                        
+                        July 2016 – June 2022.
                           
                     </FloatLeft>
                     <FloatRight>
