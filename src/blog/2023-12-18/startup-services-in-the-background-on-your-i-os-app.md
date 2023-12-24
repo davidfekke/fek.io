@@ -2,6 +2,7 @@
 layout: post
 title: "Startup services in the background on your iOS App"
 description: ""
+tags: ["iOS", "Concurrency"]
 category: 
 date: 2023-12-18
 cover_image: "./chain.png"
