@@ -8,6 +8,12 @@ date: 2024-01-08
 cover_image: "./gptactions.png"
 ---
 
+<div style="text-align: center">
+    <div class="responsive-iframe-container">
+        <iframe src="https://youtube.com/embed/iJEQGpS3jog" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
 [OpenAI](https://openai.com/) plans to launch a GPT Store this week. Back in November, OpenAI announced that they would allow anyone to create their own GPT. The way this works is that an OpenAI user can define their own GPT, upload their own information and make that GPT available to other users. The really cool thing about this feature is that you can define your own GPT without any programming.
 
 One of the other cool things is if you do know how to program or have access to external HTTP services, you can add custom actions to your GPT. In order for OpenAI to be able to use an action, it has to conform to the [openapi](https://www.openapis.org/) standard. Openapi allows developers to create a yaml or json file that defines the methods and endpoints that can be consumed by other applications. This is very similar to the old WSDL files that were used to define SOAP based web services.
