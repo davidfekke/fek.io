@@ -250,7 +250,7 @@ Somebody even has come up with a term called the BETH stack similar to the MERN 
 
 ## The Edge
 
-Whe you hear vendors refer to `The Edge`, they are generally referring to edge services that run on a server close to the client browser. They work very similar to a CDN, but you can also host functions on these Edge servers. Vercel offers Edge hosting along with a lot of other cloud based hosting providers.
+Whe you hear vendors refer to `The Edge`, they are generally referring to edge services that run on a server close to the client browser. They work very similar to a CDN, but you can also host functions on these Edge servers. [Vercel](https://vercel.com) offers Edge hosting along with a lot of other cloud based hosting providers.
 
 Basically on these Edge servers, the idea is that when somebody hits up your
 application and it's deployed on Vercel for example,
@@ -258,11 +258,11 @@ there are functions that they can host and run as
 close to the user as possible.
 
 Bun and these other edge based services support and complies with the
-Winter CG or the Web-interoperable Runtimes Community Group.
+[WinterCG](https://wintercg.org/) or the Web-interoperable Runtimes Community Group.
 Basically what that means is that all these companies are providing hosting Services where they
 allow you to run functions on the Edge, and the WinterCG is the governing body that decides what
 JavaScript features they're going to support, and what JavaScript features they are not going to support.
 
 ## Conclusion
 
-While I think that Bun has lots of promise, I would not recommend using it production as a server. One of the business goals for Oven.sh, the parent company overseeing Bun is to provide hosting. This would probably be the first place I tried running Bun since they have the most experience in running Bun, and understand all of the limitations.
+While I think that Bun has lots of promise, I would not recommend using it in production as a server. One of the business goals for Oven.sh, the parent company overseeing Bun is to provide hosting. This would probably be the first place I tried running Bun since they have the most experience in running Bun, and understand all of the limitations.
