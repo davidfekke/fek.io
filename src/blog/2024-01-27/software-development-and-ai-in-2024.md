@@ -143,4 +143,4 @@ Linkedin and Meetup both have AI generated fills when filling out forms in their
 
 There are really unlimited possibilities of some of the software we can build using these existing Generative AI models. We are already starting to see many examples in commercial and open source software. I can't wait to see how developers will use this technology in the future. 
 
-And please do not forget to join us at the Jax Software and AI meetup group on [this Wednesday](https://www.meetup.com/jax-ai/events/298769022/)
+And please do not forget to join us at the Jax Software and AI meetup group on [this Wednesday](https://www.meetup.com/jax-ai/events/298769022/).
