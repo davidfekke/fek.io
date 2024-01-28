@@ -26,7 +26,7 @@ If you look throughout history, as automation has been added, some jobs are lost
 
 ## Developer tools
 
-Many developers have already been using Github Copilot for the last couple of years. Copilot uses code completion features to try to automate and complete code in most programming languages. Github recently added a chatbot and prompt that can be used in Visual Studio Code. There are other tools for developers such as Amazon's codewhisperer and Tabnine.
+Many developers have already been using [Github Copilot](https://github.com/features/copilot) for the last couple of years. Copilot uses code completion features to try to automate and complete code in most programming languages. Github recently added a chatbot and prompt that can be used in Visual Studio Code. There are other tools for developers such as Amazon's [codewhisperer](https://aws.amazon.com/codewhisperer/) and [Tabnine](https://www.tabnine.com/).
 
 ## Processors
 
@@ -36,13 +36,13 @@ GPUs, NPUs and TPUs all handle linear algebra much quicker and more efficiently 
 
 ## Programming Languages for AI
 
-The default language for much of machine learning, math and data science is Python. There are other languages that are also popular for ML and AI tasks, but most of the development for creating and working directly with the models is done in Python.
+The default language for much of machine learning, math and data science is [Python](https://www.python.org/). There are other languages that are also popular for ML and AI tasks, but most of the development for creating and working directly with the models is done in Python.
 
-Many of the tools and libraries for working with machine learning and AI are written in Python as well. Some of these tools include SciKit, TensorFlow, Keras, Pandas and PyTorch. The two most popular frameworks are TensorFlow and PyTorch. Both work with tensors, the basic object type for working with machine learning. 
+Many of the tools and libraries for working with machine learning and AI are written in Python as well. Some of these tools include [SciKit](https://scikit-learn.org/stable/), [TensorFlow](https://www.tensorflow.org/), [Keras](https://keras.io/), [Pandas](https://pandas.pydata.org/) and [PyTorch](https://pytorch.org/). The two most popular frameworks are TensorFlow and PyTorch. Both work with tensors, the basic object type for working with machine learning. 
 
 ### Mojo
 
-Mojo is a new language developed by a startup called Modular. Modular was started by Chris Lattner, the same engineer behind LLVM, Clang, Objective-C 2.0 and Swift.
+[Mojo](https://www.modular.com/max/mojo) is a new language developed by a startup called [Modular](https://www.modular.com). Modular was started by Chris Lattner, the same engineer behind LLVM, Clang, Objective-C 2.0 and Swift.
 
 Mojo is a superset of Python. Think of TypeScript and JavaScript. Just like TypeScript, Mojo adds a type system to the language, but unlike TypeScript, Mojo has a compiler than converts Python/Mojo code into executables that will run as fast as C++ or Rust programs.
 
@@ -68,7 +68,7 @@ Many companies including OpenAI, Microsoft, Google, Anthropic and Meta have crea
 
 ## APIs
 
-OpenAI has made many of their APIs available to the general public. These API are pretty easy to use. They can be authenticated with a simple key, and use the OpenAI python or Node.js modules. They can also be accessed with a REST API. Here is a example of how their API works:
+[OpenAI](https://openai.com) has made many of their APIs available to the general public. These API are pretty easy to use. They can be authenticated with a simple key, and use the OpenAI python or Node.js modules. They can also be accessed with a REST API. Here is a example of how their API works:
 
 ```python
 from openai import OpenAI
@@ -91,11 +91,19 @@ In the above example, the Dall-E API is used to generate an image of a siamese c
 
 ## Prompts
 
-One of the terms you may have heard recently is called Prompt Engineering.
+One of the terms you may have heard recently is called Prompt Engineering. There is a whole new set of jobs that have been created in designing prompts that can be used in conjunction with AI models. 
+
+Think of prompts as being the input for your AI function or application. If you look at ChatGPT, when you ask ChatGPT a question, it is a type of prompt.
+
+Prompts can also be designed for the entire system and user prompts can be decorated with additional meta information that can help the AI be more precise in its outputs.
 
 ## Large Language Models
 
-ChatGPT and GPT 3.5 and 4 are all examples of large language models.
+[ChatGPT](https://chat.openai.com) and GPT 3.5 and 4 are all examples of large language models. OpenAI is not the only vendor of LLMs. Google provides access to LLMs through Bard and Gemini. Gemini is the latest version of Google's multi-model AI that will work with images, text, audio and video. 
+
+[Anthropic](https://www.anthropic.com/) is a company that was started by former OpenAI engineers that have an LLM called Claude. Other vendors include [Cohere](https://cohere.com/) and [Fal.ai](https://www.fal.ai/).
+
+One of the more interesting entrants in this space is the open source LLM. Meta, the parent company of Facebook, released their open source LLM called Llama 2. This gives developers the ability to run this LLM on their own hardware. 
 
 ## Custom GPTs
 
@@ -103,11 +111,36 @@ OpenAI now allows users to create their own GPTs. The user can design custom pro
 
 ## Langchain
 
+One of the frameworks that has become popular over the last year has been [Langchain](https://www.langchain.com/). Langchain allows developers to build context aware AI applications with either Python or JavaScript. 
+Langchain also allows you to `chain` prompts, data and functions together with LLMs. 
+
+One of the more powerful features of Langchain is the ability to take unstructured data and break it up in a way that it can be stored either in a database or memory, and then retrieved for building intelligent applications and agents. 
+
 ### Vector Databases
+
+Being able to store and retrieve text data easily is important if you want to be able to use the data with an AI model. There are now multiple vendors that provide vector databases or vector extensions for existing databases like Postgres SQL.
+
+The way vector databases work is that they can store data along with a vector. Think of a vector as a array of numbers. OpenAI as an example has an embedding service that will convert text into an embedding. Embeddings are nothing more than an array of floating point numbers. 
+
+These embeddings can be stored in a vector database, and can be used when fetching an answer from the LLM. Vectors can also be retrieved from the database using a cosine search algorithm. 
 
 ### RAG Apps
 
+RAG stands for Retrieval Augmented Generation. RAG apps are a way of passing your data and functions to an AI application when prompting the application for output that you want to be tailored to your data. 
+Langchain is a framework that makes this relatively easy to do. Lanchain has functions that can be used to break up unstructured data into vectors, and then those vectors cab be used with prompts for more precise output from the LLM.
+
+A good example of a RAG application built with Langchain is one where PDF or word processing documents are converted into vectors and stored for retrieval, and then these vectors can be recalled when a user is asking questions around that data.
+
 ## Examples of AI in use of apps today
+
+I mentioned the coding assistants earlier, but there are many other examples of AI showing up in applications we use everyday. If you use gmail or iMessage, you may have noticed that these applications are using autocomplete to correct spelling and even grammar. 
+
+Linkedin and Meetup both have AI generated fills when filling out forms in their web applications. Even [Adobe Photoshop](https://www.adobe.com/products/photoshop.html) has added a prompt and object detection for selecting objects and extending backgrounds.
+
+![Photoshop Prompt example](./photoshopprompt.jpg)
 
 ## Conclusion
 
+There are really unlimited possibilities of some of the software we can build using these existing Generative AI models. We are already starting to see many examples in commercial and open source software. I can't wait to see how developers will use this technology in the future. 
+
+And please do not forget to join us at the Jax Software and AI meetup group on [this Wednesday](https://www.meetup.com/jax-ai/events/298769022/)
