@@ -16,7 +16,7 @@ I had some runway from my old job, but I decided that I did not want to wait bef
 
 My previous company was based in Silicon Valley where I worked remotely. So I decided I was either going to pursue remote roles or local roles where I could work onsite.
 
-One of the other things that became evident to me was despite have a historically low unemployment in the United States, all of the tech layoffs has put a lot more potential candidates out into the marketplace competing for the same roles.
+One of the other things that became evident to me was despite having historically low unemployment in the United States, all of the tech layoffs has put a lot more potential candidates out into the marketplace competing for the same roles.
 
 ## No one is hiring in December
 
@@ -28,7 +28,7 @@ In the second week of January is when I finally started hearing from companies t
 
 In the past when I interviewed for roles, the interview process has generally been very short. Usually two interviews. Generally the first interview would be an interview with a recruiter or hiring manager. The second was usually a technical interview where the company offering the role could pick my brain about how much I knew about whatever technologies I had experience using as a software engineer. Occasionally I would be asked to do a third interview.
 
-In the past when a company asked to do a third interview, this was a sign to me that they did not know what they were doing. It should never take more than two interviews for a company to know if they want to make an offer to a candidate.
+In the past when a company asked to do a third interview, this was a sign to me that they did not know what they were doing when it came to hiring. It should never take more than two interviews for a company to know if they want to make an offer to a candidate.
 
 ## Hiring now
 
@@ -46,7 +46,7 @@ The best coding test I had was one where I was given a Xcode project with a bug.
 
 ## The Technical Interview
 
-One of the companies I interviewed with had me do two different technical interviews and then another one with the manager I would have been working for. At the end of the first technical interview at this company, the interviewer had one hour to interview me before I can to do another interview with another company. Towards the end of the interview, about five minutes before I had to go to my next interview, he asked me to do a coding assessment. The assessment was to transform a flat array of objects with a parent child relationship into a hierarchical structure in TypeScript. I told the interviewer that I only had five minutes before my next call, but I verbally described how I would transform the array into the structure using a Map.
+One of the companies I interviewed with had me do two different technical interviews and then another one with the manager I would have been working for. At the end of the first technical interview at this company, the interviewer had one hour to interview me before I had to do another interview with another company. Towards the end of the interview, about five minutes before I had to go to my next interview, he asked me to do a coding assessment. The assessment was to transform a flat array of objects with a parent child relationship into a hierarchical structure in TypeScript. I told the interviewer that I only had five minutes before my next call, but I verbally described how I would transform the array into the structure using a Map.
 
 This same company preceded to interview me another two times after this first technical interview. At the end of the process I tried to find out if they were going to make me an offer because I had another offer at this point after interviewing with for four weeks. They came back and told me that they were going to pass on making me an offer because I had not done the coding test. The same one that I verbally described how I would do five minutes before my next call.
 
