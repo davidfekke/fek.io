@@ -21,7 +21,7 @@ For this example, we will need create a chat model, a prompt and an output parse
 
 ## Create an OpenAI token
 
-To use the OpenAI API, you have to have an OpenAI API key. Log into the openai.com website. You will be prompted to select either ChatGPT or API. Select API. Once the API page loads, there will be a side menu on the left with a lock icon. Select the lock icon. This opens the API Keys page. Click on the `Create new secret key` button. Give your key a name and set permissions. 
+To use the OpenAI API, you have to have an OpenAI API key. Log into the [openai.com](https://openai.com) website. You will be prompted to select either ChatGPT or API. Select API. Once the API page loads, there will be a side menu on the left with a lock icon. Select the lock icon. This opens the API Keys page. Click on the `Create new secret key` button. Give your key a name and set permissions. 
 
 Once you have created a key, make a copy of it, and do not share it or place it on a public place. OpenAI charges per token. You can also put a rate limit so you do not have to worry about getting overcharged. If your key is exposed, you can always revoke the key if you need to.
 
@@ -34,9 +34,31 @@ $ npm init -y
 $ npm install dotenv @langchain/openai @langchain/community
 ```
 
-These two commands initialize a new Node.js app in your folder. The second command installs three modules that we will use in our application. The first module, dotenv, we will use for loading our environment variables. The next two are LangChain OpenAI and community modules.
+These two commands initialize a new Node.js app in your folder. The second command installs three modules that we will use in our application. The first module, dotenv, we will use for loading our environment variables. The next two are the LangChain OpenAI and community modules.
 
-Now that these modules are installed, lets create two files in your application folder, one will be `.env`, and the other will be called `promptopenai.js`.
+Now that these modules are installed, lets create two files in your application folder, one will be `.env`, and the other will be called `promptopenai.js`. There is also a file called `package.json` in the folder. We will need to add a key to the json for using type module.
+
+```json
+{
+  "name": "langchaindemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "promptopenai.js",
+  "type": "module",
+  "scripts": {
+    "start": "echo promptopenai.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/community": "^0.0.27",
+    "@langchain/openai": "^0.0.14",
+    "dotenv": "^16.4.4"
+  }
+}
+
+```
 
 In our `.env` file, lets create a line for storing the OpenAI API key. We will use the `dotenv` module to load an environment variable called `OPENAI_API_KEY` with our API key value. 
 
@@ -120,7 +142,7 @@ Celsius = 20
 Therefore, the temperature in Celsius is 20 degrees.
 ```
 
-If we look at this program we can see that we create objects for `ChatOpenAI`, one for a prompt template and one for the String output parser. The prompt template allows to set up reusable parameters that we can use to pass into the prompt like a function. In the second example I set up a parameter for the temperature in Fahrenheit.
+If we look at this program we can see that we create objects for `ChatOpenAI`, one for a prompt template and one for the `StringOutputParser`. The prompt template allows to set up reusable parameters that we can use to pass into the prompt like a function. In the second example I set up a parameter for the temperature in Fahrenheit.
 
 We then create a `chain` object by piping the prompt into the chat model, and then into the output parser.
 
@@ -130,4 +152,4 @@ The chain lets us invoke an answer from the chat model, but in the example above
 
 This is a very basic example of what we can do with LangChain, but by using LangChain to write this program, we can easily swap out one chat model for another. So if I want to use Gemini or Claude for my chat model, I can replace just that portion of the program.
 
-The JavaScript LangChain framework is written in TypeScript, and uses reusable interfaces for all of these objects, making easier for us to inject different solutions such as swapping one LLM for another.
+The JavaScript LangChain framework is written in TypeScript, and uses reusable interfaces for all of these objects, making it easier for us to inject different solutions such as swapping one LLM for another.
