@@ -1,11 +1,18 @@
 ---
 layout: post
 title: "LangChain for JavaScript part 1"
+tags: ["LangChain", "Node.js", "LLM", "JavaScript"]
 description: ""
 category: 
 date: 2024-02-22
 cover_image: "./c73d2b2e-31cb-4a0d-acab-bf7ed830f50a.png"
 ---
+
+<div style="text-align: center">
+    <div class="responsive-iframe-container">
+        <iframe src="https://youtube.com/embed/y3VmQVztTeQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
 
 If you are not already familiar with [LangChain](https://js.langchain.com/), it is a framework for chaining large language models, data and functions to create context aware AI software and agents. 
 The company behind LangChain has two official frameworks, one in Python, and the other in JavaScript. When you see LangChain examples online, they are usually in Python, 
@@ -63,7 +70,7 @@ Now that these modules are installed, lets create two files in your application 
 In our `.env` file, lets create a line for storing the OpenAI API key. We will use the `dotenv` module to load an environment variable called `OPENAI_API_KEY` with our API key value. 
 
 ```text
-OPENAI_API_KEY=<Your_API_Key_goies_kere>
+OPENAI_API_KEY=<Your_API_Key_goes_here>
 ```
 
 Now lets add the code to our `promptopenai.js` file for prompting the GPT model with our question?
