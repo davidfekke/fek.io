@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "LangChain for JavaScript part 2"
+tags: ["LangChain", "Node.js", "LLM", "JavaScript"]
 description: ""
 category: 
 date: 2024-02-26
