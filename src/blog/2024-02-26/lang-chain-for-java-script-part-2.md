@@ -8,6 +8,12 @@ date: 2024-02-26
 cover_image: "./2a8fc31f-5d43-4088-95c6-0bf84e20b407.png"
 ---
 
+<div style="text-align: center">
+    <div class="responsive-iframe-container">
+        <iframe src="https://youtube.com/embed/kX9CxSRB2T0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
 In a previous [post](../lang-chain-for-java-script-part-1), I wrote about LangChain for JavaScript, and gave a simple example of how to send a prompt to OpenAI's GPT Chat model using LangChain for JavaScript. In this post I plan on showing how you can parse a document, 
 and pass the document as context into a prompt to get a more relevant answer from the chat model.
 
