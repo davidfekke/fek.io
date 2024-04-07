@@ -8,6 +8,12 @@ date: 2024-04-06
 cover_image: "./appleprivacy.png"
 ---
 
+<div style="text-align: center">
+    <div class="responsive-iframe-container">
+        <iframe src="https://youtube.com/embed/XstYjtRNMeU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
 If you publish iOS apps to the Apple App Store, you might have gotten a message back saying your app was submitted successfully, but you have issues related to your upload.
 
 This is due to Apple's continuing focus on user privacy and security. If you have code that accesses an API or framework that handles the file system, dates or user defaults, these can raise an alert with Apple's app submission process.
