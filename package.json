@@ -10,7 +10,9 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "chromatic": "chromatic",
+    "build-storybook": "npx chromatic --project-token=chpt_d2dbe7df77585b1"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.0",
@@ -46,6 +48,7 @@
     "sharp": "^0.31.1"
   },
   "devDependencies": {
+    "chromatic": "^11.3.0",
     "prettier": "^2.8.3"
   },
   "repository": {
