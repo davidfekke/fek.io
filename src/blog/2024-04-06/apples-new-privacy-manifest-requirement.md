@@ -48,6 +48,8 @@ In the example above we had two alerts from Apple concerning a File Timestamp an
 
 ![Privacy Manifest](./privacymanifest.png)
 
+The last step you will need to do is make sure that your privacy manifest gets copied into the bundle resources. Go to your `Build Phases` and add the `PrivacyInfo.xcprivacy` file to the `Copy Bundle Resources` step.
+
 ## Conclusion
 
 Now that we have added the following API Types and reasons to our privacy manifest, our application should no longer get these warning from Apple on submission, and we should be safe for the May 1st deadline.

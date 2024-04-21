@@ -8,6 +8,12 @@ date: 2024-04-14
 cover_image: "./distroless.png"
 ---
 
+<div style="text-align: center">
+    <div class="responsive-iframe-container">
+        <iframe src="https://youtube.com/embed/Co4DiyDvKPA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
 It is easy enough to create a Node.js application, but one of the first roadblocks many developers run into is how they can deploy their application. Many cloud providers have services that will automatically deploy a node app, but underneath the hood almost all of these cloud providers are using Docker. 
 
 ## What is Docker
