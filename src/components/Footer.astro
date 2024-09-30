@@ -1,0 +1,101 @@
+---
+const now = new Date();
+import { Icon } from 'astro-icon/components'
+---
+<footer>
+  <div class="pt-1 pb-2 mx-auto container max-w-[1174px]">
+  <!-- style={{ textAlign: 'center', height: '3rem', paddingTop: '20px', paddingBottom: '10px',  }} -->
+    <div class="flex justify-center">
+      <Icon name="mdi:account" />
+        <a href="https://x.com/davidfekke" target="_blank" rel="noopener noreferrer" aria-label="Twitter" style={{ textDecoration: 'none', color: 'black' }}>Twitter</a><!-- <RiTwitterXFill size={32} style={{ padding: '5px' }} /> -->
+        <a href="https://www.facebook.com/David-Fekke-LLC-178889285498948/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style={{ textDecoration: 'none', color: 'black' }}>Facebook </a><!-- <FaFacebook size={32}  style={{ padding: '5px' }} /> -->
+        <a href="https://www.linkedin.com/in/david-fekke-1913ba2/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style={{ textDecoration: 'none', color: 'black' }}>Linkedin</a><!-- <FaLinkedin size={32}  style={{ padding: '5px' }} /> --> 
+        <a href="https://github.com/davidfekke/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" style={{ textDecoration: 'none', color: 'black' }}>Github</a><!-- <FaGithub size={32}  style={{ padding: '5px' }} />  -->
+        <a href="https://www.youtube.com/davidfekke/" target="_blank" rel="noopener noreferrer" aria-label="YouTube" style={{ textDecoration: 'none', color: 'black' }}>Youtube</a><!-- <FaYoutube size={32}  style={{ padding: '5px' }} /> -->
+    </div>
+    <!-- {footerStyles.gridarea} -->
+    <nav class="grid grid-cols-4 gap-4">
+        <div>
+            <ul>
+                <li>
+                    <strong>Connect</strong>
+                </li>
+                <li>
+                    <a href="/blog">Blog</a>
+                </li>
+                <li>
+                    <a href="https://x.com/davidfekke">X</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/david-fekke-1913ba2/">Linkedin</a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/c/polyglotengineer">Youtube</a>    
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <strong>Products</strong>
+                </li>
+                <li>
+                  <a href="/products/idogyears">iDogYears</a>
+                </li>
+                <li>
+                  <a href="/products/ilottonum">iLottoNum</a>
+                </li>
+                <li>
+                  <a href="/products/icatyears">iCatYears</a>
+                </li>
+                <li>
+                  <a href="/products/jaxnode">JaxNode App</a>
+                </li>
+            </ul>                            
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <strong>Sites</strong>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/channel/UC1TglgvYxS354qj7ZlmoUcA">Polyglot Engineer</a>
+
+                </li>
+                <li>
+                  <a href="https://www.jaxnode.com">JaxNode</a>
+                </li>
+                <li>
+                  <a href="https://www.swyftmobile.com">Swyft Mobile</a>
+                </li>
+                <li>
+                  <a href="https://www.github.com/davidfekke">Github</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <strong>Pages</strong>
+                </li>
+                <li>
+                  <a href="/contact">Contact</a>
+                </li>
+                <li>
+                  <a href="/about">About</a>
+                </li>
+                <li>
+                  <a href="/terms">Terms and Conditions</a>
+                </li>
+                <li>
+                    <a href="/rss.xml">RSS Feed</a>
+                </li>
+            </ul>
+        </div>    
+    </nav>
+    <!-- textAlign: 'center', fontSize: 'small', paddingTop: '1rem' -->
+    <div class="text-sm">
+        <p class="font-bold">Copyright {now.getFullYear()}, David Fekke</p>
+    </div>
+  </div>
+</footer>

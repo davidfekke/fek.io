@@ -1,0 +1,29 @@
+---
+import NavBar from '../components/NavBar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>FEK.IO</title>
+	</head>
+
+	<body>
+		<div class="flex flex-col min-h-screen flex-1 flex-grow">
+			<NavBar />
+      <div class="container mx-auto">
+        <!-- <main class="py-2 px-0 flex flex-col flex-1 items-start text-lg flex-grow"> -->
+         <main class="max-w-[1174px] mx-auto py-2">
+          <div class="prose">
+            <slot />
+          </div>
+        </main>
+      </div>
+      <Footer />
+		</div>
+	</body>
+</html>
