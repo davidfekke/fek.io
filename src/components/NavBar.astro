@@ -24,7 +24,7 @@ const menuData: menuItem[] = [
   
           <!-- Desktop Menu -->
           <div class="hidden md:flex md:items-center">
-            {menuData && menuData.map((item, index) => (
+            {menuData && menuData.map((item) => (
                 <a href={item.link} class="px-3 py-2 font-bold text-gray-700">{item.title}</a>
             ))}
           </div>
@@ -46,7 +46,7 @@ const menuData: menuItem[] = [
   
   <!-- Mobile Menu -->
   <div class="peer-checked:block hidden md:hidden">
-    {menuData && menuData.map((item, index) => (
+    {menuData && menuData.map((item) => (
         <a href={item.link} class="block px-4 py-2 text-gray-700">{item.title}</a>
     ))}
   </div>
@@ -62,19 +62,11 @@ const menuData: menuItem[] = [
           logo.classList.add('h-8');
           navbar.classList.remove('h-16');
           navbar.classList.add('h-12');
-          // nav.classList.add('bg-gray-900');
-          console.log('window.scrollY > 80');
       } else {
           logo.classList.remove('h-8');
           logo.classList.add('h-12');
           navbar.classList.remove('h-12');
           navbar.classList.add('h-16');
-          // nav.classList.remove('bg-gray-900');
-          console.log('window.scrollY <= 80');
       }
   });
 </script>
-
-<div class="flex mx-auto justify-start">
-  
-</div>
