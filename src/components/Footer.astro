@@ -1,20 +1,20 @@
 ---
 const now = new Date();
-import { Icon } from 'astro-icon/components'
+import { Icon } from 'astro-icon/components';
+// @iconify-json/fa6-solid
 ---
-<footer>
+<footer class="bg-[#868e96]">
   <div class="pt-1 pb-2 mx-auto container max-w-[1174px]">
   <!-- style={{ textAlign: 'center', height: '3rem', paddingTop: '20px', paddingBottom: '10px',  }} -->
-    <div class="flex justify-center">
-      <Icon name="mdi:account" />
-        <a href="https://x.com/davidfekke" target="_blank" rel="noopener noreferrer" aria-label="Twitter" style={{ textDecoration: 'none', color: 'black' }}>Twitter</a><!-- <RiTwitterXFill size={32} style={{ padding: '5px' }} /> -->
-        <a href="https://www.facebook.com/David-Fekke-LLC-178889285498948/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style={{ textDecoration: 'none', color: 'black' }}>Facebook </a><!-- <FaFacebook size={32}  style={{ padding: '5px' }} /> -->
-        <a href="https://www.linkedin.com/in/david-fekke-1913ba2/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style={{ textDecoration: 'none', color: 'black' }}>Linkedin</a><!-- <FaLinkedin size={32}  style={{ padding: '5px' }} /> --> 
-        <a href="https://github.com/davidfekke/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" style={{ textDecoration: 'none', color: 'black' }}>Github</a><!-- <FaGithub size={32}  style={{ padding: '5px' }} />  -->
-        <a href="https://www.youtube.com/davidfekke/" target="_blank" rel="noopener noreferrer" aria-label="YouTube" style={{ textDecoration: 'none', color: 'black' }}>Youtube</a><!-- <FaYoutube size={32}  style={{ padding: '5px' }} /> -->
+    <div class="flex justify-center m-6 gap-4">
+        <a href="https://x.com/davidfekke" target="_blank" rel="noopener noreferrer" aria-label="Twitter" style={{ textDecoration: 'none', color: 'black' }}><Icon name="simple-icons:x" width="24" height="24" /></a><!-- <RiTwitterXFill size={32} style={{ padding: '5px' }} /> -->
+        <a href="https://www.facebook.com/David-Fekke-LLC-178889285498948/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style={{ textDecoration: 'none', color: 'black' }}><Icon name="simple-icons:facebook" width="24" height="24" /> </a><!-- <FaFacebook size={32}  style={{ padding: '5px' }} /> -->
+        <a href="https://www.linkedin.com/in/davidfekke/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style={{ textDecoration: 'none', color: 'black' }}><Icon name="simple-icons:linkedin" width="24" height="24" /></a><!-- <FaLinkedin size={32}  style={{ padding: '5px' }} /> --> 
+        <a href="https://github.com/davidfekke/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" style={{ textDecoration: 'none', color: 'black' }}><Icon name="simple-icons:github" width="24" height="24" /></a><!-- <FaGithub size={32}  style={{ padding: '5px' }} />  -->
+        <a href="https://www.youtube.com/davidfekke/" target="_blank" rel="noopener noreferrer" aria-label="YouTube" style={{ textDecoration: 'none', color: 'black' }}><Icon name="simple-icons:youtube" width="24" height="24" /></a><!-- <FaYoutube size={32}  style={{ padding: '5px' }} /> -->
     </div>
     <!-- {footerStyles.gridarea} -->
-    <nav class="grid grid-cols-4 gap-4">
+    <nav class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 m-6">
         <div>
             <ul>
                 <li>
@@ -27,7 +27,7 @@ import { Icon } from 'astro-icon/components'
                     <a href="https://x.com/davidfekke">X</a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/david-fekke-1913ba2/">Linkedin</a>
+                  <a href="https://www.linkedin.com/in/davidfekke/">Linkedin</a>
                 </li>
                 <li>
                   <a href="https://www.youtube.com/c/polyglotengineer">Youtube</a>    
@@ -94,8 +94,8 @@ import { Icon } from 'astro-icon/components'
         </div>    
     </nav>
     <!-- textAlign: 'center', fontSize: 'small', paddingTop: '1rem' -->
-    <div class="text-sm">
-        <p class="font-bold">Copyright {now.getFullYear()}, David Fekke</p>
+    <div class="flex justify-center">
+        <p class="text-sm font-bold">Copyright {now.getFullYear()}, David Fekke</p>
     </div>
   </div>
 </footer>
