@@ -1,8 +1,10 @@
 ---
+type menuItem = {
+  title: string;
+  link: string;
+}
 
-import Logo from '../../public/fekio.logo.svg'
-
-const menuData = [
+const menuData: menuItem[] = [
     { title: 'Home', link: '/'},
     { title: 'Products', link: '/products' },
     { title: 'Blog', link: '/blog' },
@@ -22,11 +24,9 @@ const menuData = [
   
           <!-- Desktop Menu -->
           <div class="hidden md:flex md:items-center">
-              <a href="/" class="px-3 py-2 font-bold text-gray-700">Home</a>
-              <a href="/products" class="px-3 py-2 font-bold text-gray-700">Products</a>
-              <a href="/blog" class="px-3 py-2 font-bold text-gray-700">Blog</a>
-              <a href="/about" class="px-3 py-2 font-bold text-gray-700">About</a>
-              <a href="/contact" class="px-3 py-2 font-bold text-gray-700">Contact</a>
+            {menuData && menuData.map((item, index) => (
+                <a href={item.link} class="px-3 py-2 font-bold text-gray-700">{item.title}</a>
+            ))}
           </div>
   
           <!-- Mobile Menu Button -->
@@ -46,9 +46,9 @@ const menuData = [
   
   <!-- Mobile Menu -->
   <div class="peer-checked:block hidden md:hidden">
-    <a href="/" class="block px-4 py-2 text-gray-700">Home</a>
-    <a href="/weather" class="block px-4 py-2 text-gray-700">Weather</a>
-    <a href="/contact" class="block px-4 py-2 text-gray-700">Contact</a>
+    {menuData && menuData.map((item, index) => (
+        <a href={item.link} class="block px-4 py-2 text-gray-700">{item.title}</a>
+    ))}
   </div>
 </nav>
 
