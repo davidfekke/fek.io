@@ -2,7 +2,11 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {
+			backgroundImage: {
+				'hero-back': "url('/newcockpit-3x.jpg')",
+			}
+		},
 		screens: {
 			xs: '375px',
 			sm: '640px',
