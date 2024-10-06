@@ -3,11 +3,14 @@ import NavBar from '../components/NavBar.astro';
 import Footer from '../components/Footer.astro';
 
 type Props = {
-	children: Node;
+	title?: string;
 	coverImage?: string;
 }
 
 const coverImage = Astro.props.coverImage;
+const title = Astro.props.title || 'FEK.IO';
+const headerStyle = coverImage ? `mb-50px` : `bg-[url('/mooney-3x.jpg')] mb-50px`;
+console.log(`headerStyle: ${headerStyle}`);
 ---
 
 <html lang="en">
@@ -16,16 +19,16 @@ const coverImage = Astro.props.coverImage;
 		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>FEK.IO</title>
+		<title>{title}</title>
 	</head>
 
 	<body>
 		
 		<div class="flex flex-col min-h-screen flex-1 flex-grow">
 			<NavBar />
-			<header class="bg-[url('/newcockpit-3x.jpg')] mb-50px">
+			<header class={headerStyle} style={`background-image: url('${coverImage}');`}>
 				<div class="container mx-auto">
-						<h1 class="flex text-white text-6xl font-bold justify-center pt-[200px] pb-[200px]">My Headline</h1>
+						<h1 class="flex text-white text-6xl font-bold justify-center drop-shadow-xl pt-[200px] pb-[200px]">{title}</h1>
 				</div>
 			</header>
       <div class="container mx-auto">

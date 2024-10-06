@@ -5,6 +5,10 @@ export default {
 		extend: {
 			backgroundImage: {
 				'hero-back': "url('/newcockpit-3x.jpg')",
+				'product-back': "url('/garmin-3x.jpg')",
+				'blog-back': "url('/blogheadergraphic-3x.jpg')",
+				'contact-back': "url('/p51-3x.jpg')",
+				'about-back': "url('/b24-3x.jpg')",
 			}
 		},
 		screens: {
