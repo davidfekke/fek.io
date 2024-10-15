@@ -4,6 +4,8 @@ import PageH1 from '../../components/PageH1.astro';
 import products from '../../data/products.json';
 
 const iCatYears = products.filter(item => item.name === 'iCatYears')[0];
+const title = "Welcome to FEK.IO"
+const description = '';
 ---
 <MyLayout coverImage='/garmin-3x.jpg' title="iCatYears">
   <PageH1>{iCatYears.name}</PageH1>

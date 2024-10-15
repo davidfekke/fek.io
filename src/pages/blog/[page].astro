@@ -1,0 +1,49 @@
+---
+import MyLayout from '../../layouts/MyLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+
+
+const title = "Blog"
+const description = 'vcxcvcxvx';
+
+export async function getStaticPaths({ paginate }: { paginate: any }) {
+  const posts = (await getCollection('blog')).sort(
+    (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+  );
+
+  return paginate(posts, { pageSize: 20 });
+}
+
+const { page } = Astro.props;
+console.log(page);
+---
+
+<MyLayout coverImage='/b24-3x.jpg' title={title}>
+  <main>
+    <h1>Blog {page.currentPage}</h1>
+    <section>
+      <ul>
+        {
+          page.data.map((post: any) => (
+            <li>
+              <a href={`/blog/${post.slug.split('/').pop()}/`}>
+              {post.data.cover_image && <Image width={720} height={360} src={post.data.cover_image} alt={post.data.title} />}
+              
+                {/* <Image width={720} height={360} src={post.data.cover_image} alt="" /> */}
+                <h4 class="title">{post.data.title}</h4>
+                <p class="date">
+                  {post.data.date}
+                </p>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+    {page.url.first ? <a href={page.url.first}>First</a> : null}
+    {page.url.prev ? <a href={page.url.prev}>Previous</a> : null}
+    {page.url.next ? <a href={page.url.next}>Next</a> : null}
+    {page.url.last ? <a href={page.url.last}>Last</a> : null}
+  </main>
+</MyLayout>

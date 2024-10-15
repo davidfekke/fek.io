@@ -1,6 +1,8 @@
 ---
 import NavBar from '../components/NavBar.astro';
 import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import '@fontsource-variable/open-sans';
 
 type Props = {
 	title?: string;
@@ -10,7 +12,6 @@ type Props = {
 const coverImage = Astro.props.coverImage;
 const title = Astro.props.title || 'FEK.IO';
 const headerStyle = coverImage ? `mb-50px` : `bg-[url('/mooney-3x.jpg')] mb-50px`;
-console.log(`headerStyle: ${headerStyle}`);
 ---
 
 <html lang="en">
@@ -20,17 +21,26 @@ console.log(`headerStyle: ${headerStyle}`);
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<style is:global>
+			@font-face {
+				font-family: 'Open-Sans';
+				font-weight: normal;
+				font-style: normal;
+				font-display: swap;
+			}
+		</style>
 	</head>
 
 	<body>
 		
 		<div class="flex flex-col min-h-screen flex-1 flex-grow">
 			<NavBar />
-			<header class={headerStyle} style={`background-image: url('${coverImage}');`}>
+			<Header title={title} coverImage={coverImage} />
+			<!-- <header class={headerStyle} style={`background-image: url('${coverImage}');`}>
 				<div class="container mx-auto">
-						<h1 class="flex text-white text-6xl font-bold justify-center drop-shadow-xl pt-[200px] pb-[200px]">{title}</h1>
+						<h1 class="flex text-white text-6xl font-bold justify-center drop-shadow-md pt-[200px] pb-[200px]">{title}</h1>
 				</div>
-			</header>
+			</header> -->
       <div class="container mx-auto">
         <!-- <main class="py-2 px-0 flex flex-col flex-1 items-start text-lg flex-grow"> -->
          <main class="max-w-[1174px] mx-auto py-2">

@@ -1,0 +1,161 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { Image } from 'astro:assets';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+
+type Props = CollectionEntry<'blog'>['data'];
+
+const { title, description, date, updatedDate, cover_image }: Props = Astro.props;
+
+const imagePath = `${Astro.url.pathname}${cover_image}`;
+---
+
+
+<html lang="en">
+	<head>
+		{description && <div>{title} || {description}</div>}
+		<!-- <style>
+			main {
+				width: calc(100% - 2em);
+				max-width: 100%;
+				margin: 0;
+			}
+			.hero-image {
+				width: 100%;
+			}
+			.hero-image img {
+				display: block;
+				margin: 0 auto;
+				border-radius: 12px;
+				box-shadow: var(--box-shadow);
+			}
+			.prose {
+				width: 1024px;
+				max-width: calc(100% - 2em);
+				margin: auto;
+				padding: 1em;
+				color: rgb(var(--gray-dark));
+			}
+			.title {
+				margin-bottom: 1em;
+				padding: 1em 0;
+				text-align: center;
+				line-height: 1;
+			}
+			.title h1 {
+				margin: 0 0 0.5em 0;
+			}
+			.date {
+				margin-bottom: 0.5em;
+				color: rgb(var(--gray));
+			}
+			.last-updated-on {
+				font-style: italic;
+			}
+		</style> -->
+		<!-- <style is:global>
+			body { 
+					width: 100vw;
+					height: 100vh;
+					background-color: #1c78a6;
+					color:white;
+			}
+			.content {
+					max-width: 800px;
+					font-size: 16px;
+					margin: 0 auto;
+					padding: 8rem 0;
+			}
+			.content pre > code {
+					display: grid; /*  this is way the line will span whole width of `code` component */
+					padding: 1.5rem 0;
+					background-color: #1E293B;
+					border-radius: 0.5rem;
+			}
+			.content pre > code .line {
+					border-left: 0.5rem solid transparent;
+					padding: 0 0.5rem;
+			}
+			.content pre > code .highlighted {
+					background-color: #2e4c35;
+					border-color: #469458;
+			}
+			/** 
+			 *  data-line-numbers will be enabled on markdown  
+			 *  with `showLineNumbers` meta string on it
+			 */
+			.content pre > code[data-line-numbers] {
+					counter-reset: line;
+			}
+			.content pre > code[data-line-numbers] > .line::before {
+					counter-increment: line;
+					content: counter(line);
+					display: inline-block;
+					margin-right: 2rem
+					width: 1rem;
+					text-align: left;
+					color: #7ca2dfad;
+			}
+			.content pre > code > .line::before {
+					content: "";
+					display: inline-block;
+					width: 1rem;
+					text-align: right;
+			}
+	 
+			/** 
+			 *  we'll need to adjust the space required 
+			 *  the number depending on the number of digits 
+			 */
+			.content pre > code[data-line-numbers-max-digits="2"] > .line::before {
+					width: 2rem;
+			}
+	 
+			.content code[data-line-numbers-max-digits="3"] > .line::before {
+					width: 3rem;
+			}
+	 
+			.content [data-rehype-pretty-code-fragment]{
+					position: relative;
+			}
+			.content [data-rehype-pretty-code-title] {
+					position: absolute;
+					top:-1.75rem;
+					left:0;
+					border-top-left-radius: 0.5rem;
+					border-top-right-radius: 0.5rem;
+					background-color: #1E293B;
+					color:#9abcf3ec;
+					padding: 0.5rem 1rem;
+			}
+	</style> -->
+	</head>
+
+	<body>
+		<Header />
+		<main>
+			<article>
+				<div class="hero-image">
+					{imagePath && <Image 
+													src={cover_image} 
+													alt="{title}"
+													width={720}
+													height={360}
+													 />}
+				</div>
+				<div class="prose">
+					<div class="title">
+						<div class="date">
+							<!-- {cover_image && <div>The cover images is: <Image src={cover_image} alt={title} title={title} class="list" /></div>} -->
+						</div>
+						<h1>{title}</h1>
+						<hr />
+					</div>
+					<slot />
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>

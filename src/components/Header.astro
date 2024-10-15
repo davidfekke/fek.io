@@ -1,0 +1,16 @@
+---
+type Props = {
+	title?: string;
+	coverImage?: string;
+}
+
+const title = Astro.props.title || 'FEK.IO';
+const coverImage = Astro.props.coverImage || '/mooney-3x.jpg';
+const headerStyle = `mb-50px`;
+---
+
+<header class={headerStyle} style={`background-image: url('${coverImage}');`}>
+  <div class="container mx-auto">
+      <h1 class="flex text-white text-6xl font-black justify-center drop-shadow-md pt-[200px] pb-[200px]">{title}</h1>
+  </div>
+</header>
