@@ -1,0 +1,37 @@
+---
+import MyLayout from '../layouts/MyLayout.astro';
+import PageH1 from '../components/PageH1.astro';
+
+const title = "404 - Nothing to see here"
+const description = 'Nothing to see here';
+---
+
+<MyLayout coverImage='/b24-3x.jpg' title={title}>
+  <PageH1>404</PageH1>
+  <p>Page not found</p>
+  <div class="flex justify-center">
+    <img class="justify-items-center" src="/images/marmot.gif" alt="404" />
+  </div>
+  <div>
+    <h2 class="text-lg font-bold">The page you are looking for does not exist</h2>
+    <ul>
+        <li class="py-1">
+            <a href="/">Homepage</a>
+            
+        </li>
+        <li class="py-1">
+            <a href="/products">Products</a>
+            
+        </li>
+        <li class="py-1">
+            <a href="/blog/1">Blog</a>
+        </li>
+        <li class="py-1">
+            <a href="/about">About</a>
+        </li>
+        <li class="py-1">
+            <a href="/contact">Contact</a>
+        </li>
+    </ul>
+</div>
+</MyLayout>
