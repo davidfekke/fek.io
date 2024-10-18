@@ -21,25 +21,33 @@ console.log(page);
 
 <MyLayout coverImage='/b24-3x.jpg' title={title}>
   <main>
-    <h1>Blog {page.currentPage}</h1>
-    <section>
-      <ul>
+    <div style={{ color: 'black', 
+                        fontWeight: 'bold', 
+                        fontSize: '1rem', 
+                        marginBottom: '50px', 
+                        textAlign: 'center' }}>
+            This blog is dedicated to my musings and are strictly my own. I use it to write about all things software, hardware and aviation. 
+            The views and opinions on this site strictly reflect that of my own, and not my employer. 
+            At any point I can change my mind, and they may not even reflect my opinions from three minutes ago, so please don't take anything I say too seriously.
+            Some of the software topics on this blog will probably include ColdFusion, C#, .NET Core, Node.js, Objective-C, Swift, Java, Kotlin, C++. 
+            As commercial pilot I will be writing about General Aviation, the Airlines, instrument flying, avionics, the Federal Aviation Administration and the TSA.
+    </div>
+    <section class="flex flex-col items-center">
+      
         {
           page.data.map((post: any) => (
-            <li>
+            <div class="pb-12">
               <a href={`/blog/${post.slug.split('/').pop()}/`}>
-              {post.data.cover_image && <Image width={720} height={360} src={post.data.cover_image} alt={post.data.title} />}
-              
-                {/* <Image width={720} height={360} src={post.data.cover_image} alt="" /> */}
-                <h4 class="title">{post.data.title}</h4>
+              {post.data.cover_image && <Image width={720} height={360} src={post.data.cover_image} alt={post.data.title} />
+                <h4 class="text-2xl font-bold">{post.data.title}</h4>
                 <p class="date">
                   {post.data.date}
                 </p>
               </a>
-            </li>
+            </div>
           ))
         }
-      </ul>
+      
     </section>
     {page.url.first ? <a href={page.url.first}>First</a> : null}
     {page.url.prev ? <a href={page.url.prev}>Previous</a> : null}
