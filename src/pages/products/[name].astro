@@ -57,10 +57,10 @@ const { product } = Astro.props;
       </div>
 
   </div>
-  <div class="flex flex-row container mx-full">
+  <div class="columns-3">
   {product && product.screens.map((screen) => (
     
-      <img src={screen} alt={product.name} class="w-1/2 p-1" />
+      <img src={screen} alt={product.name} class="" />
     
   ))}
   </div>
