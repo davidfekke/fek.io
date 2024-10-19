@@ -25,7 +25,7 @@ type Product = {
 export async function getStaticPaths() {
 	const products = productData.map((product: Product) => {
     return {
-      params: { name: product.name },
+      params: { name: product.name.toLocaleLowerCase() },
       props: { product },
     }
   });
@@ -34,13 +34,34 @@ export async function getStaticPaths() {
 
 const { name } = Astro.params;
 const { product } = Astro.props;
-
 ---
-<MyLayout coverImage="garmin-3x.jpg" title="Products">
+<script is:inline>
+  const downloadProducts = (uri) => {
+    window.location.href = uri;
+  }
+</script>
+<MyLayout coverImage="/garmin-3x.jpg" title="Products">
   <PageH1>{product.name}</PageH1>
   <div class="bg-white">
-    {product && product.screens.map((screen) => (
-      <img src={screen} alt={product.name} class="w-full" />
-    ))}
+    <div class="flex flex-col md:flex-row md:items-center md:space-x-4 p-4 border-b border-gray-200">
+      <div class="flex flex-col md:flex-row md:items-center md:space-x-4">
+        <img src={product.icon} alt={product.name} class="w-24 h-24 md:w-32 md:h-32 rounded-lg drop-shadow-lg" />
+        <div>
+          <h2 class="text-xl font-bold">{product.name}</h2>
+          <p>{product.description}</p>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row md:items-center md:space-x-4">
+        <p class="text-xl font-bold">FREE</p>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick={`downloadProducts('${product.uri}');`}>Download</button>
+      </div>
+
+  </div>
+  <div class="flex flex-row container mx-full">
+  {product && product.screens.map((screen) => (
+    
+      <img src={screen} alt={product.name} class="w-1/2 p-1" />
+    
+  ))}
   </div>
 </MyLayout>
