@@ -2,7 +2,7 @@
     { "name": "iDogYears",
         "description": "This is a simple program that converts dog years into human years. It uses the canines actual weight plus the actual age to determine the age.",
         "uri": "https://itunes.apple.com/us/app/idogyears-paid/id377664932?ls=1&mt=8",
-        "icon": "/images/idogs/idogicon.png",
+        "icon": "/idogs/idogicon.png",
         "screens": [
             "/images/idogs/iDogYears1.jpg",
             "/images/idogs/iDogYears2.jpg"
@@ -10,7 +10,7 @@
     { "name": "iCatYears",
         "description": "This is a simple program that converts cat years into human years. It uses the felines actual age to determine the age.",
         "uri": "https://itunes.apple.com/us/app/icatyears/id405030433?ls=1&mt=8",
-        "icon": "/images/icats/icaticon.png",
+        "icon": "/icats/icaticon.png",
         "screens": [
             "/images/icats/icatyears1.jpg",
             "/images/icats/icatyears2.jpg"
@@ -18,7 +18,7 @@
     { "name": "iLottoNum",
         "description": "This program randomly picks a number from the starting value to the end value. It is written as way for groups to quickly pick a number for giveaways at meetings. This is the Ad free version of this application.",
         "uri": "https://itunes.apple.com/us/app/ilottonumber-paid/id377813705?ls=1&mt=8",
-        "icon": "/images/ilottonum/ilottoicon.png",
+        "icon": "/ilottonum/ilottoicon.png",
         "screens": [
             "/images/ilottonum/ilottonum1.jpg",
             "/images/ilottonum/ilottonum2.jpg",

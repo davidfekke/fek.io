@@ -1,38 +1,33 @@
 ---
 import MyLayout from '../../layouts/MyLayout.astro';
 import PageH1 from '../../components/PageH1.astro';
+import productData from '../../data/products.json';
 
 const title = "Welcome to FEK.IO"
 const description = 'Products';
 ---
+<script is:inline>
+  const downloadProducts = (uri) => {
+    window.location.href = uri;
+  }
+</script>
 <MyLayout coverImage="garmin-3x.jpg" title="Products">
   <PageH1>Products</PageH1>
   <div class="bg-white">
-    <p class="pt-6 pb-6">We have a wide range of products to choose from. Check out our selection below:</p>
-
-    <p class="pt-6 pb-6">We have a wide range of products to choose from. Check out our selection below:</p>
-
-    <p class="pt-6 pb-6">We have a wide range of products to choose from. Check out our selection below:</p>
-
-    <p class="pt-6 pb-6">We have a wide range of products to choose from. Check out our selection below:</p>
-
-    <p class="pt-6 pb-6">We have a wide range of products to choose from. Check out our selection below:</p>
-
-    <p class="pt-6 pb-6">We have a wide range of products to choose from. Check out our selection below:</p>
-
-    <p class="pt-6 pb-6">We have a wide range of products to choose from. Check out our selection below:</p>
-
-    <p class="pt-6 pb-6">We have a wide range of products to choose from. Check out our selection below:</p>
-
-
-    <p class="pt-6 pb-6">We have a wide range of products to choose from. Check out our selection below:</p>
-
-    <p class="pt-6 pb-6">We have a wide range of products to choose from. Check out our selection below:</p>
-
-    <p class="pt-6 pb-6">We have a wide range of products to choose from. Check out our selection below:</p>
-
-    <p class="pt-6 pb-6">We have a wide range of products to choose from. Check out our selection below:</p>
-
-    <p class="pt-6 pb-6">We have a wide range of products to choose from. Check out our selection below:</p>
+    {productData.map((product) => (
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between md:space-x-4 p-4 border-b border-gray-200">
+        <div class="flex flex-col md:flex-row md:items-center md:space-x-4">
+          <img src={product.icon} alt={product.name} class="w-24 h-24 md:w-32 md:h-32" />
+          <div>
+            <h2 class="text-xl font-bold">{product.name}</h2>
+            <p>{product.description}</p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row md:items-center md:space-x-4">
+          <p class="text-xl font-bold">FREE</p>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick={`downloadProducts('${product.uri}');`}>Download</button>
+        </div>
+      </div>
+    ))}
   </div>
 </MyLayout>
