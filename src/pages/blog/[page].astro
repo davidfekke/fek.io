@@ -2,24 +2,37 @@
 import MyLayout from '../../layouts/MyLayout.astro';
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
-
+import removeMarkdown from 'remove-markdown';
+import TurndownService from 'turndown';
 
 const title = "Blog"
-const description = 'vcxcvcxvx';
+const description = 'This is my blog';
 
 export async function getStaticPaths({ paginate }: { paginate: any }) {
   const posts = (await getCollection('blog')).sort(
     (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
   );
+  // Debugging line
 
-  return paginate(posts, { pageSize: 20 });
+  const cleansedPosts = posts.map((post) => {
+    const turndownService = new TurndownService();
+    const markdownContent = turndownService.turndown(post.body);
+    const plainText = removeMarkdown(markdownContent);
+
+    const excerpt = plainText.substring(0, 200);
+    return {
+      ...post,
+      excerpt: `${excerpt}...`,
+    };
+  });
+  
+  return paginate(cleansedPosts, { pageSize: 20 });
 }
 
 const { page } = Astro.props;
-console.log(page);
 ---
 
-<MyLayout coverImage='/b24-3x.jpg' title={title}>
+<MyLayout coverImage='/images/blogheadergraphic-3x.jpg' title={title}>
   <main>
     <div style={{ color: 'black', 
                         fontWeight: 'bold', 
@@ -38,10 +51,11 @@ console.log(page);
           page.data.map((post: any) => (
             <div class="pb-12">
               <a href={`/blog/${post.slug.split('/').pop()}/`}>
-              {post.data.cover_image && <Image width={720} height={360} src={post.data.cover_image} alt={post.data.title} />
+              {post.data.cover_image && <Image width={720} height={360} src={post.data.cover_image} alt={post.data.title} />}
                 <h4 class="text-2xl font-bold">{post.data.title}</h4>
                 <p class="date">
                   {post.data.date}
+                  <span>{post.excerpt}</span>
                 </p>
               </a>
             </div>
