@@ -1,0 +1,46 @@
+---
+import MyLayout from '../../layouts/MyLayout.astro';
+import PageH1 from '../../components/PageH1.astro';
+import productData from '../../data/products.json';
+
+// Create a type based on the following example:
+/*
+{ "name": "iCatYears",
+        "description": "This is a simple program that converts cat years into human years. It uses the felines actual age to determine the age.",
+        "uri": "https://itunes.apple.com/us/app/icatyears/id405030433?ls=1&mt=8",
+        "icon": "/icats/icaticon.png",
+        "screens": [
+            "/images/icats/icatyears1.jpg",
+            "/images/icats/icatyears2.jpg"
+        ] },
+*/
+type Product = {
+  name: string;
+  description: string;
+  uri: string;
+  icon: string;
+  screens: string[];
+}
+
+export async function getStaticPaths() {
+	const products = productData.map((product: Product) => {
+    return {
+      params: { name: product.name },
+      props: { product },
+    }
+  });
+  return products;
+}
+
+const { name } = Astro.params;
+const { product } = Astro.props;
+
+---
+<MyLayout coverImage="garmin-3x.jpg" title="Products">
+  <PageH1>{product.name}</PageH1>
+  <div class="bg-white">
+    {product && product.screens.map((screen) => (
+      <img src={screen} alt={product.name} class="w-full" />
+    ))}
+  </div>
+</MyLayout>
