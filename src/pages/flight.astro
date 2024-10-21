@@ -1,0 +1,24 @@
+---
+import MyLayout from '../layouts/MyLayout.astro';
+import PageH1 from '../components/PageH1.astro';
+import faapubs from '../data/faapubs.json';
+
+const title = "Flight Training Materials"
+const description = 'Flight Training Materials fro the FAA';
+---
+<MyLayout coverImage='/b24-3x.jpg' title={title}>
+  <PageH1>Flight Training Materials</PageH1>
+  <div>
+    <h2 class="text-lg font-bold">Flight Training Materials</h2>
+    <p class="pb-2">Here are some resources I use for flight training.</p>
+    <ul>
+      {faapubs.map(section => (<div>
+        <p style={{fontWeight: 'bold'}}>{section.title}</p>
+        <ul class="pb-2">
+            {section.articles.map(article => (
+              <li class="text-[#0369a1]"><a class="underline underline-offset-4" href={article.href}>{article.title}</a></li>
+            ))}
+        </ul>
+      </div>))}
+    </ul>
+</MyLayout>

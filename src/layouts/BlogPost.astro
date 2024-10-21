@@ -10,6 +10,14 @@ type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, date, updatedDate, cover_image }: Props = Astro.props;
 
+const dateOptions: object = {
+	year: "numeric",
+	month: "numeric",
+	day: "numeric",
+};
+
+const formattedPublishDate = new Date(date).toLocaleDateString("en-US", dateOptions);
+
 const imagePath = `${Astro.url.pathname}${cover_image}`;
 ---
 
@@ -19,6 +27,34 @@ const imagePath = `${Astro.url.pathname}${cover_image}`;
 		{description && <div>{title} || {description}</div>}
 		<meta charset="UTF-8">
 		<style is:global>
+			@font-face {
+				font-family: 'Open-Sans';
+				font-weight: normal;
+				font-style: normal;
+				font-display: swap;
+			}
+			h1 {
+				font-size: 2.5rem;
+				font-weight: 700;
+			}
+			h2 {
+				font-size: 2rem;
+				font-weight: 600;
+			}
+			h3 {
+				font-size: 1.75rem;
+				font-weight: 500;
+			}
+			h4 {
+				font-size: 1.5rem;
+				font-weight: 400;
+			}
+			p {
+				font-size: 1.25rem;
+				font-family: Open-Sans, sans-serif;
+				
+				margin-bottom: 1.25rem;
+			}
 			.responsive-iframe-container {
 					position: relative;
 					padding-bottom: 56.25%; /* Aspect ratio for 16:9 screens */
@@ -37,6 +73,8 @@ const imagePath = `${Astro.url.pathname}${cover_image}`;
 			p {
 				font-size: 1.25rem;
 			}
+
+
 		</style>
 	</head>
 
@@ -45,11 +83,30 @@ const imagePath = `${Astro.url.pathname}${cover_image}`;
 		<BlogHeader coverImage={cover_image} title={title} />
 		<main>
 			<article class="container mx-auto py-6">
-				<div class="flex justify-center">
-					<div class="prose">
-						<slot />
+				<main class="max-w-[1174px] mx-auto py-2">
+					<p class="font-bold text-sky-700">Author: David Fekke</p>
+					<!-- Format the date below in the following format Month, Day, Year -->
+
+					<p>Published: {formattedPublishDate}</p>
+					<div class="flex flex-row gap-1">
+						<div>
+							<a href="">Share on X</a>
+						</div>
+						<div>
+							<a href="">Share on LinkedIn</a>
+						</div>
+						<div>
+							<a href="">Share on Reddit</a>
+						</div>
 					</div>
-				</div>
+					<div class="flex flex-col justify-center">
+						
+						<!-- <div class="prose"> -->
+							<slot />
+						<!-- </div> -->
+					</div>
+				</main>
+				
 			</article>
 		</main>
 		<Footer />

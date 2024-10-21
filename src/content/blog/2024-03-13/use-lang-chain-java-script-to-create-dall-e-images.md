@@ -67,7 +67,7 @@ Something else we can observe from the prompt is that along with the title, we a
 
 When creating the Dall-E wrapper tool in our application, it takes an object as the initialization parameter. The TypeScript type for this parameter can take the following values:
 
-```TypeScript
+```javascript
 /**
  * An interface for the Dall-E API Wrapper.
  */
@@ -129,7 +129,7 @@ export interface DallEAPIWrapperParams extends ToolParams {
 
 As we can see from the interface above, the wrapper can take values for the `OPENAI_API_KEY`, the type of model, style, quality, (n) number of images, image size and response format. If you do not supply any of these parameters, it will default to the following:
 
-```TypeScript
+```javascript
 const tool = new DallEAPIWrapper({
     openAIApiKey: process.env.OPENAI_API_KEY
     modelName: "dall-e-3",
