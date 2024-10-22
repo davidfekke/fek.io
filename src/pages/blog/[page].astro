@@ -8,36 +8,6 @@ import TurndownService from 'turndown';
 const title = "Blog"
 const description = 'This is my blog';
 
-// Create a type based on the following example:
-/*
-{
-  page: {
-    data: [
-      [Object], [Object], [Object],
-      [Object], [Object], [Object],
-      [Object], [Object], [Object],
-      [Object], [Object], [Object],
-      [Object], [Object], [Object],
-      [Object], [Object], [Object],
-      [Object], [Object]
-    ],
-    start: 0,
-    end: 19,
-    size: 20,
-    total: 109,
-    currentPage: 1,
-    lastPage: 6,
-    url: {
-      current: '/blog/1',
-      next: '/blog/2',
-      prev: undefined,
-      first: undefined,
-      last: '/blog/6'
-    }
-  }
-}
-*/
-
 type Page = {
   page: {
     data: [
@@ -47,6 +17,7 @@ type Page = {
           title: string;
           date: string;
           cover_image?: string;
+          tags?: string[];
         };
         excerpt: string;
       }
@@ -101,6 +72,13 @@ export async function getStaticPaths({ paginate }: { paginate: any }) {
   return paginate(cleansedPosts, { pageSize: 20 });
 }
 
+const dateOptions: object = {
+	year: "numeric",
+	month: "numeric",
+	day: "numeric",
+};
+
+//const formattedPublishDate = new Date(date).toLocaleDateString("en-US", dateOptions);
 const { page } = Astro.props as Page;
 ---
 
@@ -117,18 +95,31 @@ const { page } = Astro.props as Page;
             Some of the software topics on this blog will probably include ColdFusion, C#, .NET Core, Node.js, Objective-C, Swift, Java, Kotlin, C++. 
             As commercial pilot I will be writing about General Aviation, the Airlines, instrument flying, avionics, the Federal Aviation Administration and the TSA.
     </div>
-    <section class="flex flex-col items-center">
+    <section class="flex flex-col">
       {page && page.data.map((post: Post) => (
-        <div class="pb-12">
-          <a href={`/blog/${post.slug.split('/').pop()}/`}>
-            {post.data.cover_image && <Image width={720} height={360} src={post.data.cover_image} alt={post.data.title} />}
-            <h4 class="text-2xl font-bold">{post.data.title}</h4>
-            <p class="date">
-              {post.data.date}
-              <span>{post.excerpt}</span>
-            </p>
-          </a>
-        </div>
+        <a href={`/blog/${post.slug.split('/').pop()}/`}>
+          <div class="flex flex-row w-full gap-6 items-center pb-12">
+            
+              <div class="flex-1 w-1/2">
+                {post.data.cover_image && <Image class="rounded-lg border border-1 border-black" width={720} height={360} src={post.data.cover_image} alt={post.data.title} />}
+              </div>
+              <div class="flex-1 w-1/2">
+                <div>
+                  <h4 class="text-2xl font-bold">{post.data.title}</h4>
+                  <div>
+                    <p><span class="font-bold">Tags: </span> {post.data.tags && post.data.tags.map(tag => (
+                      <span class="px-1">{tag}</span>
+                    ))}</p>
+                  </div>
+                  <p class="date">
+                    {new Date(post.data.date).toLocaleDateString("en-US", dateOptions)}
+                    <span>{post.excerpt}</span>
+                  </p>
+                </div>
+              </div>
+            
+          </div>
+        </a>
       ))}
 
       
