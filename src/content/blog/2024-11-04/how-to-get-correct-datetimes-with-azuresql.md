@@ -9,7 +9,7 @@ cover_image: "./azure-sql-datetime.png"
 
 I recently ran into an issue with trying to return the correct datetime for comparison using Azure SQL Database. I have used Microsoft SQL Server for most of my career, but until this year I had never used Azure SQL Database.
 
-Azure SQL Database has a lot of simularities with the on premise version of SQL Server, but since this service is hosted on Azure there are some differences. The issue I ran across recently had to do with the `GETDATE()` and `GETUTCDATE()` functions.
+Azure SQL Database has a lot of similarities with the on premise version of SQL Server, but since this service is hosted on Azure there are some differences. The issue I ran across recently had to do with the `GETDATE()` and `GETUTCDATE()` functions.
 
 In the Azure version of SQL both functions will return the same value, which is UTC time. The time zone I am working in is the US Eastcoast time zone, which runs five hours behind UTC time, and four hours during daylight saving time.
 
@@ -18,7 +18,7 @@ so I needed have this work no matter if it was daylight saving time or not.
 
 It turns out that SQL has a nice feature for getting the datetime for the correct time zone.
 
-Let us say we have a query that returns events from a table called `MyEvents`, and there is a column for storing the ScheduledEvent as a DATETIME. Normally we could return future records with a query like the following:
+Let us say we have a query that returns events from a table called `MyEvents`, and there is a column for storing the `ScheduledEvent` as a DATETIME. Normally we could return future records with a query like the following:
 
 ```sql
 SELECT Title, ScheduledEvent
