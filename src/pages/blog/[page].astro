@@ -99,12 +99,12 @@ const { page } = Astro.props as Page;
     <section class="flex flex-col">
       {page && page.data.map((post: Post) => (
         <a href={`/blog/${post.slug.split('/').pop()}/`}>
-          <div class="flex flex-row w-full gap-6 items-center pb-12">
+          <div class="flex flex-col md:flex-row w-full gap-6 items-center pb-12">
             
-              <div class="flex-1 w-1/2">
+              <div class="flex-1 w-full">
                 {post.data.cover_image && <Image class="rounded-lg border border-1 border-black" width={720} height={360} src={post.data.cover_image} alt={post.data.title} />}
               </div>
-              <div class="flex-1 w-1/2">
+              <div class="flex-1 w-full">
                 <div>
                   <h4 class="text-2xl font-bold">{post.data.title}</h4>
                   <div>
