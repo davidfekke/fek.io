@@ -1,0 +1,134 @@
+---
+// This is the first page in my blog
+import MyLayout from '../../layouts/MyLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import removeMarkdown from 'remove-markdown';
+import TurndownService from 'turndown';
+
+const title = "Blog"
+const description = 'This is my blog';
+
+type Page = {
+  page: {
+    data: [
+      {
+        slug: string;
+        data: {
+          title: string;
+          date: string;
+          cover_image?: string;
+          tags?: string[];
+        };
+        excerpt: string;
+      }
+    ];
+    start: number;
+    end: number;
+    size: number;
+    total: number;
+    currentPage: number;
+    lastPage: number;
+    url: {
+      current: string;
+      next: string;
+      prev: string;
+      first: string;
+      last: string;
+    };
+  };
+};
+
+interface Post {
+  slug: string;
+  data: {
+    title: string;
+    date: string;
+    cover_image?: string;
+    tags?: string[];
+  };
+  excerpt: string;
+}
+
+interface PageProps {
+  posts: Post[];
+}
+
+//export async function getStaticPaths({ paginate }: { paginate: any }) {
+  const posts = (await getCollection('blog')).sort(
+    (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+  );
+
+  const cleansedPosts = posts.map((post) => {
+    const turndownService = new TurndownService();
+    const markdownContent = turndownService.turndown(post.body);
+    const plainText = removeMarkdown(markdownContent);
+
+    const excerpt = plainText.substring(0, 200);
+    return {
+      ...post,
+      excerpt: `${excerpt}...`,
+    };
+  });
+  
+  //return paginate(cleansedPosts, { pageSize: 20 });
+//}
+
+const dateOptions: object = {
+	year: "numeric",
+	month: "numeric",
+	day: "numeric",
+};
+
+//const formattedPublishDate = new Date(date).toLocaleDateString("en-US", dateOptions);
+// const { page } = Astro.props as Page;
+const pageData = cleansedPosts.slice(0, 20) as unknown as Post[];
+---
+
+<MyLayout coverImage='/images/blogheadergraphic-3x.jpg' title={title}>
+  <main>
+    <div style={{ color: 'black', 
+                        fontWeight: 'bold', 
+                        fontSize: '1rem', 
+                        marginBottom: '50px', 
+                        textAlign: 'center' }}>
+            This blog is dedicated to my musings and are strictly my own. I use it to write about all things software, hardware and aviation. 
+            The views and opinions on this site strictly reflect that of my own, and not my employer. 
+            At any point I can change my mind, and they may not even reflect my opinions from three minutes ago, so please don't take anything I say too seriously.
+            Some of the software topics on this blog will probably include ColdFusion, C#, .NET Core, Node.js, Objective-C, Swift, Java, Kotlin, C++. 
+            As commercial pilot I will be writing about General Aviation, the Airlines, instrument flying, avionics, the Federal Aviation Administration and the TSA.
+    </div>
+    <section class="flex flex-col">
+      {pageData && pageData.map((post: Post) => (
+        <a href={`/blog/${post.slug.split('/').pop()}/`}>
+          <div class="flex flex-col md:flex-row w-full gap-6 items-center pb-12">
+            
+              <div class="flex-1 w-full">
+                {post.data.cover_image && <Image class="rounded-lg border border-1 border-black" width={720} height={360} src={post.data.cover_image} alt={post.data.title} />}
+              </div>
+              <div class="flex-1 w-full">
+                <div>
+                  <h4 class="text-2xl font-bold">{post.data.title}</h4>
+                  <div>
+                    <p><span class="font-bold">Tags: </span> {post.data.tags && post.data.tags.map(tag => (
+                      <span class="px-1">{tag}</span>
+                    ))}</p>
+                  </div>
+                  <p class="date">
+                    {new Date(post.data.date).toLocaleDateString("en-US", dateOptions)}
+                    <span>{post.excerpt}</span>
+                  </p>
+                </div>
+              </div>
+            
+          </div>
+        </a>
+      ))}
+
+      
+    </section>
+    <!-- {page.url.first ? <a href={page.url.first}>First</a> : null}
+    {page.url.prev ? <a href={page.url.prev}>Previous</a> : null} -->
+    {pageData ? <a href={`2`}>Next</a> : null}
+  </main>
+</MyLayout>
