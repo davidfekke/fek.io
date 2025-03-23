@@ -7,6 +7,12 @@ date: 2025-03-22
 cover_image: "./nextjshttps.png"
 ---
 
+<div style="text-align: center">
+    <div class="relative overflow-hidden aspect-video">
+        <iframe src="https://youtube.com/embed/ZmVTIbtUGes" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" class="absolute inset-0 w-full h-full border-0" allowfullscreen></iframe>
+    </div>
+</div>
+
 In my current role, one of the issues I have come across in developing web services and web front-ends is the need to run the server locally under [HTTPS](https://www.cloudflare.com/learning/ssl/what-is-https/) or [TLS](https://learn.microsoft.com/en-us/windows-server/security/tls/transport-layer-security-protocol). 
 This is commonly referred to as [SSL](https://www.cloudflare.com/learning/ssl/what-is-ssl/), but that is not the current term, it is actually TLS.
 
