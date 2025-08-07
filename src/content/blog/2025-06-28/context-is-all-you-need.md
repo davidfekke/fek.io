@@ -7,6 +7,12 @@ date: 2025-06-28
 cover_image: "./attention.png"
 ---
 
+<div style="text-align: center">
+    <div class="relative overflow-hidden aspect-video">
+        <iframe src="https://youtube.com/embed/yfkbCigUpfU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" class="absolute inset-0 w-full h-full border-0" allowfullscreen></iframe>
+    </div>
+</div>
+
 I recently gave a presentation to a user group about how to build and consume Model Context Protocol servers. Model Context Protocol, or MCP for short, is the latest AI buzz word. 
 In this post I will try to explain why MCP is so important to AI development. To truly understand why, we need to understand some history of large language models.
 
