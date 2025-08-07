@@ -4,7 +4,7 @@ tags: ["User Group", "Node.js", "JavaScript"]
 description: "The JaxNode User Group needs a new home"
 category:
 date: 2025-07-04
-cover_image: "./jaxnodeneedsahome.jpg"
+cover_image: "./jaxnodeneedsahome.png"
 ---
 
 The JaxNode user group needs a new home. For most of the past 11 years we have been meeting at Availity. 
