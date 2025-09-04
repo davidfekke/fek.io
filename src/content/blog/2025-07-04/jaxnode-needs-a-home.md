@@ -1,5 +1,5 @@
 ---
-title: "JaxNode User Group meeds a Home"
+title: "JaxNode User Group needs a Home"
 tags: ["User Group", "Node.js", "JavaScript"]
 description: "The JaxNode User Group needs a new home"
 category:
