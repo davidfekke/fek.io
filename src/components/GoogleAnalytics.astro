@@ -1,0 +1,41 @@
+---
+const GA_ID = import.meta.env.GA_ID;
+const isProd = import.meta.env.PROD;
+if (!GA_ID || !isProd) {
+  // Don’t render anything if no ID or not in production
+  return;
+}
+---
+
+<!-- Google tag (gtag.js) -->
+<script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
+
+<script is:inline>
+  // Basic GA4 boot
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  // Disable auto page_view so we can control it (important if you use View Transitions)
+  gtag('config', `${GA_ID}`, { send_page_view: false });
+
+  // Send initial page_view
+  function sendPV() {
+    if (!window.gtag) return;
+    gtag('event', 'page_view', {
+      page_title: document.title,
+      page_location: location.href,
+      page_path: location.pathname,
+    });
+  }
+  sendPV();
+
+  // If you use Astro View Transitions (soft navigation), fire a page_view after swaps
+  // Docs: astro:after-swap fires after the new page is in place.
+  // https://docs.astro.build/en/guides/view-transitions/
+  addEventListener('astro:after-swap', () => {
+    // Update GA page info and send a new page_view
+    gtag('config', `${GA_ID}`, { page_path: location.pathname, send_page_view: false });
+    sendPV();
+  });
+</script>

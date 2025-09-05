@@ -4,6 +4,7 @@ import { Image } from 'astro:assets';
 import Footer from '../components/Footer.astro';
 import BlogHeader from '../components/BlogHeader.astro';
 import NavBar from '../components/NavBar.astro';
+import GoogleAnalytics from '../components/GoogleAnalytics.astro';
 import { Icon } from 'astro-icon/components';
 import '@fontsource-variable/open-sans';
 
@@ -89,6 +90,7 @@ const slug = Astro.params.slug;
 			}
 
 		</style>
+		<GoogleAnalytics />
 	</head>
 
 	<body>
