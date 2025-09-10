@@ -10,14 +10,15 @@ if (!GA_ID || !isProd) {
 <!-- Google tag (gtag.js) -->
 <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
 
-<script is:inline>
+<script is:inline define:vars={{ GA_ID }}>
   // Basic GA4 boot
+
   window.dataLayer = window.dataLayer || [];
   function gtag(){ dataLayer.push(arguments); }
   gtag('js', new Date());
 
   // Disable auto page_view so we can control it (important if you use View Transitions)
-  gtag('config', `${GA_ID}`, { send_page_view: false });
+  gtag('config', GA_ID, { send_page_view: false });
 
   // Send initial page_view
   function sendPV() {
@@ -35,7 +36,7 @@ if (!GA_ID || !isProd) {
   // https://docs.astro.build/en/guides/view-transitions/
   addEventListener('astro:after-swap', () => {
     // Update GA page info and send a new page_view
-    gtag('config', `${GA_ID}`, { page_path: location.pathname, send_page_view: false });
+    gtag('config', GA_ID, { page_path: location.pathname, send_page_view: false });
     sendPV();
   });
 </script>
