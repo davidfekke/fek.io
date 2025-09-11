@@ -2,6 +2,7 @@
 import NavBar from '../components/NavBar.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import GoogleAnalytics from '../components/GoogleAnalytics.astro';
 import '@fontsource-variable/open-sans';
 
 type Props = {
@@ -29,6 +30,7 @@ const headerStyle = coverImage ? `mb-50px` : `bg-[url('/mooney-3x.jpg')] mb-50px
 				font-display: swap;
 			}
 		</style>
+		<GoogleAnalytics />
 	</head>
 
 	<body>
