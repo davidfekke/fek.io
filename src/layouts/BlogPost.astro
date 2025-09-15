@@ -20,6 +20,8 @@ const dateOptions: object = {
 
 const formattedPublishDate = new Date(date).toLocaleDateString("en-US", dateOptions);
 const slug = Astro.params.slug;
+const currentUrl = `https://fek.io/blog/${slug}`;
+const ogImage = cover_image || '/default-og-image.png'; // fallback image if no cover image
 ---
 
 
@@ -30,6 +32,26 @@ const slug = Astro.params.slug;
 		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content={currentUrl} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={ogImage} />
+		<meta property="og:site_name" content="fek.io" />
+		<meta property="article:author" content="David Fekke" />
+		<meta property="article:published_time" content={date} />
+		{updatedDate && <meta property="article:modified_time" content={updatedDate} />}
+		
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={currentUrl} />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content={ogImage} />
+		<meta property="twitter:creator" content="@your_twitter_handle" />
 		<style is:global>
 			@font-face {
 				font-family: 'Open-Sans';

@@ -22,7 +22,7 @@ Python users range from students trying to learn programming to mathematicians a
 
 The typical user of Python is probably not interested in all of the details of CSS, HTML and JavaScript frameworks. 
 They also are probably not interested in learning all of the nuances of the tooling, bundling and transpilers used in building modern web apps with frameworks like [Angular](https://angular.dev) and [React](https://react.dev). 
-It actually takes most users a while to get up to speed on all of the tooling and ceremoney when it comes to building a modern web application.
+It actually takes most users a while to get up to speed on all of the tooling and ceremony when it comes to building a modern web application.
 
 # Introducing Streamlit
 
