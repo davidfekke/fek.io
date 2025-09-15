@@ -21,7 +21,11 @@ const dateOptions: object = {
 const formattedPublishDate = new Date(date).toLocaleDateString("en-US", dateOptions);
 const slug = Astro.params.slug;
 const currentUrl = `https://fek.io/blog/${slug}`;
-const ogImage = cover_image || '/default-og-image.png'; // fallback image if no cover image
+const ogImage = typeof cover_image === 'string'
+  ? cover_image
+  : (cover_image?.src ?? '/images/blogheadergraphic-3x.jpg'); // fallback image if no cover image
+const dateAsString = date.toDateString();
+const updatedDateAsString = updatedDate ? updatedDate.toDateString() : null;
 ---
 
 
@@ -42,8 +46,8 @@ const ogImage = cover_image || '/default-og-image.png'; // fallback image if no 
 		<meta property="og:image" content={ogImage} />
 		<meta property="og:site_name" content="fek.io" />
 		<meta property="article:author" content="David Fekke" />
-		<meta property="article:published_time" content={date} />
-		{updatedDate && <meta property="article:modified_time" content={updatedDate} />}
+		<meta property="article:published_time" content={dateAsString} />
+		{updatedDate && <meta property="article:modified_time" content={updatedDateAsString} />}
 		
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
