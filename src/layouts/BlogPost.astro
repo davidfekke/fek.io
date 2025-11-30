@@ -21,9 +21,13 @@ const dateOptions: object = {
 const formattedPublishDate = new Date(date).toLocaleDateString("en-US", dateOptions);
 const slug = Astro.params.slug;
 const currentUrl = `https://fek.io/blog/${slug}`;
-const ogImage = typeof cover_image === 'string'
-  ? cover_image
-  : (cover_image?.src ?? '/images/blogheadergraphic-3x.jpg'); // fallback image if no cover image
+let ogImage = "/images/blogheadergraphic-3x.jpg";
+if (typeof cover_image === 'string') {
+	ogImage = `https://fek.io/${cover_image}`;
+} else if (cover_image && 'src' in cover_image) {
+	ogImage = `https://fek.io/${cover_image.src}`;
+}
+// ogImage = typeof cover_image === 'string' ? `https://fek.io/${cover_image?.src}` : (cover_image?.src ?? '/images/blogheadergraphic-3x.jpg'); // fallback image if no cover image
 const dateAsString = date.toDateString();
 const updatedDateAsString = updatedDate ? updatedDate.toDateString() : null;
 ---
