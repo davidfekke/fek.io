@@ -10,8 +10,5 @@ import icon from 'astro-icon';
 export default defineConfig({
   integrations: [
     tailwind(), 
-    icon(),
-    image({
-        serviceEntryPoint: '@astrojs/image/sharp', // REMOVE this if you have it
-    })]
+    icon()]
 });
