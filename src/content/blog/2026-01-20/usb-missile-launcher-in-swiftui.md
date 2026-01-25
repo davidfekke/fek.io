@@ -1,7 +1,7 @@
 ---
 title: "USB Missile Launcher in SwiftUI"
 tags: ["SwiftUI", "MacOS", "USB"]
-description: "Using Generics in Mojo"
+description: "USB Missile Launcher in SwiftUI"
 category:
 date: 2026-01-20
 cover_image: "./missilelauncher.png"
