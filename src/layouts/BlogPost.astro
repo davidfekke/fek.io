@@ -118,6 +118,21 @@ const updatedDateAsString = updatedDate ? updatedDate.toDateString() : null;
 				margin-bottom: 1.25rem;
 				padding: 1rem;
 			}
+			.markdown-content ul {
+				list-style-type: disc;
+				margin: 0 0 1.25rem 1.5rem;
+				padding-left: 1rem;
+			}
+			.markdown-content ol {
+				list-style-type: decimal;
+				margin: 0 0 1.25rem 1.5rem;
+				padding-left: 1rem;
+			}
+			.markdown-content li {
+				font-size: 1.25rem;
+				font-family: Open-Sans, sans-serif;
+				margin-bottom: 0.5rem;
+			}
 
 		</style>
 		<GoogleAnalytics />
@@ -145,7 +160,7 @@ const updatedDateAsString = updatedDate ? updatedDate.toDateString() : null;
 							<a href={`https://www.reddit.com/submit?url=https://fek.io/blog/${slug}&title=${title}`} target="_blank"><Icon name="simple-icons:reddit" width="24" height="24" /></a>
 						</div>
 					</div>
-					<div class="flex flex-col justify-center">
+					<div class="markdown-content flex flex-col justify-center">
 						
 						<!-- <div class="prose"> -->
 							<slot />
