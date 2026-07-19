@@ -12,13 +12,16 @@ const description = 'Flight Training Materials fro the FAA';
     <h2 class="text-lg font-bold">Flight Training Materials</h2>
     <p class="pb-2">Here are some resources I use for flight training.</p>
     <ul>
-      {faapubs.map(section => (<div>
-        <p style={{fontWeight: 'bold'}}>{section.title}</p>
-        <ul class="pb-2">
-            {section.articles.map(article => (
-              <li class="text-[#0369a1]"><a class="underline underline-offset-4" href={article.href}>{article.title}</a></li>
-            ))}
-        </ul>
-      </div>))}
+      {faapubs.map(section => (
+        <li class="pb-2">
+          <p style={{fontWeight: 'bold'}}>{section.title}</p>
+          <ul>
+              {section.articles.map(article => (
+                <li class="text-[#0369a1]"><a class="underline underline-offset-4" href={article.href}>{article.title}</a></li>
+              ))}
+          </ul>
+        </li>
+      ))}
     </ul>
+  </div>
 </MyLayout>
