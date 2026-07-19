@@ -12,7 +12,6 @@ type Props = {
 
 const coverImage = Astro.props.coverImage;
 const title = Astro.props.title || 'FEK.IO';
-const headerStyle = coverImage ? `mb-50px` : `bg-[url('/mooney-3x.jpg')] mb-50px`;
 ---
 
 <html lang="en">
@@ -22,14 +21,6 @@ const headerStyle = coverImage ? `mb-50px` : `bg-[url('/mooney-3x.jpg')] mb-50px
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-		<style is:global>
-			@font-face {
-				font-family: 'Open-Sans';
-				font-weight: normal;
-				font-style: normal;
-				font-display: swap;
-			}
-		</style>
 		<GoogleAnalytics />
 	</head>
 

@@ -1,12 +1,12 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import { Image } from 'astro:assets';
 import Footer from '../components/Footer.astro';
 import BlogHeader from '../components/BlogHeader.astro';
 import NavBar from '../components/NavBar.astro';
 import GoogleAnalytics from '../components/GoogleAnalytics.astro';
 import { Icon } from 'astro-icon/components';
 import '../styles/global.css';
+import '../styles/blog-post.css';
 
 type Props = CollectionEntry<'blog'>['data'];
 
@@ -60,91 +60,6 @@ const updatedDateAsString = updatedDate ? updatedDate.toDateString() : null;
 		<meta property="twitter:description" content={description} />
 		<meta property="twitter:image" content={ogImage} />
 		<meta property="twitter:creator" content="@your_twitter_handle" />
-		<style is:global>
-			@font-face {
-				font-family: 'Open-Sans';
-				font-weight: normal;
-				font-style: normal;
-				font-display: swap;
-			}
-			h1 {
-				font-size: 2.5rem;
-				font-weight: 700;
-			}
-			h2 {
-				font-size: 2rem;
-				font-weight: 600;
-				margin-bottom: 0.75rem;
-			}
-			h3 {
-				font-size: 1.75rem;
-				font-weight: 500;
-				margin-bottom: 0.75rem;
-			}
-			h4 {
-				font-size: 1.5rem;
-				font-weight: 400;
-				margin-bottom: 0.75rem;
-			}
-			p {
-				font-size: 1.25rem;
-				font-family: Open-Sans, sans-serif;
-				
-				margin-bottom: 1.25rem;
-			}
-			.responsive-iframe-container {
-					position: relative;
-					padding-bottom: 56.25%; /* Aspect ratio for 16:9 screens */
-					height: 0;
-					overflow: hidden;
-			}
-
-			.responsive-iframe-container iframe {
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
-					border: 0;
-			}
-			p {
-				font-size: 1.25rem;
-			}
-			p > a {
-				color: #1d4ed8;
-				text-decoration: none;
-			}
-			pre {
-				margin-bottom: 1.25rem;
-				padding: 1rem;
-			}
-			.markdown-content ul {
-				list-style-type: disc;
-				margin: 0 0 1.25rem 1.5rem;
-				padding-left: 1rem;
-			}
-			.markdown-content ol {
-				list-style-type: decimal;
-				margin: 0 0 1.25rem 1.5rem;
-				padding-left: 1rem;
-			}
-			.markdown-content li {
-				font-size: 1.25rem;
-				font-family: Open-Sans, sans-serif;
-				margin-bottom: 0.5rem;
-			}
-			.markdown-content blockquote {
-				margin: 0 0 1.25rem;
-				padding: 0.75rem 1rem;
-				border-left: 4px solid #9ca3af;
-				background-color: #f9fafb;
-				font-style: italic;
-			}
-			.markdown-content blockquote p {
-				margin-bottom: 0;
-			}
-
-		</style>
 		<GoogleAnalytics />
 	</head>
 
