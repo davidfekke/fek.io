@@ -4,21 +4,23 @@ import PageH1 from '../components/PageH1.astro';
 import faapubs from '../data/faapubs.json';
 
 const title = "Flight Training Materials"
-const description = 'Flight Training Materials fro the FAA';
 ---
 <MyLayout coverImage='/b24-3x.jpg' title={title}>
   <PageH1>Flight Training Materials</PageH1>
-  <div>
+  <div class="space-y-4">
     <h2 class="text-lg font-bold">Flight Training Materials</h2>
-    <p class="pb-2">Here are some resources I use for flight training.</p>
-    <ul>
-      {faapubs.map(section => (<div>
-        <p style={{fontWeight: 'bold'}}>{section.title}</p>
-        <ul class="pb-2">
-            {section.articles.map(article => (
-              <li class="text-[#0369a1]"><a class="underline underline-offset-4" href={article.href}>{article.title}</a></li>
-            ))}
-        </ul>
-      </div>))}
+    <p>These are the FAA publications and reference materials I come back to most often for flight training and review.</p>
+    <ul class="space-y-4">
+      {faapubs.map(section => (
+        <li class="pb-2">
+          <p class="font-bold">{section.title}</p>
+          <ul class="list-disc pl-6">
+              {section.articles.map(article => (
+                <li class="text-[#0369a1]"><a class="underline underline-offset-4" href={article.href}>{article.title}</a></li>
+              ))}
+          </ul>
+        </li>
+      ))}
     </ul>
+  </div>
 </MyLayout>
