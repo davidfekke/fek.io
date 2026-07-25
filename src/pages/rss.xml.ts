@@ -1,5 +1,6 @@
-import rss, { pagesGlobToRssItems } from '@astrojs/rss';
+import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
+import { getBlogPath } from '../utils/blog';
 
 import type { APIContext } from 'astro';
 
@@ -19,7 +20,7 @@ export async function GET(context: APIContext) {
       title: post.data.title,
       pubDate: post.data.date,
       description: post.data.description,
-      link: `https://fek.io/blog/${post.slug.split('/').pop()}/`,
+      link: `https://fek.io${getBlogPath(post.id)}`,
     })),
     // (optional) inject custom xml
     customData: `<language>en-us</language>`,

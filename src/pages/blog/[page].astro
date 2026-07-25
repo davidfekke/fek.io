@@ -1,27 +1,16 @@
 ---
 import MyLayout from '../../layouts/MyLayout.astro';
-import { getCollection } from 'astro:content';
+import { type CollectionEntry, getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
 import removeMarkdown from 'remove-markdown';
 import TurndownService from 'turndown';
+import { getBlogPath } from '../../utils/blog';
 
 const title = "Blog"
-const description = 'This is my blog';
 
 type Page = {
   page: {
-    data: [
-      {
-        slug: string;
-        data: {
-          title: string;
-          date: string;
-          cover_image?: string;
-          tags?: string[];
-        };
-        excerpt: string;
-      }
-    ];
+    data: BlogPostWithExcerpt[];
     start: number;
     end: number;
     size: number;
@@ -38,20 +27,9 @@ type Page = {
   };
 };
 
-interface Post {
-  slug: string;
-  data: {
-    title: string;
-    date: string;
-    cover_image?: string;
-    tags?: string[];
-  };
+type BlogPostWithExcerpt = CollectionEntry<'blog'> & {
   excerpt: string;
-}
-
-interface PageProps {
-  posts: Post[];
-}
+};
 
 export async function getStaticPaths({ paginate }: { paginate: any }) {
   const posts = (await getCollection('blog')).sort(
@@ -60,7 +38,7 @@ export async function getStaticPaths({ paginate }: { paginate: any }) {
 
   const cleansedPosts = posts.map((post) => {
     const turndownService = new TurndownService();
-    const markdownContent = turndownService.turndown(post.body);
+    const markdownContent = turndownService.turndown(post.body ?? '');
     const plainText = removeMarkdown(markdownContent);
 
     const excerpt = plainText.substring(0, 200);
@@ -97,8 +75,8 @@ const { page } = Astro.props as Page;
             As commercial pilot I will be writing about General Aviation, the Airlines, instrument flying, avionics, the Federal Aviation Administration and the TSA.
     </div>
     <section class="flex flex-col">
-      {page && page.data.map((post: Post) => (
-        <a href={`/blog/${post.slug.split('/').pop()}/`}>
+      {page && page.data.map((post: BlogPostWithExcerpt) => (
+        <a href={getBlogPath(post.id)}>
           <div class="flex flex-col md:flex-row w-full gap-6 items-center pb-12">
             
               <div class="flex-1 w-full">

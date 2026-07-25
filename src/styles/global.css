@@ -1,0 +1,4 @@
+@import "@fontsource-variable/open-sans/index.css";
+@import "tailwindcss/index.css";
+@config "../../tailwind.config.mjs";
+@plugin "@tailwindcss/typography";
