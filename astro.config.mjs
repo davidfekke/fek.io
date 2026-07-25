@@ -6,5 +6,10 @@ import icon from 'astro-icon';
 // https://astro.build/config
 export default defineConfig({
   integrations: [
-    icon()]
+    icon()],
+    vite: {
+      ssr: {
+        noExternal: ['neotraverse', 'astro-icon']
+      }
+    }
 });
