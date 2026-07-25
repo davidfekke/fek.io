@@ -7,6 +7,13 @@ date: 2026-07-24
 cover_image: "./vuejs-header.png"
 ---
 
+<div style="text-align: center">
+    <div class="relative overflow-hidden aspect-video">
+        <iframe src="https://youtube.com/embed/gEaFQvRm_Sw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" class="absolute inset-0 w-full h-full border-0" allowfullscreen></iframe>
+    </div>
+</div>
+
+
 I recently spoke to the [JaxNode](https://www.meetup.com/jax-node-js-ug/) user group about a number of technologies related to [Vue.js](https://vuejs.org/) and Evan You. If you are not familiar with Vue.js, it is a frontend framework that initially started in 2013 when Evan You was at Google.
 
 A whole ecosystem of tools have popped up around this framework including [Nuxt](https://nuxt.com/), which is frontend and backend framework similar to Next.js. [Vite](https://vite.dev/guide/) and [Vitest](https://vitest.dev/) both were spun up out of the Vue.js project.
