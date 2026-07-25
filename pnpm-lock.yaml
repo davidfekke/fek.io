@@ -4,9 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  neotraverse: latest
-
 importers:
 
   .:
@@ -41,9 +38,6 @@ importers:
       markdown-it:
         specifier: ^14.1.0
         version: 14.3.0
-      neotraverse:
-        specifier: ^1.0.1
-        version: 1.0.1
       remove-markdown:
         specifier: ^0.5.5
         version: 0.5.5
