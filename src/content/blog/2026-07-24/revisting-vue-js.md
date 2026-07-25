@@ -1,5 +1,5 @@
 ---
-title: "Revisting Vue.js"
+title: "Revisiting Vue.js"
 tags: ["Vue", "Nuxt"]
 description: "This post describes revisiting Vue.js"
 category:
