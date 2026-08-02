@@ -1,54 +1,350 @@
 ---
 import MyLayout from '../layouts/MyLayout.astro';
+
+const capabilities = [
+	{
+		title: 'AI Engineering',
+		description:
+			'Production-ready AI systems, retrieval-augmented workflows, orchestration pipelines, and practical automation that integrates with your existing products.',
+		tag: 'AI'
+	},
+	{
+		title: 'Machine Learning Model Training',
+		description:
+			'End-to-end model development from dataset strategy and feature design to training, evaluation, iteration, and deployment planning.',
+		tag: 'ML'
+	},
+	{
+		title: 'Mobile Product Development',
+		description:
+			'Native iOS and Android experiences with thoughtful UX, robust architecture, and app-store-ready delivery for teams that need momentum.',
+		tag: 'Mobile'
+	},
+	{
+		title: 'Cloud and API Platforms',
+		description:
+			'Scalable web services and backend APIs in Node.js and .NET that power apps, connected devices, and data workflows.',
+		tag: 'Cloud'
+	}
+];
 ---
 <MyLayout coverImage="/newcockpit-3x.jpg" title="Welcome to FEK.IO">
-	<div style={{ display: 'block'}}>
-		<div class="hero hover:drop-shadow-lg" style={{ borderRadius: '1rem', 
-										padding: '0.65rem', 
-										backgroundColor: 'lightgrey',
-										marginTop: '2rem', marginBottom: '4rem' }}>
-				<p class="p-6" style={{ fontSize: '2.5rem', fontWeight: 'bold', textAlign: 'center' }}>
-						Mobile Software for your iPhone, iPad and Android devices. We also produce web services that can be consumed by these devices.
-				</p>
-		</div>
-		<div class="flex flex-col md:flex-row items-center" >
-			<div class="w-full md:w-1/3" style={{ gridArea: 'iosshowcase', textAlign: 'center', marginBottom: '3rem' }}>
-					<img src="/images/Template-App-iPhoneX.png" alt="iOS" />
-			</div>
-			<div class="w-full md:w-2/3 items-center" style={{ gridArea: 'iosdesc', textAlign: 'center', marginBottom: '3rem', alignItems: 'center' }}>
-					
-					<h3 class="font-bold" style={{ fontSize: '2.5rem' }}>iOS Apps iPhone, iPad and Apple Watch development</h3>
-					
-					<p style={{ fontSize: '2rem' }}>Learn about our iOS projects leveraging key aspects of the iOS SDK.</p>
-					
-			</div>
-		</div>
-		<div class="flex flex-col md:flex-row-reverse items-center">
-			<div class="w-full md:w-1/3" >
-				<img src="/images/android.png" alt="Android" />	
-				
-			</div>
-			<div class="w-full md:w-2/3 items-center" style={{ gridArea: 'androiddesc', textAlign: 'center', marginBottom: '3rem'  }}>
-					<h3 class="font-bold"style={{ fontSize: '2.5rem' }}>Android Development,<br /> The rest of the 92% of devices</h3>
-					<p style={{ fontSize: '2rem' }}>Learn about our iOS projects leveraging key aspects of the iOS SDK.</p>
-			</div>
-
-		</div>
-		<div class="flex flex-col md:flex-row items-center" >
-			<div class="w-full md:w-1/3">
-				<img src="/images/500px-Node.js_logo.png" alt="Node.js" />
-				
-			</div>
-			<div class="w-full md:w-2/3" style={{ gridArea: 'nodedesc', textAlign: 'center'  }}>
-					<h3 class="font-bold" style={{ fontSize: '2.5rem' }}>.NET and Node.js</h3>
-					
-					<p style={{ fontSize: '2rem' }}>Mobile and IoT devices need a way to speak to the Cloud. We have 20 years of experience building server applications for your cloud solutions.</p>
+	<section class="landing-shell">
+		<div class="hero-panel">
+			<p class="eyebrow">FEK.IO | Engineering Services</p>
+			<h1>Mobile, Web, and AI Engineering for Teams Shipping Real Products</h1>
+			<p class="lead">
+				I build production software across iOS, Android, and cloud platforms, and I now help companies design AI systems and train machine learning models that create measurable business outcomes.
+			</p>
+			<div class="hero-cta-row">
+				<a class="btn btn-primary" href="/contact">Start a Project</a>
+				<a class="btn btn-secondary" href="/about">About Me</a>
 			</div>
 		</div>
 
+		<div class="service-grid" aria-label="Engineering capabilities">
+			{capabilities.map((capability, index) => (
+				<article class="service-card" style={{ '--delay': `${index * 120}ms` }}>
+					<div class="card-graphic" aria-hidden="true">
+						{capability.tag === 'AI' && (
+							<svg class="service-icon" viewBox="0 0 64 64" role="img">
+								<rect x="11" y="13" width="42" height="38" rx="8" fill="none" />
+								<circle cx="24" cy="28" r="3" />
+								<circle cx="40" cy="28" r="3" />
+								<path d="M22 40c2.5-3 17.5-3 20 0" fill="none" />
+								<path d="M32 13V7M19 16l-4-4M45 16l4-4M11 31H6M58 31h-5" fill="none" />
+							</svg>
+						)}
+						{capability.tag === 'ML' && (
+							<svg class="service-icon" viewBox="0 0 64 64" role="img">
+								<path d="M12 49V16M12 49h40" fill="none" />
+								<circle cx="20" cy="37" r="2.7" />
+								<circle cx="29" cy="29" r="2.7" />
+								<circle cx="39" cy="33" r="2.7" />
+								<circle cx="48" cy="20" r="2.7" />
+								<path d="M20 37l9-8 10 4 9-13" fill="none" />
+							</svg>
+						)}
+						{capability.tag === 'Mobile' && (
+							<svg class="service-icon" viewBox="0 0 64 64" role="img">
+								<rect x="21" y="8" width="22" height="48" rx="5" fill="none" />
+								<rect x="25" y="14" width="14" height="31" rx="1.8" fill="none" />
+								<circle cx="32" cy="50" r="1.8" />
+								<path d="M28 11h8" fill="none" />
+							</svg>
+						)}
+						{capability.tag === 'Cloud' && (
+							<svg class="service-icon" viewBox="0 0 64 64" role="img">
+								<path d="M20 47h26a9 9 0 0 0 0-18 13 13 0 0 0-24-4A8.5 8.5 0 0 0 20 47Z" fill="none" />
+								<path d="M25 34h14M22 39h20" fill="none" />
+							</svg>
+						)}
+					</div>
+					<div class="card-copy">
+						<span class="tag">{capability.tag}</span>
+						<h2>{capability.title}</h2>
+						<p>{capability.description}</p>
+					</div>
+				</article>
+			))}
+		</div>
 
+		<section class="tech-showcase" aria-label="Platform experience">
+			<div class="platform-tile platform-tile-mobile">
+				<img src="/images/Template-App-iPhoneX.png" alt="iPhone app development" loading="lazy" />
+				<div>
+					<h3>Native Mobile</h3>
+					<p>Polished apps for iPhone, iPad, Apple Watch, and Android.</p>
+				</div>
+			</div>
+			<div class="platform-tile platform-tile-cloud">
+				<img src="/images/500px-Node.js_logo.png" alt="Node.js backend services" loading="lazy" />
+				<div>
+					<h3>Cloud APIs</h3>
+					<p>Backend systems and integrations that power mobile and AI products.</p>
+				</div>
+			</div>
+		</section>
+	</section>
 
+	<style>
+		:global(.landing-shell) {
+			--surface: #f5f8fb;
+			--ink: #12263a;
+			--ink-muted: #31475d;
+			--accent: #0d7aa5;
+			--accent-strong: #0a5f80;
+			--card: #ffffff;
+			margin: 1.5rem 0 3.5rem;
+			padding: 1rem;
+			font-family: 'Open Sans Variable', 'Avenir Next', 'Helvetica Neue', sans-serif;
+			color: var(--ink);
+		}
 
+		:global(.hero-panel) {
+			background:
+				radial-gradient(circle at 88% 12%, rgba(13, 122, 165, 0.18), transparent 45%),
+				radial-gradient(circle at 12% 90%, rgba(18, 38, 58, 0.16), transparent 45%),
+				linear-gradient(135deg, #eef5fb 0%, #d9e9f7 100%);
+			border: 1px solid rgba(18, 38, 58, 0.12);
+			border-radius: 1.5rem;
+			padding: clamp(1.5rem, 3vw, 2.7rem);
+			box-shadow: 0 24px 40px -28px rgba(18, 38, 58, 0.45);
+			animation: fade-slide-in 780ms cubic-bezier(0.21, 1, 0.3, 1) both;
+		}
 
-	</div>
+		:global(.eyebrow) {
+			margin: 0;
+			font-size: 0.88rem;
+			letter-spacing: 0.15em;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: var(--accent-strong);
+		}
+
+		:global(.hero-panel h1) {
+			font-family: 'Open Sans Variable', 'Avenir Next', 'Helvetica Neue', sans-serif;
+			font-size: clamp(1.9rem, 4.2vw, 3.2rem);
+			line-height: 1.16;
+			margin: 0.8rem 0 1rem;
+		}
+
+		:global(.lead) {
+			font-size: clamp(1.08rem, 2vw, 1.36rem);
+			line-height: 1.65;
+			max-width: 70ch;
+			color: var(--ink-muted);
+			margin-bottom: 1.35rem;
+		}
+
+		:global(.hero-cta-row) {
+			display: flex;
+			gap: 0.8rem;
+			flex-wrap: wrap;
+		}
+
+		:global(.btn) {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0.72rem 1.15rem;
+			border-radius: 0.8rem;
+			font-weight: 700;
+			text-decoration: none;
+			transition: transform 220ms ease, box-shadow 220ms ease, background-color 220ms ease;
+		}
+
+		:global(.btn:hover) {
+			transform: translateY(-2px);
+		}
+
+		:global(.btn-primary) {
+			background: var(--accent);
+			color: #ffffff;
+			box-shadow: 0 10px 22px -14px rgba(13, 122, 165, 0.9);
+		}
+
+		:global(.btn-primary:hover) {
+			background: var(--accent-strong);
+		}
+
+		:global(.btn-secondary) {
+			border: 1px solid rgba(18, 38, 58, 0.3);
+			color: var(--ink);
+			background: rgba(255, 255, 255, 0.72);
+		}
+
+		:global(.service-grid) {
+			display: flex;
+			flex-direction: column;
+			gap: 0.9rem;
+			margin-top: 1.5rem;
+		}
+
+		:global(.service-card) {
+			background: var(--card);
+			border: 1px solid rgba(18, 38, 58, 0.12);
+			border-radius: 1rem;
+			padding: 1.1rem 1rem;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			align-items: flex-start;
+			gap: 0.9rem;
+			box-shadow: 0 18px 28px -24px rgba(18, 38, 58, 0.75);
+			animation: fade-slide-in 680ms cubic-bezier(0.21, 1, 0.3, 1) both;
+			animation-delay: var(--delay);
+			transition: transform 260ms ease, box-shadow 260ms ease;
+		}
+
+		:global(.card-graphic) {
+			width: 3.25rem;
+			height: 3.25rem;
+			flex: 0 0 3.25rem;
+			border-radius: 0.8rem;
+			background: linear-gradient(145deg, rgba(13, 122, 165, 0.14), rgba(13, 122, 165, 0.06));
+			
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		:global(.card-copy) {
+			flex: 1 1 auto;
+			min-width: 0;
+		}
+
+		:global(.service-icon) {
+			width: 2rem;
+			height: 2rem;
+			stroke: var(--accent-strong);
+			stroke-width: 1.75;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+			fill: none;
+			opacity: 0;
+			transform: translateY(6px) scale(0.92);
+			animation: icon-settle 560ms cubic-bezier(0.2, 0.9, 0.25, 1) forwards;
+			animation-delay: calc(var(--delay) + 130ms);
+		}
+
+		:global(.service-card:hover) {
+			transform: translateY(-4px);
+			box-shadow: 0 24px 34px -24px rgba(18, 38, 58, 0.6);
+		}
+
+		:global(.tag) {
+			display: inline-block;
+			font-size: 0.8rem;
+			font-weight: 700;
+			letter-spacing: 0.06em;
+			color: var(--accent-strong);
+			margin-bottom: 0.38rem;
+		}
+
+		:global(.service-card h2) {
+			font-family: 'Open Sans Variable', 'Avenir Next', 'Helvetica Neue', sans-serif;
+			font-size: 1.28rem;
+			margin: 0.05rem 0 0.45rem;
+		}
+
+		:global(.service-card p) {
+			margin: 0;
+			line-height: 1.62;
+			color: var(--ink-muted);
+		}
+
+		:global(.tech-showcase) {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+			margin-top: 1.4rem;
+		}
+
+		:global(.platform-tile) {
+			display: grid;
+			grid-template-columns: 86px 1fr;
+			gap: 0.9rem;
+			align-items: center;
+			background: linear-gradient(145deg, #ffffff 0%, #f5f8fb 100%);
+			border: 1px solid rgba(18, 38, 58, 0.1);
+			border-radius: 1rem;
+			padding: 0.9rem;
+			box-shadow: 0 18px 28px -24px rgba(18, 38, 58, 0.75);
+		}
+
+		:global(.platform-tile img) {
+			width: 100%;
+			height: auto;
+			object-fit: contain;
+		}
+
+		:global(.platform-tile h3) {
+			font-size: 1.15rem;
+			font-weight: 700;
+			margin: 0;
+		}
+
+		:global(.platform-tile p) {
+			margin: 0.22rem 0 0;
+			color: var(--ink-muted);
+		}
+
+		@media (min-width: 880px) {
+			:global(.landing-shell) {
+				padding: 1.2rem 0;
+			}
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+			:global(.hero-panel),
+			:global(.service-card),
+			:global(.btn) {
+				animation: none !important;
+				transition: none !important;
+			}
+		}
+
+		@keyframes fade-slide-in {
+			from {
+				opacity: 0;
+				transform: translateY(12px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		@keyframes icon-settle {
+			0% {
+				opacity: 0;
+				transform: translateY(8px) scale(0.9);
+			}
+			100% {
+				opacity: 1;
+				transform: translateY(0) scale(1);
+			}
+		}
+	</style>
 </MyLayout>
