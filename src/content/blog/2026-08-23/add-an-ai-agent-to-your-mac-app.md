@@ -17,11 +17,11 @@ I bring my little Mac laptop with me to the draft, so I decided to port my React
 
 ![Screenshot of SwiftUI app](FantasyScreenshot.png)
 
-This year I cheated by using Xcode 27's Codex plugin to convert the React app to SwiftUI. I used to be a iOS developer who used SwiftUI for mobile apps, but I was able to speed up the development process by using codex to create the draft version of my Fantasy app.
+This year I cheated by using Xcode 27's Codex plugin to convert the React app to SwiftUI. I used to be a iOS developer who used SwiftUI for mobile apps, but I was able to speed up the development process by using codex to create the draft version of my Fantasy app. One of the nice things about SwiftUI is that it can be used for the Mac and iOS, so you can share UI code across platforms.
 
 ## Apple Intelligence
 
-Apple gets chastised for trailing in the AI race against frontier labs like [OpenAI](https://openai.com) and [Anthropic](https://anthropic.com), but they actually have some excellent tools for putting AI into your apps. Something they introduced last year was a set models called the [Foundation models](https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models). These models allow Apple users to use generative AI on their devices without have to go out to a server. This was the approach I decided to use to add an agent to my draft app.
+Apple gets chastised for trailing in the AI race against frontier labs like [OpenAI](https://openai.com) and [Anthropic](https://anthropic.com), but they actually have some excellent tools for putting AI into your apps. Something they introduced two years ago was a set models called the [Foundation models](https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models). These models allow Apple users to use generative AI on their devices without have to go out to a server. This was the approach I decided to use to add an agent to my draft app.
 
 If you are going to use the Foundation models in your app, the first thing you need to do is add a Macro to make sure the user has access to the Foundation models. Here is how I did it in my app:
 
