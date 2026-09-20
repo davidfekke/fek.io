@@ -91,7 +91,7 @@ const { page } = Astro.props as Page;
                     ))}</p>
                   </div>
                   <p class="date">
-                    {new Date(post.data.date).toLocaleDateString("en-US", dateOptions)}
+                    {new Date(post.data.date).toLocaleDateString("en-US", dateOptions)}&nbsp;
                     <span>{post.excerpt}</span>
                   </p>
                 </div>
