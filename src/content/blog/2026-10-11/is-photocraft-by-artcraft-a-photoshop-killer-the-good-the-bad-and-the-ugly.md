@@ -78,7 +78,7 @@ I spent the better part of the 90s working as a pre-press artist before moving o
 
 I started noticing changes with the designers I worked with about four years ago. Most of them had switched to a tool called Figma. Figma is a web based design tool you can use for designing web applications and mobile applications. Something else I noticed was that many of them despised Adobe for a number of reasons. One of the reasons was they felt Adobe and not done enough for improving the tools they use for developing design systems for those applications. Another thing they despised was the price Adobe charges to use their tools. Adobe charges $70 a month for the full Creative Cloud Pro. They also have a subscription you can use 20 apps for $55 a month. They also have a photography only bundle that includes Photoshop, Lightroom and Lightroom classic for $20 a month.
 
-I remember when all of these Adobe products where shrink wrapped can came on floppy disks. I think Photoshop sold originally for $895 a copy. Adobe would come out with a new version of Illustrator or Photoshop every 18 months. Because of the cost, one of the things we would do at our company was wait for two versions before we upgraded to a new version to save money. Having also worked as a software engineer, one of the things software companies hate is not being able to predict their future sales. Almost every company I have worked for that has sold software has switched to a Saas model, or leasing the software. CFOs love this model because they can predict the revenue based on the number of customers they have leasing their software.
+I remember when all of these Adobe products where shrink wrapped and came on floppy disks. I think Photoshop sold originally for $895 a copy. Adobe would come out with a new version of Illustrator or Photoshop every 18 months. Because of the cost, one of the things we would do at our company was wait for two versions before we upgraded to a new version to save money. Having also worked as a software engineer, one of the things software companies hate is not being able to predict their future sales. Almost every company I have worked for that has sold software has switched to a Saas model, or leasing the software. CFOs love this model because they can predict the revenue based on the number of customers they have leasing their software.
 
 ## Agentic coding
 
@@ -92,4 +92,4 @@ I am not going to be dumping my Creative Cloud subscription anytime soon. The Ar
 
 It is worthwhile looking at the source code for these open source alternative applications. They are written in Rust using the [egui](https://github.com/emilk/egui) framework. You can also look at the algorithms used for pixel interpolation.
 
-It would be nice if Adobe released Linux versions of some of their apps.
+It would be nice if Adobe released Linux versions of some of their apps. It would also be nice if they lowered their prices.
