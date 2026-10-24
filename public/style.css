@@ -1,0 +1,78 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: radial-gradient(circle at top, #0f1d4a 0%, #0a0a2e 45%, #050515 100%);
+    color: #ffffff;
+    font-family: "Open Sans", system-ui, -apple-system, sans-serif;
+}
+
+#canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+#ui {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 10;
+    display: flex;
+    gap: 16px;
+    font-weight: 700;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    display: grid;
+    place-items: center;
+    background: rgba(0, 0, 0, 0.68);
+}
+
+.overlay.hidden {
+    display: none;
+}
+
+.panel {
+    min-width: min(90vw, 420px);
+    padding: 24px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 12px;
+    background: rgba(8, 11, 38, 0.95);
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+.panel h1 {
+    margin: 0 0 10px 0;
+}
+
+.panel p {
+    margin: 8px 0;
+}
+
+.panel button {
+    margin-top: 12px;
+    padding: 10px 14px;
+    border: 1px solid #7ed3ff;
+    border-radius: 8px;
+    color: #ffffff;
+    background: #0b58d2;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#rotateHint {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    opacity: 0.85;
+    font-size: 0.9rem;
+}
