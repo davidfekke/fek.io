@@ -11,7 +11,7 @@ I was recently reading about software engineering principles, and one of the pri
 The KISS principle stands for Keep It Simple Stupid. I first heard this term in the autobiography from [Clarence "Kelly" Johnson](https://en.wikipedia.org/wiki/Kelly_Johnson_(engineer)).
 
 If you are not familiar with Johnson, he was Aeronautical Engineer who started [Lockheed](https://www.lockheedmartin.com/en-us/index.html)'s [Skunk works](https://www.lockheedmartin.com/en-us/who-we-are/business-areas/aeronautics/skunkworks.html). The Skunk works designed some of the most advanced aircraft the United States ever built and flew. 
-Johnson helped design the Lockheed Constellation, P-38 lightning, P-80, U-2 and SR-71. When he retired, he still came back and consulted for Ben Rich when he was designing the F-117.
+Johnson helped design the Lockheed Constellation, P-38 lightning, P-80, U-2 and SR-71. When he retired, he still came back and consulted for [Ben Rich](https://en.wikipedia.org/wiki/Ben_Rich_(engineer)) when he was designing the F-117.
 
 ![SR-71](./Lockheed_SR-71_Blackbird.jpg)
 
