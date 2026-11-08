@@ -75,11 +75,11 @@ fn main() {
 }
 
 fn print_string(a_string: String) {
-    println("{}", a_string);
+    println!("{}", a_string);
 }
 
 fn prints_and_gives_back_str(a_string: String) {
-    println("{}", a_string);
+    println!("{}", a_string);
     a_string
 }
 ```
