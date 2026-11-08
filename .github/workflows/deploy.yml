@@ -31,13 +31,16 @@ jobs:
         run: npm ci
 
       - name: Configure Pages
-        id: pages
         uses: actions/configure-pages@v5
 
+      # The site is served from the custom domain in public/CNAME (fek.io), so
+      # assets belong at the domain root. configure-pages reports
+      # base_path=/fek.io for this repo (project-site detection), and using it
+      # made every asset URL point at https://fek.io/fek.io/... which 404s.
       - name: Build site
         run: npm run build
         env:
-          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          BASE_PATH: /
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
