@@ -119,7 +119,7 @@ fn main() {
 }
 
 fn add_my_name_to_string(a_string: &mut String) {
-    a.push_str(" David.");
+    a_string.push_str(" David.");
 }
 ```
 
