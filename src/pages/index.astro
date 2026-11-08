@@ -1,5 +1,6 @@
 ---
 import MyLayout from '../layouts/MyLayout.astro';
+import { url } from '../utils/url';
 
 const capabilities = [
 	{
@@ -37,8 +38,8 @@ const capabilities = [
 				I build production software across iOS, Android, and cloud platforms, and I now help companies design AI systems and train machine learning models that create measurable business outcomes.
 			</p>
 			<div class="hero-cta-row">
-				<a class="btn btn-primary" href="/contact">Start a Project</a>
-				<a class="btn btn-secondary" href="/about">About Me</a>
+				<a class="btn btn-primary" href={url('/contact')}>Start a Project</a>
+				<a class="btn btn-secondary" href={url('/about')}>About Me</a>
 			</div>
 		</div>
 
@@ -91,14 +92,14 @@ const capabilities = [
 
 		<section class="tech-showcase" aria-label="Platform experience">
 			<div class="platform-tile platform-tile-mobile">
-				<img src="/images/Template-App-iPhoneX.png" alt="iPhone app development" loading="lazy" />
+				<img src={url('/images/Template-App-iPhoneX.png')} alt="iPhone app development" loading="lazy" />
 				<div>
 					<h3>Native Mobile</h3>
 					<p>Polished apps for iPhone, iPad, Apple Watch, and Android.</p>
 				</div>
 			</div>
 			<div class="platform-tile platform-tile-cloud">
-				<img src="/images/500px-Node.js_logo.png" alt="Node.js backend services" loading="lazy" />
+				<img src={url('/images/500px-Node.js_logo.png')} alt="Node.js backend services" loading="lazy" />
 				<div>
 					<h3>Cloud APIs</h3>
 					<p>Backend systems and integrations that power mobile and AI products.</p>

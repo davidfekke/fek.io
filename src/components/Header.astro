@@ -1,11 +1,13 @@
 ---
+import { url } from '../utils/url';
+
 type Props = {
 	title?: string;
 	coverImage?: string;
 }
 
 const title = Astro.props.title || 'FEK.IO';
-const coverImage = Astro.props.coverImage || '/mooney-3x.jpg';
+const coverImage = url(Astro.props.coverImage || '/mooney-3x.jpg');
 const headerStyle = `mb-50px`;
 ---
 

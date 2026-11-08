@@ -2,6 +2,7 @@
 import MyLayout from '../../layouts/MyLayout.astro';
 import PageH1 from '../../components/PageH1.astro';
 import productData from '../../data/products.json';
+import { url } from '../../utils/url';
 
 // Create a type based on the following example:
 /*
@@ -39,7 +40,7 @@ const { product } = Astro.props;
   <div class="bg-white">
     <div class="flex flex-col md:flex-row md:items-center md:space-x-4 p-4 border-b border-gray-200">
       <div class="flex flex-col md:flex-row md:items-center md:space-x-4">
-        <img src={product.icon} alt={product.name} class="w-24 h-24 md:w-32 md:h-32 rounded-lg drop-shadow-lg" />
+        <img src={url(product.icon)} alt={product.name} class="w-24 h-24 md:w-32 md:h-32 rounded-lg drop-shadow-lg" />
         <div>
           <h2 class="text-xl font-bold">{product.name}</h2>
           <p>{product.description}</p>
@@ -54,7 +55,7 @@ const { product } = Astro.props;
   <div class="columns-3">
   {product && product.screens.map((screen) => (
     
-      <img src={screen} alt={product.name} class="" />
+      <img src={url(screen)} alt={product.name} class="" />
     
   ))}
   </div>

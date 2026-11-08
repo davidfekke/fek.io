@@ -1,4 +1,6 @@
 ---
+import { url } from '../utils/url';
+
 type Props = {
 	title?: string;
 	coverImage?: any;
@@ -6,10 +8,12 @@ type Props = {
 
 const title = Astro.props.title || 'FEK.IO';
 const coverImage = Astro.props.coverImage || '/mooney-3x.jpg';
+const coverImageSrc =
+	typeof coverImage === 'string' ? url(coverImage) : coverImage.src;
 const headerStyle = `mb-50px`;
 ---
 
-<header class={headerStyle} style={`background-image: url('${coverImage.src}'); background-size: cover;`}>
+<header class={headerStyle} style={`background-image: url('${coverImageSrc}'); background-size: cover;`}>
   <div class="container mx-auto">
       <h1 class="flex text-white px-[50px] md:px-[100px] lg:px-[200px] text-3xl md:text-4xl lg:text-6xl font-black justify-center text-center shadow-inner py-[50px] md:py-[100px] lg:py-[200px]"
         style="text-shadow: 2px 2px 5px black;">{title}</h1>

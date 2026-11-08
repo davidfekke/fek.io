@@ -1,4 +1,6 @@
 ---
+import { url } from '../utils/url';
+
 type menuItem = {
   title: string;
   link: string;
@@ -19,13 +21,13 @@ const menuData: menuItem[] = [
 
           <!-- Logo -->
           <div class="flex-shrink-0 flex items-center">
-              <a href="/" class="hover:bg-gray-800 logo transition-all duration-300"><img class="logo_image h-12 transition-all duration-300" src="/fekio.logo.svg" alt="JaxNode" /></a>
+              <a href={url('/')} class="hover:bg-gray-800 logo transition-all duration-300"><img class="logo_image h-12 transition-all duration-300" src={url('/fekio.logo.svg')} alt="JaxNode" /></a>
           </div>
   
           <!-- Desktop Menu -->
           <div class="hidden md:flex md:items-center">
             {menuData && menuData.map((item) => (
-                <a href={item.link} class="px-3 py-2 font-bold text-gray-700">{item.title}</a>
+                <a href={url(item.link)} class="px-3 py-2 font-bold text-gray-700">{item.title}</a>
             ))}
           </div>
   
@@ -47,7 +49,7 @@ const menuData: menuItem[] = [
   <!-- Mobile Menu -->
   <div class="peer-checked:block hidden md:hidden">
     {menuData && menuData.map((item) => (
-        <a href={item.link} class="block px-4 py-2 text-gray-700">{item.title}</a>
+        <a href={url(item.link)} class="block px-4 py-2 text-gray-700">{item.title}</a>
     ))}
   </div>
 </nav>

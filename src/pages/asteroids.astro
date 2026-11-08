@@ -1,5 +1,6 @@
 ---
 import '../styles/style.css';
+import { url } from '../utils/url';
 ---
 
 <!DOCTYPE html>
@@ -48,6 +49,6 @@ import '../styles/style.css';
 
     <canvas id="canvas"></canvas>
     
-    <script type="module" src="/asteroids.js"></script>
+    <script type="module" src={url('/asteroids.js')}></script>
 </body>
 </html>

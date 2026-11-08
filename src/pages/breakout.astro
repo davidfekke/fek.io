@@ -1,5 +1,6 @@
 ---
 import '../styles/style.css';
+import { url } from '../utils/url';
 ---
 
 <!DOCTYPE html>
@@ -54,6 +55,6 @@ import '../styles/style.css';
             }
         }
     </script>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src={url('/main.js')}></script>
 </body>
 </html>

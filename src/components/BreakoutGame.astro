@@ -4,11 +4,12 @@ interface Props {
 }
 
 const { title = 'Play Breakout' } = Astro.props;
+import { url } from '../utils/url';
 ---
 
 <section class="breakout-game" aria-label={title}>
 	<iframe
-		src="/breakout"
+		src={url('/breakout')}
 		title={title}
 		loading="lazy"
 		allow="autoplay"

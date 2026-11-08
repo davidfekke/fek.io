@@ -1,6 +1,7 @@
 ---
 const now = new Date();
 import { Icon } from 'astro-icon/components';
+import { url } from '../utils/url';
 // @iconify-json/fa6-solid
 ---
 <footer class="bg-[#868e96] flex-grow">
@@ -19,7 +20,7 @@ import { Icon } from 'astro-icon/components';
                     <strong>Connect</strong>
                 </li>
                 <li class="py-1">
-                    <a href="/blog/1">Blog</a>
+                    <a href={url('/blog/1')}>Blog</a>
                 </li>
                 <li class="py-1">
                     <a href="https://x.com/davidfekke">X</a>
@@ -38,13 +39,13 @@ import { Icon } from 'astro-icon/components';
                     <strong>Products</strong>
                 </li>
                 <li class="py-1">
-                  <a href="/products/idogyears">iDogYears</a>
+                  <a href={url('/products/idogyears')}>iDogYears</a>
                 </li>
                 <li class="py-1">
-                  <a href="/products/ilottonum">iLottoNum</a>
+                  <a href={url('/products/ilottonum')}>iLottoNum</a>
                 </li>
                 <li class="py-1">
-                  <a href="/products/icatyears">iCatYears</a>
+                  <a href={url('/products/icatyears')}>iCatYears</a>
                 </li>
                 
             </ul>                            
@@ -75,16 +76,16 @@ import { Icon } from 'astro-icon/components';
                     <strong>Pages</strong>
                 </li>
                 <li class="py-1">
-                  <a href="/contact">Contact</a>
+                  <a href={url('/contact')}>Contact</a>
                 </li>
                 <li class="py-1">
-                  <a href="/about">About</a>
+                  <a href={url('/about')}>About</a>
                 </li>
                 <li class="py-1">
-                  <a href="/terms">Terms and Conditions</a>
+                  <a href={url('/terms')}>Terms and Conditions</a>
                 </li>
                 <li class="py-1">
-                    <a href="/rss.xml">RSS Feed</a>
+                    <a href={url('/rss.xml')}>RSS Feed</a>
                 </li>
             </ul>
         </div>    

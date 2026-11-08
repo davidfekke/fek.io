@@ -2,6 +2,7 @@
 import MyLayout from '../../layouts/MyLayout.astro';
 import PageH1 from '../../components/PageH1.astro';
 import productData from '../../data/products.json';
+import { url } from '../../utils/url';
 
 const title = "Products"
 ---
@@ -12,12 +13,12 @@ const title = "Products"
       <div class="flex flex-col md:flex-row md:items-center md:justify-between md:space-x-4 p-4 border-b border-gray-200">
         {/* <div class="flex flex-col md:flex-row md:items-center md:space-x-4"> */}
           
-          <a href={`/products/${product.name.toLocaleLowerCase()}`} class="w-24 h-24 md:w-32 md:h-32 flex-none">
-            <img src={product.icon} alt={product.name} class="rounded-lg drop-shadow-lg" />
+          <a href={url(`/products/${product.name.toLocaleLowerCase()}`)} class="w-24 h-24 md:w-32 md:h-32 flex-none">
+            <img src={url(product.icon)} alt={product.name} class="rounded-lg drop-shadow-lg" />
           </a>
 
           <div class="flex flex-col flex-1">
-            <h2 class="text-xl font-bold"><a href={`/products/${product.name.toLocaleLowerCase()}`}>{product.name}</a></h2>
+            <h2 class="text-xl font-bold"><a href={url(`/products/${product.name.toLocaleLowerCase()}`)}>{product.name}</a></h2>
             <p>{product.description}</p>
           </div>
           

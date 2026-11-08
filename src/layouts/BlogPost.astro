@@ -5,6 +5,7 @@ import BlogHeader from '../components/BlogHeader.astro';
 import NavBar from '../components/NavBar.astro';
 import GoogleAnalytics from '../components/GoogleAnalytics.astro';
 import { Icon } from 'astro-icon/components';
+import { url } from '../utils/url';
 import '../styles/global.css';
 import '../styles/blog-post.css';
 
@@ -37,7 +38,7 @@ const updatedDateAsString = updatedDate ? updatedDate.toDateString() : null;
 	<head>
 		<title>{title}</title>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<link rel="icon" type="image/svg+xml" href={url('/favicon.png')} />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description} />
