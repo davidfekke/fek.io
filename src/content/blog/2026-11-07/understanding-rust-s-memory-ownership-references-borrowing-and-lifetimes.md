@@ -123,7 +123,7 @@ fn add_my_name_to_string(a_string: &mut String) {
 }
 ```
 
-Something to watch out for is trying to reference a value with different mutability. For instance, the rust compiler will throw an error if you try to reference two different variables with different mutabilitys.
+Something to watch out for is trying to reference a value with different mutability. For instance, the rust compiler will throw an error if you try to reference two different variables with different mutabilities.
 
 ```rust
 let mut s = String::from("This my first reference");
