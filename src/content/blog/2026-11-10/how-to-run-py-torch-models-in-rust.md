@@ -33,11 +33,23 @@ For the data, I used something fairly simple where I could potentially use a reg
 The structure of a PyTorch model can be very simple or complex depending on how you are using the model. For a simple feed-forward neural network, a very simple model can look like the following:
 
 ```python
+import torch
+from torch import nn
+from torch.nn import functional as F
+from torch.utils.data import DataLoader, Subset, TensorDataset, random_split
+
+import json
+import math
+from pathlib import Path
+
+import pandas as pd
+from safetensors import safe_open
+from safetensors.torch import load_file, save_file
+
 BATCH_SIZE = 16
 DIM_IN = 1000
 HIDDEN_SIZE = 100
 DIM_OUT = 10
-
 
 class TinyModel(torch.nn.Module):
 
@@ -55,7 +67,7 @@ class TinyModel(torch.nn.Module):
         return x
 ```
 
-For our exam data, the model will be a little more complex because I am baking in the normalization into the model.
+For our exam data, the model will be a little more complex because I am baking in the normalization into the model. We are also adding functions to save and load the model.
 
 ```python
 TARGET = "exam_score"
@@ -179,7 +191,6 @@ class ExamScoreRegressor(nn.Module):
         model.eval()
         return model
 ```
-
 
 ## Training the model
 
